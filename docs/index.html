@@ -1,0 +1,716 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dine Check — Hyderabad food hygiene scores</title>
+<meta name="description" content="Official food safety inspection scores for Hyderabad restaurants, cafés, cloud kitchens and stores. Search by name, filter by area, or sort by what's nearest to you.">
+<meta name="theme-color" content="#0f7a4d" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#07120f" media="(prefers-color-scheme: dark)">
+<meta property="og:title" content="Dine Check — Hyderabad food hygiene scores">
+<meta property="og:description" content="Official food safety inspection scores for Hyderabad, ranked and searchable.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f7a4d'/%3E%3Cpath d='M16 7a9 9 0 100 18 9 9 0 000-18zm-1.4 13.2l-3.8-3.8 1.7-1.7 2.1 2.1 5.2-5.2 1.7 1.7-6.9 6.9z' fill='%23fff'/%3E%3C/svg%3E">
+<style>
+/* ------------------------------------------------------------------ tokens */
+:root{
+  --bg:#f6f7f5; --surface:#ffffff; --surface-2:#f0f2ef; --line:#e2e6e0;
+  --ink:#141a17; --ink-2:#4d5a53; --ink-3:#7b8880;
+  --brand:#0f7a4d; --brand-ink:#0b5d3b; --brand-soft:#e4f3ec;
+  --exc:#15803d; --exc-bg:#dcfce7;
+  --good:#4d7c0f; --good-bg:#ecfccb;
+  --avg:#b45309; --avg-bg:#fef3c7;
+  --poor:#b91c1c; --poor-bg:#fee2e2;
+  --unr:#64748b; --unr-bg:#e9edf1;
+  --shadow:0 1px 2px rgba(15,23,20,.05),0 8px 24px -12px rgba(15,23,20,.16);
+  --radius:16px;
+  --maxw:820px;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0a100d; --surface:#131b17; --surface-2:#1a241f; --line:#26332c;
+    --ink:#e8efea; --ink-2:#a2b1a9; --ink-3:#7b8b83;
+    --brand:#3ec98a; --brand-ink:#8ce0b6; --brand-soft:#12291f;
+    --exc:#4ade80; --exc-bg:#0f2e1c;
+    --good:#a3e635; --good-bg:#1f2a10;
+    --avg:#fbbf24; --avg-bg:#332305;
+    --poor:#f87171; --poor-bg:#3a1414;
+    --unr:#94a3b8; --unr-bg:#1c242b;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -12px rgba(0,0,0,.6);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0a100d; --surface:#131b17; --surface-2:#1a241f; --line:#26332c;
+  --ink:#e8efea; --ink-2:#a2b1a9; --ink-3:#7b8b83;
+  --brand:#3ec98a; --brand-ink:#8ce0b6; --brand-soft:#12291f;
+  --exc:#4ade80; --exc-bg:#0f2e1c;
+  --good:#a3e635; --good-bg:#1f2a10;
+  --avg:#fbbf24; --avg-bg:#332305;
+  --poor:#f87171; --poor-bg:#3a1414;
+  --unr:#94a3b8; --unr-bg:#1c242b;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -12px rgba(0,0,0,.6);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font:400 16px/1.5 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  -webkit-font-smoothing:antialiased; overflow-wrap:break-word;
+}
+button,input,select{font:inherit;color:inherit}
+button{cursor:pointer;border:0;background:none}
+:focus-visible{outline:2px solid var(--brand);outline-offset:2px;border-radius:6px}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 16px}
+.sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+
+/* ------------------------------------------------------------------ header */
+header{
+  position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--bg) 88%,transparent);
+  backdrop-filter:saturate(1.6) blur(12px);border-bottom:1px solid var(--line);
+}
+.hbar{display:flex;align-items:center;gap:10px;height:56px}
+.logo{display:flex;align-items:center;gap:9px;font-weight:700;letter-spacing:-.02em;font-size:17px}
+.logo .mk{width:26px;height:26px;border-radius:8px;background:var(--brand);display:grid;place-items:center;flex:none}
+.logo .mk svg{width:16px;height:16px;fill:#fff}
+:root[data-theme="dark"] .logo .mk svg,
+:root:not([data-theme="light"]) .logo .mk svg{fill:#07130d}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]) .logo .mk svg{fill:#fff}}
+.spacer{flex:1}
+.iconbtn{width:38px;height:38px;border-radius:10px;display:grid;place-items:center;color:var(--ink-2);border:1px solid transparent}
+.iconbtn:hover{background:var(--surface-2);color:var(--ink)}
+.iconbtn svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+
+/* -------------------------------------------------------------------- hero */
+.hero{padding:26px 0 18px}
+.hero h1{margin:0 0 6px;font-size:clamp(26px,7vw,38px);line-height:1.1;letter-spacing:-.03em;font-weight:750}
+.hero p{margin:0 0 16px;color:var(--ink-2);font-size:15px;max-width:52ch}
+.hero p b{color:var(--ink);font-weight:600}
+
+.searchrow{display:flex;gap:8px}
+.search{position:relative;flex:1;min-width:0}
+.search svg{position:absolute;left:13px;top:50%;transform:translateY(-50%);width:17px;height:17px;
+  fill:none;stroke:var(--ink-3);stroke-width:1.9;stroke-linecap:round;pointer-events:none}
+.search input{
+  width:100%;height:46px;padding:0 38px 0 40px;border-radius:12px;border:1px solid var(--line);
+  background:var(--surface);box-shadow:var(--shadow);
+}
+.search input::placeholder{color:var(--ink-3)}
+.clearx{position:absolute;right:6px;top:50%;transform:translateY(-50%);width:32px;height:32px;border-radius:8px;
+  display:none;place-items:center;color:var(--ink-3)}
+.clearx.on{display:grid}
+.clearx svg{position:static;transform:none;width:15px;height:15px;stroke:currentColor;stroke-width:2}
+
+.near{
+  height:46px;padding:0 15px;border-radius:12px;background:var(--brand);color:#fff;font-weight:600;font-size:14px;
+  display:flex;align-items:center;gap:7px;white-space:nowrap;box-shadow:var(--shadow);flex:none;
+}
+:root[data-theme="dark"] .near,:root:not([data-theme="light"]) .near{color:#06130d}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]) .near{color:#fff}}
+.near svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.near[disabled]{opacity:.6}
+.near.active{background:var(--brand-soft);color:var(--brand-ink);box-shadow:none;border:1px solid var(--brand)}
+.geomsg{margin-top:9px;font-size:13px;color:var(--ink-2);display:none}
+.geomsg.on{display:block}
+.geomsg.err{color:var(--poor)}
+
+/* ------------------------------------------------------------------- stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:18px 0 4px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:11px 10px;text-align:center}
+.stat .n{font-size:20px;font-weight:700;letter-spacing:-.02em;line-height:1.15;font-variant-numeric:tabular-nums}
+.stat .l{font-size:11px;color:var(--ink-3);margin-top:2px;letter-spacing:.02em}
+.stat.exc .n{color:var(--exc)} .stat.poor .n{color:var(--poor)}
+@media (max-width:400px){.stats{grid-template-columns:repeat(2,1fr)}}
+
+/* ---------------------------------------------------------------- controls */
+.controls{position:sticky;top:56px;z-index:30;padding:12px 0 10px;
+  background:linear-gradient(var(--bg) 78%,transparent)}
+.chips{display:flex;gap:7px;overflow-x:auto;padding-bottom:2px;scrollbar-width:none;-ms-overflow-style:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;height:34px;padding:0 13px;border-radius:999px;border:1px solid var(--line);background:var(--surface);
+  font-size:13.5px;font-weight:550;color:var(--ink-2);display:flex;align-items:center;gap:6px;white-space:nowrap}
+.chip .dot{width:7px;height:7px;border-radius:99px;flex:none}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.chip[aria-pressed="true"] .dot{background:currentColor !important}
+.selrow{display:flex;gap:8px;margin-top:9px}
+.sel{position:relative;flex:1;min-width:0}
+.sel select{
+  appearance:none;width:100%;height:38px;padding:0 32px 0 12px;border-radius:10px;border:1px solid var(--line);
+  background:var(--surface);font-size:13.5px;font-weight:550;color:var(--ink);text-overflow:ellipsis
+}
+.sel::after{content:"";position:absolute;right:12px;top:50%;width:7px;height:7px;border-right:1.8px solid var(--ink-3);
+  border-bottom:1.8px solid var(--ink-3);transform:translateY(-70%) rotate(45deg);pointer-events:none}
+
+.resultbar{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:14px 0 10px;
+  font-size:13px;color:var(--ink-3)}
+.resultbar .reset{color:var(--brand);font-weight:600;font-size:13px}
+
+/* ------------------------------------------------------------------- cards */
+.list{display:flex;flex-direction:column;gap:9px;padding-bottom:8px}
+.card{
+  display:flex;align-items:center;gap:13px;width:100%;text-align:left;
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:13px;
+  box-shadow:var(--shadow);transition:transform .12s ease,border-color .12s ease;
+}
+.card:hover{transform:translateY(-1px);border-color:color-mix(in srgb,var(--brand) 45%,var(--line))}
+.card:active{transform:translateY(0)}
+.ring{position:relative;width:54px;height:54px;flex:none;border-radius:50%;display:grid;place-items:center}
+.ring i{position:absolute;inset:0;border-radius:50%;background:conic-gradient(var(--c) calc(var(--p)*1%),var(--ct) 0)}
+.ring b{position:relative;width:42px;height:42px;border-radius:50%;background:var(--surface);display:grid;place-items:center;
+  font-size:16px;font-weight:750;color:var(--c);letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.ring.none b{font-size:12px;font-weight:600;color:var(--unr)}
+.cmain{flex:1;min-width:0}
+.cname{font-weight:640;font-size:15.5px;letter-spacing:-.015em;line-height:1.25;display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.cmeta{margin-top:3px;font-size:13px;color:var(--ink-2);display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.cmeta .seg{display:inline-flex;align-items:center;gap:6px;white-space:nowrap;max-width:100%}
+.cmeta .seg>span:last-child{overflow:hidden;text-overflow:ellipsis}
+.cmeta .sep{color:var(--ink-3);opacity:.6}
+.cmeta .dist{color:var(--brand-ink);font-weight:600}
+:root[data-theme="dark"] .cmeta .dist,:root:not([data-theme="light"]) .cmeta .dist{color:var(--brand)}
+.tag{display:inline-flex;align-items:center;gap:4px;height:20px;padding:0 8px;border-radius:999px;
+  font-size:11px;font-weight:650;letter-spacing:.01em}
+.tag.exc{background:var(--exc-bg);color:var(--exc)}
+.tag.good{background:var(--good-bg);color:var(--good)}
+.tag.avg{background:var(--avg-bg);color:var(--avg)}
+.tag.poor{background:var(--poor-bg);color:var(--poor)}
+.tag.unrated{background:var(--unr-bg);color:var(--unr)}
+.tag.notice{background:var(--poor-bg);color:var(--poor)}
+.rank{font-size:11.5px;color:var(--ink-3);font-weight:650;width:22px;text-align:right;flex:none;font-variant-numeric:tabular-nums}
+.fav{width:34px;height:34px;flex:none;border-radius:9px;display:grid;place-items:center;color:var(--ink-3)}
+.fav svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linejoin:round}
+.fav[aria-pressed="true"]{color:#e11d48}
+.fav[aria-pressed="true"] svg{fill:currentColor;stroke:currentColor}
+
+.empty{text-align:center;padding:44px 20px;color:var(--ink-2)}
+.empty svg{width:38px;height:38px;stroke:var(--ink-3);fill:none;stroke-width:1.5;margin-bottom:10px}
+
+/* ------------------------------------------------------------------ detail */
+.scrim{position:fixed;inset:0;z-index:60;background:rgba(8,14,11,.45);backdrop-filter:blur(2px);
+  opacity:0;pointer-events:none;transition:opacity .2s ease}
+.scrim.on{opacity:1;pointer-events:auto}
+.sheet{
+  position:fixed;z-index:70;left:0;right:0;bottom:0;max-height:92vh;background:var(--bg);
+  border-radius:20px 20px 0 0;box-shadow:0 -8px 40px rgba(0,0,0,.3);
+  transform:translateY(102%);transition:transform .26s cubic-bezier(.32,.72,0,1);
+  display:flex;flex-direction:column;overflow:hidden;
+}
+.sheet.on{transform:translateY(0)}
+@media (min-width:720px){
+  .sheet{left:50%;right:auto;bottom:auto;top:50%;width:min(680px,94vw);max-height:88vh;border-radius:20px;
+    transform:translate(-50%,-42%) scale(.97);opacity:0;transition:transform .22s ease,opacity .22s ease}
+  .sheet.on{transform:translate(-50%,-50%) scale(1);opacity:1}
+}
+.shead{display:flex;align-items:flex-start;gap:12px;padding:16px 16px 12px;border-bottom:1px solid var(--line)}
+.shead h2{margin:0;font-size:19px;letter-spacing:-.02em;line-height:1.25;font-weight:700}
+.shead .sub{margin-top:4px;font-size:13.5px;color:var(--ink-2)}
+.sbody{overflow-y:auto;padding:16px;-webkit-overflow-scrolling:touch}
+.scorebox{display:flex;align-items:center;gap:16px;background:var(--surface);border:1px solid var(--line);
+  border-radius:14px;padding:15px;margin-bottom:14px}
+.scorebox .big{font-size:38px;font-weight:780;letter-spacing:-.04em;line-height:1;color:var(--c);font-variant-numeric:tabular-nums}
+.scorebox .big span{font-size:17px;font-weight:600;color:var(--ink-3)}
+.scorebox .meta{font-size:13px;color:var(--ink-2);line-height:1.6}
+.bar{height:7px;border-radius:99px;background:var(--surface-2);overflow:hidden;margin:9px 0 0}
+.bar i{display:block;height:100%;background:var(--c);border-radius:99px}
+
+h3.sec{margin:18px 0 8px;font-size:12px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--ink-3)}
+h3.sec:first-child{margin-top:0}
+ul.pts{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:7px}
+ul.pts li{display:flex;gap:9px;font-size:14px;line-height:1.45;color:var(--ink-2)}
+ul.pts li svg{width:16px;height:16px;flex:none;margin-top:2px;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+ul.pts.ok li svg{stroke:var(--exc)}
+ul.pts.bad li svg{stroke:var(--poor)}
+.note{background:var(--avg-bg);color:var(--avg);border-radius:12px;padding:11px 13px;font-size:13.5px;line-height:1.5}
+.hist{display:flex;flex-direction:column;gap:8px}
+.hrow{display:flex;align-items:center;gap:11px;background:var(--surface);border:1px solid var(--line);
+  border-radius:12px;padding:10px 12px}
+.hrow .hp{font-weight:700;font-size:15px;color:var(--c);width:44px;flex:none;font-variant-numeric:tabular-nums}
+.hrow .hd{flex:1;min-width:0;font-size:13px;color:var(--ink-2)}
+.srcbtn{display:inline-flex;align-items:center;gap:7px;height:38px;padding:0 14px;border-radius:10px;
+  background:var(--surface-2);border:1px solid var(--line);font-size:13.5px;font-weight:600;color:var(--ink);
+  text-decoration:none;margin-top:4px}
+.srcbtn svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+
+/* ------------------------------------------------------------------ footer */
+footer{margin-top:26px;border-top:1px solid var(--line);padding:20px 0 34px;font-size:12.5px;color:var(--ink-3);line-height:1.6}
+footer b{color:var(--ink-2);font-weight:600}
+footer a{color:var(--brand);text-decoration:none}
+footer a:hover{text-decoration:underline}
+@media (prefers-reduced-motion:reduce){*{transition:none !important;animation:none !important}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap hbar">
+    <div class="logo">
+      <span class="mk"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm-1.6 14.7l-4.2-4.2 1.9-1.9 2.3 2.3 5.8-5.8 1.9 1.9-7.7 7.7z"/></svg></span>
+      Dine&nbsp;Check
+    </div>
+    <div class="spacer"></div>
+    <button class="iconbtn" id="favBtn" aria-pressed="false" title="Show saved places" aria-label="Show saved places">
+      <svg viewBox="0 0 24 24"><path d="M20.8 8.6c0 4.9-8.8 10.4-8.8 10.4S3.2 13.5 3.2 8.6a4.6 4.6 0 018.8-1.8 4.6 4.6 0 018.8 1.8z"/></svg>
+    </button>
+    <button class="iconbtn" id="themeBtn" title="Switch theme" aria-label="Switch theme">
+      <svg id="themeIcon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"/></svg>
+    </button>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <h1>Know before you eat.</h1>
+    <p>Hygiene scores for Hyderabad restaurants, cafés and stores, taken straight from <b>official CMC, GHMC and Telangana Food Safety</b> inspection reports.</p>
+
+    <div class="searchrow">
+      <div class="search">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+        <input id="q" type="search" placeholder="Search a restaurant, café or store…" autocomplete="off" aria-label="Search by name or area">
+        <button class="clearx" id="clearQ" aria-label="Clear search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+      </div>
+      <button class="near" id="nearBtn">
+        <svg viewBox="0 0 24 24"><path d="M12 21s7-6.3 7-11a7 7 0 10-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        <span id="nearLabel">Near me</span>
+      </button>
+    </div>
+    <p class="geomsg" id="geomsg"></p>
+
+    <div class="stats" id="stats"></div>
+  </section>
+
+  <section class="controls">
+    <div class="chips" id="grades" role="group" aria-label="Filter by rating"></div>
+    <div class="selrow">
+      <label class="sel"><span class="sr">Sort by</span>
+        <select id="sort">
+          <option value="score-desc">Highest score</option>
+          <option value="score-asc">Lowest score</option>
+          <option value="date">Most recently inspected</option>
+          <option value="near">Nearest to me</option>
+          <option value="name">Name (A–Z)</option>
+        </select>
+      </label>
+      <label class="sel"><span class="sr">Filter by area</span>
+        <select id="area"><option value="">All areas</option></select>
+      </label>
+    </div>
+  </section>
+
+  <div class="resultbar">
+    <span id="count"></span>
+    <button class="reset" id="reset" hidden>Clear filters</button>
+  </div>
+
+  <div class="list" id="list"></div>
+
+  <footer>
+    <p><b>Where this comes from.</b> Every score on this page is transcribed from a public inspection report published by
+    <a href="https://x.com/CMC_Offcl" target="_blank" rel="noopener">@CMC_Offcl</a> (Cyberabad Municipal Corporation),
+    <a href="https://x.com/cfs_telangana" target="_blank" rel="noopener">@cfs_telangana</a> and
+    <a href="https://x.com/GHMCOnline" target="_blank" rel="noopener">@GHMCOnline</a>. Every listing links back to its original report — check it.</p>
+    <p><b>Read scores as percentages.</b> Inspection checklists differ by business type, so total marks vary between establishments. Only the percentage is comparable.</p>
+    <p><b>A score is a snapshot,</b> not a standing verdict — it reflects one visit on one day, and conditions change. Places with no recent inspection simply have not been visited, which is not a mark against them. Distances are measured to the centre of a locality, so treat them as approximate.</p>
+    <p id="gen"></p>
+  </footer>
+</main>
+
+<div class="scrim" id="scrim"></div>
+<aside class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle" hidden>
+  <div class="shead">
+    <div style="flex:1;min-width:0">
+      <h2 id="sheetTitle"></h2>
+      <div class="sub" id="sheetSub"></div>
+    </div>
+    <button class="iconbtn" id="closeSheet" aria-label="Close">
+      <svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+  <div class="sbody" id="sheetBody"></div>
+</aside>
+
+<script>
+(function(){
+"use strict";
+
+// ------------------------------------------------------------------ helpers
+var $ = function(s){ return document.querySelector(s); };
+var el = function(t,c,txt){ var n=document.createElement(t); if(c)n.className=c; if(txt!=null)n.textContent=txt; return n; };
+var esc = function(s){ var d=document.createElement("div"); d.textContent=s==null?"":s; return d.innerHTML; };
+
+var store = {
+  get:function(k,f){ try{ var v=localStorage.getItem(k); return v===null?f:JSON.parse(v);}catch(e){return f;} },
+  set:function(k,v){ try{ localStorage.setItem(k,JSON.stringify(v)); }catch(e){} }
+};
+
+var GRADES = {
+  excellent:{label:"Excellent", short:"Excellent", css:"exc", color:"var(--exc)", track:"var(--exc-bg)", range:"90–100"},
+  good:     {label:"Good",      short:"Good",      css:"good",color:"var(--good)",track:"var(--good-bg)",range:"80–89"},
+  average:  {label:"Average",   short:"Average",   css:"avg", color:"var(--avg)", track:"var(--avg-bg)", range:"70–79"},
+  poor:     {label:"Needs work",short:"Needs work",css:"poor",color:"var(--poor)",track:"var(--poor-bg)",range:"under 70"},
+  unrated:  {label:"No score",  short:"No score",  css:"unrated",color:"var(--unr)",track:"var(--unr-bg)",range:""}
+};
+
+var MONTHS=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+function fmtDate(iso){
+  if(!iso) return "Date not recorded";
+  var p=iso.split("-"); if(p.length!==3) return iso;
+  return (+p[2])+" "+MONTHS[(+p[1])-1]+" "+p[0];
+}
+function ago(iso){
+  if(!iso) return "";
+  var d=new Date(iso+"T00:00:00"), now=new Date();
+  var days=Math.round((now-d)/86400000);
+  if(days<0) return fmtDate(iso);
+  if(days===0) return "today";
+  if(days===1) return "yesterday";
+  if(days<30) return days+" days ago";
+  var m=Math.round(days/30.4);
+  if(m<12) return m+(m===1?" month ago":" months ago");
+  var y=Math.floor(days/365);
+  return y+(y===1?" year ago":" years ago");
+}
+function km(a,b,c,d){
+  var R=6371, r=Math.PI/180;
+  var dLat=(c-a)*r, dLon=(d-b)*r;
+  var s=Math.sin(dLat/2)*Math.sin(dLat/2)+Math.cos(a*r)*Math.cos(c*r)*Math.sin(dLon/2)*Math.sin(dLon/2);
+  return R*2*Math.atan2(Math.sqrt(s),Math.sqrt(1-s));
+}
+function fmtKm(v){
+  if(v<0.6) return "in your area";
+  if(v<10) return v.toFixed(1)+" km away";
+  return Math.round(v)+" km away";
+}
+
+// -------------------------------------------------------------------- state
+var DATA=null, VENUES=[], me=null;
+var state={ q:"", grade:"", area:"", sort:"score-desc", favOnly:false };
+var favs=store.get("dinecheck.favs",[]);
+
+// -------------------------------------------------------------------- theme
+var themeBtn=$("#themeBtn"), themeIcon=$("#themeIcon");
+var SUN="M12 4V2M12 22v-2M4 12H2M22 12h-2M6 6L4.5 4.5M19.5 19.5L18 18M18 6l1.5-1.5M4.5 19.5L6 18M16 12a4 4 0 11-8 0 4 4 0 018 0z";
+var MOON="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z";
+function applyTheme(t){
+  if(t) document.documentElement.setAttribute("data-theme",t);
+  else document.documentElement.removeAttribute("data-theme");
+  var dark = t==="dark" || (!t && matchMedia("(prefers-color-scheme:dark)").matches);
+  themeIcon.innerHTML='<path d="'+(dark?SUN:MOON)+'"/>';
+}
+applyTheme(store.get("dinecheck.theme",null));
+themeBtn.addEventListener("click",function(){
+  var cur=document.documentElement.getAttribute("data-theme");
+  var dark = cur ? cur==="dark" : matchMedia("(prefers-color-scheme:dark)").matches;
+  var next = dark?"light":"dark";
+  store.set("dinecheck.theme",next); applyTheme(next);
+});
+
+// ------------------------------------------------------------------ ranking
+function filtered(){
+  var q=state.q.trim().toLowerCase();
+  var out=VENUES.filter(function(v){
+    if(state.favOnly && favs.indexOf(v.id)<0) return false;
+    if(state.grade && v.grade!==state.grade) return false;
+    if(state.area && v.area!==state.area) return false;
+    if(q){
+      var hay=(v.name+" "+v.area+" "+v.location+" "+(v.aka||[]).join(" ")).toLowerCase();
+      if(hay.indexOf(q)<0) return false;
+    }
+    return true;
+  });
+
+  var s=state.sort;
+  out.sort(function(a,b){
+    if(s==="near"){
+      var da=a._d==null?Infinity:a._d, db=b._d==null?Infinity:b._d;
+      if(da!==db) return da-db;
+      return (b.score==null?-1:b.score)-(a.score==null?-1:a.score);
+    }
+    if(s==="name") return a.name.localeCompare(b.name);
+    if(s==="date"){
+      if(a.lastInspected!==b.lastInspected) return a.lastInspected<b.lastInspected?1:-1;
+      return a.name.localeCompare(b.name);
+    }
+    var sa=a.score, sb=b.score;
+    if(sa==null&&sb==null) return a.name.localeCompare(b.name);
+    if(sa==null) return 1;
+    if(sb==null) return -1;
+    if(sa!==sb) return s==="score-asc" ? sa-sb : sb-sa;
+    return a.name.localeCompare(b.name);
+  });
+  return out;
+}
+
+// ------------------------------------------------------------------- render
+function ringNode(score,grade){
+  var g=GRADES[grade]||GRADES.unrated;
+  var r=el("div","ring"+(score==null?" none":""));
+  r.style.setProperty("--c",g.color);
+  r.style.setProperty("--ct",g.track);
+  r.style.setProperty("--p",score==null?0:score);
+  r.appendChild(el("i"));
+  r.appendChild(el("b",null,score==null?"—":String(score)));
+  return r;
+}
+
+function card(v,i){
+  var row=el("div","card");
+  row.tabIndex=0; row.setAttribute("role","button");
+  row.setAttribute("aria-label",v.name+", score "+(v.score==null?"not recorded":v.score));
+
+  if(state.sort==="score-desc"&&!state.q&&!state.grade&&!state.area&&!state.favOnly){
+    row.appendChild(el("div","rank","#"+(i+1)));
+  }
+  row.appendChild(ringNode(v.score,v.grade));
+
+  var main=el("div","cmain");
+  var name=el("div","cname");
+  name.appendChild(el("span",null,v.name));
+  var g=GRADES[v.grade]||GRADES.unrated;
+  name.appendChild(el("span","tag "+g.css,g.short));
+  if(v.history[0].notice) name.appendChild(el("span","tag notice","Notice issued"));
+  main.appendChild(name);
+
+  var meta=el("div","cmeta");
+  var seg=function(text,cls){
+    var w=el("span","seg");
+    if(meta.childNodes.length) w.appendChild(el("span","sep","·"));
+    w.appendChild(el("span",cls||null,text));
+    meta.appendChild(w);
+  };
+  seg(v.location||v.area);
+  if(v._d!=null) seg(fmtKm(v._d),"dist");
+  seg("Inspected "+ago(v.lastInspected));
+  main.appendChild(meta);
+  row.appendChild(main);
+
+  var fav=el("button","fav");
+  var on=favs.indexOf(v.id)>=0;
+  fav.setAttribute("aria-pressed",on?"true":"false");
+  fav.setAttribute("aria-label",(on?"Remove ":"Save ")+v.name);
+  fav.innerHTML='<svg viewBox="0 0 24 24"><path d="M20.8 8.6c0 4.9-8.8 10.4-8.8 10.4S3.2 13.5 3.2 8.6a4.6 4.6 0 018.8-1.8 4.6 4.6 0 018.8 1.8z"/></svg>';
+  fav.addEventListener("click",function(e){
+    e.stopPropagation();
+    var k=favs.indexOf(v.id);
+    if(k<0) favs.push(v.id); else favs.splice(k,1);
+    store.set("dinecheck.favs",favs);
+    render();
+  });
+  row.appendChild(fav);
+
+  row.addEventListener("click",function(){ openSheet(v); });
+  row.addEventListener("keydown",function(e){
+    if(e.key==="Enter"||e.key===" "){ e.preventDefault(); openSheet(v); }
+  });
+  return row;
+}
+
+function render(){
+  var rows=filtered(), list=$("#list");
+  list.textContent="";
+  if(!rows.length){
+    var e=el("div","empty");
+    e.innerHTML='<svg viewBox="0 0 24 24" stroke="currentColor"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>'+
+      "<p>"+(state.favOnly?"You have not saved any places yet. Tap the heart on a card to keep it here.":"Nothing matches those filters.")+"</p>";
+    list.appendChild(e);
+  } else {
+    var frag=document.createDocumentFragment();
+    rows.forEach(function(v,i){ frag.appendChild(card(v,i)); });
+    list.appendChild(frag);
+  }
+
+  var active = state.q||state.grade||state.area||state.favOnly;
+  $("#count").textContent = rows.length+(rows.length===1?" place":" places")+
+    (state.area?" in "+state.area:"")+
+    (state.favOnly?" saved":"");
+  $("#reset").hidden = !active;
+  $("#clearQ").classList.toggle("on",!!state.q);
+  $("#favBtn").setAttribute("aria-pressed",state.favOnly?"true":"false");
+  $("#favBtn").style.color = state.favOnly?"#e11d48":"";
+  Array.prototype.forEach.call(document.querySelectorAll("#grades .chip"),function(c){
+    c.setAttribute("aria-pressed", c.dataset.g===state.grade ? "true":"false");
+  });
+}
+
+// -------------------------------------------------------------------- sheet
+var lastFocus=null;
+function openSheet(v){
+  lastFocus=document.activeElement;
+  var g=GRADES[v.grade]||GRADES.unrated;
+  $("#sheetTitle").textContent=v.name;
+  var sub=[v.location||v.area];
+  if(v._d!=null) sub.push(fmtKm(v._d));
+  if(v.aka&&v.aka.length) sub.push("Also listed as "+v.aka.join(", "));
+  $("#sheetSub").textContent=sub.join(" · ");
+
+  var latest=v.history[0];
+  var h='';
+
+  h+='<div class="scorebox" style="--c:'+g.color+'">'+
+       '<div><div class="big">'+(v.score==null?'—':v.score+'<span>/100</span>')+'</div></div>'+
+       '<div style="flex:1"><div class="meta"><b>'+g.label+'</b>'+(g.range?' · '+g.range+' band':'')+'<br>'+
+       'Inspected '+fmtDate(latest.date)+
+       (latest.obtained!=null&&latest.total?'<br>'+latest.obtained+' of '+latest.total+' marks on that checklist':'')+'</div>'+
+       (v.score==null?'':'<div class="bar"><i style="width:'+v.score+'%"></i></div>')+
+       '</div></div>';
+
+  if(latest.notice||/notice/i.test(latest.action||"")){
+    h+='<div class="note"><b>An improvement notice was issued</b> at this inspection.'+
+       (latest.bad&&latest.bad.length?'':' The published report did not itemise what triggered it — open the original report below.')+
+       '</div>';
+  }
+
+  if(latest.good&&latest.good.length){
+    h+='<h3 class="sec">Good practices observed</h3><ul class="pts ok">';
+    latest.good.forEach(function(t){
+      h+='<li><svg viewBox="0 0 24 24" stroke="currentColor"><path d="M20 6L9 17l-5-5"/></svg><span>'+esc(t)+'</span></li>';
+    });
+    h+='</ul>';
+  }
+  if(latest.bad&&latest.bad.length){
+    h+='<h3 class="sec">Problems recorded</h3><ul class="pts bad">';
+    latest.bad.forEach(function(t){
+      h+='<li><svg viewBox="0 0 24 24" stroke="currentColor"><path d="M12 8v5M12 16.5v.01M10.3 3.9L2.6 17.2A2 2 0 004.3 20h15.4a2 2 0 001.7-2.8L13.7 3.9a2 2 0 00-3.4 0z"/></svg><span>'+esc(t)+'</span></li>';
+    });
+    h+='</ul>';
+  }
+  if(latest.action){
+    h+='<h3 class="sec">Action taken</h3><p style="margin:0;font-size:14px;line-height:1.55;color:var(--ink-2)">'+esc(latest.action)+'</p>';
+  }
+
+  if(v.history.length>1){
+    h+='<h3 class="sec">Inspection history</h3><div class="hist">';
+    v.history.forEach(function(x){
+      var xg=GRADES[x.pct==null?'unrated':(x.pct>=90?'excellent':x.pct>=80?'good':x.pct>=70?'average':'poor')];
+      h+='<div class="hrow" style="--c:'+xg.color+'"><div class="hp">'+(x.pct==null?'—':x.pct)+'</div>'+
+         '<div class="hd">'+fmtDate(x.date)+' · '+esc(x.location||v.area)+'</div>'+
+         '<a class="srcbtn" style="margin:0;height:30px;padding:0 10px" href="'+esc(x.url)+'" target="_blank" rel="noopener">Report</a></div>';
+    });
+    h+='</div>';
+  }
+
+  h+='<h3 class="sec">Source</h3>'+
+     '<a class="srcbtn" href="'+esc(latest.url)+'" target="_blank" rel="noopener">'+
+     '<svg viewBox="0 0 24 24"><path d="M14 3h7v7M21 3l-9 9M19 14v5a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h5"/></svg>'+
+     'Original report from '+esc(latest.source||'the inspecting authority')+'</a>'+
+     '<p style="font-size:12.5px;color:var(--ink-3);margin:10px 0 4px;line-height:1.55">'+
+     'Checklist totals differ by business type, so compare places on the percentage, never on raw marks. '+
+     'This reflects a single visit on '+fmtDate(latest.date)+'.</p>';
+
+  $("#sheetBody").innerHTML=h;
+  $("#sheetBody").scrollTop=0;
+  $("#sheet").hidden=false;
+  requestAnimationFrame(function(){
+    $("#sheet").classList.add("on"); $("#scrim").classList.add("on");
+  });
+  document.body.style.overflow="hidden";
+  $("#closeSheet").focus();
+}
+function closeSheet(){
+  $("#sheet").classList.remove("on"); $("#scrim").classList.remove("on");
+  document.body.style.overflow="";
+  setTimeout(function(){ $("#sheet").hidden=true; },260);
+  if(lastFocus&&lastFocus.focus) lastFocus.focus();
+}
+$("#closeSheet").addEventListener("click",closeSheet);
+$("#scrim").addEventListener("click",closeSheet);
+document.addEventListener("keydown",function(e){ if(e.key==="Escape"&&!$("#sheet").hidden) closeSheet(); });
+
+// ------------------------------------------------------------------ near me
+$("#nearBtn").addEventListener("click",function(){
+  var btn=this, msg=$("#geomsg");
+  if(me){ // toggle off
+    me=null; VENUES.forEach(function(v){ v._d=null; });
+    btn.classList.remove("active"); $("#nearLabel").textContent="Near me";
+    msg.className="geomsg"; if(state.sort==="near"){ state.sort="score-desc"; $("#sort").value="score-desc"; }
+    render(); return;
+  }
+  if(!navigator.geolocation){
+    msg.className="geomsg on err"; msg.textContent="This browser cannot share your location. Pick your area from the dropdown instead.";
+    return;
+  }
+  btn.disabled=true; $("#nearLabel").textContent="Locating…";
+  msg.className="geomsg on"; msg.textContent="Asking your browser for your location…";
+  navigator.geolocation.getCurrentPosition(function(pos){
+    me={lat:pos.coords.latitude,lng:pos.coords.longitude};
+    var placed=0;
+    VENUES.forEach(function(v){
+      v._d = (v.lat==null) ? null : km(me.lat,me.lng,v.lat,v.lng);
+      if(v._d!=null) placed++;
+    });
+    btn.disabled=false; btn.classList.add("active"); $("#nearLabel").textContent="Using your location";
+    var unplaced=VENUES.length-placed;
+    msg.className="geomsg on";
+    msg.textContent="Sorted by distance from you. Distances are to the centre of each locality, so treat them as approximate."+
+      (unplaced?" "+unplaced+" place"+(unplaced===1?" has":"s have")+" no mapped locality and sit at the end.":"");
+    state.sort="near"; $("#sort").value="near";
+    render();
+  },function(err){
+    btn.disabled=false; $("#nearLabel").textContent="Near me";
+    msg.className="geomsg on err";
+    msg.textContent = err.code===1
+      ? "Location permission was declined. Pick your area from the dropdown instead — it works just as well."
+      : "Could not read your location. Pick your area from the dropdown instead.";
+  },{enableHighAccuracy:false,timeout:10000,maximumAge:300000});
+});
+
+// ----------------------------------------------------------------- controls
+$("#q").addEventListener("input",function(){ state.q=this.value; render(); });
+$("#clearQ").addEventListener("click",function(){ $("#q").value=""; state.q=""; $("#q").focus(); render(); });
+$("#sort").addEventListener("change",function(){
+  if(this.value==="near"&&!me){ this.value=state.sort; $("#nearBtn").click(); return; }
+  state.sort=this.value; render();
+});
+$("#area").addEventListener("change",function(){ state.area=this.value; render(); });
+$("#favBtn").addEventListener("click",function(){ state.favOnly=!state.favOnly; render(); });
+$("#reset").addEventListener("click",function(){
+  state.q=""; state.grade=""; state.area=""; state.favOnly=false;
+  $("#q").value=""; $("#area").value=""; render();
+});
+
+// --------------------------------------------------------------------- boot
+function boot(d){
+  DATA=d; VENUES=d.venues.map(function(v){ v._d=null; return v; });
+
+  var s=d.stats;
+  $("#stats").innerHTML=
+    '<div class="stat"><div class="n">'+s.venues+'</div><div class="l">places</div></div>'+
+    '<div class="stat"><div class="n">'+s.avgScore+'</div><div class="l">avg score</div></div>'+
+    '<div class="stat exc"><div class="n">'+s.excellent+'</div><div class="l">excellent</div></div>'+
+    '<div class="stat poor"><div class="n">'+s.poor+'</div><div class="l">need work</div></div>';
+
+  var counts={excellent:s.excellent,good:s.good,average:s.average,poor:s.poor};
+  var chips=$("#grades");
+  var mk=function(key,label,color){
+    var b=el("button","chip"); b.dataset.g=key; b.setAttribute("aria-pressed","false");
+    if(color){ var dot=el("span","dot"); dot.style.background=color; b.appendChild(dot); }
+    b.appendChild(el("span",null,label));
+    b.addEventListener("click",function(){ state.grade = state.grade===key?"":key; render(); });
+    chips.appendChild(b);
+  };
+  mk("","All ratings",null);
+  mk("excellent","Excellent "+counts.excellent,"var(--exc)");
+  mk("good","Good "+counts.good,"var(--good)");
+  mk("average","Average "+counts.average,"var(--avg)");
+  mk("poor","Needs work "+counts.poor,"var(--poor)");
+
+  var sel=$("#area");
+  d.areas.forEach(function(a){
+    var o=el("option",null,a.name+" ("+a.count+")"); o.value=a.name; sel.appendChild(o);
+  });
+
+  $("#gen").textContent="Built from "+s.inspections+" inspection reports covering "+s.venues+
+    " establishments across "+s.areas+" localities. Most recent inspection: "+fmtDate(s.latest)+".";
+
+  render();
+}
+
+fetch("data.json",{cache:"no-cache"})
+  .then(function(r){ if(!r.ok) throw new Error(r.status); return r.json(); })
+  .then(boot)
+  .catch(function(){
+    $("#list").innerHTML='<div class="empty"><p>Could not load the inspection data.<br>'+
+      'If you opened this file directly from disk, serve the folder instead — for example <code>python -m http.server</code> — because browsers block <code>fetch</code> on <code>file://</code> URLs.</p></div>';
+  });
+})();
+</script>
+</body>
+</html>

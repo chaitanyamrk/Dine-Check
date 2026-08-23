@@ -1,0 +1,3832 @@
+{
+ "generated": "2026-08-23T13:43:19Z",
+ "stats": {
+  "venues": 86,
+  "inspections": 88,
+  "scored": 83,
+  "avgScore": 74,
+  "excellent": 24,
+  "good": 12,
+  "average": 13,
+  "poor": 34,
+  "areas": 34,
+  "latest": "2026-08-13",
+  "skippedPosts": 17,
+  "duplicatePosts": 8,
+  "ungeocoded": [
+   "Bagh Ameer",
+   "CGR School",
+   "PNR Empire",
+   "Phoenix Towers",
+   "SMR Vinay Technopolis"
+  ]
+ },
+ "areas": [
+  {
+   "name": "Madinaguda",
+   "count": 11,
+   "lat": 17.4948,
+   "lng": 78.3352
+  },
+  {
+   "name": "Madhapur",
+   "count": 8,
+   "lat": 17.4462,
+   "lng": 78.3792
+  },
+  {
+   "name": "Gachibowli",
+   "count": 7,
+   "lat": 17.456,
+   "lng": 78.34
+  },
+  {
+   "name": "Kukatpally",
+   "count": 7,
+   "lat": 17.4948,
+   "lng": 78.3996
+  },
+  {
+   "name": "Gajularamaram",
+   "count": 6,
+   "lat": 17.5163,
+   "lng": 78.439
+  },
+  {
+   "name": "Kondapur",
+   "count": 6,
+   "lat": 17.4615,
+   "lng": 78.3639
+  },
+  {
+   "name": "HITEC City",
+   "count": 3,
+   "lat": 17.4456,
+   "lng": 78.3772
+  },
+  {
+   "name": "Kompally",
+   "count": 3,
+   "lat": 17.541,
+   "lng": 78.4867
+  },
+  {
+   "name": "Nallagandla",
+   "count": 3,
+   "lat": 17.4735,
+   "lng": 78.305
+  },
+  {
+   "name": "Chintal",
+   "count": 2,
+   "lat": 17.4972,
+   "lng": 78.439
+  },
+  {
+   "name": "Financial District",
+   "count": 2,
+   "lat": 17.418,
+   "lng": 78.34
+  },
+  {
+   "name": "Manikonda",
+   "count": 2,
+   "lat": 17.4041,
+   "lng": 78.3772
+  },
+  {
+   "name": "Medchal",
+   "count": 2,
+   "lat": 17.627,
+   "lng": 78.481
+  },
+  {
+   "name": "Moosapet",
+   "count": 2,
+   "lat": 17.47,
+   "lng": 78.421
+  },
+  {
+   "name": "Nizampet",
+   "count": 2,
+   "lat": 17.5089,
+   "lng": 78.3877
+  },
+  {
+   "name": "Puppalaguda",
+   "count": 2,
+   "lat": 17.407,
+   "lng": 78.362
+  },
+  {
+   "name": "Alkapuri Township",
+   "count": 1,
+   "lat": 17.546,
+   "lng": 78.429
+  },
+  {
+   "name": "Ameenpur",
+   "count": 1,
+   "lat": 17.5286,
+   "lng": 78.3122
+  },
+  {
+   "name": "Anjaiah Nagar",
+   "count": 1,
+   "lat": 17.5,
+   "lng": 78.418
+  },
+  {
+   "name": "Bachupally",
+   "count": 1,
+   "lat": 17.5453,
+   "lng": 78.3712
+  },
+  {
+   "name": "Bagh Ameer",
+   "count": 1,
+   "lat": null,
+   "lng": null
+  },
+  {
+   "name": "CGR School",
+   "count": 1,
+   "lat": null,
+   "lng": null
+  },
+  {
+   "name": "Gopanpally",
+   "count": 1,
+   "lat": 17.461,
+   "lng": 78.318
+  },
+  {
+   "name": "Hafeezpet",
+   "count": 1,
+   "lat": 17.48,
+   "lng": 78.352
+  },
+  {
+   "name": "Khajaguda",
+   "count": 1,
+   "lat": 17.4185,
+   "lng": 78.3673
+  },
+  {
+   "name": "Kollur",
+   "count": 1,
+   "lat": 17.479,
+   "lng": 78.257
+  },
+  {
+   "name": "Lingampally",
+   "count": 1,
+   "lat": 17.493,
+   "lng": 78.314
+  },
+  {
+   "name": "Miyapur",
+   "count": 1,
+   "lat": 17.4966,
+   "lng": 78.3579
+  },
+  {
+   "name": "Narsingi",
+   "count": 1,
+   "lat": 17.394,
+   "lng": 78.352
+  },
+  {
+   "name": "PNR Empire",
+   "count": 1,
+   "lat": null,
+   "lng": null
+  },
+  {
+   "name": "Phoenix Towers",
+   "count": 1,
+   "lat": null,
+   "lng": null
+  },
+  {
+   "name": "RC Puram",
+   "count": 1,
+   "lat": 17.5216,
+   "lng": 78.296
+  },
+  {
+   "name": "SMR Vinay Technopolis",
+   "count": 1,
+   "lat": null,
+   "lng": null
+  },
+  {
+   "name": "Tellapur",
+   "count": 1,
+   "lat": 17.482,
+   "lng": 78.287
+  }
+ ],
+ "venues": [
+  {
+   "id": "zepto-kompally",
+   "name": "Zepto",
+   "aka": [],
+   "location": "Kompally",
+   "area": "Kompally",
+   "lat": 17.541,
+   "lng": 78.4867,
+   "score": 98,
+   "grade": "excellent",
+   "lastInspected": "2026-07-13",
+   "visits": 1,
+   "notice": false,
+   "photo": "https://pbs.twimg.com/amplify_video_thumb/2076664521373192192/img/qo8nQSaaOqorqgem.jpg",
+   "history": [
+    {
+     "date": "2026-07-13",
+     "pct": 98,
+     "obtained": 194,
+     "total": 198,
+     "good": [
+      "Food handlers found wearing hairnets and gloves",
+      "Proper segregation of food and non-food items maintained",
+      "Valid FSSAI Licence displayed at the premises",
+      "FIFO system followed while dispensing food products",
+      "Required temperatures maintained in the cold room, freezer, and chiller",
+      "Pest control and daily cleaning records maintained",
+      "Valid medical fitness certificates available for all food handlers",
+      "22 employees completed FoSTaC training",
+      "Internal audit records maintained"
+     ],
+     "bad": [],
+     "action": "Oil samples were lifted for laboratory testing",
+     "severity": "None",
+     "notice": false,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2076664644601860358",
+     "location": "Kompally"
+    }
+   ]
+  },
+  {
+   "id": "kfc-madhapur",
+   "name": "KFC",
+   "aka": [],
+   "location": "Shilpakala Vedika",
+   "area": "Madhapur",
+   "lat": 17.453,
+   "lng": 78.384,
+   "score": 96,
+   "grade": "excellent",
+   "lastInspected": "2026-07-06",
+   "visits": 1,
+   "notice": false,
+   "photo": "https://pbs.twimg.com/amplify_video_thumb/2074131776474402816/img/W0gDi9ogK0XFQ7gF.jpg",
+   "history": [
+    {
+     "date": "2026-07-06",
+     "pct": 96,
+     "obtained": 96,
+     "total": 100,
+     "good": [
+      "Hot water sanitisation of utensils being followed",
+      "Regular cleaning schedule maintained",
+      "Proper segregation of vegetarian and non-vegetarian food",
+      "FoSTaC-trained Food Safety Supervisors available",
+      "Medical fitness certificates of food handlers available",
+      "Prepared food discarded within the prescribed time if unsold",
+      "Cooking oil quality monitored regularly"
+     ],
+     "bad": [
+      "Drain near the kitchen required improved cleaning"
+     ],
+     "action": "The outlet was instructed to improve drain maintenance and continue adhering to food safety standards",
+     "severity": "Minor",
+     "notice": false,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2074132090027950199",
+     "location": "Shilpakala Vedika"
+    }
+   ]
+  },
+  {
+   "id": "ks-bakers-chintal",
+   "name": "KS Bakers",
+   "aka": [],
+   "location": "Chintal",
+   "area": "Chintal",
+   "lat": 17.4972,
+   "lng": 78.439,
+   "score": 96,
+   "grade": "excellent",
+   "lastInspected": "2026-07-10",
+   "visits": 1,
+   "notice": false,
+   "photo": "https://pbs.twimg.com/media/HM3li9qaIAAMX4R?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-07-10",
+     "pct": 96,
+     "obtained": 105,
+     "total": 110,
+     "good": [
+      "Ready-to-sell and raw food items were properly covered and labelled with preparation and use-by dates",
+      "Food handlers were wearing uniforms and hairnets",
+      "Vegetarian and non-vegetarian food items stored separately with proper labelling",
+      "Dustbins fitted with automatic closing lids",
+      "Medical fitness certificates, pest control records, water testing reports, and cleaning schedule records were available",
+      "FIFO and FEFO practices followed for stored food items",
+      "FSSAI Licence and Trade Licence displayed at the premises"
+     ],
+     "bad": [
+      "FSSAI licence for transportation vehicles was not available during inspection",
+      "Food-grade certificates for packaging materials and internal audit reports were not maintained at the premises"
+     ],
+     "action": "The Food Business Operator (FBO) has been instructed to rectify the identified deficiencies",
+     "severity": "Observation",
+     "notice": false,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2075569565497745610",
+     "location": "Chintal"
+    }
+   ]
+  },
+  {
+   "id": "roast-24-7-gachibowli",
+   "name": "Roast 24×7",
+   "aka": [],
+   "location": "Telecom Nagar, Gachibowli",
+   "area": "Gachibowli",
+   "lat": 17.4401,
+   "lng": 78.3489,
+   "score": 95,
+   "grade": "excellent",
+   "lastInspected": "2026-07-06",
+   "visits": 1,
+   "notice": false,
+   "photo": "https://pbs.twimg.com/media/HMjX1EpbsAAbHov?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-07-06",
+     "pct": 95,
+     "obtained": 100,
+     "total": 106,
+     "good": [
+      "Hot water sanitisation of utensils being followed",
+      "Regular cleaning schedule maintained",
+      "Proper segregation of vegetarian and non-vegetarian food",
+      "FoSTaC-trained Food Safety Supervisors available",
+      "Periodic private food safety audits conducted",
+      "Medical fitness tests of food handlers available",
+      "Dedicated raw material grading area maintained",
+      "No visible pest infestation observed"
+     ],
+     "bad": [
+      "Maintenance of one freezer door required",
+      "Periodic cooking oil quality checks to be strengthened"
+     ],
+     "action": "The FBO was instructed to rectify the minor observations and continue maintaining high food safety standards",
+     "severity": "Minor",
+     "notice": false,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2074144973113463221",
+     "location": "Telecom Nagar, Gachibowli"
+    }
+   ]
+  },
+  {
+   "id": "taaza-kitchen-madhapur",
+   "name": "Taaza Kitchen",
+   "aka": [],
+   "location": "Madhapur",
+   "area": "Madhapur",
+   "lat": 17.4483,
+   "lng": 78.3915,
+   "score": 95,
+   "grade": "excellent",
+   "lastInspected": "2026-07-28",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/amplify_video_thumb/2082104299686076416/img/TvRF00a0D693ALMl.jpg",
+   "history": [
+    {
+     "date": "2026-07-28",
+     "pct": 95,
+     "obtained": 87,
+     "total": 92,
+     "good": [
+      "Food handlers using hairnets and gloves",
+      "Water quality testing and medical fitness records available",
+      "No synthetic colours or ajinomoto used in food preparation",
+      "FoSTaC-trained supervisors available",
+      "No stale food, expired food items or pest activity observed",
+      "Regular cleaning schedule and pest control maintained",
+      "Hot water sterilisation of utensils followed",
+      "Raw materials properly labelled"
+     ],
+     "bad": [],
+     "action": "An Improvement Notice has been issued to ensure compliance with the identified observation",
+     "severity": "None",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2082104374579638556",
+     "location": "Madhapur"
+    }
+   ]
+  },
+  {
+   "id": "10-pounder-pizzeteria-smr-vinay-technopolis",
+   "name": "10 Pounder Pizzeteria",
+   "aka": [],
+   "location": "Near SMR Vinay Technopolis",
+   "area": "SMR Vinay Technopolis",
+   "lat": null,
+   "lng": null,
+   "score": 94,
+   "grade": "excellent",
+   "lastInspected": "2026-06-17",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/media/HLBS88AbEAE-032?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-06-17",
+     "pct": 94,
+     "obtained": 99,
+     "total": 106,
+     "good": [
+      "Food handlers were using hairnets and aprons",
+      "Proper segregation of vegetarian and non-vegetarian food items",
+      "Medical fitness certificates of food handlers were available",
+      "No pest infestation observed",
+      "Hot water sanitation of utensils was being carried out",
+      "Raw materials were properly labelled and stored with appropriate wrapping"
+     ],
+     "bad": [],
+     "action": "Instructions issued for immediate cleaning and housekeeping improvements | Directions given to maintain regular cleaning schedules and uphold food safety standards | 50%–90% – Improvement Notice | Below 50% – Show Cause Notice",
+     "severity": "None",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2067243781989310533",
+     "location": "Near SMR Vinay Technopolis"
+    }
+   ]
+  },
+  {
+   "id": "antera-madinaguda",
+   "name": "AnTeRa",
+   "aka": [
+    "Antera Kitchen & Bar"
+   ],
+   "location": "Madeenaguda",
+   "area": "Madinaguda",
+   "lat": 17.4948,
+   "lng": 78.3352,
+   "score": 94,
+   "grade": "excellent",
+   "lastInspected": "2026-07-30",
+   "visits": 2,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/media/HOepPu7bAAEW1BU?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-07-30",
+     "pct": 94,
+     "obtained": 100,
+     "total": 106,
+     "good": [
+      "TPC meter available for monitoring cooking oil quality",
+      "Probe thermometer in use",
+      "Records of medical fitness, food & water testing, packaging, pest control, calibration and RUCO maintained",
+      "Food handlers trained under FoSTaC",
+      "Pallets used for proper storage",
+      "Meshes fitted to kitchen doors and the non-vegetarian cutting area",
+      "Food items properly labelled"
+     ],
+     "bad": [
+      "Kitchen and store room doors should be fitted with a proper self-closing mechanism",
+      "Cleaning frequency behind cooking stoves needs to be increased"
+     ],
+     "action": "An Improvement Notice has been issued to address the identified observations and ensure continued compliance with food safety standards",
+     "severity": "Improvement",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2082819566594642099",
+     "location": "Madinaguda"
+    },
+    {
+     "date": "2026-06-17",
+     "pct": null,
+     "obtained": null,
+     "total": null,
+     "good": [
+      "Food handlers were maintaining personal hygiene with hairnets, hand gloves, and aprons",
+      "Regular pest control measures were being carried out and records maintained",
+      "FSSAI License displayed at a prominent location",
+      "Hot water facility available for washing and sanitizing utensils"
+     ],
+     "bad": [],
+     "action": "Mould-affected vegetables and unsuitable cooking oil were discarded on the spot | Instructions issued to implement proper food labelling and storage practices | Directions given to maintain all mandatory records and strengthen hygiene protocols | Improvement Notice to be issued for the observed violations | 50%–90% – Improvement Notice | Below 50% – Show Cause Notice",
+     "severity": "None",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2067245003269927398",
+     "location": "Madeenaguda"
+    }
+   ]
+  },
+  {
+   "id": "chirec-international-school-kondapur",
+   "name": "CHIREC International School",
+   "aka": [],
+   "location": "Kondapur",
+   "area": "Kondapur",
+   "lat": 17.4615,
+   "lng": 78.3639,
+   "score": 94,
+   "grade": "excellent",
+   "lastInspected": "2026-06-30",
+   "visits": 1,
+   "notice": false,
+   "photo": "https://pbs.twimg.com/media/HMDuW8PWkAAyPRy?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-06-30",
+     "pct": 94,
+     "obtained": 94,
+     "total": 100,
+     "good": [
+      "Medical fitness, water testing, food testing, and pest control records maintained",
+      "High standards of personal hygiene followed by food handlers",
+      "Food samples retained for three days for traceability",
+      "Regular microbial testing of food handlers and equipment through laboratory swab analysis"
+     ],
+     "bad": [
+      "Lighting in one section of the kitchen needs improvement",
+      "Air curtains of the walk-in chiller require cleaning",
+      "Chopping boards found worn out and need replacement"
+     ],
+     "action": "Instructed to improve kitchen lighting, replace chopping boards, and clean air curtains",
+     "severity": "Observation",
+     "notice": false,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2071917961615745282",
+     "location": "Kondapur"
+    }
+   ]
+  },
+  {
+   "id": "cinepolis-kukatpally",
+   "name": "Cinepolis",
+   "aka": [],
+   "location": "LULU Mall",
+   "area": "Kukatpally",
+   "lat": 17.489,
+   "lng": 78.397,
+   "score": 94,
+   "grade": "excellent",
+   "lastInspected": "2026-06-19",
+   "visits": 1,
+   "notice": false,
+   "photo": "https://pbs.twimg.com/media/HLLxgu1aAAA41Gv?format=jpg&name=900x900",
+   "history": [
+    {
+     "date": "2026-06-19",
+     "pct": 94,
+     "obtained": 111,
+     "total": 116,
+     "good": [
+      "Food handlers using hairnets and aprons",
+      "Expiry and use-by dates properly maintained",
+      "Medical fitness, pest control, and water testing records available",
+      "FOSTAC-certified Food Safety Supervisors deployed",
+      "Proper segregation of veg and non-veg items",
+      "Hot water sanitation of utensils being followed",
+      "No pest infestation observed"
+     ],
+     "bad": [
+      "Dustbins found without lids",
+      "Boiled pasta stored in a freezer was discarded on the spot",
+      "Used cooking oil TPC level recorded at 21.5",
+      "Open frozen food products were not properly sealed before storage",
+      "Cola dispensing counter required improved housekeeping"
+     ],
+     "action": "Boiled pasta discarded immediately | Instructions issued to maintain proper food storage practices | Directions given to improve cleanliness of the dispensing area and avoid storing cooked food in freezers for next-day use",
+     "severity": "Observation",
+     "notice": false,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2067981058755481820",
+     "location": "LULU Mall"
+    }
+   ]
+  },
+  {
+   "id": "itihas-restaurant-kukatpally",
+   "name": "Itihas Restaurant",
+   "aka": [],
+   "location": "KPHB, Near Nexus Mall",
+   "area": "Kukatpally",
+   "lat": 17.488,
+   "lng": 78.399,
+   "score": 94,
+   "grade": "excellent",
+   "lastInspected": "2026-07-16",
+   "visits": 1,
+   "notice": false,
+   "photo": "https://pbs.twimg.com/amplify_video_thumb/2077741541146419200/img/tRh4V7lEOQyZuwyi.jpg",
+   "history": [
+    {
+     "date": "2026-07-16",
+     "pct": 94,
+     "obtained": 97,
+     "total": 104,
+     "good": [
+      "Food handlers were using hairnets and gloves",
+      "Water testing reports and medical fitness certificates were available",
+      "No synthetic colours or ajinomoto found in use",
+      "FoSTaC-trained supervisors deployed",
+      "No stale or stored food observed",
+      "No visible pest infestation or expired food items",
+      "Cleaning schedule maintained",
+      "Meat sourced from licensed vendors with proper records",
+      "Proper segregation of vegetarian, non-vegetarian, and raw food items"
+     ],
+     "bad": [
+      "Drain traps to be installed",
+      "Periodic random food testing recommended"
+     ],
+     "action": "",
+     "severity": "Observation",
+     "notice": false,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2077741711137325292",
+     "location": "KPHB, Near Nexus Mall"
+    }
+   ]
+  },
+  {
+   "id": "kfc-alkapuri-township",
+   "name": "KFC",
+   "aka": [],
+   "location": "Alkapuri Township",
+   "area": "Alkapuri Township",
+   "lat": 17.546,
+   "lng": 78.429,
+   "score": 94,
+   "grade": "excellent",
+   "lastInspected": "2026-07-09",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/media/HMyyZAdbgAAbJiT?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-07-09",
+     "pct": 94,
+     "obtained": 108,
+     "total": 116,
+     "good": [
+      "No visible pest infestation; pest control records available",
+      "Medical fitness certificates of food handlers, packaging records, and water testing reports were available",
+      "Cooking oil quality monitored regularly through TPC testing",
+      "Food handlers maintained good personal hygiene"
+     ],
+     "bad": [
+      "Water stagnation and foul odour observed in the wash area",
+      "Four packs of cut lettuce found to be not fresh and discarded on the spot"
+     ],
+     "action": "Freshness-compromised lettuce was discarded immediately | Improvement Notice will be issued, and the Food Business Operator (FBO) has been instructed to rectify the identified deficiencies",
+     "severity": "Observation",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2075229696070148180",
+     "location": "Alkapuri Township"
+    }
+   ]
+  },
+  {
+   "id": "pvr-inox-madhapur",
+   "name": "PVR INOX",
+   "aka": [],
+   "location": "Inorbit Mall",
+   "area": "Madhapur",
+   "lat": 17.4345,
+   "lng": 78.3866,
+   "score": 94,
+   "grade": "excellent",
+   "lastInspected": "2026-06-19",
+   "visits": 1,
+   "notice": false,
+   "photo": "https://pbs.twimg.com/media/HLLrMyObEAAVGjW?format=jpg&name=900x900",
+   "history": [
+    {
+     "date": "2026-06-19",
+     "pct": 94,
+     "obtained": 171,
+     "total": 182,
+     "good": [
+      "Food handlers using hairnets and aprons",
+      "Expiry and use-by dates properly maintained",
+      "Medical fitness, pest control, and water testing records available",
+      "FOSTAC-certified Food Safety Supervisors deployed",
+      "Proper segregation of veg and non-veg items",
+      "Hot water sanitation of utensils being followed",
+      "No pest infestation observed"
+     ],
+     "bad": [
+      "Expired sev found and discarded immediately",
+      "Spoiled cauliflower found and discarded on the spot",
+      "Coke dispensary area required improved housekeeping",
+      "Labelling deficiencies observed on certain food items",
+      "Cooked chicken tikka found stored in a freezer"
+     ],
+     "action": "Expired and spoiled food items discarded immediately | Instructions issued for improved housekeeping and food storage practices",
+     "severity": "Observation",
+     "notice": false,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2067974109087388143",
+     "location": "Inorbit Mall"
+    }
+   ]
+  },
+  {
+   "id": "the-gaudium-school-kollur",
+   "name": "The Gaudium School",
+   "aka": [],
+   "location": "Kollur",
+   "area": "Kollur",
+   "lat": 17.479,
+   "lng": 78.257,
+   "score": 94,
+   "grade": "excellent",
+   "lastInspected": "2026-06-30",
+   "visits": 1,
+   "notice": false,
+   "photo": "https://pbs.twimg.com/media/HMDfikiXQAAeqJg?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-06-30",
+     "pct": 94,
+     "obtained": 102,
+     "total": 108,
+     "good": [
+      "Food handlers using aprons and hairnets",
+      "Regular food and water testing through external laboratories",
+      "Proper labelling of all food items and raw materials",
+      "FIFO & FEFO practices followed",
+      "Medical fitness records maintained",
+      "FOSTAC supervisors present",
+      "Fly traps installed and proper measures taken to prevent entry of dust and pests"
+     ],
+     "bad": [
+      "Slippery floor in the washing area",
+      "Displayed FSSAI licence belonged to another branch"
+     ],
+     "action": "Recommended for Eat Right Campus certification | Instructed to rectify the identified observations",
+     "severity": "Observation",
+     "notice": false,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2071901992726024639",
+     "location": "Kollur"
+    }
+   ]
+  },
+  {
+   "id": "burger-king-puppalaguda",
+   "name": "Burger King",
+   "aka": [],
+   "location": "Puppalaguda",
+   "area": "Puppalaguda",
+   "lat": 17.407,
+   "lng": 78.362,
+   "score": 93,
+   "grade": "excellent",
+   "lastInspected": "2026-07-09",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/media/HMyzTvJbgAANZGE?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-07-09",
+     "pct": 93,
+     "obtained": 106,
+     "total": 114,
+     "good": [
+      "No visible pest infestation; pest control records available",
+      "Medical fitness certificates of food handlers and water testing reports were available",
+      "Cooking oil quality monitored regularly through TPC testing",
+      "Food handlers maintained good personal hygiene"
+     ],
+     "bad": [
+      "Oil leakage observed from kitchen equipment",
+      "Crates used for storage were not cleaned properly",
+      "Food testing reports and packaging records were not available"
+     ],
+     "action": "Improvement Notice will be issued, and the Food Business Operator (FBO) has been instructed to rectify the identified deficiencies and ensure compliance with food safety standards",
+     "severity": "Observation",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2075230699578155153",
+     "location": "Puppalaguda"
+    }
+   ]
+  },
+  {
+   "id": "domino-s-pizza-chintal",
+   "name": "Domino's Pizza",
+   "aka": [],
+   "location": "Chintal",
+   "area": "Chintal",
+   "lat": 17.4972,
+   "lng": 78.439,
+   "score": 93,
+   "grade": "excellent",
+   "lastInspected": "2026-07-18",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/media/HNg5YilakAAhZWr?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-07-18",
+     "pct": 93,
+     "obtained": 104,
+     "total": 112,
+     "good": [
+      "Food handlers wearing uniforms and headcaps",
+      "Proper labelling of opened food items with use-by dates",
+      "Separate storage of veg. and non-veg. items",
+      "FIFO & FEFO systems followed",
+      "Medical records, pest control and cleaning logs maintained",
+      "FoSTaC-trained personnel available"
+     ],
+     "bad": [
+      "Expired FSSAI license copy displayed (license renewed, old copy not replaced)",
+      "Water stagnation observed in parts of the kitchen",
+      "Free drinking water facility for customers not provided"
+     ],
+     "action": "An Improvement Notice has been recommended to address the observed deficiencies",
+     "severity": "Observation",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2078479883198730499",
+     "location": "Chintal"
+    }
+   ]
+  },
+  {
+   "id": "kfc-nallagandla",
+   "name": "KFC",
+   "aka": [],
+   "location": "Aparna Neo Mall, Nallagandla",
+   "area": "Nallagandla",
+   "lat": 17.4735,
+   "lng": 78.305,
+   "score": 93,
+   "grade": "excellent",
+   "lastInspected": "2026-07-27",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/media/HOPn1x2bIAE07I4?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-07-27",
+     "pct": 93,
+     "obtained": 106,
+     "total": 114,
+     "good": [
+      "FSSAI licence displayed at the premises",
+      "Food handlers wearing uniforms and head caps",
+      "FIFO followed for raw material storage",
+      "Separate storage of vegetarian and non-vegetarian food items",
+      "Pest control records, medical fitness certificates and water analysis reports available",
+      "Frying oil quality within the stipulated TPC limit",
+      "FoSTaC-trained personnel available",
+      "Regular internal audits being conducted"
+     ],
+     "bad": [
+      "TPC meter not available for routine monitoring",
+      "Water leakage from chillers onto the floor"
+     ],
+     "action": "An Improvement Notice has been issued to address the observations and ensure continued compliance with food safety standards",
+     "severity": "Improvement",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2081762427679752405",
+     "location": "Aparna Neo Mall, Nallagandla"
+    }
+   ]
+  },
+  {
+   "id": "palle-vindhu-hitec-city",
+   "name": "Palle Vindhu",
+   "aka": [],
+   "location": "Hitech City",
+   "area": "HITEC City",
+   "lat": 17.4456,
+   "lng": 78.3772,
+   "score": 93,
+   "grade": "excellent",
+   "lastInspected": "2026-08-13",
+   "visits": 1,
+   "notice": false,
+   "photo": "https://pbs.twimg.com/amplify_video_thumb/2087939029618888704/img/c6v_yr06zXEkaq2L.jpg",
+   "history": [
+    {
+     "date": "2026-08-13",
+     "pct": 93,
+     "obtained": 102,
+     "total": 110,
+     "good": [
+      "Hairnets and aprons used by food handlers",
+      "Water testing and medical fitness certificates maintained",
+      "No synthetic colours or Ajinomoto used",
+      "FOSTAC supervisors deployed",
+      "No stored/stale or expired food observed",
+      "Proper pest control practices and records maintained",
+      "Regular cleaning schedules followed",
+      "Raw materials properly labelled"
+     ],
+     "bad": [
+      "Uneven wash-area surface causing water accumulation at some points",
+      "Drain mesh to be installed"
+     ],
+     "action": "The establishment was advised to address the observed deficiencies and continue maintaining good food safety and hygiene standards",
+     "severity": "Improvement",
+     "notice": false,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2087939064779641004",
+     "location": "Hitech City"
+    }
+   ]
+  },
+  {
+   "id": "rameshwaram-cafe-madhapur",
+   "name": "Rameshwaram Cafe",
+   "aka": [],
+   "location": "Near Image Gardens",
+   "area": "Madhapur",
+   "lat": 17.4483,
+   "lng": 78.3915,
+   "score": 93,
+   "grade": "excellent",
+   "lastInspected": "2026-06-23",
+   "visits": 1,
+   "notice": false,
+   "photo": "https://pbs.twimg.com/media/HLgHYrNbIAAecUp?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-06-23",
+     "pct": 93,
+     "obtained": 95,
+     "total": 102,
+     "good": [
+      "Food handlers using hairnets and aprons",
+      "Medical fitness, pest control, water testing, and food-grade container certificates available",
+      "Proper date labelling maintained on all food materials",
+      "No pest infestation or expired products observed",
+      "Hot water sanitation of utensils being followed",
+      "Timely disposal of prepared food items",
+      "RUCO guidelines implemented",
+      "Vegetable grading carried out systematically"
+     ],
+     "bad": [
+      "Butter was being thawed in water near a drain, posing a contamination risk",
+      "Drain in the grinding area was clogged with food particles",
+      "Dustbins were found open"
+     ],
+     "action": "Instructions issued to follow proper FIFO practices | Directions given to keep dustbins closed and strengthen food handling and sanitation practices",
+     "severity": "Observation",
+     "notice": false,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2069412857482248594",
+     "location": "Near Image Gardens"
+    }
+   ]
+  },
+  {
+   "id": "bigbasket-kompally",
+   "name": "BigBasket",
+   "aka": [
+    "BigBasket Warehouse"
+   ],
+   "location": "Kompally",
+   "area": "Kompally",
+   "lat": 17.541,
+   "lng": 78.4867,
+   "score": 92,
+   "grade": "excellent",
+   "lastInspected": "2026-07-21",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/amplify_video_thumb/2079544603968217088/img/UFYYtRBxNHYlgIEc.jpg",
+   "history": [
+    {
+     "date": "2026-07-21",
+     "pct": 92,
+     "obtained": 68,
+     "total": 74,
+     "good": [
+      "FSSAI licence displayed at the premises",
+      "Pest control records maintained",
+      "FIFO (First In, First Out) system followed"
+     ],
+     "bad": [
+      "Food handlers were not wearing gloves and hair nets",
+      "Non-food articles were stored alongside food items at certain locations",
+      "Medical fitness records of food handlers were not available",
+      "Onion and ginger-garlic storage area was found untidy"
+     ],
+     "action": "An Improvement Notice has been issued, directing the establishment to rectify the deficiencies and strengthen food safety practices",
+     "severity": "Improvement",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2079544704069517607",
+     "location": "Kompally"
+    }
+   ]
+  },
+  {
+   "id": "kanchi-cafe-nallagandla",
+   "name": "Kanchi Cafe",
+   "aka": [
+    "Kanchi Cafe Restaurant"
+   ],
+   "location": "Nallagandla",
+   "area": "Nallagandla",
+   "lat": 17.4735,
+   "lng": 78.305,
+   "score": 92,
+   "grade": "excellent",
+   "lastInspected": "2026-07-16",
+   "visits": 1,
+   "notice": false,
+   "photo": "https://pbs.twimg.com/media/HNWtAxwasAEeZo5?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-07-16",
+     "pct": 92,
+     "obtained": 106,
+     "total": 114,
+     "good": [
+      "Food handlers were using hairnets and gloves",
+      "Water testing carried out and reports available",
+      "No synthetic colours used",
+      "No stale or stored food observed",
+      "No visible pest infestation or expired food items",
+      "Cleaning schedule maintained",
+      "Internal audit system in place",
+      "Raw materials stored on pallets in the store room",
+      "Kitchen chimneys maintained in satisfactory condition"
+     ],
+     "bad": [
+      "Corroded chopping boards found in the kitchen and instructed to be replaced immediately",
+      "Medical fitness certificates of food handlers not maintained",
+      "Approximately 2 kg of idly batter found without proper labelling and discarded on the spot"
+     ],
+     "action": "",
+     "severity": "Non-compliance",
+     "notice": false,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2077757146473926692",
+     "location": "Nallagandla"
+    }
+   ]
+  },
+  {
+   "id": "sattibabu-biryani-kondapur",
+   "name": "Sattibabu Biryani",
+   "aka": [],
+   "location": "Near KIMS, Kondapur",
+   "area": "Kondapur",
+   "lat": 17.4615,
+   "lng": 78.3639,
+   "score": 92,
+   "grade": "excellent",
+   "lastInspected": "2026-06-20",
+   "visits": 1,
+   "notice": false,
+   "photo": "https://pbs.twimg.com/media/HLPZ16RbgAAEr29?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-06-20",
+     "pct": 92,
+     "obtained": 84,
+     "total": 92,
+     "good": [
+      "Food handlers using hairnets, gloves, and aprons",
+      "Expiry and use-by dates properly maintained",
+      "Medical fitness, pest control, and water testing records available",
+      "FOSTAC-certified Food Safety Supervisors deployed",
+      "Proper segregation of veg and non-veg items",
+      "Fly catchers installed",
+      "Meat properly cleaned, wrapped, and stored",
+      "Vendor licenses maintained for food materials"
+     ],
+     "bad": [
+      "Flies were noticed near food items due to lids not being closed during inspection",
+      "Proper labelling was not available on sourced ghee"
+     ],
+     "action": "Instructions issued to keep food items covered at all times | Directions given to procure and maintain properly labelled food products",
+     "severity": "Observation",
+     "notice": false,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2068236727815446684",
+     "location": "Near KIMS, Kondapur"
+    }
+   ]
+  },
+  {
+   "id": "barbeque-nation-madinaguda",
+   "name": "Barbeque Nation",
+   "aka": [],
+   "location": "GSM Mall, Madinaguda",
+   "area": "Madinaguda",
+   "lat": 17.4948,
+   "lng": 78.3352,
+   "score": 91,
+   "grade": "excellent",
+   "lastInspected": "2026-07-28",
+   "visits": 2,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/media/HOUf1QlbgAACwhH?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-07-28",
+     "pct": 91,
+     "obtained": 105,
+     "total": 116,
+     "good": [
+      "Food safety records, including medical fitness certificates, pest control, food testing, water testing and packaging records, were properly maintained",
+      "FSSAI licence displayed prominently at the premises",
+      "No pest activity observed during the inspection",
+      "Probe thermometer used to monitor the internal temperature of cooked food"
+     ],
+     "bad": [
+      "Deep cleaning of side walls, flooring and corners to be carried out",
+      "Cajun sauce without proper labelling was discarded",
+      "Wet mats at the non-alcoholic beverage counter to be replaced to prevent foul odour",
+      "Maintain records of cooked food temperature monitoring"
+     ],
+     "action": "An Improvement Notice has been issued to ensure compliance with the identified observations",
+     "severity": "Improvement",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2082105414293115136",
+     "location": "GSM Mall, Madinaguda"
+    },
+    {
+     "date": "2026-06-29",
+     "pct": 79,
+     "obtained": 86,
+     "total": 110,
+     "good": [
+      "Medical fitness records of food handlers and water testing reports available",
+      "Personal hygiene maintained by food handlers"
+     ],
+     "bad": [
+      "Brownies and kulfi (Pan, Malai & Kesar Pista variants) found without labels and discarded on the spot",
+      "Food testing, packaging material, and pest control records not available",
+      "Vegetable crates and water bubble containers found unclean; instructed to replace immediately",
+      "Chopping boards in poor condition",
+      "Cockroach infestation observed in the fruit storage area and near refrigerators"
+     ],
+     "action": "Improvement Notice recommended | Unlabelled food items discarded during inspection",
+     "severity": "Observation",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2071610541991502220",
+     "location": "GSM Mall, Madinaguda"
+    }
+   ]
+  },
+  {
+   "id": "domino-s-pizza-gajularamaram",
+   "name": "Domino's Pizza",
+   "aka": [
+    "Jubilant Food Works (Domino's Pizza)"
+   ],
+   "location": "MGSR Chamber, Gajularamaram",
+   "area": "Gajularamaram",
+   "lat": 17.5163,
+   "lng": 78.439,
+   "score": 91,
+   "grade": "excellent",
+   "lastInspected": "2026-07-27",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/media/HOPNZVLbgAAQe86?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-07-27",
+     "pct": 91,
+     "obtained": 98,
+     "total": 108,
+     "good": [
+      "Food handlers wearing uniforms and head caps",
+      "FIFO followed for food storage with proper date labelling",
+      "Separate storage of vegetarian and non-vegetarian food items",
+      "Rat traps installed and dustbins fitted with automatic closing lids",
+      "Medical fitness certificates available for food handlers",
+      "FoSTaC-trained personnel available at the premises"
+     ],
+     "bad": [
+      "FSSAI licence was not displayed at the premises",
+      "Pest control and cleaning schedule records were not maintained"
+     ],
+     "action": "An Improvement Notice has been issued to ensure compliance with the identified observations",
+     "severity": "Improvement",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2081733410608021690",
+     "location": "MGSR Chamber, Gajularamaram"
+    }
+   ]
+  },
+  {
+   "id": "pista-house-gachibowli",
+   "name": "Pista House",
+   "aka": [
+    "Pista House Fine Dining"
+   ],
+   "location": "Preston Mall",
+   "area": "Gachibowli",
+   "lat": 17.452,
+   "lng": 78.343,
+   "score": 90,
+   "grade": "excellent",
+   "lastInspected": "2026-07-06",
+   "visits": 1,
+   "notice": false,
+   "photo": "https://pbs.twimg.com/media/HMjKRW2bgAApWjM?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-07-06",
+     "pct": 90,
+     "obtained": 98,
+     "total": 110,
+     "good": [
+      "Hot water sanitisation of utensils being followed",
+      "Regular cleaning schedule maintained",
+      "Proper segregation of vegetarian and non-vegetarian food",
+      "FoSTaC-trained Food Safety Supervisors available",
+      "Food-grade packaging material certificates produced",
+      "No synthetic food colours in use",
+      "Medical fitness certificates of food handlers available"
+     ],
+     "bad": [
+      "Minor flaking observed at one location; immediate rectification instructed",
+      "No separate designated space for expired food products due to inadequate storage area",
+      "Water testing reports not available during inspection"
+     ],
+     "action": "FBO instructed to rectify the identified deficiencies and maintain the required food safety standards",
+     "severity": "Observation",
+     "notice": false,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2074130116108603392",
+     "location": "Preston Mall"
+    }
+   ]
+  },
+  {
+   "id": "arabian-mandi-moosapet",
+   "name": "Arabian Mandi",
+   "aka": [],
+   "location": "Near Moosapet Metro Pillar No. 873",
+   "area": "Moosapet",
+   "lat": 17.468,
+   "lng": 78.427,
+   "score": 87,
+   "grade": "good",
+   "lastInspected": "2026-07-08",
+   "visits": 1,
+   "notice": false,
+   "photo": "https://pbs.twimg.com/media/HMtZu9MbkAANWL6?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-07-08",
+     "pct": 87,
+     "obtained": 83,
+     "total": 96,
+     "good": [
+      "Hot water sanitisation of utensils being followed",
+      "No stale food found during inspection",
+      "Clean and well-maintained kitchen flooring",
+      "Well-organised store room",
+      "No visible pest infestation observed",
+      "Procurement records for chicken and mutton maintained",
+      "FIFO and FEFO practices being followed"
+     ],
+     "bad": [
+      "Synthetic food colours found in use and discarded immediately",
+      "Water testing reports and medical fitness certificates of food handlers were not available"
+     ],
+     "action": "Synthetic food colours were discarded on the spot | The Food Business Operator (FBO) has been instructed to obtain the required records and ensure full compliance with food safety standards",
+     "severity": "Observation",
+     "notice": false,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2074850750031626414",
+     "location": "Near Moosapet Metro Pillar No. 873"
+    }
+   ]
+  },
+  {
+   "id": "kfc-nizampet",
+   "name": "KFC",
+   "aka": [],
+   "location": "Nizampet",
+   "area": "Nizampet",
+   "lat": 17.5089,
+   "lng": 78.3877,
+   "score": 86,
+   "grade": "good",
+   "lastInspected": "2026-06-20",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/media/HLREahpacAA037m?format=jpg&name=900x900",
+   "history": [
+    {
+     "date": "2026-06-20",
+     "pct": 86,
+     "obtained": 100,
+     "total": 116,
+     "good": [
+      "Food handlers using hairnets, gloves, and aprons",
+      "Medical fitness, pest control, and water testing records available",
+      "No pest infestation observed"
+     ],
+     "bad": [
+      "Used cooking oil TPC level found above the permissible limit",
+      "Prepared food items lacked preparation and discard time labels",
+      "Raw chicken stored in chillers without proper labeling",
+      "Pungent smell observed in the kitchen area",
+      "Veg and non-veg items stored together without proper segregation",
+      "Food and non-food materials stored in the same area",
+      "Marination and frying sections required improved housekeeping",
+      "Temperature monitoring records for chillers and freezers were not available",
+      "Expired food license found in records; renewed license produced upon verification",
+      "Tomatoes and lemons nearing use-by date found in storage",
+      "were communicated for immediate corrective action"
+     ],
+     "action": "Improvement Notice issued to the establishment | Instructions given to strengthen food storage, labeling, segregation, oil monitoring, and record maintenance practices | Directions issued to improve housekeeping and food safety compliance",
+     "severity": "Observation",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2068361690165744084",
+     "location": "Nizampet"
+    }
+   ]
+  },
+  {
+   "id": "am-aha-restaurant-madinaguda",
+   "name": "Am Aha Restaurant",
+   "aka": [],
+   "location": "Infinity Mall, Madinaguda",
+   "area": "Madinaguda",
+   "lat": 17.4948,
+   "lng": 78.3352,
+   "score": 85,
+   "grade": "good",
+   "lastInspected": "2026-07-04",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/media/HMY1LojakAA4jqM?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-07-04",
+     "pct": 85,
+     "obtained": 94,
+     "total": 110,
+     "good": [
+      "No visible pest infestation; pest control records available",
+      "Food handlers maintained good personal hygiene"
+     ],
+     "bad": [
+      "Raw materials and stored food items not properly labelled",
+      "Prawns, salad, and atta balls in the freezer found without labels",
+      "Medical fitness certificates and water testing records not available",
+      "Eggs not cleaned properly before storage",
+      "Containers with raw chicken placed directly on the floor",
+      "Chopping boards found in poor condition and instructed to be replaced",
+      "Dust accumulation observed in the store room"
+     ],
+     "action": "Improvement Notice recommended and corrective measures instructed",
+     "severity": "Observation",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2073403198950510719",
+     "location": "Infinity Mall, Madinaguda"
+    }
+   ]
+  },
+  {
+   "id": "california-burrito-madinaguda",
+   "name": "California Burrito",
+   "aka": [],
+   "location": "GSM Mall, Madinaguda",
+   "area": "Madinaguda",
+   "lat": 17.4948,
+   "lng": 78.3352,
+   "score": 85,
+   "grade": "good",
+   "lastInspected": "2026-07-10",
+   "visits": 1,
+   "notice": false,
+   "photo": "https://pbs.twimg.com/media/HM4wXmgaIAAwopR?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-07-10",
+     "pct": 85,
+     "obtained": 93,
+     "total": 110,
+     "good": [
+      "No visible pest infestation observed",
+      "Food handlers maintained good personal hygiene",
+      "Thermometers were being used for temperature monitoring of food"
+     ],
+     "bad": [
+      "Sprouted potatoes found in the kitchen and discarded on the spot",
+      "Food testing reports, packaging records, medical fitness certificates of food handlers, water testing reports, and pest control records were not available during inspection"
+     ],
+     "action": "Sprouted potatoes were discarded immediately | The Food Business Operator (FBO) has been instructed to maintain all mandatory records and rectify the identified deficiencies",
+     "severity": "Observation",
+     "notice": false,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2075649902701633540",
+     "location": "GSM Mall, Madinaguda"
+    }
+   ]
+  },
+  {
+   "id": "pvr-inox-madinaguda",
+   "name": "PVR INOX",
+   "aka": [
+    "INOX"
+   ],
+   "location": "GSM Mall, Madeenaguda",
+   "area": "Madinaguda",
+   "lat": 17.4948,
+   "lng": 78.3352,
+   "score": 85,
+   "grade": "good",
+   "lastInspected": "2026-06-19",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/media/HLLy0rGbgAAY0Nh?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-06-19",
+     "pct": 85,
+     "obtained": 98,
+     "total": 116,
+     "good": [
+      "Valid FSSAI License available",
+      "Medical fitness records of food handlers maintained",
+      "Regular pest control measures being carried out and records maintained"
+     ],
+     "bad": [
+      "Food handlers were not wearing hairnets properly",
+      "Incomplete labelling observed on burger buns and sandwich bread",
+      "Dustbins found open at coffee and sandwich counters",
+      "Chicken tikka used as an ingredient was assigned a 3-day shelf life without supporting technical records",
+      "Water testing records for water used in beverage preparation were not available",
+      "Packaging testing records were not produced during inspection"
+     ],
+     "action": "Improvement Notice to be issued | Instructions given to maintain all required records and supporting documents | Directions issued to reduce shelf life of prepared ingredients as per food safety requirements | Food handlers instructed to follow proper personal hygiene practices | 50%–90% – Improvement Notice",
+     "severity": "Observation",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2067983061296509374",
+     "location": "GSM Mall, Madeenaguda"
+    }
+   ]
+  },
+  {
+   "id": "coal-spark-madhapur",
+   "name": "Coal Spark",
+   "aka": [],
+   "location": "Madhapur",
+   "area": "Madhapur",
+   "lat": 17.4483,
+   "lng": 78.3915,
+   "score": 84,
+   "grade": "good",
+   "lastInspected": "2026-07-29",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/amplify_video_thumb/2082455167149240320/img/0gC5dYHyDGGgy60s.jpg",
+   "history": [
+    {
+     "date": "2026-07-29",
+     "pct": 84,
+     "obtained": 89,
+     "total": 106,
+     "good": [
+      "Food handlers using hairnets and gloves",
+      "Water quality testing carried out",
+      "Natural colour extracts used in food preparation",
+      "FoSTaC-certified supervisors available at the premises",
+      "No expired food items or pest activity observed in the kitchen",
+      "Regular cleaning schedule maintained",
+      "FIFO and FEFO practices followed for food storage"
+     ],
+     "bad": [
+      "Water seepage and flaking observed on the store room walls",
+      "Pest activity noticed in a steamer kept under maintenance",
+      "Hot water sterilisation of utensils was not being followed",
+      "Rust observed on freezer racks, requiring corrective action to prevent contamination"
+     ],
+     "action": "An Improvement Notice has been issued directing the Food Business Operator to address the identified observations and ensure compliance with food safety standards",
+     "severity": "Improvement",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2082455238544412910",
+     "location": "Madhapur"
+    }
+   ]
+  },
+  {
+   "id": "chinese-wok-madinaguda",
+   "name": "Chinese Wok",
+   "aka": [],
+   "location": "GSM Mall, Madinaguda",
+   "area": "Madinaguda",
+   "lat": 17.4948,
+   "lng": 78.3352,
+   "score": 82,
+   "grade": "good",
+   "lastInspected": "2026-06-29",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/media/HL_XOCRbwAE6QxL?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-06-29",
+     "pct": 82,
+     "obtained": 88,
+     "total": 108,
+     "good": [
+      "No pest activity observed; pest control and water testing records available",
+      "Kitchen maintained free from water and food stagnation"
+     ],
+     "bad": [
+      "Cooked rice assigned a 36-hour shelf life without supporting laboratory validation",
+      "Food testing, packaging material, and annual medical fitness records not available",
+      "Incoming eggs not cleaned before use",
+      "One food handler found with untrimmed nails",
+      "Water taps near the rice and noodles preparation area found unclean",
+      "FSSAI licence not displayed prominently"
+     ],
+     "action": "Improvement Notice recommended and corrective measures instructed",
+     "severity": "Observation",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2071611113461211202",
+     "location": "GSM Mall, Madinaguda"
+    }
+   ]
+  },
+  {
+   "id": "glendale-international-school-gopanpally",
+   "name": "Glendale International School",
+   "aka": [
+    "Glendale International School Cambridge"
+   ],
+   "location": "Gopanpally",
+   "area": "Gopanpally",
+   "lat": 17.461,
+   "lng": 78.318,
+   "score": 82,
+   "grade": "good",
+   "lastInspected": "2026-06-30",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/amplify_video_thumb/2071904799780442112/img/9Jv0Wtd-V4DTqSae.jpg",
+   "history": [
+    {
+     "date": "2026-06-30",
+     "pct": 82,
+     "obtained": 75,
+     "total": 92,
+     "good": [
+      "Food handlers using aprons and hairnets",
+      "Regular water testing through external laboratories",
+      "Clean and well-maintained dining area",
+      "Medical fitness and pest control records submitted"
+     ],
+     "bad": [
+      "Patchy flooring with water stagnation in the wash area",
+      "FSSAI licence not displayed at the premises",
+      "Food and non-food items stored together without proper segregation",
+      "Transport vehicle FSSAI licence not produced",
+      "Dustbins without lids",
+      "Bananas stored near washrooms without pallets"
+     ],
+     "action": "Improvement Notice recommended and corrective measures instructed",
+     "severity": "Observation",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2071905665782886789",
+     "location": "Gopanpally"
+    }
+   ]
+  },
+  {
+   "id": "itlu-veg-diner-restaurant-financial-district",
+   "name": "ITLU Veg Diner Restaurant",
+   "aka": [],
+   "location": "Nanakramguda, Financial District",
+   "area": "Financial District",
+   "lat": 17.418,
+   "lng": 78.34,
+   "score": 82,
+   "grade": "good",
+   "lastInspected": "2026-07-06",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/media/HMjGO6-aIAAnwYi?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-07-06",
+     "pct": 82,
+     "obtained": 75,
+     "total": 92,
+     "good": [
+      "Food handlers maintained good personal hygiene",
+      "Medical fitness certificates, water testing reports, pest control records, and FoSTaC training certificates were available"
+     ],
+     "bad": [
+      "No hot water provision for sanitising cooking utensils",
+      "Water stagnation on the floor and food waste observed near drains",
+      "Employees' clothes kept near the food preparation area",
+      "Food containers not properly labelled",
+      "Hara Bhara Kebab, Beetroot Tikka, Onion Rings, Hello Gravy, and Sweet Corn found without labels and discarded on the spot",
+      "Dust accumulation observed on the store room ceiling",
+      "The claim \"The Purest Water on Earth\" on glass water bottles was found to be potentially misleading; the FBO was instructed to discontinue its use"
+     ],
+     "action": "Unlabelled food items discarded on the spot | Improvement Notice to be issued and corrective measures instructed",
+     "severity": "Observation",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2074125646977196292",
+     "location": "Nanakramguda, Financial District"
+    }
+   ]
+  },
+  {
+   "id": "ks-bakers-kukatpally",
+   "name": "KS Bakers",
+   "aka": [],
+   "location": "Kukatpally",
+   "area": "Kukatpally",
+   "lat": 17.4948,
+   "lng": 78.3996,
+   "score": 82,
+   "grade": "good",
+   "lastInspected": "2026-06-27",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/amplify_video_thumb/2070902936155435008/img/aW8Oq3Tsl0EFi9u3.jpg",
+   "history": [
+    {
+     "date": "2026-06-27",
+     "pct": 82,
+     "obtained": 94,
+     "total": 116,
+     "good": [
+      "Food handlers using aprons and hairnets",
+      "Regular food and water testing through external laboratories",
+      "Proper labelling on cakes",
+      "FIFO practices followed",
+      "Medical fitness records maintained",
+      "FOSTAC-trained supervisor available"
+     ],
+     "bad": [
+      "Inadequate segregation of veg and non-veg items in the freezer",
+      "Cockroach infestation observed",
+      "Rusted ovens",
+      "Untidy storage containers and kitchen tiles"
+     ],
+     "action": "Improvement Notice recommended and corrective measures instructed",
+     "severity": "Observation",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2070902975908954224",
+     "location": "Kukatpally"
+    }
+   ]
+  },
+  {
+   "id": "old-trees-cafe-ots-medchal",
+   "name": "Old Trees Cafe (OTS)",
+   "aka": [],
+   "location": "Kandlakoya, Medchal",
+   "area": "Medchal",
+   "lat": 17.627,
+   "lng": 78.481,
+   "score": 82,
+   "grade": "good",
+   "lastInspected": "2026-07-03",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/media/HMT4edBbcAA_jfu?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-07-03",
+     "pct": 82,
+     "obtained": 90,
+     "total": 110,
+     "good": [
+      "FSSAI and Trade Licence displayed at the premises",
+      "Food handlers using head caps, uniforms, and gloves",
+      "Pest control records maintained",
+      "Most food items properly covered and labelled",
+      "Veg and non-veg food stored separately",
+      "FOSTAC-trained supervisor available"
+     ],
+     "bad": [
+      "Expired sweet sauce and yellow curry paste found and discarded",
+      "Medical fitness certificates of food handlers not available",
+      "Dustbins found without proper lids",
+      "Water analysis report for food preparation not available"
+     ],
+     "action": "Expired food products discarded on the spot | Improvement Notice recommended and corrective measures instructed",
+     "severity": "Observation",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2073055026931696084",
+     "location": "Kandlakoya, Medchal"
+    }
+   ]
+  },
+  {
+   "id": "jaaju-kitchen-bar-madinaguda",
+   "name": "Jaaju Kitchen & Bar",
+   "aka": [],
+   "location": "Madinaguda",
+   "area": "Madinaguda",
+   "lat": 17.4948,
+   "lng": 78.3352,
+   "score": 80,
+   "grade": "good",
+   "lastInspected": "2026-08-06",
+   "visits": 1,
+   "notice": false,
+   "photo": "https://pbs.twimg.com/media/HPC-2WSbEAAu6Dq?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-08-06",
+     "pct": 80,
+     "obtained": 82,
+     "total": 102,
+     "good": [
+      "Good personal hygiene maintained by food handlers",
+      "Pest control, annual medical and water testing records available",
+      "Semi-prepared food items properly labelled"
+     ],
+     "bad": [
+      "Food testing and packaging records not available",
+      "Food waste observed in drains and an open drain near the dishwashing area",
+      "Damaged gasket in the non-veg chiller requiring replacement",
+      "Water clogging in the dishwashing sink",
+      "Exhausts near stoves and freezer require proper cleaning"
+     ],
+     "action": "The management was instructed to rectify the observed deficiencies and maintain required food safety and hygiene standards",
+     "severity": "Improvement",
+     "notice": false,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2085376554356617605",
+     "location": "Madinaguda"
+    }
+   ]
+  },
+  {
+   "id": "bake-max-foods-brown-bear-kukatpally",
+   "name": "Bake Max Foods (Brown Bear)",
+   "aka": [],
+   "location": "Kukatpally",
+   "area": "Kukatpally",
+   "lat": 17.4948,
+   "lng": 78.3996,
+   "score": 78,
+   "grade": "average",
+   "lastInspected": "2026-06-18",
+   "visits": 1,
+   "notice": false,
+   "photo": "https://pbs.twimg.com/media/HLGOV14aMAAxVDl?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-06-18",
+     "pct": 78,
+     "obtained": 71,
+     "total": 92,
+     "good": [
+      "Food handlers were wearing aprons and hairnets",
+      "Basic personal hygiene practices were being followed"
+     ],
+     "bad": [],
+     "action": "Food samples collected and sent for laboratory analysis | Show Cause Notice to be issued | Directions issued to strengthen hygiene, storage, and labelling practices",
+     "severity": "None",
+     "notice": false,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2067592465859919909",
+     "location": "Kukatpally"
+    }
+   ]
+  },
+  {
+   "id": "rebel-cloud-kitchen-kondapur",
+   "name": "Rebel (Cloud Kitchen)",
+   "aka": [],
+   "location": "Kondapur",
+   "area": "Kondapur",
+   "lat": 17.4615,
+   "lng": 78.3639,
+   "score": 78,
+   "grade": "average",
+   "lastInspected": "2026-07-05",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/media/HM0-Va0a4AAAlne?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-07-05",
+     "pct": 78,
+     "obtained": 78,
+     "total": 100,
+     "good": [
+      "No synthetic food colours found in use",
+      "Food handlers were using hairnets",
+      "Cooking oil quality monitored periodically through TPC testing"
+     ],
+     "bad": [
+      "Expired curd found during inspection",
+      "5 packets expired on 05.07.2026",
+      "6 packets expired on 08.07.2026",
+      "Expired Indian gravy (expired on 04.07.2026) found",
+      "Mint chaas prepared using expired curd",
+      "Wash area found to be in an unhygienic condition",
+      "Medical fitness certificates of food handlers appeared to have been altered and did not reflect actual medical test results"
+     ],
+     "action": "Expired food items were discarded on the spot | Improvement Notice will be issued, and the Food Business Operator (FBO) has been directed to immediately rectify all identified deficiencies. The authenticity of the medical fitness certificates will also be examined",
+     "severity": "Observation",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2075383747386716505",
+     "location": "Kondapur"
+    }
+   ]
+  },
+  {
+   "id": "reliance-retail-kompally",
+   "name": "Reliance Retail",
+   "aka": [
+    "Reliance Retail Store"
+   ],
+   "location": "Kompally",
+   "area": "Kompally",
+   "lat": 17.541,
+   "lng": 78.4867,
+   "score": 78,
+   "grade": "average",
+   "lastInspected": "2026-07-07",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/amplify_video_thumb/2074491858974363648/img/oxzkbYeZ2-XQIAGj.jpg",
+   "history": [
+    {
+     "date": "2026-07-07",
+     "pct": 78,
+     "obtained": 128,
+     "total": 165,
+     "good": [
+      "Food handlers maintained good personal hygiene",
+      "Pest control records and FoSTaC training certificates were available",
+      "FSSAI licence prominently displayed",
+      "Cold storage maintained for milk and dairy products"
+     ],
+     "bad": [
+      "Improper segregation of disposable products and sale stock",
+      "Expired Cuppa Oats (14 boxes), Blue Bird Veg Jelly Crystals (1 packet) and Fortune Sona Masoori Rice (6 bags of 10 kg each) found during inspection",
+      "Store room not maintained properly; FIFO not followed",
+      "Drinks and other products stored without pallets",
+      "Pest-infested Suji (Upma Rava) found in the store room",
+      "Raw ingredient storage found poorly maintained",
+      "Rice, suji, pulses, spices and millets kept in open bins without lids, posing a risk of contamination"
+     ],
+     "action": "Expired food items and pest-infested Suji were seized during the inspection | Improvement Notice will be issued and corrective measures have been instructed",
+     "severity": "Observation",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2074492444234899650",
+     "location": "Kompally"
+    }
+   ]
+  },
+  {
+   "id": "swiggy-instamart-gajularamaram",
+   "name": "Swiggy Instamart",
+   "aka": [
+    "Kwickbox (Instamart)"
+   ],
+   "location": "Gajularamaram",
+   "area": "Gajularamaram",
+   "lat": 17.5163,
+   "lng": 78.439,
+   "score": 76,
+   "grade": "average",
+   "lastInspected": "2026-07-03",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/media/HMTv_J2aQAAiTJg?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-07-03",
+     "pct": 76,
+     "obtained": 114,
+     "total": 150,
+     "good": [
+      "FSSAI and Trade Licence displayed at the premises",
+      "Pest control records maintained",
+      "Temperature records for cold rooms and refrigerators maintained"
+     ],
+     "bad": [
+      "Expired cheese, yogurt smoothie, and paneer found and discarded",
+      "Veg and non-veg food items stored together",
+      "Cold room maintained in an untidy and disorganized condition",
+      "Medical fitness certificates of food handlers not available",
+      "FIFO & FEFO practices not followed properly",
+      "No designated area for expired or damaged food products"
+     ],
+     "action": "Expired food products discarded on the spot | Improvement Notice recommended and corrective measures instructed",
+     "severity": "Observation",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2073045639647433003",
+     "location": "Gajularamaram"
+    }
+   ]
+  },
+  {
+   "id": "7-sisters-hitec-city",
+   "name": "7 Sisters",
+   "aka": [],
+   "location": "Near NAC Building, Hitex",
+   "area": "HITEC City",
+   "lat": 17.47,
+   "lng": 78.376,
+   "score": 73,
+   "grade": "average",
+   "lastInspected": "2026-06-20",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/amplify_video_thumb/2068292484988624896/img/GZYcGx49SmCY7a7N.jpg",
+   "history": [
+    {
+     "date": "2026-06-20",
+     "pct": 73,
+     "obtained": 71,
+     "total": 98,
+     "good": [
+      "Food handlers were using hairnets, gloves, and aprons",
+      "Medical fitness, pest control, and water testing records were available",
+      "Proper segregation of veg and non-veg food items",
+      "No expired products found in the store room",
+      "No major pest infestation observed"
+     ],
+     "bad": [
+      "Prepared food items were not being discarded within the prescribed use-by period",
+      "Meat items were not properly labelled",
+      "Food items were found kept open near drain areas without adequate covering",
+      "Broken tiles and slippery flooring observed in the kitchen",
+      "Hot water sanitation practices were not being followed",
+      "Lizard droppings found in the store room, indicating inadequate shelf cleaning"
+     ],
+     "action": "Improvement Notice is being issued | Instructions given to strengthen food storage, labelling, sanitation, and housekeeping practices",
+     "severity": "Observation",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2068293370079027293",
+     "location": "Near NAC Building, Hitex"
+    }
+   ]
+  },
+  {
+   "id": "hotel-svm-grand-bachupally",
+   "name": "Hotel SVM Grand",
+   "aka": [],
+   "location": "Bachupally",
+   "area": "Bachupally",
+   "lat": 17.5453,
+   "lng": 78.3712,
+   "score": 72,
+   "grade": "average",
+   "lastInspected": "2026-06-23",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/amplify_video_thumb/2069414301228814336/img/hjg0swZ9T-jRtIOX.jpg",
+   "history": [
+    {
+     "date": "2026-06-23",
+     "pct": 72,
+     "obtained": 83,
+     "total": 116,
+     "good": [
+      "Valid FSSAI License displayed at the premises",
+      "Food handlers using hairnets, gloves, and aprons",
+      "Pest control records with MSDS sheets available"
+     ],
+     "bad": [
+      "Dustbins found without lids",
+      "Kitchen floor was slippery",
+      "Broken tiles observed in the kitchen",
+      "Cockroach infestation detected",
+      "Food items in freezers lacked proper labels",
+      "Food preparation area maintained in unhygienic condition",
+      "Vegetable trays found untidy"
+     ],
+     "action": "Instructions issued to implement proper food labelling and improve housekeeping practices | Improvement Notice issued for immediate rectification of food safety and hygiene violations | The establishment has been instructed to strengthen hygiene, storage, and food safety practices to ensure full compliance with prescribed standards",
+     "severity": "Observation",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2069414373656048024",
+     "location": "Bachupally"
+    }
+   ]
+  },
+  {
+   "id": "kake-di-hatti-pure-veg-restaurant-madinaguda",
+   "name": "Kake Di Hatti Pure Veg Restaurant",
+   "aka": [],
+   "location": "Infinity Mall, Madinaguda",
+   "area": "Madinaguda",
+   "lat": 17.4948,
+   "lng": 78.3352,
+   "score": 72,
+   "grade": "average",
+   "lastInspected": "2026-07-04",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/media/HMY2WQPaIAEMUB_?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-07-04",
+     "pct": 72,
+     "obtained": 76,
+     "total": 106,
+     "good": [
+      "No visible pest infestation observed",
+      "Food handlers maintained good personal hygiene"
+     ],
+     "bad": [
+      "Medical fitness, pest control, and water testing records not available",
+      "Several prepared food items found without labels and discarded on the spot",
+      "Boiled vegetables stored uncovered on the floor near the washing area",
+      "Open dustbins inside the kitchen",
+      "Gaps, corners, and exhaust systems found unclean and greasy",
+      "Food waste and water stagnation observed near drains",
+      "Raw materials stored in containers without proper labelling",
+      "Cauliflower with mould growth found cooked and discarded immediately",
+      "Crates used for storing utensils found unclean"
+     ],
+     "action": "Unlabelled prepared food and mould-affected cauliflower discarded on the spot | Improvement Notice recommended and corrective measures instructed",
+     "severity": "Observation",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2073404557435273710",
+     "location": "Infinity Mall, Madinaguda"
+    }
+   ]
+  },
+  {
+   "id": "mandi-king-manikonda",
+   "name": "Mandi King",
+   "aka": [],
+   "location": "Manikonda",
+   "area": "Manikonda",
+   "lat": 17.4041,
+   "lng": 78.3772,
+   "score": 72,
+   "grade": "average",
+   "lastInspected": "2026-07-29",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/amplify_video_thumb/2082464293032001536/img/SoIUyXJ7ftv_DTOK.jpg",
+   "history": [
+    {
+     "date": "2026-07-29",
+     "pct": 72,
+     "obtained": 82,
+     "total": 114,
+     "good": [
+      "Food handlers wearing uniforms and hairnets",
+      "No stale or expired food items found",
+      "Food items in freezers properly labelled",
+      "No pest activity observed and pest control records were available"
+     ],
+     "bad": [],
+     "action": "",
+     "severity": "None",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2082464400485806197",
+     "location": "Manikonda"
+    }
+   ]
+  },
+  {
+   "id": "babai-hotel-madinaguda",
+   "name": "Babai Hotel",
+   "aka": [],
+   "location": "Madinaguda",
+   "area": "Madinaguda",
+   "lat": 17.4948,
+   "lng": 78.3352,
+   "score": 71,
+   "grade": "average",
+   "lastInspected": "2026-08-13",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/media/HPnB5pHaUAA-A7q?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-08-13",
+     "pct": 71,
+     "obtained": 69,
+     "total": 98,
+     "good": [
+      "Pest control, packaging and water testing records were available"
+     ],
+     "bad": [
+      "Medical records of food handlers and food testing records were not available",
+      "Uneven flooring causing water stagnation and odour in the dishwashing area",
+      "Semi-prepared foods such as poori and poornam were not labelled",
+      "Food waste was not cleared from drains",
+      "Exhaust was greasy and required cleaning",
+      "Broken flooring observed at some places in the kitchen"
+     ],
+     "action": "A notice was issued for the observed violations, with directions to rectify the deficiencies and maintain required food safety and hygiene standards",
+     "severity": "Non-compliance",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2087913124569711052",
+     "location": "Madinaguda"
+    }
+   ]
+  },
+  {
+   "id": "narayana-educational-society-madhapur",
+   "name": "Narayana Educational Society",
+   "aka": [
+    "Narayana Educational Society (Central Kitchen)"
+   ],
+   "location": "Madhapur",
+   "area": "Madhapur",
+   "lat": 17.4483,
+   "lng": 78.3915,
+   "score": 71,
+   "grade": "average",
+   "lastInspected": "2026-07-01",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/media/HMKAUkxagAI5tYm?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-07-01",
+     "pct": 71,
+     "obtained": 98,
+     "total": 138,
+     "good": [
+      "All food handlers wearing hairnets",
+      "Medical fitness records maintained",
+      "Regular pest control carried out",
+      "FOSTAC supervisors present",
+      "Raw materials stored on pallets",
+      "Milk, curd, and vegetables stored in chillers"
+     ],
+     "bad": [
+      "Uneven kitchen flooring causing water stagnation",
+      "Utensils not sanitized with hot water; health concerns observed among wash area staff",
+      "Heavy housefly infestation with no fly traps installed",
+      "Open dustbins near the transportation area",
+      "Updated water testing reports not available",
+      "Machinery not cleaned using hot water",
+      "Rust observed in transportation vehicles"
+     ],
+     "action": "Improvement Notice recommended and corrective measures instructed",
+     "severity": "Observation",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2072359977768063132",
+     "location": "Madhapur"
+    }
+   ]
+  },
+  {
+   "id": "nawaabs-restaurant-anjaiah-nagar",
+   "name": "Nawaabs Restaurant",
+   "aka": [],
+   "location": "Anjaiah Nagar",
+   "area": "Anjaiah Nagar",
+   "lat": 17.5,
+   "lng": 78.418,
+   "score": 71,
+   "grade": "average",
+   "lastInspected": "2026-06-18",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/media/HLGNFLub0AAr5I_?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-06-18",
+     "pct": 71,
+     "obtained": 140,
+     "total": 196,
+     "good": [
+      "Proper segregation of vegetarian and non-vegetarian food items",
+      "Raw meat stored with appropriate wrapping",
+      "No synthetic colours found in use",
+      "Colour-coded chopping boards used for veg and non-veg food preparation"
+     ],
+     "bad": [],
+     "action": "Improvement Notice to be issued | Directions issued to immediately rectify food safety and hygiene deficiencies | 50%–90% – Improvement Notice",
+     "severity": "None",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2067591940284293515",
+     "location": "Anjaiah Nagar"
+    }
+   ]
+  },
+  {
+   "id": "vijayawada-special-krishna-cafe-gajularamaram",
+   "name": "Vijayawada Special Krishna Cafe",
+   "aka": [],
+   "location": "Gajularamaram",
+   "area": "Gajularamaram",
+   "lat": 17.5163,
+   "lng": 78.439,
+   "score": 71,
+   "grade": "average",
+   "lastInspected": "2026-06-27",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/media/HL0_TCRa0AAWNKx?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-06-27",
+     "pct": 71,
+     "obtained": 75,
+     "total": 106,
+     "good": [
+      "Food handlers using head caps and uniforms"
+     ],
+     "bad": [
+      "Kitchen partially open, allowing entry of dust and pests",
+      "Overflowing, uncovered dustbins with houseflies around food preparation areas",
+      "Uncovered and unlabelled dough, chutney, and cut vegetables stored in refrigerators",
+      "Disorganized storage of raw materials with spillages",
+      "Water stagnation near the washing area",
+      "Iron knives in use for food preparation (discarded during inspection)",
+      "Medical fitness certificates and pest control records not maintained"
+     ],
+     "action": "Improvement Notice recommended | Iron knives discarded on the spot and instructions issued to use stainless steel knives",
+     "severity": "Observation",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2070881011379187778",
+     "location": "Gajularamaram"
+    }
+   ]
+  },
+  {
+   "id": "pista-house-rc-puram",
+   "name": "Pista House",
+   "aka": [
+    "Nestham (Pista House)"
+   ],
+   "location": "RC Puram",
+   "area": "RC Puram",
+   "lat": 17.5216,
+   "lng": 78.296,
+   "score": 70,
+   "grade": "average",
+   "lastInspected": "2026-07-29",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/media/HOZnLkwbgAAN39y?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-07-29",
+     "pct": 70,
+     "obtained": 72,
+     "total": 104,
+     "good": [
+      "Personal hygiene maintained by food handlers",
+      "FSSAI license displayed prominently at the premises"
+     ],
+     "bad": [],
+     "action": "An Improvement Notice has been issued directing the Food Business Operator to rectify the identified deficiencies and ensure compliance with food safety standards",
+     "severity": "None",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2082466238123638874",
+     "location": "RC Puram"
+    }
+   ]
+  },
+  {
+   "id": "wow-momo-madinaguda",
+   "name": "Wow! Momo",
+   "aka": [],
+   "location": "Madinaguda",
+   "area": "Madinaguda",
+   "lat": 17.4948,
+   "lng": 78.3352,
+   "score": 68,
+   "grade": "poor",
+   "lastInspected": "2026-07-29",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/media/HOXPgCsa4AAwiI4?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-07-29",
+     "pct": 68,
+     "obtained": 78,
+     "total": 116,
+     "good": [
+      "Food handlers maintained personal hygiene",
+      "FSSAI licence displayed prominently at the premises"
+     ],
+     "bad": [],
+     "action": "An Improvement Notice is being issued, directing the Food Business Operator to rectify the deficiencies and ensure compliance with food safety standards",
+     "severity": "None",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2082298956344885384",
+     "location": "Madinaguda"
+    }
+   ]
+  },
+  {
+   "id": "zepto-gajularamaram",
+   "name": "Zepto",
+   "aka": [],
+   "location": "Devbhoomi Nagar, Gajularamaram Circle",
+   "area": "Gajularamaram",
+   "lat": 17.5163,
+   "lng": 78.439,
+   "score": 68,
+   "grade": "poor",
+   "lastInspected": "2026-06-23",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/amplify_video_thumb/2069427362928947200/img/027PvIedPnwtUAB8.jpg",
+   "history": [
+    {
+     "date": "2026-06-23",
+     "pct": 68,
+     "obtained": 48,
+     "total": 72,
+     "good": [
+      "Cold storage maintained with temperature records",
+      "Food and non-food products stored separately",
+      "Labelling and display norms followed",
+      "No expired food articles found during inspection"
+     ],
+     "bad": [
+      "Expired FSSAI license copy displayed instead of the renewed one",
+      "Live cockroach infestation observed",
+      "Rusted racks and poor housekeeping beneath shelves",
+      "Inadequate spacing between walls and racks affecting cleaning",
+      "Greasy flooring and carton boxes obstructing the washing area",
+      "Medical fitness, pest control, and cleaning schedule records not maintained",
+      "One leaking apple juice pack found on sale shelves",
+      "One chicken packet without legible use-by date was discarded on the spot"
+     ],
+     "action": "Improvement Notice recommended | Defective food product discarded immediately | Directions issued to strengthen hygiene, housekeeping, documentation, and storage practices",
+     "severity": "Observation",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2069427494357434434",
+     "location": "Devbhoomi Nagar, Gajularamaram Circle"
+    }
+   ]
+  },
+  {
+   "id": "ideal-kitchen-madhapur",
+   "name": "Ideal Kitchen",
+   "aka": [],
+   "location": "Madhapur",
+   "area": "Madhapur",
+   "lat": 17.4483,
+   "lng": 78.3915,
+   "score": 67,
+   "grade": "poor",
+   "lastInspected": "2026-06-27",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/amplify_video_thumb/2070874367240900608/img/bB228z_XwCByz1IO.jpg",
+   "history": [
+    {
+     "date": "2026-06-27",
+     "pct": 67,
+     "obtained": 61,
+     "total": 92,
+     "good": [
+      "Food handlers using hairnets and aprons",
+      "Regular pest control carried out",
+      "Leftover food disposed of twice daily"
+     ],
+     "bad": [
+      "Unwrapped batters and semi-prepared food stored in the freezer; dead cockroaches found on batter",
+      "Wet floors and food accumulation",
+      "Raw materials stored without pallets, posing contamination risk",
+      "Insects found in urad dal",
+      "Medical fitness and water testing records not available"
+     ],
+     "action": "Improvement Notice initiated and corrective measures instructed",
+     "severity": "Observation",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2070874446983057647",
+     "location": "Madhapur"
+    }
+   ]
+  },
+  {
+   "id": "la-pino-z-pizza-madhapur",
+   "name": "La Pino'z Pizza",
+   "aka": [],
+   "location": "Jubilee Enclave",
+   "area": "Madhapur",
+   "lat": 17.4462,
+   "lng": 78.3792,
+   "score": 67,
+   "grade": "poor",
+   "lastInspected": "2026-06-17",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/media/HLBRsoeaQAAeWgY?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-06-17",
+     "pct": 67,
+     "obtained": 67,
+     "total": 100,
+     "good": [],
+     "bad": [],
+     "action": "Expired and improperly stored food items discarded on the spot | Directions issued for deep cleaning and pest control | Improvement Notice being issued for immediate compliance | 50%–90% – Improvement Notice | Below 50% – Show Cause Notice",
+     "severity": "None",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2067242242226704709",
+     "location": "Jubilee Enclave"
+    }
+   ]
+  },
+  {
+   "id": "mehfil-restaurant-hitec-city",
+   "name": "Mehfil Restaurant",
+   "aka": [],
+   "location": "Hitech City",
+   "area": "HITEC City",
+   "lat": 17.4456,
+   "lng": 78.3772,
+   "score": 67,
+   "grade": "poor",
+   "lastInspected": "2026-06-27",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/amplify_video_thumb/2070871118676959232/img/r1Rx2JhRPSj777VG.jpg",
+   "history": [
+    {
+     "date": "2026-06-27",
+     "pct": 67,
+     "obtained": 68,
+     "total": 102,
+     "good": [
+      "Food handlers using hairnets",
+      "Veg & non-veg segregation maintained",
+      "No pest infestation observed"
+     ],
+     "bad": [
+      "Inadequate kitchen space",
+      "Wet floors and food accumulation",
+      "Roomali roti preparation in a construction area (stopped immediately)",
+      "Unhygienic food grading practices",
+      "Medical fitness certificates of food handlers not produced"
+     ],
+     "action": "Improvement Notice initiated and corrective measures instructed",
+     "severity": "Observation",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2070871306959208548",
+     "location": "Hitech City"
+    }
+   ]
+  },
+  {
+   "id": "pancha-kattu-dosa-nizampet",
+   "name": "Pancha Kattu Dosa",
+   "aka": [],
+   "location": "Nizampet",
+   "area": "Nizampet",
+   "lat": 17.5089,
+   "lng": 78.3877,
+   "score": 67,
+   "grade": "poor",
+   "lastInspected": "2026-06-20",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/media/HLRFlmpakAEVxAi?format=jpg&name=900x900",
+   "history": [
+    {
+     "date": "2026-06-20",
+     "pct": 67,
+     "obtained": 75,
+     "total": 112,
+     "good": [
+      "Food handlers using hairnets, gloves, and aprons",
+      "Working surfaces found clean and maintained",
+      "No pest infestation observed"
+     ],
+     "bad": [
+      "Broken tiles found in kitchen and work areas",
+      "Chimney found greasy and required cleaning",
+      "Kitchen floor found slippery",
+      "Prepared junnu and nannari syrup stored without labels or date markings",
+      "Raw materials stored directly on the floor without pallets",
+      "Food and non-food materials stored together",
+      "Medical fitness certificates and water analysis reports were not available during inspection",
+      "Storage containers found damaged and inadequately maintained",
+      "were communicated to the establishment for immediate corrective action and improvement of food safety standards"
+     ],
+     "action": "Improvement Notice issued to the establishment | Instructions given to improve housekeeping, storage practices, documentation, and food safety compliance",
+     "severity": "Observation",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2068361774437679197",
+     "location": "Nizampet"
+    }
+   ]
+  },
+  {
+   "id": "fire-water-neo-bar-kitchen-financial-district",
+   "name": "Fire Water Neo Bar & Kitchen",
+   "aka": [],
+   "location": "Financial District, Nanakramguda",
+   "area": "Financial District",
+   "lat": 17.418,
+   "lng": 78.34,
+   "score": 66,
+   "grade": "poor",
+   "lastInspected": "2026-07-09",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/media/HMyxmWUaQAAGzzU?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-07-09",
+     "pct": 66,
+     "obtained": 71,
+     "total": 108,
+     "good": [
+      "No visible pest infestation observed and pest control records were available"
+     ],
+     "bad": [
+      "Several prepared food items were assigned a shelf life of 2–5 days without any technical or laboratory evidence to support it",
+      "Raw crabs, boneless chicken legs, prawns, chicken wings, baby corn packs and other food items were found without labels and discarded on the spot",
+      "One pack of expired mushrooms found during inspection",
+      "Water used for cooking and preparation of crushed ice for beverages had not been tested",
+      "Medical fitness certificates of food handlers and packaging records were not available",
+      "Vegetarian and non-vegetarian food items stored together in the chiller",
+      "Food commodity names not mentioned on stored food items",
+      "Eggs found without proper cleaning before storage"
+     ],
+     "action": "Unlabelled food items and expired mushrooms were discarded on the spot | Improvement Notice will be issued, and the Food Business Operator (FBO) has been instructed to immediately rectify all identified deficiencies",
+     "severity": "Observation",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2075228861194011044",
+     "location": "Financial District, Nanakramguda"
+    }
+   ]
+  },
+  {
+   "id": "protein-chef-cgr-school",
+   "name": "Protein Chef",
+   "aka": [],
+   "location": "Backside of CGR School",
+   "area": "CGR School",
+   "lat": null,
+   "lng": null,
+   "score": 65,
+   "grade": "poor",
+   "lastInspected": "2026-06-24",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/media/HLlZ2XybIAA0J2M?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-06-24",
+     "pct": 65,
+     "obtained": 66,
+     "total": 102,
+     "good": [
+      "Food handlers using hairnets & aprons",
+      "Well-maintained store room",
+      "Proper pest control measures",
+      "Veg & non-veg segregation followed"
+     ],
+     "bad": [
+      "Inadequate cleaning & drain maintenance",
+      "Unclean freezer with stale/unwrapped food posing cross-contamination risk",
+      "Improper thawing of frozen items",
+      "Medical fitness records unavailable",
+      "Hot water sanitation not followed",
+      "Open dustbins near the cooking area"
+     ],
+     "action": "Improvement Notice recommended | Food samples collected for laboratory analysis",
+     "severity": "Observation",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2069784663577837771",
+     "location": "Backside of CGR School"
+    }
+   ]
+  },
+  {
+   "id": "shah-gouse-restaurant-gachibowli",
+   "name": "Shah Gouse Restaurant",
+   "aka": [],
+   "location": "Opp. Biodiversity Park, Raidurg, Gachibowli Road",
+   "area": "Gachibowli",
+   "lat": 17.4401,
+   "lng": 78.3489,
+   "score": 65,
+   "grade": "poor",
+   "lastInspected": "2026-06-27",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/amplify_video_thumb/2070851447508656128/img/G5Z-eum_rQCf0Nu_.jpg",
+   "history": [
+    {
+     "date": "2026-06-27",
+     "pct": 65,
+     "obtained": 60,
+     "total": 92,
+     "good": [
+      "Food handlers using caps and aprons"
+     ],
+     "bad": [
+      "Houseflies observed throughout the kitchen",
+      "Poor housekeeping with grease, dirt, and dust accumulation",
+      "Unhygienic non-veg cutting area with risk of cross-contamination",
+      "Open drains and food waste accumulation",
+      "Unclean wash area and leakage in the store room",
+      "Semi-prepared food items found without labels",
+      "Water testing records not produced",
+      "Gutka stains observed on kitchen walls"
+     ],
+     "action": "Improvement Notice recommended",
+     "severity": "Observation",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2070851788371120463",
+     "location": "Opp. Biodiversity Park, Raidurg, Gachibowli Road"
+    }
+   ]
+  },
+  {
+   "id": "natural-aqua-packaged-drinking-water-unit-gajularamaram",
+   "name": "Natural Aqua (Packaged Drinking Water Unit)",
+   "aka": [],
+   "location": "Rodamestry Nagar, Gajularamaram Circle",
+   "area": "Gajularamaram",
+   "lat": 17.5163,
+   "lng": 78.439,
+   "score": 64,
+   "grade": "poor",
+   "lastInspected": "2026-06-22",
+   "visits": 1,
+   "notice": false,
+   "photo": "https://pbs.twimg.com/media/HLbsUmsaMAIGDjw?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-06-22",
+     "pct": 64,
+     "obtained": 101,
+     "total": 158,
+     "good": [
+      "Properly sloped flooring with no water stagnation",
+      "Wastewater diverted into a rainwater harvesting pit",
+      "Walls and ceilings found free from dust and cobwebs"
+     ],
+     "bad": [
+      "Food handlers were not using headcaps, gloves, or aprons",
+      "Bottling unit lacked proper barriers/mesh to prevent pest and dust entry",
+      "Pest control, medical fitness, and cleaning schedule records were not available",
+      "NOC for groundwater extraction was not obtained",
+      "Water analysis report was incomplete, with no microbial analysis",
+      "FSSAI license for the transportation vehicle was not available",
+      "NABL certification for packing materials was not produced",
+      "Application documents were not properly self-attested"
+     ],
+     "action": "Drinking water samples collected for laboratory analysis | FBO instructed to rectify all observations and resubmit the application with complete documentation for further processing",
+     "severity": "Observation",
+     "notice": false,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2069108145981640839",
+     "location": "Rodamestry Nagar, Gajularamaram Circle"
+    }
+   ]
+  },
+  {
+   "id": "baisakhi-family-dhaba-medchal",
+   "name": "Baisakhi Family Dhaba",
+   "aka": [],
+   "location": "Kandlakoya, Medchal",
+   "area": "Medchal",
+   "lat": 17.627,
+   "lng": 78.481,
+   "score": 63,
+   "grade": "poor",
+   "lastInspected": "2026-07-03",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/media/HMT5PkxbUAEAYDf?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-07-03",
+     "pct": 63,
+     "obtained": 70,
+     "total": 110,
+     "good": [],
+     "bad": [
+      "FSSAI and Trade Licences not displayed at the premises",
+      "Expired baby corn and black pepper masala found and discarded",
+      "Medical fitness, pest control, and water testing records not maintained",
+      "Kitchen open to the outside environment without protective mesh",
+      "Open dustbins and un labelled semi-prepared food items",
+      "Synthetic food colours used in Chinese food items; discarded on the spot",
+      "Dead flies found inside the refrigerator",
+      "Rusted iron knives used for food preparation; discarded and replacement with food-grade stainless steel knives instructed"
+     ],
+     "action": "Expired food items, synthetic food colours, and rusted iron knives discarded on the spot | Improvement Notice recommended and corrective measures instructed",
+     "severity": "Observation",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2073056386682884138",
+     "location": "Kandlakoya, Medchal"
+    }
+   ]
+  },
+  {
+   "id": "ideal-kitchen-ameenpur",
+   "name": "Ideal Kitchen",
+   "aka": [],
+   "location": "Beeramguda, Ameenpur",
+   "area": "Ameenpur",
+   "lat": 17.5286,
+   "lng": 78.3122,
+   "score": 63,
+   "grade": "poor",
+   "lastInspected": "2026-08-13",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/media/HPnaOgBaEAA6ZWt?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-08-13",
+     "pct": 63,
+     "obtained": 58,
+     "total": 92,
+     "good": [],
+     "bad": [
+      "Kitchen found small, congested and not properly cleaned",
+      "Semi-prepared batters and chutneys stored close to a brooming stick",
+      "Medical, pest control, water testing, food testing and packaging records were not available",
+      "Artificial food colours were in use and discarded on the spot",
+      "Prepared rice items including sambar rice, lemon rice, pulihora and mudda pappu-avakaya were kept open",
+      "Batters were not properly labelled",
+      "Open drain and broken flooring in the grinding area causing water stagnation and odour",
+      "Exhausts were not cleaned properly"
+     ],
+     "action": "A notice was issued for the observed violations, with directions to rectify the deficiencies and improve food safety and hygiene standards",
+     "severity": "Non-compliance",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2087940051347046638",
+     "location": "Beeramguda, Ameenpur"
+    }
+   ]
+  },
+  {
+   "id": "zomato-hyperpure-kukatpally",
+   "name": "Zomato Hyperpure",
+   "aka": [],
+   "location": "IDA Kukatpally",
+   "area": "Kukatpally",
+   "lat": 17.475,
+   "lng": 78.398,
+   "score": 63,
+   "grade": "poor",
+   "lastInspected": "2026-06-25",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/amplify_video_thumb/2070114162370596865/img/7-vbUTSvITMr-eqn.jpg",
+   "history": [
+    {
+     "date": "2026-06-25",
+     "pct": 63,
+     "obtained": 124,
+     "total": 198,
+     "good": [
+      "Food handlers using hairnets and aprons",
+      "Medical fitness and pest control records available",
+      "Raw materials stored on pallets"
+     ],
+     "bad": [
+      "Food and non-food items stored together",
+      "78 expired Kitchen King Masala packets and expired pizza sauce found and discarded",
+      "Untidy storage trays and unhygienic poultry chiller",
+      "Flies observed near the vegetable segregation area",
+      "Food spillages and leakages noticed",
+      "Veg and non-veg items stored together in the freezer"
+     ],
+     "action": "Expired products disposed of immediately | Improvement Notice recommended | Samples of peanuts, dal, cumin, and ghee collected and sent to the laboratory for analysis",
+     "severity": "Observation",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2070114297422954965",
+     "location": "IDA Kukatpally"
+    }
+   ]
+  },
+  {
+   "id": "babai-hotel-manikonda",
+   "name": "Babai Hotel",
+   "aka": [
+    "Friends Factory (Babai Hotel)"
+   ],
+   "location": "Manikonda",
+   "area": "Manikonda",
+   "lat": 17.4041,
+   "lng": 78.3772,
+   "score": 62,
+   "grade": "poor",
+   "lastInspected": "2026-07-18",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/media/HNhE3HKa8AActDV?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-07-18",
+     "pct": 62,
+     "obtained": 71,
+     "total": 114,
+     "good": [
+      "Food handlers found wearing hairnets and gloves",
+      "No synthetic colours used",
+      "No stale food observed",
+      "No expired food items found"
+     ],
+     "bad": [
+      "Broken kitchen flooring and tiles",
+      "Water stagnation observed in the kitchen and drains",
+      "Cleaning not carried out at regular intervals",
+      "Presence of rodents observed",
+      "Foul odour in the utensil washing area",
+      "Greasy chimneys with oil leakage",
+      "Uncovered dustbins",
+      "Medical fitness certificates and water analysis reports not available"
+     ],
+     "action": "Improvement Notice issued directing the establishment to rectify the observed deficiencies and comply with food safety norms",
+     "severity": "Non-compliance",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2078487033488748784",
+     "location": "Manikonda"
+    }
+   ]
+  },
+  {
+   "id": "fire-water-fine-dining-phoenix-towers",
+   "name": "Fire Water Fine Dining",
+   "aka": [],
+   "location": "Phoenix Towers",
+   "area": "Phoenix Towers",
+   "lat": null,
+   "lng": null,
+   "score": 62,
+   "grade": "poor",
+   "lastInspected": "2026-07-04",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/amplify_video_thumb/2073394267188531200/img/S-3h5Wtb1iMncrqz.jpg",
+   "history": [
+    {
+     "date": "2026-07-04",
+     "pct": 62,
+     "obtained": 63,
+     "total": 102,
+     "good": [
+      "Hot water sanitisation of utensils being followed",
+      "Regular cleaning schedule maintained for the premises"
+     ],
+     "bad": [
+      "Cockroach infestation observed in the store area",
+      "Rat droppings found in the premises, indicating inadequate cleaning of the store area",
+      "Rust formation observed inside the freezer",
+      "Raw chicken stored directly in the freezer without proper wrapping",
+      "Dustbins kept open inside the kitchen",
+      "Medical fitness certificates of the present food handlers not produced during inspection"
+     ],
+     "action": "Improvement Notice recommended and corrective measures instructed",
+     "severity": "Observation",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2073394397975335406",
+     "location": "Phoenix Towers"
+    }
+   ]
+  },
+  {
+   "id": "kodikura-chittigare-nallagandla",
+   "name": "Kodikura Chittigare",
+   "aka": [],
+   "location": "Nallagandla",
+   "area": "Nallagandla",
+   "lat": 17.4735,
+   "lng": 78.305,
+   "score": 62,
+   "grade": "poor",
+   "lastInspected": "2026-06-22",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/media/HLbpFxLa8AIqK0M?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-06-22",
+     "pct": 62,
+     "obtained": 60,
+     "total": 98,
+     "good": [
+      "Valid FSSAI License available"
+     ],
+     "bad": [
+      "Raw chicken, desserts, and mango pulp received without proper labels; unlabelled items discarded on the spot",
+      "Water testing reports for water used in cooking were not available",
+      "Chiller found overloaded, affecting proper cooling",
+      "Two food handlers found with untrimmed nails",
+      "Dust accumulation observed on the grinding area ceiling",
+      "Food waste found uncleared in drain areas",
+      "Medical fitness records and packaging material testing reports were not available",
+      "Greasy kitchen ceiling required immediate cleaning"
+     ],
+     "action": "Unlabelled food items discarded immediately | Improvement Notice issued with directions to strengthen hygiene, documentation, storage, and housekeeping practices | The establishment has been instructed to implement immediate corrective measures to ensure compliance with food safety standards",
+     "severity": "Observation",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2069097408970289458",
+     "location": "Nallagandla"
+    }
+   ]
+  },
+  {
+   "id": "iguru-restaurant-khajaguda",
+   "name": "Iguru Restaurant",
+   "aka": [],
+   "location": "Chitrapuri Colony, Khajaguda",
+   "area": "Khajaguda",
+   "lat": 17.4185,
+   "lng": 78.3673,
+   "score": 61,
+   "grade": "poor",
+   "lastInspected": "2026-06-23",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/media/HLgint-boAA0Aa8?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-06-23",
+     "pct": 61,
+     "obtained": 63,
+     "total": 104,
+     "good": [
+      "Valid FSSAI License displayed at the premises"
+     ],
+     "bad": [
+      "Dustbins found without lids",
+      "Semi-prepared and prepared food items lacked proper name and use-by labels",
+      "Houseflies observed in the kitchen, dishwashing area, and store room",
+      "Medical fitness, water testing, packaging material, and pest control records were not available",
+      "Refrigerators were not demarcated for veg and non-veg storage",
+      "Food waste found uncleared in drains",
+      "Cooked fish curry container kept directly on the floor",
+      "Kitchen entry and store room were open to the external environment, increasing contamination risk",
+      "Dust accumulation observed on ceilings in the dishwashing area and store room",
+      "Mouldy cauliflower and unlabelled baby corn and jackfruit pieces were discarded on the spot"
+     ],
+     "action": "Instructions issued to implement proper food labelling and strengthen hygiene and storage practices | Improvement Notice issued for immediate rectification of the observed violations",
+     "severity": "Observation",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2069442219480854922",
+     "location": "Chitrapuri Colony, Khajaguda"
+    }
+   ]
+  },
+  {
+   "id": "varnam-hafeezpet",
+   "name": "Varnam",
+   "aka": [],
+   "location": "Genpact Lane, Hafeezpet",
+   "area": "Hafeezpet",
+   "lat": 17.48,
+   "lng": 78.352,
+   "score": 61,
+   "grade": "poor",
+   "lastInspected": "2026-08-12",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/media/HPhotEVaEAAgFAV?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-08-12",
+     "pct": 61,
+     "obtained": 61,
+     "total": 100,
+     "good": [
+      "Good personal hygiene maintained by food handlers"
+     ],
+     "bad": [
+      "Water stagnation and food waste in drains",
+      "Iron knives and no pallets in use",
+      "Required medical, food testing, water testing and packaging records not available",
+      "Refrigerator not properly cleaned/sorted, with water leakage observed",
+      "Semi-prepared and prepared foods not labelled",
+      "Dust on ceiling and greasy exhausts",
+      "Fungus observed on cauliflower and spoiled cabbage and potatoes not sorted"
+     ],
+     "action": "A notice will be served for the observed violations, with directions to rectify the deficiencies and improve food safety and hygiene practices",
+     "severity": "Non-compliance",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2087533852659188034",
+     "location": "Genpact Lane, Hafeezpet"
+    }
+   ]
+  },
+  {
+   "id": "wacky-wok-cloud-kitchen-kondapur",
+   "name": "Wacky Wok Cloud Kitchen",
+   "aka": [],
+   "location": "Satya Towers, Kondapur",
+   "area": "Kondapur",
+   "lat": 17.4615,
+   "lng": 78.3639,
+   "score": 61,
+   "grade": "poor",
+   "lastInspected": "2026-08-13",
+   "visits": 1,
+   "notice": false,
+   "photo": "https://pbs.twimg.com/amplify_video_thumb/2087907241395625985/img/Xe5U7Bhwb-HGEsXK.jpg",
+   "history": [
+    {
+     "date": "2026-08-13",
+     "pct": 61,
+     "obtained": 60,
+     "total": 98,
+     "good": [
+      "Hairnets used by food handlers",
+      "No expired raw materials found",
+      "FIFO and FEFO practices followed",
+      "Fly catchers installed",
+      "Veg and non-veg food areas separated"
+     ],
+     "bad": [
+      "Inadequate cooling in the freezer, with spoiled vegetables and pest activity observed",
+      "No hot-water sanitation of utensils",
+      "Freezer found poorly maintained and unhygienic",
+      "Synthetic colours found in use and discarded on the spot"
+     ],
+     "action": "The establishment was advised to rectify the deficiencies and maintain required food safety and hygiene standards",
+     "severity": "Major",
+     "notice": false,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2087907815885308193",
+     "location": "Satya Towers, Kondapur"
+    }
+   ]
+  },
+  {
+   "id": "wah-mandi-gachibowli",
+   "name": "Wah Mandi",
+   "aka": [],
+   "location": "Opp. AMB Mall",
+   "area": "Gachibowli",
+   "lat": 17.456,
+   "lng": 78.34,
+   "score": 61,
+   "grade": "poor",
+   "lastInspected": "2026-07-04",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/media/HMYbBsgaEAAJWBo?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-07-04",
+     "pct": 61,
+     "obtained": 61,
+     "total": 100,
+     "good": [
+      "Regular pest control with no visible pest infestation",
+      "Freezers maintained in clean condition",
+      "Limited stock of non-vegetarian items maintained"
+     ],
+     "bad": [
+      "Stale and spoiled cooked mandi, boiled eggs, and chicken wings found and discarded on the spot",
+      "Inadequate washing area; hot water sanitisation of utensils not followed",
+      "Medical fitness certificates and water testing reports not available",
+      "Raw and cooked meat stored together; veg and non-veg items not properly segregated",
+      "Flaking walls and ceiling observed in the vegetable cutting section"
+     ],
+     "action": "Spoiled food items discarded on the spot | Improvement Notice recommended and corrective measures instructed",
+     "severity": "Observation",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2073376227956830331",
+     "location": "Opp. AMB Mall"
+    }
+   ]
+  },
+  {
+   "id": "kanchi-cafe-puppalaguda",
+   "name": "Kanchi Cafe",
+   "aka": [],
+   "location": "Puppalaguda",
+   "area": "Puppalaguda",
+   "lat": 17.407,
+   "lng": 78.362,
+   "score": 60,
+   "grade": "poor",
+   "lastInspected": "2026-06-22",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/media/HLbpexwa8AA89we?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-06-22",
+     "pct": 60,
+     "obtained": 56,
+     "total": 94,
+     "good": [
+      "Valid FSSAI License displayed at the premises",
+      "Food handlers maintaining personal hygiene"
+     ],
+     "bad": [
+      "Open dustbins placed between the kitchen and store room, causing foul smell and attracting houseflies",
+      "Dust accumulation on store room ceiling",
+      "Water stagnation near grinding and vegetable cutting areas",
+      "Mould growth observed on cauliflower",
+      "Foul smell near drains",
+      "Batter stored in refrigerators without proper labels",
+      "Houseflies and cockroaches observed in the kitchen and store room",
+      "Medical fitness, pest control, water testing, and packaging material testing records were not available"
+     ],
+     "action": "Instructions issued to implement proper food labelling and improve housekeeping | Improvement Notice issued for immediate rectification of food safety and hygiene violations | The establishment has been instructed to take immediate corrective measures to strengthen hygiene and food safety compliance",
+     "severity": "Observation",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2069098097184268457",
+     "location": "Puppalaguda"
+    }
+   ]
+  },
+  {
+   "id": "palamuru-grill-bar-restaurant-kondapur",
+   "name": "Palamuru Grill Bar & Restaurant",
+   "aka": [],
+   "location": "Near RTO Office, Kondapur",
+   "area": "Kondapur",
+   "lat": 17.4615,
+   "lng": 78.3639,
+   "score": 60,
+   "grade": "poor",
+   "lastInspected": "2026-06-27",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/amplify_video_thumb/2070879805281849344/img/zmWej0uLOUexn04D.jpg",
+   "history": [
+    {
+     "date": "2026-06-27",
+     "pct": 60,
+     "obtained": 65,
+     "total": 108,
+     "good": [
+      "Food handlers using caps and aprons",
+      "Medical fitness certificates available",
+      "Cleaning schedule maintained"
+     ],
+     "bad": [
+      "Label tampering observed on prepared food items",
+      "Stale food and expired mushrooms found and discarded",
+      "Houseflies present in the kitchen",
+      "Grease and dirt accumulation on ceilings and lights",
+      "Rusted freezer with water accumulation, posing contamination risk",
+      "Hot water sanitation of utensils not followed",
+      "Water testing reports not available"
+     ],
+     "action": "Improvement Notice recommended | Stale food and expired mushrooms discarded on the spot",
+     "severity": "Observation",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2070879883694121173",
+     "location": "Near RTO Office, Kondapur"
+    }
+   ]
+  },
+  {
+   "id": "santosh-dhaba-100-pure-veg-exclusive-miyapur",
+   "name": "Santosh Dhaba 100% Pure Veg Exclusive",
+   "aka": [],
+   "location": "near Miraj Theatre Lane, Miyapur",
+   "area": "Miyapur",
+   "lat": 17.4966,
+   "lng": 78.3579,
+   "score": 58,
+   "grade": "poor",
+   "lastInspected": "2026-08-06",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/media/HPC_9lDbwAExNW0?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-08-06",
+     "pct": 58,
+     "obtained": 55,
+     "total": 96,
+     "good": [],
+     "bad": [
+      "Semi-prepared food items were not labelled",
+      "Food handlers were not using hairnets, aprons and gloves",
+      "Exhaust fans and ceiling areas require proper cleaning",
+      "No lighting in the store room",
+      "Medical, pest control, water & food testing and packaging records were not produced",
+      "Broken side-wall tiles observed",
+      "Chiller was not maintained properly"
+     ],
+     "action": "A notice will be served for the violations observed, with directions to rectify the deficiencies and improve food safety and hygiene practices",
+     "severity": "Non-compliance",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2085377978104733961",
+     "location": "near Miraj Theatre Lane, Miyapur"
+    }
+   ]
+  },
+  {
+   "id": "siddique-khabab-centre-kukatpally",
+   "name": "Siddique Khabab Centre",
+   "aka": [],
+   "location": "Near BJP Office, Kukatpally",
+   "area": "Kukatpally",
+   "lat": 17.4948,
+   "lng": 78.3996,
+   "score": 57,
+   "grade": "poor",
+   "lastInspected": "2026-07-08",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/media/HMtyLLdbcAAQDSX?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-07-08",
+     "pct": 57,
+     "obtained": 46,
+     "total": 82,
+     "good": [
+      "No synthetic food colours found in use",
+      "Food handlers were using hairnets"
+     ],
+     "bad": [
+      "Meat not stored under proper conditions in the freezer",
+      "Improper wash area with water stagnation; unhygienic worker washrooms and fly movement observed",
+      "No hot water sanitisation of utensils",
+      "Inadequate space for storage of raw materials",
+      "Dustbins found overflowing and kept open"
+     ],
+     "action": "The Food Business Operator (FBO) was instructed to rectify the identified deficiencies immediately, and an Improvement Notice will be issued",
+     "severity": "Observation",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2074877729535922415",
+     "location": "Near BJP Office, Kukatpally"
+    }
+   ]
+  },
+  {
+   "id": "j-vishnu-vardhan-reddy-swagruha-foods-gajularamaram",
+   "name": "J. Vishnu Vardhan Reddy Swagruha Foods",
+   "aka": [],
+   "location": "Gajularamaram",
+   "area": "Gajularamaram",
+   "lat": 17.5163,
+   "lng": 78.439,
+   "score": 54,
+   "grade": "poor",
+   "lastInspected": "2026-06-27",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/media/HL1Ch2kboAAx1Wm?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-06-27",
+     "pct": 54,
+     "obtained": 60,
+     "total": 112,
+     "good": [],
+     "bad": [
+      "Kitchen open to the outside environment, allowing entry of dust and pests",
+      "No provision to check TPC levels of used cooking oil; overused oil suspected",
+      "Food handlers not using head caps, aprons, or gloves",
+      "Raw materials stored directly on the floor without pallets",
+      "Water stagnation near the washing area",
+      "Packed sweets and savouries found without proper labels",
+      "Medical fitness certificates and pest control records not maintained",
+      "Cobwebs, dust, poor lighting, and water seepage in the store room",
+      "Rat burrows observed near the packing area",
+      "Sugar beetle infestation found in jaggery; affected stock discarded on the spot"
+     ],
+     "action": "Improvement Notice recommended | Infested jaggery discarded immediately and corrective measures instructed",
+     "severity": "Observation",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2070884570841649435",
+     "location": "Gajularamaram"
+    }
+   ]
+  },
+  {
+   "id": "mandi-king-gachibowli",
+   "name": "Mandi King",
+   "aka": [
+    "Mandi King – Gachibowli Branch"
+   ],
+   "location": "Opp. Starbucks, Gachibowli",
+   "area": "Gachibowli",
+   "lat": 17.4401,
+   "lng": 78.3489,
+   "score": 52,
+   "grade": "poor",
+   "lastInspected": "2026-07-04",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/media/HMYfJrjbAAANFLW?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-07-04",
+     "pct": 52,
+     "obtained": 56,
+     "total": 108,
+     "good": [
+      "Regular pest control carried out with no visible pest infestation during inspection",
+      "Used cooking oil disposed of through an authorized third-party vendor, preventing its reuse in the food chain"
+     ],
+     "bad": [
+      "Raw and cooked non-vegetarian food stored together without proper covering, posing a risk of cross-contamination",
+      "Greasy and unclean exhaust system",
+      "Inadequate kitchen workspace, with raw material handling, cutting, and cooking carried out in the same area, resulting in wet and unhygienic floor conditions",
+      "Cooking oil found excessively reused for four days, as confirmed by the food handler; discarded on the spot",
+      "Improper utensil washing area with no hot water sanitisation",
+      "Rusted doors and heavy fly infestation observed"
+     ],
+     "action": "Reused cooking oil discarded immediately | Improvement Notice recommended and corrective measures instructed",
+     "severity": "Observation",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2073379970140008516",
+     "location": "Opp. Starbucks, Gachibowli"
+    }
+   ]
+  },
+  {
+   "id": "the-food-planet-lingampally",
+   "name": "The Food Planet",
+   "aka": [],
+   "location": "Old Mumbai Highway, Chandanagar, Lingampally",
+   "area": "Lingampally",
+   "lat": 17.493,
+   "lng": 78.314,
+   "score": 51,
+   "grade": "poor",
+   "lastInspected": "2026-06-24",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/media/HLqAP8NasAAhPKy?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-06-24",
+     "pct": 51,
+     "obtained": 51,
+     "total": 100,
+     "good": [
+      "Food handlers using hairnets and hand gloves"
+     ],
+     "bad": [
+      "Greasy exhausts, ceiling, and pipelines due to poor cleaning",
+      "Expired raw mutton and unlabeled curd discarded on the spot",
+      "Medical fitness, pest control, water testing, and packaging records unavailable",
+      "Non-veg storage refrigerators not maintained properly",
+      "Houseflies observed in the kitchen",
+      "Worn-out chopping boards and iron knives in use",
+      "Food handlers not wearing aprons; nails not trimmed",
+      "Food waste in drains causing unhygienic conditions"
+     ],
+     "action": "Directions issued to improve hygiene and proper food labelling | Improvement Notice to be issued",
+     "severity": "Observation",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2070108364529648083",
+     "location": "Old Mumbai Highway, Chandanagar, Lingampally"
+    }
+   ]
+  },
+  {
+   "id": "zepto-narsingi",
+   "name": "Zepto",
+   "aka": [],
+   "location": "Narsingi",
+   "area": "Narsingi",
+   "lat": 17.394,
+   "lng": 78.352,
+   "score": 50,
+   "grade": "poor",
+   "lastInspected": "2026-07-09",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/media/HMysmd4boAAVnaN?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-07-09",
+     "pct": 50,
+     "obtained": 30,
+     "total": 60,
+     "good": [],
+     "bad": [
+      "Racks, crates, flooring, walls, and ceiling found unclean with visible dirt accumulation",
+      "Pest-o-Flash unit not properly positioned in the fruits and vegetables section, posing a potential physical contamination risk",
+      "Food bags stored without pallets",
+      "Food waste observed on racks, crates, and the floor",
+      "Food and non-food items not properly segregated",
+      "FSSAI licence not displayed at a prominent location",
+      "Air curtains found in an unclean condition"
+     ],
+     "action": "Improvement Notice to be issued | The Food Business Operator (FBO) was instructed to temporarily stop accepting orders, undertake complete cleaning and rectification, and resume operations only after ensuring compliance with food safety standards",
+     "severity": "Observation",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2075223363019309126",
+     "location": "Narsingi"
+    }
+   ]
+  },
+  {
+   "id": "alsaba-restaurant-gachibowli",
+   "name": "Alsaba Restaurant",
+   "aka": [],
+   "location": "Gachibowli",
+   "area": "Gachibowli",
+   "lat": 17.4401,
+   "lng": 78.3489,
+   "score": 46,
+   "grade": "poor",
+   "lastInspected": "2026-07-09",
+   "visits": 1,
+   "notice": false,
+   "photo": "https://pbs.twimg.com/amplify_video_thumb/2075227566139662336/img/9l3gje2DT0l9Dnjg.jpg",
+   "history": [
+    {
+     "date": "2026-07-09",
+     "pct": 46,
+     "obtained": 69,
+     "total": 150,
+     "good": [
+      "No synthetic food colours found in use",
+      "Food handlers were using hairnets"
+     ],
+     "bad": [
+      "Meat not stored under proper conditions in the freezer",
+      "Improper wash area with water stagnation; unhygienic worker washrooms and fly movement observed",
+      "No hot water sanitisation of utensils",
+      "Rumali roti prepared adjacent to unclean washrooms with fly infestation",
+      "Slaughtering area found unhygienic, with no separate containers for leftover chicken",
+      "Water testing reports and medical fitness certificates of food handlers were not available"
+     ],
+     "action": "Action has been initiated to suspend the FSSAI licence | The restaurant has been directed to remain closed until all identified violations are rectified and compliance with food safety standards is verified",
+     "severity": "Observation",
+     "notice": false,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2075227665779535881",
+     "location": "Gachibowli"
+    }
+   ]
+  },
+  {
+   "id": "the-wine-dine-kitchen-bar-moosapet",
+   "name": "The Wine Dine Kitchen & Bar",
+   "aka": [],
+   "location": "Near Rainbow Vistas",
+   "area": "Moosapet",
+   "lat": 17.47,
+   "lng": 78.421,
+   "score": 46,
+   "grade": "poor",
+   "lastInspected": "2026-07-08",
+   "visits": 1,
+   "notice": false,
+   "photo": "https://pbs.twimg.com/media/HMtRFTKb0AAUdOm?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-07-08",
+     "pct": 46,
+     "obtained": 45,
+     "total": 98,
+     "good": [
+      "Hot water sanitization of utensils being followed",
+      "No stale food found during inspection"
+     ],
+     "bad": [
+      "Rat droppings found in the dal storage area and store room",
+      "Medical fitness certificates of food handlers were not available",
+      "Expired mushrooms (expired on 02.07.2026 and 07.07.2026) found during inspection",
+      "FIFO and FEFO practices were not being followed",
+      "Rusting observed inside the freezer",
+      "Improper segregation of vegetarian and non-vegetarian food items"
+     ],
+     "action": "Expired food items were discarded on the spot | The Food Business Operator (FBO) was instructed to rectify all deficiencies immediately and ensure compliance with food safety standards. Further action will be taken as per the Food Safety and Standards Act",
+     "severity": "Observation",
+     "notice": false,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2074841381588382058",
+     "location": "Near Rainbow Vistas"
+    }
+   ]
+  },
+  {
+   "id": "bahar-cafe-madinaguda",
+   "name": "Bahar Cafe",
+   "aka": [],
+   "location": "Madeenaguda",
+   "area": "Madinaguda",
+   "lat": 17.4948,
+   "lng": 78.3352,
+   "score": 40,
+   "grade": "poor",
+   "lastInspected": "2026-06-18",
+   "visits": 1,
+   "notice": false,
+   "photo": "https://pbs.twimg.com/media/HLGRxQMbUAAEV-t?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-06-18",
+     "pct": 40,
+     "obtained": 38,
+     "total": 96,
+     "good": [
+      "Valid FSSAI License was available and displayed"
+     ],
+     "bad": [],
+     "action": "Show Cause Notice issued for serious food safety and hygiene violations | FBO instructed to suspend kitchen operations until thorough cleaning and corrective measures are completed | Immediate compliance with food safety norms directed | Below 50% – Show Cause Notice",
+     "severity": "None",
+     "notice": false,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2067593997888172084",
+     "location": "Madeenaguda"
+    }
+   ]
+  },
+  {
+   "id": "platform-65-pnr-empire",
+   "name": "Platform 65",
+   "aka": [],
+   "location": "PNR Empire",
+   "area": "PNR Empire",
+   "lat": null,
+   "lng": null,
+   "score": 37,
+   "grade": "poor",
+   "lastInspected": "2026-06-23",
+   "visits": 1,
+   "notice": false,
+   "photo": "https://pbs.twimg.com/media/HLgKcdvasAA1ro9?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-06-23",
+     "pct": 37,
+     "obtained": 40,
+     "total": 110,
+     "good": [
+      "Food handlers using hairnets and aprons",
+      "Medical fitness records available for some food handlers"
+     ],
+     "bad": [],
+     "action": "Suspension of FSSAI License recommended | Immediate corrective measures directed to address critical food safety and hygiene violations | Below 50% – Show Cause Notice / Strict Regulatory Action",
+     "severity": "None",
+     "notice": false,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2069415800889545074",
+     "location": "PNR Empire"
+    }
+   ]
+  },
+  {
+   "id": "shree-dwaraka-grand-bagh-ameer",
+   "name": "Shree Dwaraka Grand",
+   "aka": [],
+   "location": "Bagh Ameer",
+   "area": "Bagh Ameer",
+   "lat": null,
+   "lng": null,
+   "score": 30,
+   "grade": "poor",
+   "lastInspected": "2026-07-08",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/media/HMtcoftbgAA732_?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-07-08",
+     "pct": 30,
+     "obtained": 28,
+     "total": 94,
+     "good": [
+      "No stale food found during inspection"
+     ],
+     "bad": [
+      "Operating with an expired FSSAI license, while online orders were still being facilitated",
+      "Expired butter and chana dal found during inspection",
+      "4–5 cats found inside the kitchen premises",
+      "Cockroach infestation observed",
+      "Heavy fly infestation in the kitchen",
+      "Kitchen flooring found to be in poor condition",
+      "No hot water sanitization of utensils",
+      "Water testing reports not available"
+     ],
+     "action": "Expired food items were discarded on the spot | A notice has been issued to the Food Business Operator (FBO) directing closure of the premises until all deficiencies are rectified and food safety standards are complied with",
+     "severity": "Observation",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2074854277097681124",
+     "location": "Bagh Ameer"
+    }
+   ]
+  },
+  {
+   "id": "zayaka-food-court-gachibowli",
+   "name": "Zayaka Food Court",
+   "aka": [],
+   "location": "Near AMB Mall",
+   "area": "Gachibowli",
+   "lat": 17.456,
+   "lng": 78.34,
+   "score": 25,
+   "grade": "poor",
+   "lastInspected": "2026-06-24",
+   "visits": 1,
+   "notice": false,
+   "photo": "https://pbs.twimg.com/amplify_video_thumb/2069786058674298880/img/pq9joWTCeHwlwTHW.jpg",
+   "history": [
+    {
+     "date": "2026-06-24",
+     "pct": 25,
+     "obtained": 25,
+     "total": 100,
+     "good": [
+      "Food handlers using hairnets"
+     ],
+     "bad": [],
+     "action": "FSSAI License Suspended | Directions issued for immediate rectification of all food safety violations | FBO instructed not to operate the premises until re-inspection and revocation of the suspension",
+     "severity": "None",
+     "notice": false,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2069786153663009098",
+     "location": "Near AMB Mall"
+    }
+   ]
+  },
+  {
+   "id": "lulu-hypermarket-kukatpally",
+   "name": "Lulu Hypermarket",
+   "aka": [],
+   "location": "Kukatpally",
+   "area": "Kukatpally",
+   "lat": 17.4948,
+   "lng": 78.3996,
+   "score": null,
+   "grade": "unrated",
+   "lastInspected": "2026-05-18",
+   "visits": 1,
+   "notice": false,
+   "photo": "https://pbs.twimg.com/media/HInmK8VaEAAu15x?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-05-18",
+     "pct": null,
+     "obtained": null,
+     "total": null,
+     "good": [],
+     "bad": [],
+     "action": "Approximately 150 Kg of food articles including sweets, oils, flour and pulses with infestation were seized/discarded | Food samples lifted on suspicion of adulteration or excess artificial colour usage and pest-infested besan flour and sent for analysis | Public Advisory: Consumers are advised to remain vigilant while purchasing food products from retail outlets, supermarkets, bakeries and eateries",
+     "severity": "None",
+     "notice": false,
+     "source": "@cfs_telangana",
+     "url": "https://x.com/cfs_telangana/status/2056436009844584838",
+     "location": "Kukatpally"
+    }
+   ]
+  },
+  {
+   "id": "subway-kondapur",
+   "name": "Subway",
+   "aka": [],
+   "location": "Kondapur",
+   "area": "Kondapur",
+   "lat": 17.4615,
+   "lng": 78.3639,
+   "score": null,
+   "grade": "unrated",
+   "lastInspected": "2026-06-16",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/amplify_video_thumb/2066884313329876992/img/clzry896WJnVuKli.jpg",
+   "history": [
+    {
+     "date": "2026-06-16",
+     "pct": null,
+     "obtained": null,
+     "total": null,
+     "good": [
+      "Food handlers were equipped with gloves and aprons and maintaining personal hygiene",
+      "Walls, flooring, ceilings, and overall infrastructure were found in satisfactory condition",
+      "No usage of synthetic food colours observed",
+      "Separate handling and storage of vegetarian and non-vegetarian food items"
+     ],
+     "bad": [],
+     "action": "50% to 90% – Improvement Notice | Below 50% – Show Cause Notice",
+     "severity": "None",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2066884676741112192",
+     "location": "Kondapur"
+    }
+   ]
+  },
+  {
+   "id": "vijetha-supermarket-tellapur",
+   "name": "Vijetha Supermarket",
+   "aka": [
+    "Vijetha Supermarkets"
+   ],
+   "location": "Tellapur",
+   "area": "Tellapur",
+   "lat": 17.482,
+   "lng": 78.287,
+   "score": null,
+   "grade": "unrated",
+   "lastInspected": "2026-06-24",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/media/HLla8dybEAAViDo?format=jpg&name=small",
+   "history": [
+    {
+     "date": "2026-06-24",
+     "pct": null,
+     "obtained": null,
+     "total": null,
+     "good": [
+      "FSSAI License displayed",
+      "Pest control records available"
+     ],
+     "bad": [
+      "Rotten fruits and low-quality peanuts found",
+      "Dead insects observed on food racks; fly traps absent",
+      "Expired food products and a bulged Frooti bottle found for sale",
+      "Cleaning schedule not maintained",
+      "Manufacturing/use-by dates not clearly visible on some products",
+      "Dusty and leaking oil packets",
+      "Medical fitness records of food handlers unavailable"
+     ],
+     "action": "Expired food products discarded on the spot | Peanut samples collected for laboratory analysis | Instructions issued to strengthen cleaning, sorting, and FIFO practices | Improvement Notice recommended",
+     "severity": "Observation",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2069785527285674039",
+     "location": "Tellapur"
+    }
+   ]
+  }
+ ]
+}
