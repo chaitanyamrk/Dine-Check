@@ -47,5 +47,4 @@ Telangana) and [@GHMCOnline](https://x.com/GHMCOnline). Every listing links back
 to the original report.
 
 A score reflects one visit on one day. An establishment absent from the list has
-not been inspected in the scraped window, which is not itself a mark against it.
-Keep that framing on the page — it is what makes the site fair to publish.
+not been inspected in the scraped window.
