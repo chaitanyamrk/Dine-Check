@@ -5,9 +5,6 @@ scores in front of people before they order. It reads the CSV produced by the
 inspection scraper, ranks every establishment by hygiene percentage, and can
 sort by distance from wherever the visitor is standing.
 
-Everything is static — one HTML file plus one JSON file, no build tooling, no
-framework, no external requests. It drops straight onto GitHub Pages.
-
 ## What the site does
 
 - **Ranked list** by hygiene percentage, with position numbers on the default view
