@@ -418,17 +418,6 @@ function boot(d){
               topAreas.slice(0,3).join(", ")+" and "+(topAreas[3]||"nearby areas")+
               " are well represented while much of the city — including the old city — is barely covered at all.</p>";
     }
-    // Point-in-time note. Telangana's food-safety department was merged into
-    // TG SAFE on 16 Aug 2026 and has not yet published inspections itself; its
-    // drives reach the public only through press reports, which this site does
-    // not list because they cannot be traced to the inspecting authority.
-    // DELETE THIS PARAGRAPH once TG SAFE publishes its own feed and the scraper
-    // picks it up — see MAINTAINING.md.
-    html += "<p>Telangana's food-safety department was reorganised into <b>TG SAFE</b> in "+
-            "August 2026. Its enforcement drives — including in areas missing from this list — "+
-            "are not shown here, because TG SAFE does not yet publish inspections itself. "+
-            "Only reports traceable to the inspecting authority are included.</p>";
-
     if(s.earliest && s.latest){
       html += "<p>The record runs from "+fmtDate(s.earliest)+" to "+fmtDate(s.latest)+
               ", and grows whenever the authorities publish a new inspection.</p>";

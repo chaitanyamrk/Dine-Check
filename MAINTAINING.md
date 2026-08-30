@@ -183,6 +183,33 @@ the site says so in the footer.
 
 ---
 
+## Known coverage gap: TG SAFE
+
+Telangana merged its Food Safety Department and Drugs Control Administration
+into **TG SAFE** (Telangana Standards Authority for Food and Essential Drugs) on
+16 August 2026. Two consequences:
+
+- **`@cfs_telangana` has been deleted.** It is still listed as a source in the
+  scraper and now resolves to a dead handle. Harmless beyond a wasted request,
+  but remove it next time you touch `scrape_x_inspections.py`. The rows already
+  collected from it stay valid.
+- **TG SAFE publishes nothing itself.** Checked 31 August 2026: no official X
+  account exists under any obvious handle, and the two legacy food-safety
+  accounts are dormant (`@FoodsafetyTS` 0 posts, `@director_food` last posted
+  2019). Its raids are reported only by journalists and news outlets.
+
+Press reports are deliberately **not** ingested. Enforcement raids produce
+violations rather than FoSCoS scores, so there is nothing to rank; outlets
+disagree on which establishments were involved; and every listing on the site is
+supposed to link to the inspecting authority's own post, which is the site's
+main defence when a business objects.
+
+The coverage panel on the site says so explicitly. **When TG SAFE launches an
+official channel**, add it to the scraper and delete the TG SAFE paragraph from
+the coverage note in `docs/app.js` — it is marked with a comment.
+
+---
+
 ## Security
 
 The site is static — no server, no database, no logins, no cookies, no secrets
