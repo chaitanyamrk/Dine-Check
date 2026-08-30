@@ -5,6 +5,9 @@ scores in front of people before they order. It reads the CSV produced by the
 inspection scraper, ranks every establishment by hygiene percentage, and can
 sort by distance from wherever the visitor is standing.
 
+Live at **[dinecheck.in](https://dinecheck.in)**. For deploy, data-refresh and
+analytics instructions see [MAINTAINING.md](MAINTAINING.md).
+
 ## What the site does
 
 - **Ranked list** by hygiene percentage, with position numbers on the default view
@@ -19,7 +22,8 @@ sort by distance from wherever the visitor is standing.
   action taken, full inspection history, and a link to the original report
 - **Saved places** kept in the visitor's browser via `localStorage`
 - **Dark mode** following the system setting, with a manual override
-- Keyboard accessible, no external requests, works offline once loaded
+- Keyboard accessible, works offline once loaded, and makes no external requests
+  unless analytics is enabled
 
 ---
 
@@ -29,10 +33,12 @@ sort by distance from wherever the visitor is standing.
 build_data.py                     CSV → docs/data.json
 areas.json                        locality gazetteer (edit this to add areas)
 hyderabad_food_inspections.csv    input, copied from the scraper
+MAINTAINING.md                    deploy, refresh and analytics notes
 docs/
   index.html                      the entire app
   data.json                       generated — do not edit by hand
   .nojekyll                       stops Pages from running Jekyll
+  CNAME                           binds dinecheck.in — never delete it
 ```
 
 ## Attribution and limits

@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-23T13:43:19Z",
+ "generated": "2026-08-30T17:10:57Z",
  "stats": {
   "venues": 86,
   "inspections": 88,
@@ -19,7 +19,18 @@
    "PNR Empire",
    "Phoenix Towers",
    "SMR Vinay Technopolis"
-  ]
+  ],
+  "sources": [
+   {
+    "handle": "@CMC_Offcl",
+    "count": 87
+   },
+   {
+    "handle": "@cfs_telangana",
+    "count": 1
+   }
+  ],
+  "earliest": "2026-05-18"
  },
  "areas": [
   {

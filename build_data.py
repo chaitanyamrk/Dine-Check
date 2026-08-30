@@ -14,6 +14,7 @@ Pipeline:
 Usage:  python build_data.py [path/to/hyderabad_food_inspections.csv]
 """
 
+import collections
 import csv
 import json
 import os
@@ -454,6 +455,14 @@ def main():
             "skippedPosts": skipped,
             "duplicatePosts": dupes,
             "ungeocoded": sorted({v["area"] for v in out if v["lat"] is None and v["area"] != "Unspecified"}),
+            "sources": [
+                {"handle": h, "count": c}
+                for h, c in sorted(
+                    collections.Counter(i["source"] for i in inspections if i["source"]).items(),
+                    key=lambda kv: -kv[1],
+                )
+            ],
+            "earliest": min((i["date"] for i in inspections if i["date"]), default=""),
         },
         "areas": sorted(
             [{"name": a, "count": c, "lat": area_geo.get(a, (None, None))[0], "lng": area_geo.get(a, (None, None))[1]}
