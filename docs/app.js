@@ -97,7 +97,8 @@ function filtered(){
   var q=state.q.trim().toLowerCase();
   var out=VENUES.filter(function(v){
     if(state.favOnly && favs.indexOf(v.id)<0) return false;
-    if(state.grade && v.grade!==state.grade) return false;
+    if(state.grade==="__enf"){ if(v.kind!=="enforcement") return false; }
+    else if(state.grade && (v.kind!=="inspection" || v.grade!==state.grade)) return false;
     if(state.area && v.area!==state.area) return false;
     if(q){
       var hay=(v.name+" "+v.area+" "+v.location+" "+(v.aka||[]).join(" ")).toLowerCase();
@@ -115,6 +116,8 @@ function filtered(){
     }
     if(s==="name") return a.name.localeCompare(b.name);
     if(s==="date"){
+      var ea=a.kind==="enforcement", eb=b.kind==="enforcement";
+      if(ea!==eb) return ea?1:-1;
       if(a.lastInspected!==b.lastInspected) return a.lastInspected<b.lastInspected?1:-1;
       return a.name.localeCompare(b.name);
     }
@@ -129,6 +132,22 @@ function filtered(){
 }
 
 // ------------------------------------------------------------------- render
+// A record older than a year is labelled Historic and shows its full date, so
+// a 2024 inspection is never mistaken for a current one.
+var STALE_AFTER_DAYS = 365;
+function isStale(iso){
+  if(!iso) return false;
+  var d=new Date(iso+"T00:00:00");
+  return (Date.now()-d.getTime()) > STALE_AFTER_DAYS*86400000;
+}
+
+function markNode(v){
+  var m=el("div","mark");
+  m.appendChild(el("b",null,String(v.violations||0)));
+  m.appendChild(el("s",null,v.violations===1?"issue":"issues"));
+  return m;
+}
+
 function ringNode(score,grade){
   var g=GRADES[grade]||GRADES.unrated;
   var r=el("div","ring"+(score==null?" none":""));
@@ -145,17 +164,26 @@ function card(v,i){
   row.tabIndex=0; row.setAttribute("role","button");
   row.setAttribute("aria-label",v.name+", score "+(v.score==null?"not recorded":v.score));
 
-  if(state.sort==="score-desc"&&!state.q&&!state.grade&&!state.area&&!state.favOnly){
+  var enf = v.kind==="enforcement";
+  if(enf) row.classList.add("enf");
+
+  // Only scored venues are ranked; enforcement records carry no position.
+  if(!enf&&state.sort==="score-desc"&&!state.q&&!state.grade&&!state.area&&!state.favOnly){
     row.appendChild(el("div","rank","#"+(i+1)));
   }
-  row.appendChild(ringNode(v.score,v.grade));
+  row.appendChild(enf ? markNode(v) : ringNode(v.score,v.grade));
 
   var main=el("div","cmain");
   var name=el("div","cname");
   name.appendChild(el("span",null,v.name));
-  var g=GRADES[v.grade]||GRADES.unrated;
-  name.appendChild(el("span","tag "+g.css,g.short));
-  if(v.history[0].notice) name.appendChild(el("span","tag notice","Notice issued"));
+  if(enf){
+    name.appendChild(el("span","tag enf","Violations recorded"));
+    if(isStale(v.lastInspected)) name.appendChild(el("span","tag stale","Historic"));
+  } else {
+    var g=GRADES[v.grade]||GRADES.unrated;
+    name.appendChild(el("span","tag "+g.css,g.short));
+    if(v.history[0].notice) name.appendChild(el("span","tag notice","Notice issued"));
+  }
   main.appendChild(name);
 
   var meta=el("div","cmeta");
@@ -167,7 +195,9 @@ function card(v,i){
   };
   seg(v.location||v.area);
   if(v._d!=null) seg(fmtKm(v._d),"dist");
-  seg("Inspected "+ago(v.lastInspected));
+  seg(isStale(v.lastInspected)
+        ? "Inspected "+fmtDate(v.lastInspected)     // exact date once it is old
+        : "Inspected "+ago(v.lastInspected));
   main.appendChild(meta);
   row.appendChild(main);
 
@@ -220,6 +250,7 @@ function render(){
 
   var active = state.q||state.grade||state.area||state.favOnly;
   $("#count").textContent = rows.length+(rows.length===1?" place":" places")+
+    (state.grade==="__enf"?" with violations recorded":"")+
     (state.area?" in "+state.area:"")+
     (state.favOnly?" saved":"");
   $("#reset").hidden = !active;
@@ -243,9 +274,20 @@ function openSheet(v){
   $("#sheetSub").textContent=sub.join(" · ");
 
   var latest=v.history[0];
+  var enf=v.kind==="enforcement";
   var h='';
 
-  h+='<div class="scorebox" style="--c:'+g.color+'">'+
+  if(enf){
+    h+='<div class="enfnote"><b>Enforcement record — no hygiene score.</b> '+
+       'Inspectors recorded violations here; this is not a scored audit and is '+
+       'not ranked against places that have one.</div>';
+    if(isStale(latest.date)){
+      h+='<div class="note"><b>This record is from '+fmtDate(latest.date)+'.</b> '+
+         'It describes conditions on that day and may not reflect the place today.</div>';
+    }
+  }
+
+  if(!enf) h+='<div class="scorebox" style="--c:'+g.color+'">'+
        '<div><div class="big">'+(v.score==null?'—':v.score+'<span>/100</span>')+'</div></div>'+
        '<div style="flex:1"><div class="meta"><b>'+g.label+'</b>'+(g.range?' · '+g.range+' band':'')+'<br>'+
        'Inspected '+fmtDate(latest.date)+
@@ -253,7 +295,7 @@ function openSheet(v){
        (v.score==null?'':'<div class="bar"><i style="width:'+v.score+'%"></i></div>')+
        '</div></div>';
 
-  if(latest.notice||/notice/i.test(latest.action||"")){
+  if(!enf && latest.notice||/notice/i.test(latest.action||"")){
     h+='<div class="note"><b>An improvement notice was issued</b> at this inspection.'+
        (latest.bad&&latest.bad.length?'':' The published report did not itemise what triggered it — open the original report below.')+
        '</div>';
@@ -267,7 +309,7 @@ function openSheet(v){
     h+='</ul>';
   }
   if(latest.bad&&latest.bad.length){
-    h+='<h3 class="sec">Problems recorded</h3><ul class="pts bad">';
+    h+='<h3 class="sec">'+(enf?"Violations recorded":"Problems recorded")+'</h3><ul class="pts bad">';
     latest.bad.forEach(function(t){
       h+='<li><svg viewBox="0 0 24 24" stroke="currentColor"><path d="M12 8v5M12 16.5v.01M10.3 3.9L2.6 17.2A2 2 0 004.3 20h15.4a2 2 0 001.7-2.8L13.7 3.9a2 2 0 00-3.4 0z"/></svg><span>'+esc(t)+'</span></li>';
     });
@@ -374,11 +416,13 @@ function boot(d){
   DATA=d; VENUES=d.venues.map(function(v){ v._d=null; return v; });
 
   var s=d.stats;
+  // The average and grade counts describe the SCORED set only - enforcement
+  // records have no score and must not be averaged into it.
   $("#stats").innerHTML=
-    '<div class="stat"><div class="n">'+s.venues+'</div><div class="l">places</div></div>'+
+    '<div class="stat"><div class="n">'+s.scoredVenues+'</div><div class="l">scored</div></div>'+
     '<div class="stat"><div class="n">'+s.avgScore+'</div><div class="l">avg score</div></div>'+
-    '<div class="stat exc"><div class="n">'+s.excellent+'</div><div class="l">excellent</div></div>'+
-    '<div class="stat poor"><div class="n">'+s.poor+'</div><div class="l">need work</div></div>';
+    '<div class="stat poor"><div class="n">'+s.enforcementVenues+'</div><div class="l">with violations</div></div>'+
+    '<div class="stat"><div class="n">'+s.areas+'</div><div class="l">areas</div></div>';
 
   var counts={excellent:s.excellent,good:s.good,average:s.average,poor:s.poor};
   var chips=$("#grades");
@@ -394,6 +438,7 @@ function boot(d){
   mk("good","Good "+counts.good,"var(--good)");
   mk("average","Average "+counts.average,"var(--avg)");
   mk("poor","Needs work "+counts.poor,"var(--poor)");
+  mk("__enf","Violations "+s.enforcementVenues,"var(--poor)");
 
   var sel=$("#area");
   d.areas.forEach(function(a){
@@ -412,6 +457,11 @@ function boot(d){
     line.textContent = s.venues+" places with a published inspection — not every restaurant in Hyderabad.";
 
     var html = "";
+    html += "<p>Two kinds of record appear here. <b>"+s.scoredVenues+"</b> places have a "+
+            "scored hygiene audit, with marks out of a checklist — those are the ones ranked. "+
+            "<b>"+s.enforcementVenues+"</b> have an <b>enforcement record</b> instead: inspectors "+
+            "listed violations but published no score, so they are never ranked against a scored place.</p>";
+
     if(top){
       html += "<p><b>"+top.count+" of "+s.inspections+"</b> inspections here were published by "+
               esc(top.handle)+". Coverage follows whoever publishes, so "+
@@ -431,7 +481,8 @@ function boot(d){
 
     if(s.earliest && s.latest){
       html += "<p>The record runs from "+fmtDate(s.earliest)+" to "+fmtDate(s.latest)+
-              ", and grows whenever the authorities publish a new inspection.</p>";
+              ". Older entries are marked <b>Historic</b> — they describe one day, "+
+              "sometimes years ago, and a place may have changed completely since.</p>";
     }
     html += "<p><b>A place missing from this list has not been inspected in public.</b> "+
             "That is not a mark against it, and not a clean bill of health either — "+

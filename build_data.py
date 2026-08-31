@@ -130,9 +130,12 @@ def clean_name(raw: str) -> str:
     n = squash(raw)
     n = OPERATOR_PAREN.sub(" ", n)
     n = re.sub(r"\bM/s\.?\s*", "", n, flags=re.I)
-    n = LEGAL_SUFFIX.sub("", n)
-    n = squash(n)
-    return n
+    stripped = squash(LEGAL_SUFFIX.sub("", n))
+    # "S.R. Enterprises" -> "S.R" is worse than leaving it alone. Only drop the
+    # legal suffix when a usable name survives it.
+    if len(re.sub(r"[^A-Za-z0-9]", "", stripped)) >= 4:
+        n = stripped
+    return squash(n)
 
 
 def canonical(name: str) -> str:
@@ -245,6 +248,11 @@ def resolve_area(loc: str, gaz: dict):
 # ------------------------------------------------------------------ scoring
 
 
+def _neg_date(d):
+    """Sort key that puts the most recent date first among unscored records."""
+    return "".join(chr(ord("9") - int(c)) if c.isdigit() else c for c in (d or ""))
+
+
 def grade(pct):
     if pct is None:
         return "unrated"
@@ -330,6 +338,9 @@ def main():
 
         inspections.append(
             {
+                # A scored FoSCoS audit (CMC) or an unscored enforcement record
+                # (TG SAFE / CFS). The two are never ranked against each other.
+                "kind": "inspection" if pct is not None else "enforcement",
                 "name": name,
                 "brand": canonical(name),
                 "location": display_loc,
@@ -393,6 +404,9 @@ def main():
         ins = sorted(v["inspections"], key=lambda x: x["date"] or "", reverse=True)
         latest = ins[0]
         scored = [i for i in ins if i["pct"] is not None]
+        latest_scored = scored[0] if scored else None
+        kind = "inspection" if scored else "enforcement"
+        violations = sum(len(i["bad"]) for i in ins)
         slug = re.sub(r"[^a-z0-9]+", "-", f"{v['name']} {v['area']}".lower()).strip("-")
         geo = next(({"lat": i["lat"], "lng": i["lng"]} for i in ins if i["lat"] is not None), None)
         out.append(
@@ -404,14 +418,18 @@ def main():
                 "area": v["area"] or "Unspecified",
                 "lat": geo["lat"] if geo else None,
                 "lng": geo["lng"] if geo else None,
-                "score": latest["pct"] if latest["pct"] is not None else (scored[0]["pct"] if scored else None),
-                "grade": grade(latest["pct"] if latest["pct"] is not None else (scored[0]["pct"] if scored else None)),
+                "kind": kind,
+                "score": latest_scored["pct"] if latest_scored else None,
+                "grade": grade(latest_scored["pct"]) if latest_scored else "unrated",
+                "violations": violations,
+                "lastScored": latest_scored["date"] if latest_scored else "",
                 "lastInspected": latest["date"],
                 "visits": len(ins),
                 "notice": any(i["notice"] for i in ins),
                 "photo": next((i["photo"] for i in ins if i["photo"]), ""),
                 "history": [
                     {
+                        "kind": i["kind"],
                         "date": i["date"],
                         "pct": i["pct"],
                         "obtained": i["obtained"],
@@ -430,9 +448,17 @@ def main():
             }
         )
 
-    out.sort(key=lambda v: (v["score"] is None, -(v["score"] or 0), v["name"]))
+    # Scored venues form the ranking. Enforcement-only records are not ranked
+    # against them - they fall below, newest first.
+    out.sort(key=lambda v: (
+        v["score"] is None,
+        -(v["score"] or 0) if v["score"] is not None else 0,
+        "" if v["score"] is not None else _neg_date(v["lastInspected"]),
+        v["name"],
+    ))
 
     scored = [v for v in out if v["score"] is not None]
+    enforcement = [v for v in out if v["score"] is None]
     area_counts, area_geo = {}, {}
     for v in out:
         area_counts[v["area"]] = area_counts.get(v["area"], 0) + 1
@@ -443,6 +469,8 @@ def main():
         "generated": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
         "stats": {
             "venues": len(out),
+            "scoredVenues": len(scored),
+            "enforcementVenues": len(enforcement),
             "inspections": len(inspections),
             "scored": len(scored),
             "avgScore": round(sum(v["score"] for v in scored) / len(scored)) if scored else 0,

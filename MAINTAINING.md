@@ -210,6 +210,45 @@ the coverage note in `docs/app.js` — it is marked with a comment.
 
 ---
 
+## Two kinds of record
+
+The site carries two things that must never be confused:
+
+| | Source | Has a score? | Ranked? |
+|---|---|---|---|
+| **Scored inspection** | `@CMC_Offcl` | Yes, FoSCoS marks | Yes |
+| **Enforcement record** | `@c_tgsafe` (ex-CFS) | No | **No** |
+
+Enforcement records come from a different regulator with a different method:
+inspectors list violations and initiate action, but publish no marks. They are
+shown with a square warning mark and a "Violations recorded" tag instead of a
+score ring, are excluded from the ranking, and are excluded from the average and
+the grade counts. `build_data.py` sets `kind` on every venue and every history
+entry; `stats.scoredVenues` and `stats.enforcementVenues` keep the two apart.
+
+`tgsafe_parser.py` handles the CFS/TG SAFE format — see its docstring for the
+Unicode-bold header trick. Two behaviours worth knowing:
+
+- **Statewide filter.** That account covers all of Telangana. `is_outside_hyderabad()`
+  drops district inspections (Warangal, Khammam, Medak…) at build time, because
+  this is a Hyderabad site. Patancheru, Ameenpur and RC Puram are kept — they are
+  Sangareddy district on paper but sit inside the Hyderabad ring road.
+- **Positive observations are separated out.** These posts bullet everything
+  together, so "Pest control records were available" sits beside "FSSAI licence
+  not displayed". Only bullets matching `NEGATIVE_CUE` are published as
+  violations; the rest become good practices. Publishing a positive finding
+  under "Violations" would misrepresent a named business, so if you touch that
+  regex, re-check the samples in the docstring first.
+
+## Record age
+
+Enforcement records run back to 2024, while the scored inspections are recent.
+Anything older than 18 months is tagged **Historic** on the card and carries a
+dated warning in the detail view. Keep that: a 2024 violation shown without its
+age reads as a current claim about a business that may have fixed everything.
+
+---
+
 ## Security
 
 The site is static — no server, no database, no logins, no cookies, no secrets
