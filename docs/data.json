@@ -1,19 +1,19 @@
 {
- "generated": "2026-08-31T00:02:57Z",
+ "generated": "2026-08-31T00:33:45Z",
  "stats": {
-  "venues": 316,
-  "scoredVenues": 83,
+  "venues": 317,
+  "scoredVenues": 84,
   "enforcementVenues": 233,
-  "inspections": 323,
-  "scored": 83,
+  "inspections": 324,
+  "scored": 84,
   "avgScore": 74,
   "excellent": 24,
   "good": 12,
   "average": 13,
-  "poor": 34,
+  "poor": 35,
   "areas": 100,
   "latest": "2026-08-13",
-  "skippedPosts": 10,
+  "skippedPosts": 12,
   "duplicatePosts": 8,
   "ungeocoded": [
    "Bagh Ameer",
@@ -29,7 +29,7 @@
   "sources": [
    {
     "handle": "@c_tgsafe",
-    "count": 222
+    "count": 223
    },
    {
     "handle": "@CMC_Offcl",
@@ -74,16 +74,16 @@
    "lng": 78.3996
   },
   {
+   "name": "Ameerpet",
+   "count": 9,
+   "lat": 17.4374,
+   "lng": 78.4487
+  },
+  {
    "name": "Kondapur",
    "count": 9,
    "lat": 17.4615,
    "lng": 78.3639
-  },
-  {
-   "name": "Ameerpet",
-   "count": 8,
-   "lat": 17.4374,
-   "lng": 78.4487
   },
   {
    "name": "Jubilee Hills",
@@ -905,7 +905,7 @@
       "Raw materials were properly labelled and stored with appropriate wrapping"
      ],
      "bad": [],
-     "action": "Instructions issued for immediate cleaning and housekeeping improvements | Directions given to maintain regular cleaning schedules and uphold food safety standards | 50%–90% – Improvement Notice | Below 50% – Show Cause Notice",
+     "action": "Instructions issued for immediate cleaning and housekeeping improvements | Directions given to maintain regular cleaning schedules and uphold food safety standards",
      "severity": "None",
      "notice": true,
      "source": "@CMC_Offcl",
@@ -927,7 +927,7 @@
    "kind": "inspection",
    "score": 94,
    "grade": "excellent",
-   "violations": 2,
+   "violations": 9,
    "lastScored": "2026-07-30",
    "lastInspected": "2026-07-30",
    "visits": 2,
@@ -961,20 +961,28 @@
      "location": "Madinaguda"
     },
     {
-     "kind": "enforcement",
+     "kind": "inspection",
      "date": "2026-06-17",
-     "pct": null,
-     "obtained": null,
-     "total": null,
+     "pct": 83,
+     "obtained": 87,
+     "total": 106,
      "good": [
       "Food handlers were maintaining personal hygiene with hairnets, hand gloves, and aprons",
       "Regular pest control measures were being carried out and records maintained",
       "FSSAI License displayed at a prominent location",
       "Hot water facility available for washing and sanitizing utensils"
      ],
-     "bad": [],
-     "action": "Mould-affected vegetables and unsuitable cooking oil were discarded on the spot | Instructions issued to implement proper food labelling and storage practices | Directions given to maintain all mandatory records and strengthen hygiene protocols | Improvement Notice to be issued for the observed violations | 50%–90% – Improvement Notice | Below 50% – Show Cause Notice",
-     "severity": "None",
+     "bad": [
+      "Medical fitness records of food handlers were not available",
+      "Water testing reports for water used in cooking and ice preparation were not available",
+      "Desserts, non-vegetarian food items, mushrooms, and chopped onions were stored without proper labels",
+      "Iron knives were in use in food preparation areas",
+      "Mould growth observed on cauliflower and potatoes",
+      "Cooking oil used for French fries was found unsuitable for further use",
+      "Dustbins were kept open near operational areas"
+     ],
+     "action": "Mould-affected vegetables and unsuitable cooking oil were discarded on the spot | Instructions issued to implement proper food labelling and storage practices | Directions given to maintain all mandatory records and strengthen hygiene protocols | Improvement Notice to be issued for the observed violations",
+     "severity": "Non-compliance",
      "notice": true,
      "source": "@CMC_Offcl",
      "url": "https://x.com/CMC_Offcl/status/2067245003269927398",
@@ -2026,7 +2034,7 @@
       "Water testing records for water used in beverage preparation were not available",
       "Packaging testing records were not produced during inspection"
      ],
-     "action": "Improvement Notice to be issued | Instructions given to maintain all required records and supporting documents | Directions issued to reduce shelf life of prepared ingredients as per food safety requirements | Food handlers instructed to follow proper personal hygiene practices | 50%–90% – Improvement Notice",
+     "action": "Improvement Notice to be issued | Instructions given to maintain all required records and supporting documents | Directions issued to reduce shelf life of prepared ingredients as per food safety requirements | Food handlers instructed to follow proper personal hygiene practices",
      "severity": "Observation",
      "notice": true,
      "source": "@CMC_Offcl",
@@ -2719,7 +2727,7 @@
       "No pest activity observed and pest control records were available"
      ],
      "bad": [],
-     "action": "",
+     "action": "Used cooking oil was discarded during the inspection | The rusted freezer was removed from the kitchen | An Improvement Notice is being issued to rectify the identified deficiencies",
      "severity": "None",
      "notice": true,
      "source": "@CMC_Offcl",
@@ -2787,7 +2795,7 @@
    "kind": "inspection",
    "score": 71,
    "grade": "average",
-   "violations": 15,
+   "violations": 17,
    "lastScored": "2026-07-01",
    "lastInspected": "2026-07-01",
    "visits": 3,
@@ -2830,14 +2838,13 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Observed multiple hygiene issues in the kitchen area",
-      "Grinding area found to be untidy and with high chances of contamination"
-     ],
+     "good": [],
      "bad": [
       "Expired white gravy (2kg), chopp masala (2kg) found",
       "No FOSTAC supervisor among the staff",
       "Dosa pan found to be unhygienic and rusted",
+      "Observed multiple hygiene issues in the kitchen area",
+      "Grinding area found to be untidy and with high chances of contamination",
       "Open drainage, garbage storage area, wash area found to be in unhygienic condition"
      ],
      "action": "",
@@ -2900,7 +2907,7 @@
       "Colour-coded chopping boards used for veg and non-veg food preparation"
      ],
      "bad": [],
-     "action": "Improvement Notice to be issued | Directions issued to immediately rectify food safety and hygiene deficiencies | 50%–90% – Improvement Notice",
+     "action": "Improvement Notice to be issued | Directions issued to immediately rectify food safety and hygiene deficiencies",
      "severity": "None",
      "notice": true,
      "source": "@CMC_Offcl",
@@ -3154,7 +3161,7 @@
      "total": 100,
      "good": [],
      "bad": [],
-     "action": "Expired and improperly stored food items discarded on the spot | Directions issued for deep cleaning and pest control | Improvement Notice being issued for immediate compliance | 50%–90% – Improvement Notice | Below 50% – Show Cause Notice",
+     "action": "Expired and improperly stored food items discarded on the spot | Directions issued for deep cleaning and pest control | Improvement Notice being issued for immediate compliance",
      "severity": "None",
      "notice": true,
      "source": "@CMC_Offcl",
@@ -3565,7 +3572,7 @@
    "kind": "inspection",
    "score": 63,
    "grade": "poor",
-   "violations": 8,
+   "violations": 10,
    "lastScored": "2026-06-25",
    "lastInspected": "2026-06-25",
    "visits": 2,
@@ -3605,13 +3612,13 @@
      "obtained": null,
      "total": null,
      "good": [
-      "Button Mushrooms (18kg) were found with future date of packing i.e., 30.10.2024 at the said premises",
       "FBO found to be operating with State License and the license is displayed at the premises",
-      "Houseflies were observed inside the premises",
       "Medical Fitness certificates for food handlers and Pest control records for the premises were available with the FBO"
      ],
      "bad": [
+      "Button Mushrooms (18kg) were found with future date of packing i.e., 30.10.2024 at the said premises",
       "Premises found open directly to the outside environment without proper insect proof screen",
+      "Houseflies were observed inside the premises",
       "Few of the food handlers were found without haircaps and aprons"
      ],
      "action": "",
@@ -4044,6 +4051,55 @@
    ]
   },
   {
+   "id": "subway-kondapur",
+   "name": "Subway",
+   "aka": [],
+   "location": "Kondapur",
+   "area": "Kondapur",
+   "lat": 17.4615,
+   "lng": 78.3639,
+   "kind": "inspection",
+   "score": 60,
+   "grade": "poor",
+   "violations": 8,
+   "lastScored": "2026-06-16",
+   "lastInspected": "2026-06-16",
+   "visits": 1,
+   "notice": true,
+   "photo": "https://pbs.twimg.com/amplify_video_thumb/2066884313329876992/img/clzry896WJnVuKli.jpg",
+   "history": [
+    {
+     "kind": "inspection",
+     "date": "2026-06-16",
+     "pct": 60,
+     "obtained": 58,
+     "total": 96,
+     "good": [
+      "Food handlers were equipped with gloves and aprons and maintaining personal hygiene",
+      "Walls, flooring, ceilings, and overall infrastructure were found in satisfactory condition",
+      "No usage of synthetic food colours observed",
+      "Separate handling and storage of vegetarian and non-vegetarian food items"
+     ],
+     "bad": [
+      "Incoming raw vegetables were not being properly checked at the time of procurement",
+      "Rotten lettuce found stored in the chiller",
+      "Cut vegetables including onions, tomatoes, and lettuce were found unlabelled, with some exceeding the declared use-by date",
+      "Food waste observed on the floor in the food preparation area",
+      "Presence of flies noticed in the food preparation section",
+      "Sink and washing areas found inadequately maintained",
+      "Medical fitness certificates of food handlers, food testing reports, and water analysis reports were not available during inspection",
+      "Food handlers were found to have inadequate awareness of safe food handling practices"
+     ],
+     "action": "Rotten and unlabelled vegetables were discarded on the spot | Improvement Notice to be issued for the observed violations and necessary corrective measures",
+     "severity": "Non-compliance",
+     "notice": true,
+     "source": "@CMC_Offcl",
+     "url": "https://x.com/CMC_Offcl/status/2066884676741112192",
+     "location": "Kondapur"
+    }
+   ]
+  },
+  {
    "id": "santosh-dhaba-100-pure-veg-exclusive-miyapur",
    "name": "Santosh Dhaba 100% Pure Veg Exclusive",
    "aka": [],
@@ -4430,7 +4486,7 @@
       "Valid FSSAI License was available and displayed"
      ],
      "bad": [],
-     "action": "Show Cause Notice issued for serious food safety and hygiene violations | FBO instructed to suspend kitchen operations until thorough cleaning and corrective measures are completed | Immediate compliance with food safety norms directed | Below 50% – Show Cause Notice",
+     "action": "Show Cause Notice issued for serious food safety and hygiene violations | FBO instructed to suspend kitchen operations until thorough cleaning and corrective measures are completed | Immediate compliance with food safety norms directed",
      "severity": "None",
      "notice": false,
      "source": "@CMC_Offcl",
@@ -4468,7 +4524,7 @@
       "Medical fitness records available for some food handlers"
      ],
      "bad": [],
-     "action": "Suspension of FSSAI License recommended | Immediate corrective measures directed to address critical food safety and hygiene violations | Below 50% – Show Cause Notice / Strict Regulatory Action",
+     "action": "Suspension of FSSAI License recommended | Immediate corrective measures directed to address critical food safety and hygiene violations",
      "severity": "None",
      "notice": false,
      "source": "@CMC_Offcl",
@@ -4609,46 +4665,6 @@
    ]
   },
   {
-   "id": "subway-kondapur",
-   "name": "Subway",
-   "aka": [],
-   "location": "Kondapur",
-   "area": "Kondapur",
-   "lat": 17.4615,
-   "lng": 78.3639,
-   "kind": "enforcement",
-   "score": null,
-   "grade": "unrated",
-   "violations": 0,
-   "lastScored": "",
-   "lastInspected": "2026-06-16",
-   "visits": 1,
-   "notice": true,
-   "photo": "https://pbs.twimg.com/amplify_video_thumb/2066884313329876992/img/clzry896WJnVuKli.jpg",
-   "history": [
-    {
-     "kind": "enforcement",
-     "date": "2026-06-16",
-     "pct": null,
-     "obtained": null,
-     "total": null,
-     "good": [
-      "Food handlers were equipped with gloves and aprons and maintaining personal hygiene",
-      "Walls, flooring, ceilings, and overall infrastructure were found in satisfactory condition",
-      "No usage of synthetic food colours observed",
-      "Separate handling and storage of vegetarian and non-vegetarian food items"
-     ],
-     "bad": [],
-     "action": "50% to 90% – Improvement Notice | Below 50% – Show Cause Notice",
-     "severity": "None",
-     "notice": true,
-     "source": "@CMC_Offcl",
-     "url": "https://x.com/CMC_Offcl/status/2066884676741112192",
-     "location": "Kondapur"
-    }
-   ]
-  },
-  {
    "id": "s-r-enterprises-malkajgiri",
    "name": "S.R. Enterprises",
    "aka": [],
@@ -4659,7 +4675,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 8,
+   "violations": 9,
    "lastScored": "",
    "lastInspected": "2025-04-22",
    "visits": 1,
@@ -4672,14 +4688,13 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Lizard found in the filtration room near the tank"
-     ],
+     "good": [],
      "bad": [
       "Pest control records not available and Medical fitness certificates available but without date",
       "Internal quality control laboratory is not in working condition. External laboratory records also not available",
       "Floor found slippery and water stagnation is observed at manufacturing area",
       "Doors are not closely fitted with insect proof screens",
+      "Lizard found in the filtration room near the tank",
       "Gap between walls and stocks not maintained",
       "⁠Food handlers found without wearing headcaps, gloves and aprons",
       "Sealing of caps of bottles is checked without gloves in unhygienic condition",
@@ -4751,7 +4766,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 5,
+   "violations": 6,
    "lastScored": "",
    "lastInspected": "2025-04-16",
    "visits": 1,
@@ -4764,15 +4779,14 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Dustbins were found open"
-     ],
+     "good": [],
      "bad": [
       "FBO running the business without valid license",
       "There's no proper drainage system in the preparation area",
       "Refrigerator was highly rusty and in unhygienic condition",
       "Iron knives were found which are rusty",
-      "Water analysis reports, pest control reports and medical certificates for food handlers were not available"
+      "Water analysis reports, pest control reports and medical certificates for food handlers were not available",
+      "Dustbins were found open"
      ],
      "action": "Action initiated under the FSS Act, 2006",
      "severity": "Non-compliance",
@@ -4794,7 +4808,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 6,
+   "violations": 9,
    "lastScored": "",
    "lastInspected": "2025-04-16",
    "visits": 1,
@@ -4807,18 +4821,17 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Rotten fruits and vegetables were stored in the refrigerator for human consumption",
-      "Food handlers were chewing tobacco during the preparation of food",
-      "Dustbins were found open"
-     ],
+     "good": [],
      "bad": [
       "FSSAI License not displayed at a prominent place",
       "There are no pest control records, medical fitness certificates and water analysis report",
       "Walls of the refrigerator are rusty and extremely unhygienic",
+      "Rotten fruits and vegetables were stored in the refrigerator for human consumption",
       "Few food articles were found unlabelled",
+      "Food handlers were chewing tobacco during the preparation of food",
       "Exhaust fan is dirty with oil droplets dripping from it",
-      "Food handlers were not wearing aprons and gloves"
+      "Food handlers were not wearing aprons and gloves",
+      "Dustbins were found open"
      ],
      "action": "",
      "severity": "Non-compliance",
@@ -4840,7 +4853,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 2,
+   "violations": 5,
    "lastScored": "",
    "lastInspected": "2025-04-16",
    "visits": 1,
@@ -4854,14 +4867,14 @@
      "obtained": null,
      "total": null,
      "good": [
-      "Insects and cockroaches were found in the refrigerator",
-      "Rotten fruits were found in the refrigerator",
-      "Dustbins were found to be open",
       "License is displayed in a prominent place"
      ],
      "bad": [
+      "Insects and cockroaches were found in the refrigerator",
+      "Rotten fruits were found in the refrigerator",
       "There are no pest control records, medical records and water analysis reports",
-      "Preparation area was in unhygienic condition"
+      "Preparation area was in unhygienic condition",
+      "Dustbins were found to be open"
      ],
      "action": "",
      "severity": "Non-compliance",
@@ -4883,7 +4896,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 5,
+   "violations": 7,
    "lastScored": "",
    "lastInspected": "2025-04-16",
    "visits": 1,
@@ -4896,16 +4909,15 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Several houseflies were found in the juice preparation area",
-      "Dustbins were found open"
-     ],
+     "good": [],
      "bad": [
       "FBO running the business without license",
       "Refrigerator is in highly unhygienic condition",
+      "Several houseflies were found in the juice preparation area",
       "Spoiled fruit salad was stored in the refrigerator for human consumption",
       "Unlabelled food articles were found",
-      "The premises was found to be in unhygienic condition"
+      "The premises was found to be in unhygienic condition",
+      "Dustbins were found open"
      ],
      "action": "Action initiated under the FSS Act, 2006",
      "severity": "Non-compliance",
@@ -4927,7 +4939,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 5,
+   "violations": 7,
    "lastScored": "",
    "lastInspected": "2025-04-16",
    "visits": 1,
@@ -4940,16 +4952,15 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Several cockroaches were found in the refrigerator",
-      "Dustbins were found open"
-     ],
+     "good": [],
      "bad": [
       "FBO running the business without license",
       "There are no pest control records, medical records and water analysis reports",
       "Expired fruit syrups were found such as pineapple crush, blackcurrant crush, orange crush, blue curraco, banana crush etc",
       "Soda bottles were unlabelled - without any manufacturing and expiry date",
-      "Food handler was not wearing any head cap or apron"
+      "Several cockroaches were found in the refrigerator",
+      "Food handler was not wearing any head cap or apron",
+      "Dustbins were found open"
      ],
      "action": "Action initiated under the FSS Act, 2006",
      "severity": "Non-compliance",
@@ -4971,7 +4982,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 1,
+   "violations": 3,
    "lastScored": "",
    "lastInspected": "2025-04-03",
    "visits": 1,
@@ -4986,12 +4997,12 @@
      "total": null,
      "good": [
       "FSSAI license is displayed at the prominent place",
-      "Pest Control records, Water and Food Analysis reports, FoSTaC training certificates and medical records of food handlers are available",
-      "Calibration of equipment is being done periodically",
-      "Dustbins were found to be open"
+      "Pest Control records, Water and Food Analysis reports, FoSTaC training certificates and medical records of food handlers are available"
      ],
      "bad": [
-      "TPM levels are being monitored for reused oil"
+      "Calibration of equipment is being done periodically",
+      "TPM levels are being monitored for reused oil",
+      "Dustbins were found to be open"
      ],
      "action": "",
      "severity": "Non-compliance",
@@ -5055,7 +5066,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 6,
+   "violations": 9,
    "lastScored": "",
    "lastInspected": "2025-04-02",
    "visits": 1,
@@ -5068,16 +5079,15 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Blood from packed raw meat was found to be dripping in the chiller room",
-      "Food articles kept in plastic trays stored on floor in cold storage",
-      "Food waste was found to be accumulated at several places in the kitchen drains"
-     ],
+     "good": [],
      "bad": [
       "Flooring was found to be patchy at some places in the kitchen and grinding area",
       "Flooring was found to be wet with littering of food waste in the grinding area",
       "Paneer packets (16 kg) for which packing dates was not visible were made to be discarded",
       "No proper gap is left between the wall and storage racks to ensure proper cleaning",
+      "Blood from packed raw meat was found to be dripping in the chiller room",
+      "Food articles kept in plastic trays stored on floor in cold storage",
+      "Food waste was found to be accumulated at several places in the kitchen drains",
       "Few food articles were kept uncovered in the kitchen below knee height",
       "Housefly infestation was observed at the raw material reception area"
      ],
@@ -5101,7 +5111,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 5,
+   "violations": 8,
    "lastScored": "",
    "lastInspected": "2025-03-27",
    "visits": 1,
@@ -5114,15 +5124,14 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "The license of the establishment is taken in incorrect jurisdiction",
-      "Tobacco stains observed on the walls of premises",
-      "Store room found in unhygenic condition"
-     ],
+     "good": [],
      "bad": [
+      "The license of the establishment is taken in incorrect jurisdiction",
       "The kitchen floor is found unhygienic and sticky. Foul smell noticed",
       "Food handlers found without hair nets, gloves and aprons",
       "Pest control records, Water analysis reports, Medical fitness certificates of food handlers and FoSTaC trained workers are not available",
+      "Tobacco stains observed on the walls of premises",
+      "Store room found in unhygenic condition",
       "Huge quantity of expired products (300kg) were identified in the premises",
       "Sweets at the establishment are not fit for human consumption because of excessive use of food colour and fungal infestation"
      ],
@@ -5146,7 +5155,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 8,
+   "violations": 9,
    "lastScored": "",
    "lastInspected": "2025-03-27",
    "visits": 1,
@@ -5159,9 +5168,7 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Rodents were observed during inspection"
-     ],
+     "good": [],
      "bad": [
       "FSSAI Registration not displayed prominently in the premises",
       "Food articles in the refrigerator were found uncovered",
@@ -5169,6 +5176,7 @@
       "Few fruits like peeled pomegranates were found in spoiled condition",
       "Dustbins were found to be uncovered",
       "Live cockroach infestation and house fly infestation was observed",
+      "Rodents were observed during inspection",
       "Employees were found without headgear, aprons etc",
       "Littering of food waste was observed on the floor and in the refrigerator"
      ],
@@ -5192,7 +5200,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 10,
+   "violations": 11,
    "lastScored": "",
    "lastInspected": "2025-03-27",
    "visits": 1,
@@ -5205,12 +5213,11 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Dustbins were found to be kept in open condition"
-     ],
+     "good": [],
      "bad": [
       "Food articles in the refrigerator were found to be uncovered and unlabelled",
       "Food waste was found to be littered on the floor",
+      "Dustbins were found to be kept in open condition",
       "Food handlers were not wearing gloves, aprons etc",
       "House fly infestation and live cockroach infestation was observed",
       "Some of the fruits like apples, black grapes , mangoes, peeled pomegranates were found to be spoilt and were discarded",
@@ -5240,7 +5247,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 5,
+   "violations": 6,
    "lastScored": "",
    "lastInspected": "2025-03-27",
    "visits": 1,
@@ -5253,13 +5260,12 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Dustbin was found in open condition"
-     ],
+     "good": [],
      "bad": [
       "FSSAI license was not available with the FBO",
       "Food articles in the refrigerator were found uncovered",
       "Some of the fruits like sapotas, oranges etc found to be in spoiled condition were discarded",
+      "Dustbin was found in open condition",
       "Housefly infestation was observed",
       "Flooring was found to be littered with food waste"
      ],
@@ -5283,7 +5289,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 5,
+   "violations": 8,
    "lastScored": "",
    "lastInspected": "2025-03-21",
    "visits": 1,
@@ -5296,16 +5302,15 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Dustbin found to be left open and near to the cooking area",
-      "Long stored meat was found to be completely rotten in the cold chamber",
-      "Oil was observed to be used repeatedly for cooking"
-     ],
+     "good": [],
      "bad": [
       "Unhygienic conditions observed in the cooking area and storage premises",
+      "Dustbin found to be left open and near to the cooking area",
       "Expired Mushrooms, insect-infested icecreams and poppyseeds were identified in the store room",
+      "Long stored meat was found to be completely rotten in the cold chamber",
       "Stocks of spoiled meat (96kg), infested Icecreams (worth Rs. 2500) and Mushrooms (10 pkts) were discarded",
       "No proper drainage system in the kitchen",
+      "Oil was observed to be used repeatedly for cooking",
       "Pest control and other records not available with the FBO"
      ],
      "action": "",
@@ -5328,7 +5333,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 7,
+   "violations": 9,
    "lastScored": "",
    "lastInspected": "2025-03-21",
    "visits": 1,
@@ -5341,14 +5346,13 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Chimneys found greasy with oil/grease dripping down",
-      "Synthetic food colours found being used"
-     ],
+     "good": [],
      "bad": [
       "Flooring found to be dirty with broken tiles and stagnation observed",
+      "Chimneys found greasy with oil/grease dripping down",
       "Drainage found to be clogged with food waste",
       "Large no. of houseflies found in vegetable cutting area",
+      "Synthetic food colours found being used",
       "Refrigerators found in unhygienic condition. Veg and non veg food stored together. Chicken/Mutton blood found seeping and frozen",
       "Food handlers found without headcaps, gloves, etc",
       "Meat found stored unlabelled in plastic covers in refrigerator",
@@ -5374,7 +5378,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 7,
+   "violations": 8,
    "lastScored": "",
    "lastInspected": "2025-03-21",
    "visits": 1,
@@ -5387,13 +5391,12 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Iron Knives were found to be used in the kitchen"
-     ],
+     "good": [],
      "bad": [
       "Food handlers are not FoSTaC trained",
       "Flooring was found to be patchy at some places. Ceiling of the kitchen was found to be dark and sooty",
       "Chimneys were found to be greasy, dusty and unclean. Exhaust are not fitted with meshses to prevent entry of insects",
+      "Iron Knives were found to be used in the kitchen",
       "Grilling pans were found to be dark, greasy and unclean",
       "Food articles in the refrigerator are covered but unlabelled",
       "Few vegetables like mint leaves were found in spoiled condition and discarded",
@@ -5512,7 +5515,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 6,
+   "violations": 8,
    "lastScored": "",
    "lastInspected": "2025-03-21",
    "visits": 1,
@@ -5525,15 +5528,14 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Exhaust is greasy and oil found to be dripping",
-      "Raw food ingredients found directly stored on the floor"
-     ],
+     "good": [],
      "bad": [
       "Kitchen found to be in unhygienic condition with unclean walls and broken flooring",
+      "Exhaust is greasy and oil found to be dripping",
       "Water stagnation observed due to clogged drains. Food waste thrown directly onto the drain and not being removed regularly",
       "Grinding area unhygienic with chutney spilled over walls",
       "Dustbins found without lids. Rats seen outside kitchen area. No rodent traps available",
+      "Raw food ingredients found directly stored on the floor",
       "Water analysis report, Medical fitness certificates for food handlers not available",
       "Plastic utensils being extensively used and found to be unclean and few are broken"
      ],
@@ -5557,7 +5559,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 8,
+   "violations": 10,
    "lastScored": "",
    "lastInspected": "2025-03-20",
    "visits": 1,
@@ -5570,15 +5572,14 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Presence of houseflies and cockroaches observed in the unit",
-      "Cobwebs were noticed at several places in the unit"
-     ],
+     "good": [],
      "bad": [
       "Walls at the entrance of the unit were found to be dirty with Pan Masala stains",
       "The unit has several openings to outside environment and not fitted with insect proof meshes",
       "Flooring was found to be patchy at several places. Drains were not fitted with mesh",
       "Walls of the unit were found to be flaky, unclean and not properly whitewashed",
+      "Presence of houseflies and cockroaches observed in the unit",
+      "Cobwebs were noticed at several places in the unit",
       "Racks used to store paneer in the cold room were found to be rusty",
       "Rodent infestation was observed in the unit and no rat pads were seen in the unit",
       "Records of temperature monitoring for the cold room are not available",
@@ -5650,7 +5651,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 8,
+   "violations": 10,
    "lastScored": "",
    "lastInspected": "2025-03-18",
    "visits": 1,
@@ -5663,15 +5664,14 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Employees were wearing hairnets but were found to be handling the food articles with bare hands",
-      "Few food articles like milk powder were found to be kept on ground instead of pallets"
-     ],
+     "good": [],
      "bad": [
       "Doors are not close fitted to prevent entry of pests",
       "The unit has several openings to outside environment and not fitted with insect proof meshes",
       "Flooring was found to be wet and patchy with stagnation of water and no proper drains",
+      "Employees were wearing hairnets but were found to be handling the food articles with bare hands",
       "Housefly infestation was observed",
+      "Few food articles like milk powder were found to be kept on ground instead of pallets",
       "Cold room is not maintained in clean condition",
       "FSSAI License not displayed prominently at the premises",
       "Pest Control records, Employee health records, Water and food analysis reports are not available",
@@ -5697,7 +5697,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 10,
+   "violations": 12,
    "lastScored": "",
    "lastInspected": "2025-03-10",
    "visits": 1,
@@ -5710,18 +5710,17 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Rat feces were observed in the vegetable cutting area",
-      "Housefly presence was observed at several places in the kitchen which may cause contamination"
-     ],
+     "good": [],
      "bad": [
       "Water analysis report does not include testing for microbial contaminants",
       "Multiple violations noticed pertaining to the license category availed by the FBO. Instructed to apply for modification as per the rules",
       "9 vehicles are being used for transportation of food but license not obtained with transport category",
       "Flooring was found to be patchy and stagnant water. Few wall tiles found to be broken",
       "Raw inlet water tank for R.O. plant was found to be unclean",
+      "Rat feces were observed in the vegetable cutting area",
       "Few vegetables like potatoes, tomatoes etc. were found in spoilt condition and hence discarded",
       "Rusty iron knives found being used for vegetable cutting",
+      "Housefly presence was observed at several places in the kitchen which may cause contamination",
       "Several food articles found to be stored on ground instead of pallets. Food and non-food articles were stored together",
       "Cobwebs were observed at several places in the storage which suggests lack of proper cleaning",
       "Doors are not close fitted to prevent entry of pests"
@@ -5748,7 +5747,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 10,
+   "violations": 12,
    "lastScored": "",
    "lastInspected": "2025-03-10",
    "visits": 1,
@@ -5761,18 +5760,17 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Rat feces were observed in the vegetable cutting area",
-      "Housefly presence was observed at several places in the kitchen which may cause contamination"
-     ],
+     "good": [],
      "bad": [
       "Water analysis report does not include testing for microbial contaminants",
       "Multiple violations noticed pertaining to the license category availed by the FBO. Instructed to apply for modification as per the rules",
       "9 vehicles are being used for transportation of food but license not obtained with transport category",
       "Flooring was found to be patchy and stagnant water. Few wall tiles found to be broken",
       "Raw inlet water tank for R.O. plant was found to be unclean",
+      "Rat feces were observed in the vegetable cutting area",
       "Few vegetables like potatoes, tomatoes etc. were found in spoilt condition and hence discarded",
       "Rusty iron knives found being used for vegetable cutting",
+      "Housefly presence was observed at several places in the kitchen which may cause contamination",
       "Several food articles found to be stored on ground instead of pallets. Food and non-food articles were stored together",
       "Cobwebs were observed at several places in the storage which suggests lack of proper cleaning",
       "Doors are not close fitted to prevent entry of pests"
@@ -5797,7 +5795,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 8,
+   "violations": 10,
    "lastScored": "",
    "lastInspected": "2025-03-06",
    "visits": 1,
@@ -5810,10 +5808,7 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Storage was found to be congested with food articles dumped on the ground",
-      "Toilet found to be opening directly into the kitchen which may cause contaminations"
-     ],
+     "good": [],
      "bad": [
       "Pest Control Records, Employee Health Records, Water Analysis Report and Fostac Certificates of supervisor not available",
       "Refrigerators were not maintained properly and were littered with food waste",
@@ -5821,8 +5816,10 @@
       "Grinding area and washing area were found to be unhygienic with clogged drains",
       "Food articles in the refrigerator were found to be uncovered and unlabelled",
       "Synthetic food colors were found and discarded on suspicion of use in prepared food articles",
+      "Storage was found to be congested with food articles dumped on the ground",
       "Food and non-food articles are stored together",
-      "Rodent infestation observed in the storage area"
+      "Rodent infestation observed in the storage area",
+      "Toilet found to be opening directly into the kitchen which may cause contaminations"
      ],
      "action": "",
      "severity": "Non-compliance",
@@ -5844,7 +5841,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 8,
+   "violations": 9,
    "lastScored": "",
    "lastInspected": "2025-03-06",
    "visits": 1,
@@ -5857,15 +5854,14 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Storage was found to be small and congested. Several food articles were found to be stored on ground instead of pallets"
-     ],
+     "good": [],
      "bad": [
       "Water Analysis Report and Fostac Certificates of supervisor not available",
       "Refrigerators were not maintained properly. Dustbins were found kept in open condition",
       "Food articles in the refrigerator were found to be uncovered and unlabelled",
       "Semi-prepared and raw materials, food and non-food items were stored together. Few vegetables (tomatoes) found to be spoiled",
       "Rusty iron knives were found being used for cutting of vegetables",
+      "Storage was found to be small and congested. Several food articles were found to be stored on ground instead of pallets",
       "Rice flour stored in a steel container was found to be infested with insects and hence discarded",
       "Temperature records for the cold room were not maintained",
       "Some of the food handlers were found without hairnets, gloves etc"
@@ -5890,7 +5886,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 11,
+   "violations": 12,
    "lastScored": "",
    "lastInspected": "2025-03-05",
    "visits": 1,
@@ -5903,13 +5899,12 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Walls were found to be oily and tiles were found to be broken at some places"
-     ],
+     "good": [],
      "bad": [
       "Refrigerators were maintained in unhygienic conditions",
       "Drains in the kitchen floor were not equipped with traps to capture contaminants",
       "Ceiling of the kitchen were found to be dark and sooty. Flooring was found to be patchy and littered with food waste",
+      "Walls were found to be oily and tiles were found to be broken at some places",
       "Exhausts and chimneys were found to be greasy and unclean",
       "Heavy cockroach infestation observed with cockroaches present everywhere in the kitchen",
       "Presence of rat feces in the storage indicates rodent infestation",
@@ -5939,7 +5934,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 6,
+   "violations": 9,
    "lastScored": "",
    "lastInspected": "2025-02-20",
    "visits": 1,
@@ -5952,18 +5947,17 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "FBO was found to be preparing mayonnaise using raw eggs which is banned by Government of Telangana. Approx. 1 kg of prepared mayonnaise was destroyed",
-      "Synthetic food colors were being used in the preparation of food",
-      "Cooking oil found used repeatedly for preparation of food"
-     ],
+     "good": [],
      "bad": [
       "FSSAI license was not displayed at a prominent place",
+      "FBO was found to be preparing mayonnaise using raw eggs which is banned by Government of Telangana. Approx. 1 kg of prepared mayonnaise was destroyed",
+      "Synthetic food colors were being used in the preparation of food",
       "Marinated raw chicken (15kg) was found to be stored for more than a week in the refrigerator which is rusty and unhygienic with blood stains",
       "Refrigerator is highly infested with cockroaches. The walls of the kitchen, electric pipes, switch boards and raw material were highly infested with cockroaches",
       "Kitchen was found highly unhygienic with open dustbins",
       "There are no pest control records",
-      "Medical records for food handlers, FoSTaC certificates were not available"
+      "Medical records for food handlers, FoSTaC certificates were not available",
+      "Cooking oil found used repeatedly for preparation of food"
      ],
      "action": "Action initiated under the FSS Act, 2006",
      "severity": "Non-compliance",
@@ -5985,7 +5979,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 8,
+   "violations": 9,
    "lastScored": "",
    "lastInspected": "2025-02-12",
    "visits": 1,
@@ -5998,12 +5992,11 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Few food articles were found to be stored on ground instead of pallets"
-     ],
+     "good": [],
      "bad": [
       "FSSAI license not displayed at a prominent place in the premises",
       "Food and non-food articles like cement, tyres etc are stored together",
+      "Few food articles were found to be stored on ground instead of pallets",
       "Walls and ceilings were found to be patchy and flaky with cobwebs",
       "Infestation of rodents and birds like pigeons/sparrows was observed including presence of their feces",
       "Poor personal hygiene was being followed by food handlers and they were found to be without aprons, haircaps, etc",
@@ -6031,7 +6024,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 9,
+   "violations": 10,
    "lastScored": "",
    "lastInspected": "2025-02-12",
    "visits": 1,
@@ -6044,13 +6037,12 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Few food articles were found stored on ground below a leaking air conditioner, which may lead to contamination of food articles"
-     ],
+     "good": [],
      "bad": [
       "Improper storage measured followed like storing on ground, use of rusted racks and no FIFO method",
       "Expired food articles including Kasturi Methi (1.25kg), Mustard seeds (0.5kg), Rai Mota (1kg) were found and discarded",
       "Nutmeg (1.5kg) were found with labelling violations like no MRP, Batch No. and Date of packing and hence seized",
+      "Few food articles were found stored on ground below a leaking air conditioner, which may lead to contamination of food articles",
       "Few vegetables like tomatoes were found to be spoiled and in rotten condition",
       "Live cockroach infestation was observed in the cooking area and grinding unit",
       "The flooring was found to be patchy and littered with food waste. Drains were found clogged",
@@ -6078,7 +6070,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 3,
+   "violations": 4,
    "lastScored": "",
    "lastInspected": "2025-02-08",
    "visits": 1,
@@ -6091,11 +6083,10 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Exhaust fans found to be greasy and dripping oil"
-     ],
+     "good": [],
      "bad": [
       "Food waste was not removed at regular intervals",
+      "Exhaust fans found to be greasy and dripping oil",
       "Medical fitness certificates of food handlers and Pest control records not available",
       "Several unlabelled raw materials such as pav found in kitchen"
      ],
@@ -6119,7 +6110,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 5,
+   "violations": 6,
    "lastScored": "",
    "lastInspected": "2025-02-08",
    "visits": 1,
@@ -6132,10 +6123,9 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Exhaust fans were found to be greasy and dripping oil"
-     ],
+     "good": [],
      "bad": [
+      "Exhaust fans were found to be greasy and dripping oil",
       "Refrigerators were found to be very unhygienic and identified stored boiled vegetables in large quantities without any labels",
       "Utensils were not cleaned properly. Kitchen floor was found to be wet and with improper drainage",
       "Cockroach infestation found in premises",
@@ -6162,7 +6152,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 9,
+   "violations": 11,
    "lastScored": "",
    "lastInspected": "2025-02-04",
    "visits": 1,
@@ -6175,16 +6165,15 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "FSSAI license obtained on registered address instead of food preparation premises",
-      "Floor found to be slippery in preparation area"
-     ],
+     "good": [],
      "bad": [
+      "FSSAI license obtained on registered address instead of food preparation premises",
       "FoSTaC trained supervisor not available",
       "Pest control records and Water analysis reports were not available",
       "Rat faeces and cockroach infestation found in store room",
       "Unlabelled raw rajma (90kgs) found",
       "Windows and doors of preparation area, dining area do not have insect proof screens",
+      "Floor found to be slippery in preparation area",
       "Temperature records were not maintained",
       "Raw materials were kept on floor without pallets",
       "Muskmelon seeds used for gravy curries (20 kg) found to be insect infested. Hence discarded",
@@ -6210,7 +6199,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 10,
+   "violations": 12,
    "lastScored": "",
    "lastInspected": "2025-02-03",
    "visits": 2,
@@ -6223,13 +6212,12 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Synthetic food colours was found being used in prepared items"
-     ],
+     "good": [],
      "bad": [
       "Kitchen walls and floor were found to be untidy. Foul smell observed",
       "Cockroach infestation was observed in the kitchen",
       "Vessels in kitchen and refrigerator were found to be rusty",
+      "Synthetic food colours was found being used in prepared items",
       "Rotten brinjal and cauliflower were found and discarded",
       "There is no FoSTaC trained supervisor despite more than 140 people working in the premises",
       "Expired food items including Rosemary (Sep 2023) and Curry cut chicken (4kg - 02.01.2025, 2kg - 14.01.2025, 4kg - 28.01.2025) were found and discarded",
@@ -6250,14 +6238,14 @@
      "total": null,
      "good": [
       "The semi-prepared food articles stored inside the refrigerator were properly covered and labelled well",
-      "Dustbins were found closed with lids",
       "Medical Fitness Certificates for food handlers and pest control records for the premises available with the FBO",
       "The FSSAI license true copy was displayed at the premises"
      ],
      "bad": [
       "Expired food articles like Chicken Leg Boneless (5kg), Liquid Caramel Colour and Green Gram Dal (10kg) found infested with Black Beetle. Hence, discarded on the spot",
       "Cashew (24 pkts) were found without following FSSAI labelling regulations and hence seized",
-      "Cockroach infestation observed near red meat storage area"
+      "Cockroach infestation observed near red meat storage area",
+      "Dustbins were found closed with lids"
      ],
      "action": "Action initiated under the FSS Act, 2006",
      "severity": "Non-compliance",
@@ -6279,7 +6267,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 7,
+   "violations": 9,
    "lastScored": "",
    "lastInspected": "2025-02-03",
    "visits": 1,
@@ -6292,17 +6280,16 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Sanitary items were placed along with food items in store room",
-      "Usage of synthetic food colours was observed"
-     ],
+     "good": [],
      "bad": [
       "Food handlers were found without aprons in kitchen area",
       "Boiled eggs were found placed near drains without any covering",
       "Severe cockroach infestation was observed in the kitchen",
       "Food items were found in fridge without preparation and use by dates",
       "Rotten tomatoes, green chillies and carrots with fungal infestation were found and discarded",
+      "Sanitary items were placed along with food items in store room",
       "Pest control records and Medical fitness certificates for food handlers were not available",
+      "Usage of synthetic food colours was observed",
       "Expired food items including Masala Powder (3pkts), Cumin powder (3.5kg - Oct 2024), Hazelnut flavored syrup (Sep 2024), Peach flavored syrup (Mar 2024) and Chilli flakes (Mar 2024) were found and discarded"
      ],
      "action": "",
@@ -6370,7 +6357,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 9,
+   "violations": 10,
    "lastScored": "",
    "lastInspected": "2025-02-01",
    "visits": 1,
@@ -6383,9 +6370,7 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Packed Citric Acid (1kg) meant only for industrial use found in the storage"
-     ],
+     "good": [],
      "bad": [
       "Found to be operating with expired license (20.12.2024)",
       "Water analysis reports, Pest Control records and Fostac certificates and medical records of employees were not provided",
@@ -6394,6 +6379,7 @@
       "Kitchen had an opening to the outside without window and insect proof screen",
       "Veg and non-veg food, food and non-food items were found to be stored together. Food articles were found to be stored on ground",
       "Expired and misbranded Sichuan Pepper found and seized – product of Bangkok but importer details not available",
+      "Packed Citric Acid (1kg) meant only for industrial use found in the storage",
       "Expired food items including Soy Sauce (1L - Sep 2024), Papad packets (18), Rasam powder (1kg - Jul 2024), Onion powder (Oct 2024), Kajun mix (Dec 2024), Mushroom (800g), Packed Methi (2kg) were found and discarded",
       "Loose Split Cashew was found to be infested with insects"
      ],
@@ -6417,7 +6403,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 14,
+   "violations": 15,
    "lastScored": "",
    "lastInspected": "2025-01-24",
    "visits": 1,
@@ -6430,9 +6416,7 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Dustbins were found in open condition"
-     ],
+     "good": [],
      "bad": [
       "Water analysis reports, Pest Control records and Fostac certificates of employees were not provided",
       "Refrigerators were not cleaned properly and were found to be unhygienic",
@@ -6440,6 +6424,7 @@
       "Drains in the kitchen floor are found to be broken at places and are also not fitted to meshes to prevent entry of insects",
       "Walls were found to be patchy at places with broken tiles and it was also found to be greasy",
       "Exhaust was found to be greasy and unclean",
+      "Dustbins were found in open condition",
       "Doors are not close fitted to prevent entry of pests. The grills between the walls and the ceiling were not fitted with meshes to prevent the entry of insects",
       "Packed Nut Meg was found to be unlabeled",
       "Most of the food articles were found to be stored on ground instead of pallets. Food and non food articles were stored together",
@@ -6469,7 +6454,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 7,
+   "violations": 8,
    "lastScored": "",
    "lastInspected": "2025-01-08",
    "visits": 1,
@@ -6482,10 +6467,9 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Several food articles were found dumped on floor in haphazard manner instead of storing them on pallets"
-     ],
+     "good": [],
      "bad": [
+      "Several food articles were found dumped on floor in haphazard manner instead of storing them on pallets",
       "Insect infestation was found on several packed food articles in the storage",
       "Unlabelled Cocoa powder bags (875 Kg) and Liquid GMS (Glycerol Mono Stearate - 165kg) were seized",
       "Several food articles worth Rs. 14,29,600/- were found to be expired and seized",
@@ -6514,7 +6498,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 10,
+   "violations": 11,
    "lastScored": "",
    "lastInspected": "2024-12-30",
    "visits": 1,
@@ -6527,9 +6511,7 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Chemicals and disinfectants found stored in close vicinity of final milk products such as Paneer and Flavoured milks in the same refrigerator"
-     ],
+     "good": [],
      "bad": [
       "FSSAI License is not displayed at a prominent location and few categories of milk products are not included in the license",
       "No proper hygiene and sanitation within the dairy processing unit",
@@ -6537,6 +6519,7 @@
       "Harmful chemicals such as TGV 999 caustic soda (850kg) found at the location and suspected to be used for adulteration",
       "No proper storage of raw materials is done. Scrap material found being stored along with final products",
       "Multiple label defects identified on the final products including cross-branding and non-declaration of additives like artificial flavors",
+      "Chemicals and disinfectants found stored in close vicinity of final milk products such as Paneer and Flavoured milks in the same refrigerator",
       "Ghee (280kg) seized on suspicion of undeclared additives",
       "No water analysis reports and medical test reports of food handlers",
       "Non-FSSAI lactic acid cultures found being used in curd making",
@@ -6562,7 +6545,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 8,
+   "violations": 12,
    "lastScored": "",
    "lastInspected": "2024-12-30",
    "visits": 1,
@@ -6575,20 +6558,19 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Rodent excreta was found in several places in the storage",
-      "Walls were found to be oily and tiles were found to be broken at some places",
-      "Dust bins were found in open condition",
-      "Paint brush found being used to apply butter"
-     ],
+     "good": [],
      "bad": [
       "FSSAI license not displayed at the premises",
       "Water analysis reports, Pest Control records, Fostac certificates and Health Records of employees were not provided",
       "Raw meet like chicken, mutton etc were found to be dumped in the refrigerator in unhygienic manner which can cause contamination",
       "Prepared food articles like Mutton Curry & Fried Chicken Wings were stored in the cold room without proper labelling, which were discarded",
       "Synthetic food colors were found and discarded on suspicion of use in prepared food articles",
+      "Rodent excreta was found in several places in the storage",
       "Refrigerators were not maintained in hygienic condition",
       "Flooring was found to be patchy and littering of food waste at some places",
+      "Walls were found to be oily and tiles were found to be broken at some places",
+      "Dust bins were found in open condition",
+      "Paint brush found being used to apply butter",
       "Raw and semi-cooked food, veg and non-veg food articles were found stored together"
      ],
      "action": "",
@@ -6611,7 +6593,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 5,
+   "violations": 7,
    "lastScored": "",
    "lastInspected": "2024-12-30",
    "visits": 1,
@@ -6624,16 +6606,15 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Few food articles were found to be stored on floor in the storage area",
-      "The aprons of the food handlers were found to be untidy"
-     ],
+     "good": [],
      "bad": [
       "Flooring was found to be patchy, slippery with littering of food waste at several places",
       "Drains were found to be clogged with food waste and stagnant water",
       "Refrigerators are not maintained in hygienic manner. Food articles in the fridge were not covered and labelled",
       "Veg and non-veg food articles are stored together",
-      "Food and non-food articles were also stored together"
+      "Few food articles were found to be stored on floor in the storage area",
+      "Food and non-food articles were also stored together",
+      "The aprons of the food handlers were found to be untidy"
      ],
      "action": "",
      "severity": "Non-compliance",
@@ -6655,7 +6636,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 8,
+   "violations": 11,
    "lastScored": "",
    "lastInspected": "2024-12-30",
    "visits": 1,
@@ -6668,19 +6649,18 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Vegetables like tomatoes were found in rotten condition",
-      "Walls and ceiling were found to be flaky with shredding of particles",
-      "Paint Brush is used to apply butter"
-     ],
+     "good": [],
      "bad": [
       "FSSAI license not displayed at the premises",
       "Water analysis reports, Pest Control records, Fostac certificates and Health Records of employees were not provided",
       "Expired Crushes (3 packs) and Kova (1 pack) & Misbranded and expired food articles (139 Goli Soda bottles) worth Rs. 14,936 were found and seized",
+      "Vegetables like tomatoes were found in rotten condition",
       "Synthetic food colors were found and discarded on suspicion of use in prepared food articles",
+      "Walls and ceiling were found to be flaky with shredding of particles",
       "Flooring was found to be patchy, slippery with littering of food waste",
       "Raw meat like chicken, mutton etc were found to be dumped in the refrigerator in unhygienic manner, which may cause contamination",
       "Refrigerators were not maintained in hygienic condition. Drains were found to be clogged and not equipped with insect traps",
+      "Paint Brush is used to apply butter",
       "Grinding area and Washing area were found to be very unhygienic. Exhaust was found to be greasy and untidy"
      ],
      "action": "",
@@ -6744,7 +6724,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 6,
+   "violations": 8,
    "lastScored": "",
    "lastInspected": "2024-12-20",
    "visits": 1,
@@ -6757,15 +6737,14 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "One toilet provided which opens directly into the manufacturing premises and may lead to contamination",
-      "Waste bags, wooden logs, plastic containers etc were found to be dumped and disposed on the floor"
-     ],
+     "good": [],
      "bad": [
       "Internal structures are made up of iron sheets which were found to be rusty",
       "Flooring was found to be patchy, uneven with stagnation of water and was also found to be emanating foul smell",
+      "One toilet provided which opens directly into the manufacturing premises and may lead to contamination",
       "Manufacturing and storage is being done in an unhygienic environment",
       "Pest control records are not available and presence of pests like house flies, mosquitoes and cockroaches has been noticed",
+      "Waste bags, wooden logs, plastic containers etc were found to be dumped and disposed on the floor",
       "Food handlers were found without aprons, headgear, shoe cover etc and spitting was observed at some places in the unit",
       "Fostac Certificates and Employee health records were not available"
      ],
@@ -6789,7 +6768,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 4,
+   "violations": 6,
    "lastScored": "",
    "lastInspected": "2024-12-19",
    "visits": 1,
@@ -6802,15 +6781,14 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Open dustbins were found",
-      "Cleaning solutions are stored along with raw food materials"
-     ],
+     "good": [],
      "bad": [
       "Water analysis reports, Pest Control Records, Medical records and FoSTaC Training certificates of food handlers were not available",
       "Expired products were found in kitchen and store such as Apple Cider Vinegar, Peanut Butter, Mushrooms and Chinese spice powder, Sesame Oil, Madras curry powder, Cajun spice ginger powder, Sweet corn and Blueberry Bamboo shoot. Hence, discarded",
       "Unlabeled food items were found in the refrigerator",
-      "Veg and non-veg food items were found in the same refrigerator"
+      "Open dustbins were found",
+      "Veg and non-veg food items were found in the same refrigerator",
+      "Cleaning solutions are stored along with raw food materials"
      ],
      "action": "",
      "severity": "Non-compliance",
@@ -6832,7 +6810,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 3,
+   "violations": 5,
    "lastScored": "",
    "lastInspected": "2024-12-19",
    "visits": 1,
@@ -6847,13 +6825,13 @@
      "total": null,
      "good": [
       "FSSAI license was displayed in a prominent place",
-      "Pest control records, Medical fitness certificates of food handlers were available",
-      "Kitchen floor is slippery",
-      "Ceiling and walls in cake preparation area were found with flaking paint and shedding particles"
+      "Pest control records, Medical fitness certificates of food handlers were available"
      ],
      "bad": [
       "Windows and doors are not fitted with insect proof screens",
+      "Kitchen floor is slippery",
       "Used oil is not being checked for total polar compounds and suspected to be used beyond the permissible limit",
+      "Ceiling and walls in cake preparation area were found with flaking paint and shedding particles",
       "Some of the raw material in the store are not labelled"
      ],
      "action": "",
@@ -6876,7 +6854,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 5,
+   "violations": 6,
    "lastScored": "",
    "lastInspected": "2024-12-19",
    "visits": 1,
@@ -6889,15 +6867,14 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Open dustbins were found in the kitchen"
-     ],
+     "good": [],
      "bad": [
       "Water analysis reports, Medical records and FoSTaC Training certificates for food handlers were not available",
       "Drain inside the kitchen is blocked and water is stagnated",
       "Windows and doors of the kitchen do not have insect screens",
       "Suspected rodent infestation as rodent excreta found in the store room",
-      "Raw chicken and mutton in refrigerators were not labelled. Onion powder (2 kgs) and Peri Peri mix (2 kgs) found in the store were also unlabelled"
+      "Raw chicken and mutton in refrigerators were not labelled. Onion powder (2 kgs) and Peri Peri mix (2 kgs) found in the store were also unlabelled",
+      "Open dustbins were found in the kitchen"
      ],
      "action": "",
      "severity": "Non-compliance",
@@ -7051,7 +7028,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 8,
+   "violations": 11,
    "lastScored": "",
    "lastInspected": "2024-12-17",
    "visits": 1,
@@ -7064,19 +7041,18 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Walls found to be greasy and sooty",
-      "Proper gap to be left between the racks and the wall in storage area",
-      "Some of the food articles in the storage area were found to be stored on ground instead of racks"
-     ],
+     "good": [],
      "bad": [
       "Medical Records and Fostac Certificates of food handlers not available",
+      "Walls found to be greasy and sooty",
       "Kitchen floor found to be patchy with stagnant water and littering of food waste",
       "Drains were found to be clogged with food waste",
       "Refrigerators are in unhygienic condition",
       "Food articles in the refrigerators are covered but not labelled",
       "FBO was advised to purchase a TPC meter to check for quality of oil",
       "Exhaust was found to be oily and unclean",
+      "Proper gap to be left between the racks and the wall in storage area",
+      "Some of the food articles in the storage area were found to be stored on ground instead of racks",
       "Walls of the storage are found to be unclean and flooring was also found to be patchy at some places"
      ],
      "action": "",
@@ -7099,7 +7075,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 11,
+   "violations": 13,
    "lastScored": "",
    "lastInspected": "2024-12-17",
    "visits": 1,
@@ -7112,10 +7088,7 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Dustbins are found to be kept in open condition",
-      "False Ceiling found to be broken in some places in the storage area"
-     ],
+     "good": [],
      "bad": [
       "Pest Control records, Water Analysis reports, Medical records and Fostac Certificates of food handlers not available",
       "Synthetic food colors were found and discarded on suspicion of use in prepared food articles",
@@ -7125,8 +7098,10 @@
       "Washing area was found to be patchy with stagnant water and accumulation of food waste",
       "Lights in the kitchen are not fitted with fixtures",
       "Refrigerators are in unhygienic condition",
+      "Dustbins are found to be kept in open condition",
       "Food articles in the refrigerators are covered but not labelled",
       "Veg and Non Veg food articles are found stored together in the fridge",
+      "False Ceiling found to be broken in some places in the storage area",
       "Food handlers were found wearing aprons which were found to be dirty and unclean"
      ],
      "action": "",
@@ -7193,7 +7168,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 9,
+   "violations": 11,
    "lastScored": "",
    "lastInspected": "2024-12-13",
    "visits": 1,
@@ -7206,10 +7181,7 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Ceiling of the kitchen was found to be covered with soot",
-      "Walls were found to be oily and tiles were found to be broken at some places"
-     ],
+     "good": [],
      "bad": [
       "Water analysis reports, Pest Control records and Fostac certificates of employees were not provided",
       "Refrigerators are not cleaned properly",
@@ -7217,6 +7189,8 @@
       "Kissan Tomato Paste (6kg), Vanaspathi (10kg), Oregano (1kg) and Peri Peri Marinade (8kg) were found to be expired and hence discarded",
       "Flooring was found to be patchy and littering of food waste at some places",
       "Kitchen floor is not equipped with drains to remove food waste",
+      "Ceiling of the kitchen was found to be covered with soot",
+      "Walls were found to be oily and tiles were found to be broken at some places",
       "Exhaust was found to be greasy and unclean",
       "Vegetables like tomatoes and potatoes were found in spoilt condition and discarded",
       "Raw meat like chicken, mutton etc were found to be dumped in the refrigerator in unhygienic manner which may cause contamination"
@@ -7243,7 +7217,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 6,
+   "violations": 9,
    "lastScored": "",
    "lastInspected": "2024-12-12",
    "visits": 1,
@@ -7257,15 +7231,15 @@
      "obtained": null,
      "total": null,
      "good": [
-      "Few vegetables found rotten & spoilt",
-      "Food colours found being used in prepared foods",
-      "Drain in kitchen is partially blocked",
       "Pest control records were available"
      ],
      "bad": [
       "FSSAI License Copy not displayed at prominent place",
       "Milk packets (500ml x 2) found expired on 08.12.2024. Bombay gold spices (1kg) found expired in July 2024",
+      "Few vegetables found rotten & spoilt",
+      "Food colours found being used in prepared foods",
       "Medical fitness records and FoSTaC training certificates not available for food handlers",
+      "Drain in kitchen is partially blocked",
       "Food materials in refrigerator were not covered/labelled",
       "Doors and windows do not have insect proof protection",
       "Cleaning materials stored along with raw food items. FIFO not maintained in the store"
@@ -7290,7 +7264,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 7,
+   "violations": 9,
    "lastScored": "",
    "lastInspected": "2024-12-12",
    "visits": 1,
@@ -7303,15 +7277,14 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Iron knives are used for cutting",
-      "Synthetic food colours being used in prepared foods"
-     ],
+     "good": [],
      "bad": [
       "FBO running business without valid license",
       "FOSTAC trained personnel not available",
       "Water analysis reports, Medical Fitness Certificates for food handlers not available",
       "Kitchen is in highly unhygienic condition, without any insect proof shields/insect repellents",
+      "Iron knives are used for cutting",
+      "Synthetic food colours being used in prepared foods",
       "Prepared and semi prepared food items kept together. No labelling for stored food items",
       "Fried Onion stored in unhygienic plastic drum",
       "Food handlers have no headcaps, aprons & gloves"
@@ -7381,7 +7354,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 8,
+   "violations": 10,
    "lastScored": "",
    "lastInspected": "2024-12-11",
    "visits": 1,
@@ -7394,18 +7367,17 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Kitchen found to be congested and cannot facilitate proper cleaning",
-      "Some of the food articles which kept in trays which were found to be stored on ground"
-     ],
+     "good": [],
      "bad": [
       "FSSAI License not displayed prominently",
       "Refrigerators not maintained properly and found with food waste",
+      "Kitchen found to be congested and cannot facilitate proper cleaning",
       "Food articles worth Rs. 21,893/- were found in violation of labelling regulations and were seized",
       "Besan (1 kg) found expired and hence seized",
       "Food articles in the refrigerator were covered but not labelled",
       "FIFO not properly maintained as food articles are found to be haphazardly arranged in the storage",
       "No gap between the wall and the storage racks",
+      "Some of the food articles which kept in trays which were found to be stored on ground",
       "Food and non-food articles found to be stored together"
      ],
      "action": "",
@@ -7475,7 +7447,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 10,
+   "violations": 12,
    "lastScored": "",
    "lastInspected": "2024-12-03",
    "visits": 1,
@@ -7488,15 +7460,14 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Rat feces observed at several places in the storage",
-      "The AC in the Cold Room was found to be leaking which can contaminate the food products stored in the trays in the room"
-     ],
+     "good": [],
      "bad": [
       "FSSAI license not displayed at prominent location",
       "Storage is not adequate and packing material and some other products were found to be stored on ground and on steps",
       "Mould vessels used in the preparation of cakes found to be in very unhygienic condition",
+      "Rat feces observed at several places in the storage",
       "Live cockroach infestation observed at several places in the manufacturing unit",
+      "The AC in the Cold Room was found to be leaking which can contaminate the food products stored in the trays in the room",
       "Employee Health records and FoSTaC certificates not available",
       "Several expired products found in the premises including the below",
       "Walls and ceilings were found to be patchy with flaking particles",
@@ -7567,7 +7538,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 2,
+   "violations": 5,
    "lastScored": "",
    "lastInspected": "2024-12-03",
    "visits": 1,
@@ -7580,13 +7551,12 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Last mile delivery personnel must be trained in food safety and hygiene practices, covering safe handling of transportation of food items",
-      "Product claims on eCommerce platforms must align with the physical labels. All labels must be in accordance with the FSS (Labeling & Display) Regulations 2020",
-      "Shelf life at delivery must be atleast 30% or 45 days"
-     ],
+     "good": [],
      "bad": [
+      "Last mile delivery personnel must be trained in food safety and hygiene practices, covering safe handling of transportation of food items",
       "Food and non-food items must be delivered separately to ensure cross-contamination",
+      "Product claims on eCommerce platforms must align with the physical labels. All labels must be in accordance with the FSS (Labeling & Display) Regulations 2020",
+      "Shelf life at delivery must be atleast 30% or 45 days",
       "No eCommerce FBO shall list any food business operator on its platform without displaying their valid FSSAI License or Registration"
      ],
      "action": "",
@@ -7609,7 +7579,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 6,
+   "violations": 7,
    "lastScored": "",
    "lastInspected": "2024-11-26",
    "visits": 1,
@@ -7622,11 +7592,10 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Cobwebs observed inside kitchen premises"
-     ],
+     "good": [],
      "bad": [
       "FBO did not display the copy of the food license at the premises",
+      "Cobwebs observed inside kitchen premises",
       "Food articles stores inside the refrigerator were not labelled properly",
       "Pest Control Records, Medical Fitness Certificates and Water analysis reports not available with the FBO",
       "Synthetic food colors suspected of being used in kababs & Chinese items were found and discarded",
@@ -7653,7 +7622,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 7,
+   "violations": 8,
    "lastScored": "",
    "lastInspected": "2024-11-26",
    "visits": 1,
@@ -7666,9 +7635,7 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "The design of the kitchen premises doesn't provide adequate working space and to carry out proper cleaning process"
-     ],
+     "good": [],
      "bad": [
       "The FBO is operating the food business without valid FSSAI license",
       "Leftover food from the previous day was found in kitchen and hence discarded on the spot",
@@ -7676,7 +7643,8 @@
       "Flooring found patchy with tiles broken and water stagnation observed",
       "Premises is not fitted with insect proof screen to avoid entry of pests",
       "Refrigerator found in unhygeinic condition and veg & non-veg articles were stored together",
-      "Rat fecal matter observed on shelves used to store raw food materials. Possible rat infestation at the premises"
+      "Rat fecal matter observed on shelves used to store raw food materials. Possible rat infestation at the premises",
+      "The design of the kitchen premises doesn't provide adequate working space and to carry out proper cleaning process"
      ],
      "action": "",
      "severity": "Non-compliance",
@@ -7741,7 +7709,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 8,
+   "violations": 9,
    "lastScored": "",
    "lastInspected": "2024-11-21",
    "visits": 1,
@@ -7754,11 +7722,10 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Walls and ceiling found with flaking plasters and shedding particles"
-     ],
+     "good": [],
      "bad": [
       "FSSAI license copy not displayed at the premises",
+      "Walls and ceiling found with flaking plasters and shedding particles",
       "Adequate ventilation and lighting not available at the premises",
       "Medical fitness certificates not available for the food handlers",
       "No internal and external audit system witnessed",
@@ -7787,7 +7754,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 9,
+   "violations": 10,
    "lastScored": "",
    "lastInspected": "2024-11-20",
    "visits": 1,
@@ -7800,9 +7767,7 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Thermocol false ceiling found to be loosely hanging and with shedding particles in food preparation and packing area"
-     ],
+     "good": [],
      "bad": [
       "Raw materials like Food Color Mixture, Essences were found to be beyond Best Before dates & CyanoCobalamin (Vitamin B12 ) found to be expired. Hence discarded on the spot",
       "Raw materials like Chocolate Powder (500g) & Vanilla Powder (500g) were found without proper labelling like Manufacturing date, Use by dates and FSSAI License & Logo on them",
@@ -7810,6 +7775,7 @@
       "No Internal Testing Laboratory found at the premises and no Test Report for prepared food articles with the FBO",
       "Water stagnation observed near the mixing area",
       "Premises not fitted with insect proof screen and doors are not close fitted to avoid entry of pests",
+      "Thermocol false ceiling found to be loosely hanging and with shedding particles in food preparation and packing area",
       "Food Recall Mechanism & Cleaning Schedule Records not available with the FBO",
       "Consumer Care Number not printed on the label of packed articles like Multivitamin tablet Sheets",
       "FoSTaC trained personnel not available at the premises"
@@ -7967,7 +7933,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 9,
+   "violations": 10,
    "lastScored": "",
    "lastInspected": "2024-11-08",
    "visits": 1,
@@ -7980,9 +7946,7 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "⁠Dust bins found open in the kitchen"
-     ],
+     "good": [],
      "bad": [
       "Operating the business without FSSAI license",
       "Medical fitness certificates and FoSTaC training certificates were not available",
@@ -7992,6 +7956,7 @@
       "Food articles stored in the cold room and refrigerator were not labelled",
       "Food articles like atta bags stored directly on the floor and gap not maintained between the bags and walls",
       "Temperature records were not available",
+      "⁠Dust bins found open in the kitchen",
       "⁠Expired food articles like below were found and discarded on the spot"
      ],
      "action": "",
@@ -8014,7 +7979,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 9,
+   "violations": 10,
    "lastScored": "",
    "lastInspected": "2024-11-08",
    "visits": 1,
@@ -8027,9 +7992,7 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Cobwebs observed on ceiling and walls inside store room"
-     ],
+     "good": [],
      "bad": [
       "FSSAI license copy not displayed at premises",
       "Pest control records and Medical fitness certificates not found",
@@ -8039,6 +8002,7 @@
       "Paneer (3kgs) found with unclear labeling of date as 08.11.2024. (not clear whether it is date of packing or Use by date) 08 November 2024",
       "Button Mushroom packet found expired on 07-09-2024. Hence discarded",
       "Live cockroach infestation observed inside store and kitchen premises",
+      "Cobwebs observed on ceiling and walls inside store room",
       "Food handlers found without hair caps and gloves"
      ],
      "action": "",
@@ -8061,7 +8025,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 7,
+   "violations": 8,
    "lastScored": "",
    "lastInspected": "2024-11-08",
    "visits": 1,
@@ -8074,10 +8038,9 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "FBO found with FSSAI Registration Certificate even though the business falls under State License category"
-     ],
+     "good": [],
      "bad": [
+      "FBO found with FSSAI Registration Certificate even though the business falls under State License category",
       "Pest control, Medical fitness and Water analysis reports not found",
       "⁠Flooring found uneven and water stagnation observed",
       "⁠Food articles stored inside refrigerator were covered but not labelled",
@@ -8106,7 +8069,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 9,
+   "violations": 10,
    "lastScored": "",
    "lastInspected": "2024-11-08",
    "visits": 1,
@@ -8119,9 +8082,7 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Cobwebs observed on ceiling and walls inside store room"
-     ],
+     "good": [],
      "bad": [
       "FSSAI license copy not displayed at premises",
       "Pest control records and Medical fitness certificates not found",
@@ -8131,6 +8092,7 @@
       "Paneer (3kgs) found with unclear labeling of date as 08.11.2024. (not clear whether it is date of packing or Use by date) 08 November 2024",
       "Button Mushroom packet found expired on 07-09-2024. Hence discarded",
       "Live cockroach infestation observed inside store and kitchen premises",
+      "Cobwebs observed on ceiling and walls inside store room",
       "Food handlers found without hair caps and gloves"
      ],
      "action": "",
@@ -8153,7 +8115,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 8,
+   "violations": 9,
    "lastScored": "",
    "lastInspected": "2024-11-02",
    "visits": 1,
@@ -8166,9 +8128,7 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Dust bins found open in the kitchen"
-     ],
+     "good": [],
      "bad": [
       "Pest control records and Medical fitness certificates were not available with FBO",
       "Kitchen floor not sloped properly found patchy and slippery. Water stagnation observed",
@@ -8177,6 +8137,7 @@
       "Wheat flour bags directly stored on the ground and gap between walls and bags were not maintained",
       "Temperature records for refrigerators were not available",
       "Food handlers found without wearing head caps, gloves and aprons in the kitchen",
+      "Dust bins found open in the kitchen",
       "Fungus infested ginger found in the store room"
      ],
      "action": "",
@@ -8199,7 +8160,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 9,
+   "violations": 11,
    "lastScored": "",
    "lastInspected": "2024-11-02",
    "visits": 1,
@@ -8212,20 +8173,19 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Walls and ceiling found flaking paint / plasters were found",
-      "Vegetables like onions and potatoes were directly stored on the floor"
-     ],
+     "good": [],
      "bad": [
       "FSSAI license copy not displayed at the premises",
       "Medical fitness certificates for food handlers were not available",
+      "Walls and ceiling found flaking paint / plasters were found",
       "Kitchen floor found slippery, patchy and water stagnation observed",
       "Doors and windows not close fitted with insect proof screens",
       "Some of the food handlers were not wearing headgear, caps and aprons",
       "⁠Live cockroach infestation observed in the kitchen racks",
       "Malabar parotas (3 pkts) found expired, hence discarded",
       "Gap between walls and rice bags were not maintained in the store room",
-      "Kitchen does not have dustbins"
+      "Kitchen does not have dustbins",
+      "Vegetables like onions and potatoes were directly stored on the floor"
      ],
      "action": "",
      "severity": "Non-compliance",
@@ -8247,7 +8207,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 8,
+   "violations": 11,
    "lastScored": "",
    "lastInspected": "2024-11-02",
    "visits": 1,
@@ -8260,20 +8220,19 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "The display board is in the name of Swathi Hotel where as in the license copy mentioned as Hotel Swagath",
-      "Wall tiles at the rice preparation area were broken",
-      "Open dustbins found in the kitchen. Gunny bags being used as dustbins"
-     ],
+     "good": [],
      "bad": [
       "FSSAI license copy not displayed in the premises",
       "⁠Medical fitness certificates for food handlers were not available",
+      "The display board is in the name of Swathi Hotel where as in the license copy mentioned as Hotel Swagath",
+      "Wall tiles at the rice preparation area were broken",
       "Floor found patchy and water stagnation observed in the kitchen",
       "Doors and windows were not close fitted with insect proof screens",
       "⁠Synthetic food colours found in the kitchen suspected of being used in the prepared foods. Hence discarded",
       "Food articles stored in the refrigerator were not covered and not labelled",
       "Gap between walls and food grain bags were not maintained",
-      "Food handlers were not wearing head caps, gloves and aprons"
+      "Food handlers were not wearing head caps, gloves and aprons",
+      "Open dustbins found in the kitchen. Gunny bags being used as dustbins"
      ],
      "action": "",
      "severity": "Non-compliance",
@@ -8424,7 +8383,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 6,
+   "violations": 7,
    "lastScored": "",
    "lastInspected": "2024-10-28",
    "visits": 1,
@@ -8437,12 +8396,11 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Raw and cooked food items stored together"
-     ],
+     "good": [],
      "bad": [
       "FSSAI license copy was not displayed at a prominent location",
       "Refrigerators were in unhygienic condition and all doors/lids were found to be broken",
+      "Raw and cooked food items stored together",
       "Kitchen floor, walls and ceiling found to be in unhygienic conditions and flaking observed on broken ceiling",
       "Dustbins were placed without lids and houseflies found all over the kitchen. Open drain running through the kitchen",
       "Few food handlers were found without hairnets, aprons and gloves",
@@ -8468,7 +8426,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 6,
+   "violations": 7,
    "lastScored": "",
    "lastInspected": "2024-10-28",
    "visits": 1,
@@ -8481,12 +8439,11 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Raw and cooked food items stored together"
-     ],
+     "good": [],
      "bad": [
       "FSSAI license copy was not displayed at a prominent location",
       "Refrigerators were in unhygienic condition and all doors/lids were found to be broken",
+      "Raw and cooked food items stored together",
       "Kitchen floor, walls and ceiling found to be in unhygienic conditions and flaking observed on broken ceiling",
       "Dustbins were placed without lids and houseflies found all over the kitchen. Open drain running through the kitchen",
       "Few food handlers were found without hairnets, aprons and gloves",
@@ -8553,7 +8510,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 6,
+   "violations": 7,
    "lastScored": "",
    "lastInspected": "2024-10-23",
    "visits": 1,
@@ -8566,16 +8523,15 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "⁠Dust bins found open inside the kitchen area"
-     ],
+     "good": [],
      "bad": [
       "Medical fitness certificates and water analysis reports were not available",
       "FoSTaC trained supervisor not available",
       "⁠Doors and windows were not close fitted with insect proof screens",
       "Few of the food articles like Curd and Milk were not labelled",
       "Sugar bags stored directly on the floor and not maintained gap between walls and bags",
-      "Rat faeces observed in the store room racks. Possible rodent infestation suspected"
+      "Rat faeces observed in the store room racks. Possible rodent infestation suspected",
+      "⁠Dust bins found open inside the kitchen area"
      ],
      "action": "",
      "severity": "Non-compliance",
@@ -8597,7 +8553,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 10,
+   "violations": 12,
    "lastScored": "",
    "lastInspected": "2024-10-22",
    "visits": 1,
@@ -8610,21 +8566,20 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Iron knife was being used for vegetable cutting",
-      "⁠Raw chicken directly dumped in the refrigerators"
-     ],
+     "good": [],
      "bad": [
       "Medical fitness certificates for food handlers and Water analysis reports not available",
       "No FoSTaC trainee available",
       "Kitchen doors not close fitted with insect proof screens",
       "Drains found open and water stagnation observed in the kitchen",
+      "Iron knife was being used for vegetable cutting",
       "⁠Food articles stored in the refrigerator were not labelled",
       "Veg and Non veg food articles stored in the same refrigerator",
       "⁠Synthetic food colours found in the store room suspected of being used in prepared foods. Hence discarded",
       "⁠FIFO not followed in the store, Expired food articles like Hot Pepper sauce (3 No.s) and Chocolate flavour syrup were found. Hence discarded",
       "Refrigerator found unhygienic and temperature records not maintained. Dust bins found open in the kitchen",
-      "Unlabelled MSG packet found in the kitchen. Hence discarded"
+      "Unlabelled MSG packet found in the kitchen. Hence discarded",
+      "⁠Raw chicken directly dumped in the refrigerators"
      ],
      "action": "",
      "severity": "Non-compliance",
@@ -8646,7 +8601,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 10,
+   "violations": 12,
    "lastScored": "",
    "lastInspected": "2024-10-22",
    "visits": 1,
@@ -8659,17 +8614,16 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Ceiling found greasy in the kitchen",
-      "⁠Rotten vegetables like tomatoes and bitterguard were found in the kitchen"
-     ],
+     "good": [],
      "bad": [
       "FSSAI license copy not displayed in the premises",
       "Pest control records, Medical fitness certificates for food handlers and water analysis reports were not available with FBO",
       "⁠FoSTaC trainee supervisor not available",
+      "Ceiling found greasy in the kitchen",
       "⁠Drains found open and water stagnation observed in the kitchen",
       "Refrigerator found unhygienic and temperature records not available. Dust bins found open in the kitchen",
       "Food articles stored in the refrigerator were not labelled and not covered",
+      "⁠Rotten vegetables like tomatoes and bitterguard were found in the kitchen",
       "Live cockroach infestation observed in the kitchen at vegetable storage and refrigerators area",
       "Veg and non veg food articles stored in the same refrigerator",
       "⁠Synthetic food colours found in the kitchen and store room, suspected of being used in prepared foods. Hence discarded",
@@ -8695,7 +8649,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 10,
+   "violations": 12,
    "lastScored": "",
    "lastInspected": "2024-10-21",
    "visits": 1,
@@ -8708,12 +8662,10 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Manufacturing unit operating from a shed with out any proper layout plan",
-      "Statutory samples were lifted and sent to lab for analysis"
-     ],
+     "good": [],
      "bad": [
       "FSSAI license not displayed at prominent place",
+      "Manufacturing unit operating from a shed with out any proper layout plan",
       "Manufacturing unit does not have any proper documents/records about milk procurement",
       "Unit does not have proper documents/records regarding sales of milk products",
       "Entire premises is in unhygienic condition",
@@ -8722,7 +8674,8 @@
       "Raw material storage area is not organised and the walls are wet and appears to be a dump area",
       "No fostac training for food handlers",
       "Floor is slippery and no slopes",
-      "There is no pest control certification nor pollution control permission"
+      "There is no pest control certification nor pollution control permission",
+      "Statutory samples were lifted and sent to lab for analysis"
      ],
      "action": "",
      "severity": "Non-compliance",
@@ -8744,7 +8697,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 4,
+   "violations": 6,
    "lastScored": "",
    "lastInspected": "2024-10-16",
    "visits": 1,
@@ -8757,14 +8710,13 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Dustbins were found to be open",
-      "Iron metal knives were used for cutting"
-     ],
+     "good": [],
      "bad": [
       "License was not displayed in a prominent place",
+      "Dustbins were found to be open",
       "Prepared food was not covered with lids",
       "Semi prepared food was not labelled in the refrigerator",
+      "Iron metal knives were used for cutting",
       "Food handlers did not have FoSTaC training"
      ],
      "action": "",
@@ -8787,7 +8739,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 4,
+   "violations": 8,
    "lastScored": "",
    "lastInspected": "2024-10-16",
    "visits": 1,
@@ -8800,17 +8752,16 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Cockroaches were found in the raw material storage area",
-      "Sanitary liquids were stored along with raw material",
-      "Wash area was very stingy with bad smell",
-      "Iron knives were being used for cutting"
-     ],
+     "good": [],
      "bad": [
       "FSSAI licence was not displayed at a prominent place",
+      "Cockroaches were found in the raw material storage area",
       "Atta and rava were infested with black beetles",
+      "Sanitary liquids were stored along with raw material",
       "Onions and cabbage were spoiled and undesirable condition for human consumption",
-      "Food handlers were not having FoSTaC training"
+      "Wash area was very stingy with bad smell",
+      "Food handlers were not having FoSTaC training",
+      "Iron knives were being used for cutting"
      ],
      "action": "",
      "severity": "Non-compliance",
@@ -8918,7 +8869,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 6,
+   "violations": 7,
    "lastScored": "",
    "lastInspected": "2024-10-09",
    "visits": 1,
@@ -8931,14 +8882,13 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Presence of cockroaches and rats in the kitchen observed"
-     ],
+     "good": [],
      "bad": [
       "FSSAI license not displayed at the premises",
       "No adequate space in kitchen, leading to improper cleaning",
       "Walls were found to be patchy and covered with spillage",
       "No proper ventilation and lighting fixtures",
+      "Presence of cockroaches and rats in the kitchen observed",
       "Proper dustbins not provided at the premises",
       "Medical fitness certificates, Fostoc training certificates not available"
      ],
@@ -8962,7 +8912,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 5,
+   "violations": 6,
    "lastScored": "",
    "lastInspected": "2024-10-09",
    "visits": 1,
@@ -8975,12 +8925,11 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Rotten lemons found in storage"
-     ],
+     "good": [],
      "bad": [
       "Kitchen floor was found to be littered with food waste",
       "Veg and non veg items, food and non food items found to be stored together",
+      "Rotten lemons found in storage",
       "Some of the refrigerators were found to be dirty and littered with foodwaste",
       "Stagnant water observed in clogged wash basin",
       "Food articles like buns, tea powder, biryani masala were found without any labelling"
@@ -9049,7 +8998,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 1,
+   "violations": 4,
    "lastScored": "",
    "lastInspected": "2024-10-08",
    "visits": 1,
@@ -9062,13 +9011,12 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
+     "good": [],
+     "bad": [
       "Loose tea powder (300kg)",
       "Coconut shell powder (200kg)",
+      "Non Food grade Red and orange colours (5kg each)",
       "Artificial flavours of chocolate, Cardamom and Milk"
-     ],
-     "bad": [
-      "Non Food grade Red and orange colours (5kg each)"
      ],
      "action": "",
      "severity": "Non-compliance",
@@ -9090,7 +9038,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 9,
+   "violations": 10,
    "lastScored": "",
    "lastInspected": "2024-10-07",
    "visits": 1,
@@ -9103,11 +9051,10 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Tiles and walls found broken and shedding particles observed"
-     ],
+     "good": [],
      "bad": [
       "Medical fitness certificates, Pest control records and Water analysis reports for RO water using at premises for cooking were not available",
+      "Tiles and walls found broken and shedding particles observed",
       "Refrigerator found in highly unhygienic condition",
       "⁠Food articles stored inside refrigerator were not covered and not labelled properly",
       "⁠Synthetic food colours suspected of being used in prepared non-veg items were discarded on the spot",
@@ -9357,7 +9304,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 9,
+   "violations": 11,
    "lastScored": "",
    "lastInspected": "2024-09-30",
    "visits": 1,
@@ -9370,14 +9317,13 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Cobwebs observed inside kitchen premises",
-      "Pan spitting observed near wood log storage area"
-     ],
+     "good": [],
      "bad": [
       "FSSAI license copy not displayed at prominent place",
       "⁠Kitchen premises found to be highly unhygienic. Flooring found patchy and uneven with broken tiles and Water stagnation",
+      "Cobwebs observed inside kitchen premises",
       "Live Cockroach infestation observed",
+      "Pan spitting observed near wood log storage area",
       "Food articles stored inside refrigerator were found covered but not labelled. Refrigerator found in unhygienic condition",
       "⁠Dustbins found open without proper lids",
       "⁠Kitchen premises found to outside environment without insect proof screens",
@@ -9405,7 +9351,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 7,
+   "violations": 9,
    "lastScored": "",
    "lastInspected": "2024-09-30",
    "visits": 1,
@@ -9419,15 +9365,15 @@
      "obtained": null,
      "total": null,
      "good": [
-      "FSSAI license copy displayed at prominent place",
-      "⁠FBO found to be using Rose water (Cosmetic) in foods like lassi etc",
-      "⁠Dust bins found open in the kitchen"
+      "FSSAI license copy displayed at prominent place"
      ],
      "bad": [
       "Kitchen premises found open to the outside environment without any insect proof screens",
       "Tiles inside kitchen walls and floor found to be broken and found in unhygienic condition",
       "Some of the food articles stored inside refrigerator were found not covered and not labelled",
+      "⁠FBO found to be using Rose water (Cosmetic) in foods like lassi etc",
       "Refrigerator walls found to be rusted from inside and raw chicken stored directly without any vessel and covering",
+      "⁠Dust bins found open in the kitchen",
       "Live cockroach infestation observed inside kitchen premises",
       "⁠Medical fitness certificates and Water analysis reports were not found",
       "Noodles (3 pkts) found without any label. Hence discarded"
@@ -9577,7 +9523,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 2,
+   "violations": 5,
    "lastScored": "",
    "lastInspected": "2024-09-27",
    "visits": 1,
@@ -9590,14 +9536,13 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
+     "good": [],
+     "bad": [
+      "Flooring found slippery and not sloped appropriately to prevent water accumulation. Water stagnation observed at two points in drains",
+      "Raw mutton (4.5 kg) and Soya paneer (200g) found to be beyond use by dates. Hence discarded",
       "Raw onions found stored directly on the floor",
       "⁠Cobwebs observed in store room",
       "Insect proof screens were found to broken"
-     ],
-     "bad": [
-      "Flooring found slippery and not sloped appropriately to prevent water accumulation. Water stagnation observed at two points in drains",
-      "Raw mutton (4.5 kg) and Soya paneer (200g) found to be beyond use by dates. Hence discarded"
      ],
      "action": "",
      "severity": "Non-compliance",
@@ -9708,7 +9653,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 7,
+   "violations": 8,
    "lastScored": "",
    "lastInspected": "2024-09-25",
    "visits": 1,
@@ -9721,14 +9666,13 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "⁠Store room found to be narrow with limited space for storing and working"
-     ],
+     "good": [],
      "bad": [
       "FSSAI License copy not displayed at prominent location",
       "⁠Pest control and Medical fitness certificates not found",
       "Food articles stored in the refrigerator were covered but not labelled",
       "Synthetic food colours suspected of being used in chinese items were found hence discarded",
+      "⁠Store room found to be narrow with limited space for storing and working",
       "Temperature records not maintained for refrigerators",
       "Dust bins found open without proper lids",
       "Kitchen table found unhygienic"
@@ -9796,7 +9740,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 9,
+   "violations": 10,
    "lastScored": "",
    "lastInspected": "2024-09-24",
    "visits": 1,
@@ -9809,13 +9753,12 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Water seepage observed from ceiling directly over grinding area"
-     ],
+     "good": [],
      "bad": [
       "FBO found operating food business without any valid FSSAI license",
       "Medical Fitness Certificates for food handlers, Pest Control Records for premises & Water Analysis Report for RO water used for food preparation were not available with the FBO",
       "Live cockroach infestation observed inside kitchen premises",
+      "Water seepage observed from ceiling directly over grinding area",
       "Refrigerator doors were found found broken and joints were rusted. Food articles stored were found covered but not labelled",
       "Drains were found clogged and water stagnation observed",
       "Synthetic food colors found inside kitchen and upon enquiry FBO stated to have used them for Chinese items. Hence discarded on the spot",
@@ -9890,7 +9833,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 4,
+   "violations": 5,
    "lastScored": "",
    "lastInspected": "2024-09-20",
    "visits": 1,
@@ -9907,12 +9850,12 @@
       "FSSAI License true copy was displayed at the billing counter",
       "Food Handlers were found wearing haircaps and aprons",
       "Medical Fitness Certificates for food Hhandlers & Pest Control Records for premises were available with the FBO",
-      "!Possible water seepage suspected at 1 point on the ceiling inside kitchen premises",
       "Temperature records for the refrigerators were maintained"
      ],
      "bad": [
       "Water analysis reports for the RO water used for cooking were available & 2 No. of FoSTaC trained supervisors available at the said premises",
       "Windows at 2 points were found open without any insect proof screen. Remaining points were found fitted with mesh",
+      "!Possible water seepage suspected at 1 point on the ceiling inside kitchen premises",
       "Water stagnation observed in the drain near the biryani preparation area",
       "Semi-prepared food articles stored inside the refrigerator were found covered but not labelled properly"
      ],
@@ -10018,7 +9961,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 5,
+   "violations": 6,
    "lastScored": "",
    "lastInspected": "2024-09-18",
    "visits": 1,
@@ -10031,15 +9974,14 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "FSSAI Registration Certificate of sweet items supplied by Kotamamba Food Products was found to be inactive"
-     ],
+     "good": [],
      "bad": [
       "FSSAI License true copy was not displayed at prominent location of the premises",
       "Frozen packed food articles like Mc Cain Potato bites, Heritage Mozzarella Cheese, etc were not stored as per FIFO Method",
       "Medical Fitness Certificates for food handlers & FoSTaC trained staff were not available for the premises",
       "Blue Berries packets were found without proper label i.e., FSSAI license number, logo, importer address details. Packing and use by dates were not mentioned",
-      "Pest control records were maintained and found to be done every 15 days"
+      "Pest control records were maintained and found to be done every 15 days",
+      "FSSAI Registration Certificate of sweet items supplied by Kotamamba Food Products was found to be inactive"
      ],
      "action": "",
      "severity": "Non-compliance",
@@ -10267,7 +10209,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 6,
+   "violations": 8,
    "lastScored": "",
    "lastInspected": "2024-09-11",
    "visits": 1,
@@ -10280,17 +10222,16 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Cobwebs observed on walls inside kitchen premises",
-      "Sample of Cake collected for further analysis"
-     ],
+     "good": [],
      "bad": [
       "Medical fitness certificates for food handlers and water analysis reports not available with FBO",
       "Windows and doors found open and not fitted with insect proof screens",
+      "Cobwebs observed on walls inside kitchen premises",
       "Cake base and prepared food articles were not labelled properly",
       "Live cockroach infestation observed in one of the kitchen room",
       "Expired Dark soya sauce, fruit mix syrup and Irish cream gourmet syrup were found. Hence discarded on the spot",
-      "Few food handlers found without hair caps"
+      "Few food handlers found without hair caps",
+      "Sample of Cake collected for further analysis"
      ],
      "action": "",
      "severity": "Non-compliance",
@@ -10312,7 +10253,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 10,
+   "violations": 11,
    "lastScored": "",
    "lastInspected": "2024-09-10",
    "visits": 1,
@@ -10325,9 +10266,7 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Washroom doors were found to be open"
-     ],
+     "good": [],
      "bad": [
       "Medical fitness and pest control records were not maintained",
       "FSSAI license copy was not displayed at a prominent place",
@@ -10336,6 +10275,7 @@
       "The iron stand located above rice preparation was found corroded and rusted",
       "Food articles stored inside the refrigerator were not covered and not labelled",
       "Raw food materials like flour and pulses were found to be stored directly on the floor, with no gap maintained between items and walls",
+      "Washroom doors were found to be open",
       "Food handlers were found without hair caps and aprons",
       "Lime pickle (20kg) stored inside a large plastic container was suspected of being contaminated, hence discarded",
       "Toor dal (50kg) and Coriander (packed 50kg) were found without proper labels, such as the date of packing and use-by dates. Hence, the stock was seized"
@@ -10360,7 +10300,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 7,
+   "violations": 8,
    "lastScored": "",
    "lastInspected": "2024-09-10",
    "visits": 1,
@@ -10373,13 +10313,12 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Tiles found broken and walls found to be greasy"
-     ],
+     "good": [],
      "bad": [
       "FSSAI license copy not provided by FBO at the time of inspection",
       "Medical fitness certificates and Pest control records not available",
       "Refrigerator found in unhygienic condition. Food articles like stored were not covered and not labelled",
+      "Tiles found broken and walls found to be greasy",
       "Use of Synthetic food colours observed in Chinese items. Hence discarded",
       "Live cockroach infestation observed inside kitchen premises",
       "Windows not fitted with insect proof screens.raw food articles like rice and flour stored directly on floor",
@@ -10405,7 +10344,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 5,
+   "violations": 7,
    "lastScored": "",
    "lastInspected": "2024-09-10",
    "visits": 1,
@@ -10419,13 +10358,13 @@
      "obtained": null,
      "total": null,
      "good": [
-      "Food handlers found wearing hair caps and uniform",
-      "⁠Dustbins found overflowing with filth and houseflies found hovering",
-      "Cobwebs observed near store area"
+      "Food handlers found wearing hair caps and uniform"
      ],
      "bad": [
       "FBO found operating business without FSSAI license",
+      "⁠Dustbins found overflowing with filth and houseflies found hovering",
       "FBO found using synthetic food colours in Chinese items. Hence discarded",
+      "Cobwebs observed near store area",
       "Prepared rice and flour found stored without proper covering and labelling",
       "Kitchen premises found in highly unhygienic condition",
       "Medical fitness and pest control records not available with FBO"
@@ -10450,7 +10389,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 4,
+   "violations": 6,
    "lastScored": "",
    "lastInspected": "2024-09-10",
    "visits": 1,
@@ -10463,14 +10402,13 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Houseflies observed hovering inside kitchen premises",
-      "Houseflies observed in the kitchen"
-     ],
+     "good": [],
      "bad": [
       "Medical fitness certificates and pest control records were not found",
       "Premises found open to external environment and no insect proof screens",
+      "Houseflies observed hovering inside kitchen premises",
       "⁠Raw materials and semi prepared food articles stored inside refrigerator and kitchen were covered but not labelled",
+      "Houseflies observed in the kitchen",
       "Dust bins found open, overflowing without any lids"
      ],
      "action": "",
@@ -10493,7 +10431,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 10,
+   "violations": 12,
    "lastScored": "",
    "lastInspected": "2024-09-09",
    "visits": 1,
@@ -10506,10 +10444,7 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Dust bins found open in the kitchen",
-      "Raw green chilli stored directly on floor"
-     ],
+     "good": [],
      "bad": [
       "FSSAI license copy not displayed at the premises",
       "Medical fitness and Pest Control Records not available",
@@ -10517,7 +10452,9 @@
       "Windows and doors not fitted with insect proof screens",
       "Drains observed with water stagnation",
       "⁠Semi prepared food articles stored in the refrigerator were not covered with lids and not labelled",
+      "Dust bins found open in the kitchen",
       "⁠Grinding area in the kitchen premises found to be Unhygienic manner",
+      "Raw green chilli stored directly on floor",
       "Insect proof screens not found and Ceiling found broken",
       "Food handlers found without hair caps and aprons",
       "Wash room found to be unhygienic"
@@ -10625,7 +10562,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 10,
+   "violations": 11,
    "lastScored": "",
    "lastInspected": "2024-09-09",
    "visits": 1,
@@ -10638,9 +10575,7 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Raw food articles found directly stored on floor"
-     ],
+     "good": [],
      "bad": [
       "FSSAI licence copy not displayed at the premises",
       "Pest control records and Medical fitness certificates were not available",
@@ -10649,6 +10584,7 @@
       "Drains found unclean and with water stagnation",
       "Live cockroach infestation observed in store room",
       "Stored items were not labelled",
+      "Raw food articles found directly stored on floor",
       "Rat burrows observed on floor and possible rodent infestation",
       "Food handlers found without hair caps and aprons",
       "⁠Washroom attached to grinding area, door open and found unhygienic. Bad odour observed inside kitchen premises"
@@ -10717,7 +10653,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 9,
+   "violations": 11,
    "lastScored": "",
    "lastInspected": "2024-09-03",
    "visits": 1,
@@ -10730,11 +10666,9 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "FBO operating the business with registration instead of state license",
-      "⁠Dust bins found open in the kitchen"
-     ],
+     "good": [],
      "bad": [
+      "FBO operating the business with registration instead of state license",
       "FSSAI license true copy not displayed at the premises",
       "Pest control records and Medical fitness certificates were not available with FBO",
       "Doors and windows were found open without insect proof screens",
@@ -10743,6 +10677,7 @@
       "Veg and non veg food articles stored in the same refrigerator",
       "Cockroach infestation observed in the storage racks in the kitchen",
       "Food handlers found without wearing head caps, gloves and aprons",
+      "⁠Dust bins found open in the kitchen",
       "Synthetic food colours found in the kitchen with suspected use in the prepared foods. Hence discarded"
      ],
      "action": "",
@@ -10765,7 +10700,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 9,
+   "violations": 10,
    "lastScored": "",
    "lastInspected": "2024-09-03",
    "visits": 1,
@@ -10778,9 +10713,7 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Broken tiles were observed at food preparation area in the kitchen"
-     ],
+     "good": [],
      "bad": [
       "Medical fitness certificates for food handlers were not available",
       "No Fostac trainee available",
@@ -10790,6 +10723,7 @@
       "Veg and non-veg items stored in the same refrigerator",
       "Rice bags and wheat bags were stored directly on the floor in the store room and gap between the walls and the bags was not maintained",
       "Dust bins found open without lids",
+      "Broken tiles were observed at food preparation area in the kitchen",
       "Fungus infested groundnuts (10kg) found in the store. Hence discarded"
      ],
      "action": "",
@@ -10854,7 +10788,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 8,
+   "violations": 9,
    "lastScored": "",
    "lastInspected": "2024-09-02",
    "visits": 1,
@@ -10867,9 +10801,7 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Dustbins found open in the kitchen"
-     ],
+     "good": [],
      "bad": [
       "No Fostac trainee available",
       "⁠Floor found slippery and drains were stagnated with water",
@@ -10878,7 +10810,8 @@
       "Few food articles stored inside the refrigerator were unlabelled",
       "Veg and non veg food articles stored in the same refrigerator",
       "Synthetic food colours found in the kitchen. Hence discarded",
-      "FIFO not maintained in the store room"
+      "FIFO not maintained in the store room",
+      "Dustbins found open in the kitchen"
      ],
      "action": "",
      "severity": "Non-compliance",
@@ -10983,7 +10916,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 8,
+   "violations": 9,
    "lastScored": "",
    "lastInspected": "2024-08-31",
    "visits": 1,
@@ -10996,12 +10929,11 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Flooring found to be wet and slippery"
-     ],
+     "good": [],
      "bad": [
       "Medical fitness certificates for food handlers not available",
       "Water analysis reports for RO water used for food preparation not available",
+      "Flooring found to be wet and slippery",
       "Dust bins found open without any lids on it",
       "⁠Food articles stored inside refrigerator were not labelled properly",
       "Expired flavouring agents and fruit fillings were found, along with synthetic food colours. Hence discarded",
@@ -11159,7 +11091,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 2,
+   "violations": 4,
    "lastScored": "",
    "lastInspected": "2024-08-23",
    "visits": 1,
@@ -11173,15 +11105,15 @@
      "obtained": null,
      "total": null,
      "good": [
-      "Tiles were found broken near the live kitchen",
       "FSSAI license true copy was displayed at the premises entrance",
       "Food handlers found wearing haircaps & aprons",
-      "Medical fitness certificates and pest control records were available",
-      "Premises was found fitted with imsect-proof screen and doors were close fitted"
+      "Medical fitness certificates and pest control records were available"
      ],
      "bad": [
+      "Tiles were found broken near the live kitchen",
       "Few potatoes found to be damaged and were discarded on the spot",
-      "Dustbins were found open without proper lids inside kitchen premises"
+      "Dustbins were found open without proper lids inside kitchen premises",
+      "Premises was found fitted with imsect-proof screen and doors were close fitted"
      ],
      "action": "",
      "severity": "Non-compliance",
@@ -11289,7 +11221,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 6,
+   "violations": 7,
    "lastScored": "",
    "lastInspected": "2024-08-21",
    "visits": 1,
@@ -11302,10 +11234,9 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "The FBO found operating with registration certificate instead of state license"
-     ],
+     "good": [],
      "bad": [
+      "The FBO found operating with registration certificate instead of state license",
       "Pest control records and Medical fitness certificates for food handlers were not available with the FBO",
       "Windows found open to the outside environment and houseflies observed inside kitchen premises",
       "Raw mutton pieces spillage observed inside refrigerator and it is found to be in highly unhygienic condition",
@@ -11377,7 +11308,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 6,
+   "violations": 7,
    "lastScored": "",
    "lastInspected": "2024-08-20",
    "visits": 1,
@@ -11390,15 +11321,14 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Ceiling and walls observed with plastering flakes and also found greasy"
-     ],
+     "good": [],
      "bad": [
       "FBO found to be operating the food business without a valid FSSAI license",
       "Food handlers were found without haircaps, aprons and gloves",
       "Kitchen premises was found open to outside environment without any insect proof screen to avoid entry of pests",
       "Water stagnation observed near cleaning area & dustbins were found open without any lids",
       "Medical Fitness Certificates & Pest Control Records were not available with the FBO",
+      "Ceiling and walls observed with plastering flakes and also found greasy",
       "Packed biscuit packets meant for sale to the customers were found without any label at the billing counter"
      ],
      "action": "",
@@ -11421,7 +11351,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 3,
+   "violations": 4,
    "lastScored": "",
    "lastInspected": "2024-08-20",
    "visits": 1,
@@ -11437,13 +11367,13 @@
      "good": [
       "FSSAI License True Copy was displayed at the Premises",
       "Food Handlers were found wearing Haircaps, Aprons and Gloves",
-      "Pest control records were available & dustbins were found closed with lids",
-      "Food articles stored inside the refrigerator were covered and also found labelled"
+      "Pest control records were available & dustbins were found closed with lids"
      ],
      "bad": [
       "Kitchen Window found open to outside premises without any insect proof screen",
       "Water stagnation observed in drain inside kitchen premises",
-      "Medical Fitness Certificates for food handlers not available with the FBO"
+      "Medical Fitness Certificates for food handlers not available with the FBO",
+      "Food articles stored inside the refrigerator were covered and also found labelled"
      ],
      "action": "",
      "severity": "Non-compliance",
@@ -11590,7 +11520,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 7,
+   "violations": 8,
    "lastScored": "",
    "lastInspected": "2024-08-14",
    "visits": 1,
@@ -11603,14 +11533,13 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "⁠Houseflies found hovering over dustbins"
-     ],
+     "good": [],
      "bad": [
       "FSSAI License copy not displayed at the premises",
       "⁠Pest control records of the unit and Medical fitness certificates of the food handlers were not available",
       "⁠Premises found open to outside environment and not close fitted with insect proof screens",
       "Food articles stored were not covered and not labelled properly",
+      "⁠Houseflies found hovering over dustbins",
       "⁠Drain water found open and stagnated",
       "⁠Dustbins found open without lids",
       "⁠Food handlers found without hair caps"
@@ -11635,7 +11564,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 6,
+   "violations": 7,
    "lastScored": "",
    "lastInspected": "2024-08-14",
    "visits": 1,
@@ -11648,15 +11577,14 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Rat faeces observed on racks inside store area"
-     ],
+     "good": [],
      "bad": [
       "FSSAI license copy not provided and displayed at premises by FBO at the time of inspection",
       "Pest control records of the premises and Medical Fitness Certificates of the food handlers not available",
       "Windows and doors were not close fitted with insect proof screens",
       "Flooring found patchy and water stagnation observed near cleaning area",
       "Food articles stored inside refrigerator were not covered and not labelled",
+      "Rat faeces observed on racks inside store area",
       "Temperature records were not maintained"
      ],
      "action": "",
@@ -11679,7 +11607,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 6,
+   "violations": 7,
    "lastScored": "",
    "lastInspected": "2024-08-14",
    "visits": 1,
@@ -11692,15 +11620,14 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Cleaning area found adjacent to food preparation area"
-     ],
+     "good": [],
      "bad": [
       "Medical fitness certificates of the food handlers were not available",
       "Pest control records for the month of May found and instructed to conduct twice a month",
       "Windows were found open without insect proof screens",
       "Synthetic food colours found and hence discarded",
       "Food articles stored inside refrigerator were not covered and not labelled",
+      "Cleaning area found adjacent to food preparation area",
       "Food handlers found without hair caps, aprons and gloves"
      ],
      "action": "",
@@ -11723,7 +11650,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 6,
+   "violations": 7,
    "lastScored": "",
    "lastInspected": "2024-08-14",
    "visits": 1,
@@ -11736,16 +11663,15 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Dust bins kept open in the kitchen"
-     ],
+     "good": [],
      "bad": [
       "Medical fitness certificates for food handlers and Pest control records were not available",
       "Windows were not close fitted with insect proof screens",
       "Expired noodle packets (3 No.s) were found hence discarded",
       "⁠Food articles inside the refrigerator were not covered and not labelled",
       "Synthetic food colours found hence discarded",
-      "⁠Kitchen and cleaning area found adjacent to each other without proper partition"
+      "⁠Kitchen and cleaning area found adjacent to each other without proper partition",
+      "Dust bins kept open in the kitchen"
      ],
      "action": "",
      "severity": "Non-compliance",
@@ -11767,7 +11693,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 9,
+   "violations": 11,
    "lastScored": "",
    "lastInspected": "2024-08-14",
    "visits": 1,
@@ -11780,17 +11706,16 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Dust bins found open",
-      "Onions stored directly on floor"
-     ],
+     "good": [],
      "bad": [
       "FBO running the business with expired FSSAI license",
       "Medical fitness certificates of the food handlers and pest control records of premises were not available",
       "Windows and doors not close fitted with insect proof screens",
+      "Dust bins found open",
       "⁠Damaged vegetables found, hence discarded",
       "Stored food articles were not covered and not labelled",
       "Store room was found in unhygienic condition",
+      "Onions stored directly on floor",
       "Live cockroach infestation observed in store room",
       "Doors found open to outside premises without any barrier",
       "Food handlers found without hair caps and aprons"
@@ -11815,7 +11740,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 6,
+   "violations": 7,
    "lastScored": "",
    "lastInspected": "2024-08-14",
    "visits": 1,
@@ -11828,15 +11753,14 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Cleaning area found adjacent to food preparation area"
-     ],
+     "good": [],
      "bad": [
       "Medical fitness certificates of the food handlers were not available",
       "Pest control records for the month of May found and instructed to conduct twice a month",
       "Windows were found open without insect proof screens",
       "Synthetic food colours found and hence discarded",
       "Food articles stored inside refrigerator were not covered and not labelled",
+      "Cleaning area found adjacent to food preparation area",
       "Food handlers found without hair caps, aprons and gloves"
      ],
      "action": "",
@@ -11944,7 +11868,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 6,
+   "violations": 7,
    "lastScored": "",
    "lastInspected": "2024-08-13",
    "visits": 1,
@@ -11957,16 +11881,15 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "⁠Ceiling found with loose plastering flakes"
-     ],
+     "good": [],
      "bad": [
       "FSSAI license copy not displayed at premises",
       "⁠Synthetic food colours suspected of being used in non veg starters were discarded",
       "Live cockroach infestation observed inside kitchen premises",
       "Food handlers found without hair caps and gloves",
       "⁠Windows and doors are not close fitted with insect proof screens",
-      "Medical fitness certificate for food handlers and pest control records for premises were not available"
+      "Medical fitness certificate for food handlers and pest control records for premises were not available",
+      "⁠Ceiling found with loose plastering flakes"
      ],
      "action": "",
      "severity": "Non-compliance",
@@ -12161,7 +12084,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 7,
+   "violations": 8,
    "lastScored": "",
    "lastInspected": "2024-08-07",
    "visits": 1,
@@ -12174,9 +12097,7 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "FBO found to be using garbage covers instead of dust bins"
-     ],
+     "good": [],
      "bad": [
       "Medical fitness certificates of the food handlers and pest control records were not available with FBO",
       "Doors and windows of the kitchen were not close fitted with insect proof screens",
@@ -12184,6 +12105,7 @@
       "Live cockroach infestation and house flies were found and possible rat infestation observed inside the kitchen",
       "Synthetic food colours usage observed in Biryani and non veg items. Hence discarded on the spot",
       "Food handlers found without wearing head caps, gloves and aprons",
+      "FBO found to be using garbage covers instead of dust bins",
       "Bakery items like Bread and Bun prepared, packed and sold at the premises found without any labels"
      ],
      "action": "",
@@ -12206,7 +12128,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 6,
+   "violations": 7,
    "lastScored": "",
    "lastInspected": "2024-07-26",
    "visits": 1,
@@ -12219,10 +12141,9 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "The FBO obtained FSSAI Registration certificate instead of State License, even though his sales exceed the prescribed limit"
-     ],
+     "good": [],
      "bad": [
+      "The FBO obtained FSSAI Registration certificate instead of State License, even though his sales exceed the prescribed limit",
       "Live rats infestation observed near food preparation area",
       "FBO found in possession of synthetic food colors and upon enquiry stated that they are being used in preparation of masala water for Pani Puri. Hence discarded those food articles and food colors",
       "Food handlers were found without any hairnets, gloves and aprons",
@@ -12290,7 +12211,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 3,
+   "violations": 4,
    "lastScored": "",
    "lastInspected": "2024-07-25",
    "visits": 1,
@@ -12303,10 +12224,9 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Food items have been placed directly exposed to road side"
-     ],
+     "good": [],
      "bad": [
+      "Food items have been placed directly exposed to road side",
       "Unhygienic conditions in kitchen area and exposed to outside environment",
       "Water analysis report not available for RO Water being used in the premises",
       "Food handlers found to be wearing unclean attire and without any medical fitness certificates"
@@ -12331,7 +12251,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 7,
+   "violations": 8,
    "lastScored": "",
    "lastInspected": "2024-07-20",
    "visits": 1,
@@ -12344,11 +12264,10 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "FBO found to be operating as a Multi Brand Kitchen through food delivery app"
-     ],
+     "good": [],
      "bad": [
       "Food articles like Button Mushrooms, Tutti Fruti & Preserved Karonda were found expired and hence discarded on the spot",
+      "FBO found to be operating as a Multi Brand Kitchen through food delivery app",
       "During the course of inspection, it was found that the food delivery app and the FBO are also taking orders online using expired FSSAI license with a similar premises name",
       "Food handlers were found wearing hairnets but not wearing aprons/ uniforms",
       "Raw food articles & semi prepared foods were found to be stored in unhygienic condition inside the refridgerator. The refridgerator was found to be rusted",
@@ -12376,7 +12295,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 5,
+   "violations": 6,
    "lastScored": "",
    "lastInspected": "2024-07-12",
    "visits": 1,
@@ -12390,12 +12309,12 @@
      "obtained": null,
      "total": null,
      "good": [
-      "Flooring found broken inside kitchen and possible harbouring of pests at the point suspected",
       "Raw food articles & semi-prepared food items stored in steel containers were covered and also labelled properly"
      ],
      "bad": [
       "FBO was found operating the business without valid license/ registration and upon enquiry displayed expired registration certificate",
       "Live cockroach infestation observed inside kitchen premises",
+      "Flooring found broken inside kitchen and possible harbouring of pests at the point suspected",
       "Some of the food handlers were found without hairnets and uniforms",
       "Dustbins were found open without lids",
       "Medical Fitness Certificates for food handlers not available. Pest control records for premises were available"
@@ -12628,6 +12547,50 @@
    ]
   },
   {
+   "id": "itc-limited-ameerpet",
+   "name": "ITC Limited",
+   "aka": [],
+   "location": "SR Nagar, Ameerpet",
+   "area": "Ameerpet",
+   "lat": 17.4374,
+   "lng": 78.4487,
+   "kind": "enforcement",
+   "score": null,
+   "grade": "unrated",
+   "violations": 1,
+   "lastScored": "",
+   "lastInspected": "2024-07-06",
+   "visits": 1,
+   "notice": false,
+   "photo": "https://pbs.twimg.com/media/GR9lgbsaoAAovQJ?format=jpg&name=small",
+   "history": [
+    {
+     "kind": "enforcement",
+     "date": "2024-07-06",
+     "pct": null,
+     "obtained": null,
+     "total": null,
+     "good": [
+      "FSSAI License true copy was displayed at the premises",
+      "Food handlers were found wearing hairnets, gloves and uniforms",
+      "Raw food articles & semi prepared foods stored in steel containers were covered and labelled properly",
+      "Pest control records for premises and Medical Fitness Certificates for food handlers were available",
+      "Water analysis report for the RO water being used at the premises for food preparation is available",
+      "1 FoStaC trained supervisor available at the premises"
+     ],
+     "bad": [
+      "The FBO is found to be operating the same kitchen to offer online food services in the name of ITC MasterChef, Sunfeast Baked Creations and Aashirwad Soul Creations"
+     ],
+     "action": "",
+     "severity": "Non-compliance",
+     "notice": false,
+     "source": "@c_tgsafe",
+     "url": "https://x.com/c_tgsafe/status/1810277188232770029",
+     "location": "SR Nagar, Ameerpet"
+    }
+   ]
+  },
+  {
    "id": "rebel-ameerpet",
    "name": "Rebel",
    "aka": [],
@@ -12638,7 +12601,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 3,
+   "violations": 4,
    "lastScored": "",
    "lastInspected": "2024-07-06",
    "visits": 1,
@@ -12652,7 +12615,6 @@
      "obtained": null,
      "total": null,
      "good": [
-      "The FBO was found to be operating the same kitchen to offer online food services in the name of 27 other listed brands and claims it as a multi-brand kitchen",
       "Food handlers were found wearing hairnets, gloves and uniforms",
       "Pest control records for premises and Medical Fitness Certificates for food handlers were available",
       "Water analysis report for the RO water being used at the premises for food preparation is available",
@@ -12660,6 +12622,7 @@
      ],
      "bad": [
       "The FSSAI license true copy was not displayed at the premises",
+      "The FBO was found to be operating the same kitchen to offer online food services in the name of 27 other listed brands and claims it as a multi-brand kitchen",
       "Expired food Articles like Peri Peri Sprinkler Seasoning (1kg), Frozen Baby Potato (1kg), Green Cabbage (2kg) and Garlic Bread Seasoning Sachets (100no.s) were found in the store room",
       "Some of the food articles stored in the refrigerator were not labelled properly"
      ],
@@ -12854,7 +12817,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 5,
+   "violations": 6,
    "lastScored": "",
    "lastInspected": "2024-06-29",
    "visits": 1,
@@ -12867,10 +12830,9 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "FBO was found operating with registration certificate even though his turnover comes under the license category"
-     ],
+     "good": [],
      "bad": [
+      "FBO was found operating with registration certificate even though his turnover comes under the license category",
       "Frozen chicken found not stored according to the temperature mentioned on it's label",
       "Food handlers were found without wearing headgear, gloves and aprons",
       "Proper insect proof screen not available to avoid entry of pests. Doors of the kitchen were not close fitted",
@@ -12941,7 +12903,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 6,
+   "violations": 7,
    "lastScored": "",
    "lastInspected": "2024-06-29",
    "visits": 1,
@@ -12954,13 +12916,12 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Cobwebs were found above grinding area and premises found untidy"
-     ],
+     "good": [],
      "bad": [
       "FBO was found operating without valid license",
       "Carrots were found rotten & damaged and hence discarded on the spot",
       "Packed paratha (ready to cook) without any label on it",
+      "Cobwebs were found above grinding area and premises found untidy",
       "Few food handlers were found without wearing headgear, gloves and aprons",
       "Insect proof screen not available to avoid entry of pests. The doors of the kitchen were not close fitted",
       "Medical fitness certificates for food handlers and pest control records not available"
@@ -13027,7 +12988,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 3,
+   "violations": 4,
    "lastScored": "",
    "lastInspected": "2024-06-26",
    "visits": 1,
@@ -13043,13 +13004,13 @@
      "good": [
       "Workers in the food section were found wearing hair caps, gloves, masks and uniforms",
       "40 FoSTaC trained supervisors were available at the said premises",
-      "Houseflies were found hovering near meat storage",
       "Pest control records, Medical Fitness Certificates of food handlers were available"
      ],
      "bad": [
       "Infested items like Atta Bread Mix (10kg) loose Baguette Bread Mix (15kg) in the bakery unit was found and discarded",
       "Expired and beyond Use-by-date food articles like Sesame Seeds (20kg), Toned Milk (20L), Biscuit packets, Glaze (7.5kg), Gems (5kg), Fruit Juice (2pkts) were found and discarded",
-      "Updated FSSAI licence copy was not displayed at the entrance of the premises"
+      "Updated FSSAI licence copy was not displayed at the entrance of the premises",
+      "Houseflies were found hovering near meat storage"
      ],
      "action": "Action initiated under the FSS Act, 2006",
      "severity": "Non-compliance",
@@ -13114,7 +13075,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 3,
+   "violations": 4,
    "lastScored": "",
    "lastInspected": "2024-06-25",
    "visits": 1,
@@ -13129,13 +13090,13 @@
      "total": null,
      "good": [
       "FSSAI licence true copy was displayed at the entrance of the premises",
-      "Ceiling found with loose plastering flakes at some points, tiles broken on side walls in pasteurisation area, possible water seepage observed at icecream manufacturing unit",
       "Workers in the food section were found wearing hair caps, gloves, masks and uniforms",
       "7 FoSTaC trained supervisors were available at the said premises",
       "Pest control records, Medical Fitness Certificates of food handlers and Analysis Reports for the food products being manufactured were available",
       "FSSAI license was available for the vehicles involved in transportation of dairy products"
      ],
      "bad": [
+      "Ceiling found with loose plastering flakes at some points, tiles broken on side walls in pasteurisation area, possible water seepage observed at icecream manufacturing unit",
       "FBO found to be repacking the cooking butter procured from Jersey unit, Ongole without including it in the scope of license",
       "The raw food articles like Soluble Essence and Candied Karonda were not stored according to the temperature mentioned on its label",
       "Manufacturing premises found fitted with insect proof screen but with minor damage"
@@ -13160,7 +13121,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 4,
+   "violations": 5,
    "lastScored": "",
    "lastInspected": "2024-06-25",
    "visits": 1,
@@ -13175,14 +13136,14 @@
      "total": null,
      "good": [
       "FSSAI license true copy was displayed in the office premises",
-      "Headgear, gloves and uniform are available for the food handlers",
-      "Milk testing done on the spot with the help of Food Safety on Wheels vehicle and the sample parameters were found to be within the prescribed limits"
+      "Headgear, gloves and uniform are available for the food handlers"
      ],
      "bad": [
       "Medical Fitness Certificates for food handlers and pest control records for the premises were not available with the FBO",
       "Premises was not fitted with insect proof screen and doors not close fitted to avoid entry of pests",
       "Analysis report for the food products manufactured by the FBO were not available and no internal laboratory found",
-      "Vehicle meant for the transportation of dairy products does not have FSSAI license/registration"
+      "Vehicle meant for the transportation of dairy products does not have FSSAI license/registration",
+      "Milk testing done on the spot with the help of Food Safety on Wheels vehicle and the sample parameters were found to be within the prescribed limits"
      ],
      "action": "",
      "severity": "Non-compliance",
@@ -13244,7 +13205,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 2,
+   "violations": 3,
    "lastScored": "",
    "lastInspected": "2024-06-21",
    "visits": 1,
@@ -13260,11 +13221,11 @@
      "good": [
       "FSSAI licence true copy was displayed at the office premises",
       "5 FoSTaC trained supervisors were available at the said premises",
-      "SR Foods Vendor was found to be supplying Soya Paneer with incorrect license",
       "Medical Fitness Certificates for food handlers and pest control records were available with FBO"
      ],
      "bad": [
       "The FSSAI license number displayed on Nutriwala Brand food articles like Sprouts, Baby Corn and Mushroom was found to be inactive and expired. The supermarket has voluntarily removed and discarded those articles on the spot",
+      "SR Foods Vendor was found to be supplying Soya Paneer with incorrect license",
       "Damaged and expired goods were properly segregated and kept separately in designated area as per rules"
      ],
      "action": "",
@@ -13287,7 +13248,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 3,
+   "violations": 4,
    "lastScored": "",
    "lastInspected": "2024-06-20",
    "visits": 1,
@@ -13301,13 +13262,13 @@
      "obtained": null,
      "total": null,
      "good": [
-      "FSSAI License true copy was displayed at the office premises",
-      "Windows were found fitted with insect proof screen and doors are also close fitted to avoid entry of pests"
+      "FSSAI License true copy was displayed at the office premises"
      ],
      "bad": [
       "Flower Brand Tamarind (30kg) and Packed Cumin Seeds (300kg) were found without proper label declaration and hence seized",
       "Rice Flour (5kg) used in papad manufacturing was found expired on 17.04.2024 & hence discarded on the spot",
-      "Medical Fitness Certificates for food handlers not available with the FBO. Pest control for the premises is done every 15 days as per the records available"
+      "Medical Fitness Certificates for food handlers not available with the FBO. Pest control for the premises is done every 15 days as per the records available",
+      "Windows were found fitted with insect proof screen and doors are also close fitted to avoid entry of pests"
      ],
      "action": "",
      "severity": "Non-compliance",
@@ -13373,7 +13334,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 5,
+   "violations": 6,
    "lastScored": "",
    "lastInspected": "2024-06-20",
    "visits": 1,
@@ -13388,15 +13349,15 @@
      "total": null,
      "good": [
       "FSSAI License true copy was displayed at the office premises",
-      "FoSTaC certificate available for Supervisor working at the premises",
-      "Analysis report for the food articles being manufactured at the said premises was being done from NABL accredited laboratory"
+      "FoSTaC certificate available for Supervisor working at the premises"
      ],
      "bad": [
       "Water analysis report for the RO water being used as an ingredient is not available with the FBO",
       "Parts of the packing machinery were found to be rusted",
       "Houseflies were observed inside manufacturing premises. Insect proof screen not found",
       "Some food handlers were not found wearing aprons & haircaps",
-      "Medical Fitness Certificates for food handlers and pest control records for the premises are not available with the FBO"
+      "Medical Fitness Certificates for food handlers and pest control records for the premises are not available with the FBO",
+      "Analysis report for the food articles being manufactured at the said premises was being done from NABL accredited laboratory"
      ],
      "action": "",
      "severity": "Non-compliance",
@@ -13494,7 +13455,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 2,
+   "violations": 3,
    "lastScored": "",
    "lastInspected": "2024-06-19",
    "visits": 1,
@@ -13507,10 +13468,9 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Found usage of synthetic food colours"
-     ],
+     "good": [],
      "bad": [
+      "Found usage of synthetic food colours",
       "Unhygienic conditions observed in work area, refridgerator and wash area",
       "Drinking water (pH 8.45) failed spot test"
      ],
@@ -13611,7 +13571,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 2,
+   "violations": 3,
    "lastScored": "",
    "lastInspected": "2024-06-19",
    "visits": 1,
@@ -13624,11 +13584,10 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Found rotten tomatoes, potatoes and coloured chips in stale condition"
-     ],
+     "good": [],
      "bad": [
       "Rusted dosa tawa, gutkha spit marks on kitchen walls, unhygienic kitchen were observed",
+      "Found rotten tomatoes, potatoes and coloured chips in stale condition",
       "Chilli sauce, Tomato sauce, Tea powder (presence of colour) samples failed in spot tests"
      ],
      "action": "Action initiated under the FSS Act, 2006",
@@ -13774,7 +13733,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 3,
+   "violations": 5,
    "lastScored": "",
    "lastInspected": "2024-06-18",
    "visits": 1,
@@ -13787,11 +13746,10 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Found workers chewing gutkha while cooking/serving",
-      "Found usage of synthetic colours"
-     ],
+     "good": [],
      "bad": [
+      "Found workers chewing gutkha while cooking/serving",
+      "Found usage of synthetic colours",
       "Expired Hing Powder (Dec'2023) and rotten vegetables found",
       "Unhygienic kitchen with presence of cockroaches and rusted dosa tawa",
       "Soy Sauce sample failed in spot test"
@@ -13974,7 +13932,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 5,
+   "violations": 8,
    "lastScored": "",
    "lastInspected": "2024-06-17",
    "visits": 1,
@@ -13987,16 +13945,15 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Usage of food colours observed",
-      "Observed raw materials, vegetables in unsanitary condition",
-      "Spot test done for drinking water, vinegar, chilli sauce and tomato sauce. Parameters found to be in acceptable range"
-     ],
+     "good": [],
      "bad": [
       "Running without FSSAI license",
+      "Usage of food colours observed",
       "Dosa tawa found to be rusted",
+      "Observed raw materials, vegetables in unsanitary condition",
       "Refridgerator found in unhygienic condition",
       "Workers found without hairnets",
+      "Spot test done for drinking water, vinegar, chilli sauce and tomato sauce. Parameters found to be in acceptable range",
       "Loose chilli powder sample lifted on suspicion of adulteration"
      ],
      "action": "",
@@ -14019,7 +13976,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 6,
+   "violations": 7,
    "lastScored": "",
    "lastInspected": "2024-06-15",
    "visits": 1,
@@ -14032,15 +13989,14 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Spot test done for water, tomato sauce in the 'Food Safety on Wheels' vehicle. Parameters found to be in acceptable range"
-     ],
+     "good": [],
      "bad": [
       "Facility found to be operating without any FSSAI license",
       "Vegetables (cauliflower and ladiesfinger) found to be infested with pests",
       "Dosa pan found to be rusted",
       "Work area observed to be unhygienic",
       "Improper storage: Rice and dals stored along with mattresses",
+      "Spot test done for water, tomato sauce in the 'Food Safety on Wheels' vehicle. Parameters found to be in acceptable range",
       "Loose chilli powder and bengal gram samples lifted on suspicion of adulteration"
      ],
      "action": "",
@@ -14063,7 +14019,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 3,
+   "violations": 4,
    "lastScored": "",
    "lastInspected": "2024-06-14",
    "visits": 1,
@@ -14076,13 +14032,12 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Displayed receipt of the licence instead of FSSAI licence copy"
-     ],
+     "good": [],
      "bad": [
       "Food articles like Mocktail syrup, Icing sugar, Rosemary leaves, Cinnamon powder, Cashews and Chicken breast strips were found expired and hence discarded on the spot",
       "Unlabelled food articles like Tasty beans, Thai curry sauce were seized",
-      "Pest control records and medical fitness certificates of food handlers not available with FBO"
+      "Pest control records and medical fitness certificates of food handlers not available with FBO",
+      "Displayed receipt of the licence instead of FSSAI licence copy"
      ],
      "action": "",
      "severity": "Non-compliance",
@@ -14221,7 +14176,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 7,
+   "violations": 8,
    "lastScored": "",
    "lastInspected": "2024-06-05",
    "visits": 1,
@@ -14234,14 +14189,13 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Cosmetic products were stored along with food products"
-     ],
+     "good": [],
      "bad": [
       "The premises found to be very disorganised, unhygienic and dusty at storage racks",
       "There is no Fostac trainee available",
       "Food handlers were found without headgears, gloves and aprons",
       "Medical fitness certificates of food handlers not available",
+      "Cosmetic products were stored along with food products",
       "The license of Whole Farm Congruence Trade and Services Pvt Ltd was not as per FSS act regarding address mentioned on the label. Notice will be sent",
       "The products manufactured by Kamakshi Foods license found to be expired, hence the products of VSR i.e Suji, Raw peanut butter, Maida, Poha, Besan and Bajra worth Rs. 30k were seized",
       "Suspected infested Whole Farm Ragi flour and Toor dal of worth Rs. 52k was seized and samples sent to lab"
@@ -14309,7 +14263,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 3,
+   "violations": 4,
    "lastScored": "",
    "lastInspected": "2024-06-02",
    "visits": 1,
@@ -14325,13 +14279,13 @@
      "good": [
       "Food handlers were found wearing haircaps, gloves and aprons",
       "Pest control records for the premises available with the FBO and found to be conducting fortnightly",
-      "Water analysis report for RO water used as an ingredient for food preparation is found with the FBO",
       "FSSAI License true copy was displayed at entrance of the premises"
      ],
      "bad": [
       "Green Moong(3kg), Eating Soda (2kg) found to be expired and discarded",
       "Biscuits, Jaggery, Kaju and other items worth Rs. 2.7 Lakhs were seized for not following FSSAI labelling regulations",
-      "Packaged Drinking Water (600 bottles) was seized for having low TDS of only 27 ppm on spot inspection"
+      "Packaged Drinking Water (600 bottles) was seized for having low TDS of only 27 ppm on spot inspection",
+      "Water analysis report for RO water used as an ingredient for food preparation is found with the FBO"
      ],
      "action": "",
      "severity": "Non-compliance",
@@ -14481,7 +14435,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 8,
+   "violations": 9,
    "lastScored": "",
    "lastInspected": "2024-05-30",
    "visits": 1,
@@ -14494,10 +14448,9 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Rust observed on the transportation trolleys"
-     ],
+     "good": [],
      "bad": [
+      "Rust observed on the transportation trolleys",
       "Water stagnation observed on the floor, bad smell observed at the manufacturing area. Insects proof screens were not found",
       "Food handlers were found without wearing gloves, head gear and aprons",
       "FSSAI License not displayed in the premises",
@@ -14571,7 +14524,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 5,
+   "violations": 6,
    "lastScored": "",
    "lastInspected": "2024-05-29",
    "visits": 1,
@@ -14584,13 +14537,12 @@
      "pct": null,
      "obtained": null,
      "total": null,
-     "good": [
-      "Stagnant water, untidy and greasy exhaust fans, flaking plaster observed near cooking area"
-     ],
+     "good": [],
      "bad": [
       "The FSSAI License true copy was not displayed at any prominent location of the premises",
       "Food handlers found without wearing any haircaps, gloves and aprons",
       "The kitchen premises found open to external environment without proper insect proof screen and doors not close fitted to avoid entry of pests or flies and some Dustbins found open without lids",
+      "Stagnant water, untidy and greasy exhaust fans, flaking plaster observed near cooking area",
       "Refrigerator found in very unhygienic condition and with food articles not covered and labelled properly",
       "Medical Fitness Certificates for Food handlers and Pest control records for the premises not found with the FBO"
      ],
@@ -14614,7 +14566,7 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 5,
+   "violations": 6,
    "lastScored": "",
    "lastInspected": "2024-05-29",
    "visits": 1,
@@ -14628,7 +14580,6 @@
      "obtained": null,
      "total": null,
      "good": [
-      "Flaking plaster from ceiling, dust and cobwebs observed over gas pipeline in ground floor kitchen area",
       "FBO found to be carrying out Pest Control Measures every fortnight and records available"
      ],
      "bad": [
@@ -14636,6 +14587,7 @@
       "Some of the semi-prepared and raw food articles which are stored inside refrigerator found without proper labelling and proper covering",
       "FSSAI license true copy was not displayed at any prominent location of the premises",
       "The kitchen area present at the ground floor found open to outside environment without proper insect proof screen and doors not close fitted to avoid entry of pests or flies and some dustbins found open without lids",
+      "Flaking plaster from ceiling, dust and cobwebs observed over gas pipeline in ground floor kitchen area",
       "Medical Fitness Certificates for food handlers not found"
      ],
      "action": "",

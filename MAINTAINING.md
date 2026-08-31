@@ -233,12 +233,27 @@ Unicode-bold header trick. Two behaviours worth knowing:
   drops district inspections (Warangal, Khammam, Medak…) at build time, because
   this is a Hyderabad site. Patancheru, Ameenpur and RC Puram are kept — they are
   Sangareddy district on paper but sit inside the Hyderabad ring road.
-- **Positive observations are separated out.** These posts bullet everything
+- **A bullet is a violation by default.** These posts bullet everything
   together, so "Pest control records were available" sits beside "FSSAI licence
-  not displayed". Only bullets matching `NEGATIVE_CUE` are published as
-  violations; the rest become good practices. Publishing a positive finding
-  under "Violations" would misrepresent a named business, so if you touch that
-  regex, re-check the samples in the docstring first.
+  not displayed". `classify()` records a bullet as a good practice **only** when
+  it carries an explicit `POSITIVE_CUE` and no `NEGATIVE_CUE`. Anything
+  ambiguous stays a violation.
+
+  This default is deliberate and was learned the hard way. An earlier version
+  had it inverted — anything without a negative keyword became a good practice —
+  and it published *"Raw chicken directly dumped in the refrigerators"* and
+  *"Iron knife was being used for vegetable cutting"* as **good practices** about
+  a named restaurant. These lists are inspection findings; they overwhelmingly
+  describe what was wrong, so violation is the safe default.
+
+  Watch for the four patterns that broke it, all now covered: contractions
+  (`doesn't provide adequate space`), `instead of`, `but` introducing the real
+  problem (`wearing hairnets but handling food with bare hands`), and directives
+  about what ought to happen (`personnel must be trained`).
+
+  **If you change either regex, re-audit.** Dump every distinct string still
+  classified as a good practice and read the list — there were only 95, so it
+  takes minutes and it is the only way to catch this class of error.
 
 ## Record age
 
