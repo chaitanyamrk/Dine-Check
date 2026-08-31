@@ -147,6 +147,31 @@ def canonical(name: str) -> str:
     return name
 
 
+def is_chain(name: str) -> bool:
+    """True for brands that legitimately have one outlet per locality."""
+    low = name.lower()
+    return any(re.search(pat, low) for pat, _ in CHAIN_ALIASES)
+
+
+ANY_PAREN = re.compile(r"\s*\([^)]*\)\s*")
+
+
+def match_key(name: str) -> str:
+    """
+    Merge key. Never displayed — only used to decide whether two rows describe
+    the same establishment.
+
+    The source posts spell one venue several ways: "Multi cuisine" vs
+    "Multicuisine", "All Rich Dairy (Swetha Diary)" vs "All Rich Dairy". So the
+    key drops every parenthetical and every space and punctuation mark.
+
+    Descriptor words are deliberately NOT stripped. Dropping "Restaurant" or
+    "Bakery" would fuse genuinely different businesses that share a first word.
+    """
+    n = ANY_PAREN.sub(" ", squash(name).lower())
+    return re.sub(r"[^a-z0-9]+", "", n)
+
+
 # ------------------------------------------------------------- location logic
 
 
@@ -212,23 +237,29 @@ STRIP_PREFIX = re.compile(
 
 def resolve_area(loc: str, gaz: dict):
     """
-    Return (display_location, canonical_area, lat, lng).
+    Return (display_location, canonical_area, lat, lng, hits).
 
     An address runs specific -> broad ("GSM Mall, Madinaguda"), so the LAST
     comma-part that matches the gazetteer is the safest locality to group by.
+
+    `hits` is every gazetteer area the address touches, not just the last one.
+    "Tolichowki, Mehdipatnam" groups under Mehdipatnam but also records
+    Tolichowki, which is what lets a second post naming only "Tolichowki" be
+    recognised as the same place.
     """
     loc = squash(loc)
     if not loc:
-        return "", "", None, None
+        return "", "", None, None, set()
 
     parts = [STRIP_PREFIX.sub("", squash(p)) for p in loc.split(",")]
     parts = [p for p in parts if p and not NOT_A_PLACE.search(p)]
 
-    hit = None
+    hit, hits = None, set()
     for p in parts:
         low = p.lower()
         if low in gaz:
             hit = gaz[low]
+            hits.add(hit["area"])
             continue
         # substring match against aliases, longest alias first
         for alias in sorted(gaz, key=len, reverse=True):
@@ -236,13 +267,14 @@ def resolve_area(loc: str, gaz: dict):
                 continue
             if re.search(r"\b" + re.escape(alias) + r"\b", low):
                 hit = gaz[alias]
+                hits.add(hit["area"])
                 break
 
     if hit:
-        return loc, hit["area"], hit["lat"], hit["lng"]
+        return loc, hit["area"], hit["lat"], hit["lng"], hits
 
     area = parts[-1] if parts else squash(STRIP_PREFIX.sub("", loc))
-    return loc, area, None, None
+    return loc, area, None, None, ({area} if area else set())
 
 
 # ------------------------------------------------------------------ scoring
@@ -318,12 +350,13 @@ def main():
             continue
 
         loc_raw = recover_location(r)
-        display_loc, area, lat, lng = resolve_area(loc_raw, areas)
+        display_loc, area, lat, lng, area_hits = resolve_area(loc_raw, areas)
         if lat is None:
             swept = sweep_for_area(r.get("raw_text", ""), areas)
             if swept:
                 g = next(v for v in areas.values() if v["area"] == swept)
                 area, lat, lng = swept, g["lat"], g["lng"]
+                area_hits = area_hits | {swept}
                 display_loc = display_loc or swept
 
         obtained = to_int(r.get("score_obtained", ""))
@@ -345,6 +378,7 @@ def main():
                 "brand": canonical(name),
                 "location": display_loc,
                 "area": area,
+                "areaHits": area_hits,
                 "lat": lat,
                 "lng": lng,
                 "date": parse_date(r.get("inspection_date", "")) or parse_date(r.get("post_date", "")),
@@ -368,9 +402,9 @@ def main():
     seen, deduped = set(), []
     for ins in inspections:
         if ins["pct"] is not None:
-            k = (ins["brand"].lower(), ins["area"].lower(), ins["pct"], ins["obtained"], ins["total"])
+            k = (match_key(ins["brand"]), ins["area"].lower(), ins["pct"], ins["obtained"], ins["total"])
         else:
-            k = (ins["brand"].lower(), ins["area"].lower(), ins["date"], ins["url"])
+            k = (match_key(ins["brand"]), ins["area"].lower(), ins["date"], ins["url"])
         if k in seen:
             continue
         seen.add(k)
@@ -378,31 +412,91 @@ def main():
     dupes = len(inspections) - len(deduped)
     inspections = deduped
 
-    # ---- merge into venues: one card per (brand, area)
+    # ---- merge into venues: one card per (name, area)
     venues = {}
     for ins in inspections:
-        key = (ins["brand"].lower(), ins["area"].lower())
+        key = (match_key(ins["brand"]), ins["area"].lower())
         v = venues.setdefault(
             key,
-            {
-                "id": "",
-                "name": ins["brand"],
-                "aka": set(),
-                "location": ins["location"],
-                "area": ins["area"],
-                "inspections": [],
-            },
+            {"id": "", "areaHits": set(), "inspections": []},
         )
-        if ins["name"] != ins["brand"]:
-            v["aka"].add(ins["name"])
-        if len(ins["location"]) > len(v["location"]):
-            v["location"] = ins["location"]
+        v["areaHits"] |= ins["areaHits"]
         v["inspections"].append(ins)
 
+    # ---- second pass: the same establishment split across spelling or locality
+    #
+    # Pass one keys on (name, area), so one venue still ends up on two cards
+    # when the posts disagree about where it is:
+    #   "Tolichowki"            vs "Tolichowki, Mehdipatnam"   (nested locality)
+    #   "Abdullapurmet"         vs no locality at all          (missing locality)
+    # Both are the same place, and both are now caught below.
+    #
+    # Chains are exempt: two KFCs in overlapping localities really are two
+    # restaurants, and merging them would hide one of the two scores.
+    def same_place(a, b, pair_only):
+        blank = {"", "unspecified"}
+        if area_of(a).lower() in blank or area_of(b).lower() in blank:
+            # A placeless record joins its named twin only when there is exactly
+            # one twin to join; with three candidates the choice would be a guess.
+            return pair_only
+        return bool(a["areaHits"] & b["areaHits"])
+
+    def area_of(v):
+        newest = max(v["inspections"], key=lambda i: i["date"] or "")
+        return newest["area"]
+
+    def name_of(v):
+        newest_date = max((i["date"] or "") for i in v["inspections"])
+        # Among the most recent posts, prefer the fullest spelling.
+        return max(
+            (i for i in v["inspections"] if (i["date"] or "") == newest_date),
+            key=lambda i: len(i["brand"]),
+        )["brand"]
+
+    by_name = collections.defaultdict(list)
+    for key in venues:
+        by_name[key[0]].append(key)
+
+    merged = []
+    for nkey, keys in by_name.items():
+        if len(keys) < 2:
+            continue
+        if any(is_chain(name_of(venues[k])) for k in keys):
+            continue
+        pair_only = len(keys) == 2
+        rest = list(keys)
+        i = 0
+        while i < len(rest):
+            base = venues[rest[i]]
+            j = i + 1
+            while j < len(rest):
+                other = venues[rest[j]]
+                if same_place(base, other, pair_only):
+                    merged.append(
+                        f"{name_of(other)} ({area_of(other) or 'no locality'}) "
+                        f"-> {name_of(base)} ({area_of(base) or 'no locality'})"
+                    )
+                    base["inspections"] += other["inspections"]
+                    base["areaHits"] |= other["areaHits"]
+                    del venues[rest[j]]
+                    rest.pop(j)
+                    continue
+                j += 1
+            i += 1
+
     out = []
-    for (bkey, akey), v in venues.items():
+    for v in venues.values():
         ins = sorted(v["inspections"], key=lambda x: x["date"] or "", reverse=True)
         latest = ins[0]
+        v["name"] = name_of(v)
+        v["area"] = area_of(v)
+        v["location"] = max((i["location"] for i in ins), key=len, default="")
+        v["aka"] = {
+            n
+            for i in ins
+            for n in (i["name"], i["brand"])
+            if n and n != v["name"]
+        }
         scored = [i for i in ins if i["pct"] is not None]
         latest_scored = scored[0] if scored else None
         kind = "inspection" if scored else "enforcement"
@@ -508,6 +602,10 @@ def main():
     print(f"venues={s['venues']}  inspections={s['inspections']}  scored={s['scored']}  "
           f"avg={s['avgScore']}  areas={s['areas']}  "
           f"dupes_merged={s['duplicatePosts']}  non_venue_posts={s['skippedPosts']}")
+    if merged:
+        print(f"split venues re-merged ({len(merged)}):")
+        for m in sorted(merged):
+            print("   ", m)
     if s["ungeocoded"]:
         print("NO COORDINATES for:", ", ".join(s["ungeocoded"]))
     print("wrote", OUT)

@@ -1,9 +1,9 @@
 {
- "generated": "2026-08-31T00:33:45Z",
+ "generated": "2026-08-31T00:57:34Z",
  "stats": {
-  "venues": 317,
+  "venues": 315,
   "scoredVenues": 84,
-  "enforcementVenues": 233,
+  "enforcementVenues": 231,
   "inspections": 324,
   "scored": 84,
   "avgScore": 74,
@@ -368,12 +368,6 @@
    "lng": 78.403
   },
   {
-   "name": "Tolichowki",
-   "count": 2,
-   "lat": 17.398,
-   "lng": 78.413
-  },
-  {
    "name": "Uppal",
    "count": 2,
    "lat": 17.398,
@@ -636,6 +630,12 @@
    "count": 1,
    "lat": 17.482,
    "lng": 78.287
+  },
+  {
+   "name": "Tolichowki",
+   "count": 1,
+   "lat": 17.398,
+   "lng": 78.413
   },
   {
    "name": "Vengal Rao Nagar",
@@ -5878,7 +5878,9 @@
   {
    "id": "4-seasons-multicuisine-restaurant-mehdipatnam",
    "name": "4 Seasons Multicuisine Restaurant",
-   "aka": [],
+   "aka": [
+    "4 Seasons Multi cuisine Restaurant"
+   ],
    "location": "Tolichowki, Mehdipatnam",
    "area": "Mehdipatnam",
    "lat": 17.396,
@@ -5886,10 +5888,10 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 12,
+   "violations": 18,
    "lastScored": "",
    "lastInspected": "2025-03-05",
-   "visits": 1,
+   "visits": 2,
    "notice": false,
    "photo": "https://pbs.twimg.com/media/GlafX72bwAEbb2X?format=jpg&name=small",
    "history": [
@@ -5920,6 +5922,31 @@
      "source": "@c_tgsafe",
      "url": "https://x.com/c_tgsafe/status/1897879590061981758",
      "location": "Tolichowki, Mehdipatnam"
+    },
+    {
+     "kind": "enforcement",
+     "date": "2024-07-03",
+     "pct": null,
+     "obtained": null,
+     "total": null,
+     "good": [
+      "Food handlers were found wearing headgear and hotel uniforms",
+      "Pest control records for premises were available"
+     ],
+     "bad": [
+      "FSSAI license true copy was not displayed at premises",
+      "Misbranded items like Sweet Sounf, Fry Sounf and Potli ka Masala were seized for not having date of manufacturing/packed date",
+      "Stored food articles were not covered and not labelled properly",
+      "Medical fitness certificates for food handlers were not available and upon enquiry FBO stated that diagnostic tests completed and awaiting certificates",
+      "Kitchen premises was found open to the outside environment from one side without insect proof screen and doors are not close fitted to avoid entry of pests or dust. Open dustbins observed",
+      "Water stagnation observed near cleaning areas and loose plastering flakes observed inside kitchen premises"
+     ],
+     "action": "",
+     "severity": "Non-compliance",
+     "notice": false,
+     "source": "@c_tgsafe",
+     "url": "https://x.com/c_tgsafe/status/1808871785443545497",
+     "location": "Tolichowki"
     }
    ]
   },
@@ -6490,7 +6517,9 @@
   {
    "id": "all-rich-dairy-swetha-diary-abdullapurmet",
    "name": "All Rich Dairy (Swetha Diary)",
-   "aka": [],
+   "aka": [
+    "All Rich Dairy"
+   ],
    "location": "Pasumamula(V), Abdullapurmet(M)",
    "area": "Abdullapurmet",
    "lat": 17.306,
@@ -6498,10 +6527,10 @@
    "kind": "enforcement",
    "score": null,
    "grade": "unrated",
-   "violations": 11,
+   "violations": 20,
    "lastScored": "",
    "lastInspected": "2024-12-30",
-   "visits": 1,
+   "visits": 2,
    "notice": false,
    "photo": "https://pbs.twimg.com/media/GgEKsyNbYAE6PH6?format=jpg&name=small",
    "history": [
@@ -6531,6 +6560,31 @@
      "source": "@c_tgsafe",
      "url": "https://x.com/c_tgsafe/status/1873790689517199763",
      "location": "Pasumamula(V), Abdullapurmet(M)"
+    },
+    {
+     "kind": "enforcement",
+     "date": "2024-05-30",
+     "pct": null,
+     "obtained": null,
+     "total": null,
+     "good": [],
+     "bad": [
+      "Rust observed on the transportation trolleys",
+      "Water stagnation observed on the floor, bad smell observed at the manufacturing area. Insects proof screens were not found",
+      "Food handlers were found without wearing gloves, head gear and aprons",
+      "FSSAI License not displayed in the premises",
+      "The license is not as per FSSAI guidelines i.e. Name of the Manufacturer and Marketer address",
+      "Medical Fitness certificates of food handlers were not available",
+      "There is no FOSTAC trainee available at the factory",
+      "Unlabelled Ghee (263kg) seized at FBO premises",
+      "Transport license not available for the vehicles"
+     ],
+     "action": "",
+     "severity": "Non-compliance",
+     "notice": false,
+     "source": "@c_tgsafe",
+     "url": "https://x.com/c_tgsafe/status/1796508635939676360",
+     "location": ""
     }
    ]
   },
@@ -12636,51 +12690,6 @@
    ]
   },
   {
-   "id": "4-seasons-multi-cuisine-restaurant-tolichowki",
-   "name": "4 Seasons Multi cuisine Restaurant",
-   "aka": [],
-   "location": "Tolichowki",
-   "area": "Tolichowki",
-   "lat": 17.398,
-   "lng": 78.413,
-   "kind": "enforcement",
-   "score": null,
-   "grade": "unrated",
-   "violations": 6,
-   "lastScored": "",
-   "lastInspected": "2024-07-03",
-   "visits": 1,
-   "notice": false,
-   "photo": "https://pbs.twimg.com/media/GRpnR4obMAEFnHE?format=jpg&name=small",
-   "history": [
-    {
-     "kind": "enforcement",
-     "date": "2024-07-03",
-     "pct": null,
-     "obtained": null,
-     "total": null,
-     "good": [
-      "Food handlers were found wearing headgear and hotel uniforms",
-      "Pest control records for premises were available"
-     ],
-     "bad": [
-      "FSSAI license true copy was not displayed at premises",
-      "Misbranded items like Sweet Sounf, Fry Sounf and Potli ka Masala were seized for not having date of manufacturing/packed date",
-      "Stored food articles were not covered and not labelled properly",
-      "Medical fitness certificates for food handlers were not available and upon enquiry FBO stated that diagnostic tests completed and awaiting certificates",
-      "Kitchen premises was found open to the outside environment from one side without insect proof screen and doors are not close fitted to avoid entry of pests or dust. Open dustbins observed",
-      "Water stagnation observed near cleaning areas and loose plastering flakes observed inside kitchen premises"
-     ],
-     "action": "",
-     "severity": "Non-compliance",
-     "notice": false,
-     "source": "@c_tgsafe",
-     "url": "https://x.com/c_tgsafe/status/1808871785443545497",
-     "location": "Tolichowki"
-    }
-   ]
-  },
-  {
    "id": "hotel-rumaan-tolichowki",
    "name": "Hotel Rumaan",
    "aka": [],
@@ -14421,51 +14430,6 @@
      "source": "@c_tgsafe",
      "url": "https://x.com/c_tgsafe/status/1796810749815423380",
      "location": "Jubilee Hills"
-    }
-   ]
-  },
-  {
-   "id": "all-rich-dairy",
-   "name": "All Rich Dairy",
-   "aka": [],
-   "location": "",
-   "area": "Unspecified",
-   "lat": null,
-   "lng": null,
-   "kind": "enforcement",
-   "score": null,
-   "grade": "unrated",
-   "violations": 9,
-   "lastScored": "",
-   "lastInspected": "2024-05-30",
-   "visits": 1,
-   "notice": false,
-   "photo": "https://pbs.twimg.com/media/GO57FRdWsAEFWMY?format=jpg&name=small",
-   "history": [
-    {
-     "kind": "enforcement",
-     "date": "2024-05-30",
-     "pct": null,
-     "obtained": null,
-     "total": null,
-     "good": [],
-     "bad": [
-      "Rust observed on the transportation trolleys",
-      "Water stagnation observed on the floor, bad smell observed at the manufacturing area. Insects proof screens were not found",
-      "Food handlers were found without wearing gloves, head gear and aprons",
-      "FSSAI License not displayed in the premises",
-      "The license is not as per FSSAI guidelines i.e. Name of the Manufacturer and Marketer address",
-      "Medical Fitness certificates of food handlers were not available",
-      "There is no FOSTAC trainee available at the factory",
-      "Unlabelled Ghee (263kg) seized at FBO premises",
-      "Transport license not available for the vehicles"
-     ],
-     "action": "",
-     "severity": "Non-compliance",
-     "notice": false,
-     "source": "@c_tgsafe",
-     "url": "https://x.com/c_tgsafe/status/1796508635939676360",
-     "location": ""
     }
    ]
   },

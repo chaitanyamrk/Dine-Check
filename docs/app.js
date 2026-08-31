@@ -337,8 +337,11 @@ function openSheet(v){
      '<svg viewBox="0 0 24 24"><path d="M14 3h7v7M21 3l-9 9M19 14v5a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h5"/></svg>'+
      'Original report from '+esc(latest.source||'the inspecting authority')+'</a>'+
      '<p style="font-size:12.5px;color:var(--ink-3);margin:10px 0 4px;line-height:1.55">'+
-     'Checklist totals differ by business type, so compare places on the percentage, never on raw marks. '+
-     'This reflects a single visit on '+fmtDate(latest.date)+'.</p>';
+     (enf?'':'Checklist totals differ by business type, so compare places on the percentage, never on raw marks. ')+
+     (v.history.length>1
+        ? 'Based on '+v.history.length+' recorded visits, the most recent on '+fmtDate(latest.date)+'. '+
+          'The findings above are from that visit; earlier ones are listed under inspection history.'
+        : 'This reflects a single visit on '+fmtDate(latest.date)+'.')+'</p>';
 
   $("#sheetBody").innerHTML=h;
   $("#sheetBody").scrollTop=0;

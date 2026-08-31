@@ -143,6 +143,49 @@ cleaning before it can be ranked. `build_data.py` does five things:
    one, keeping the copy that carries a date and a source URL.
 5. **Merges repeat visits.** One card per venue per area, showing the most
    recent score with the full inspection history behind it.
+6. **Re-merges venues the first five steps split apart.** See below — this is
+   the step most likely to need attention when a venue looks duplicated.
+
+### Why one venue can end up on two cards
+
+Steps 4 and 5 key on `(name, area)`. Both halves of that key are unreliable,
+because they come from prose written by a different officer each time.
+
+**Names drift.** The same restaurant is posted as `4 Seasons Multicuisine
+Restaurant` and `4 Seasons Multi cuisine Restaurant`; the same dairy as
+`All Rich Dairy` and `All Rich Dairy (Swetha Diary)`. So merging uses
+`match_key()` rather than the display name: it drops every parenthetical, then
+every space and punctuation mark, leaving `4seasonsmulticuisinerestaurant`.
+
+`match_key()` deliberately does **not** strip descriptor words. Dropping
+`Restaurant` and `Bakery` would make `Mehfil Restaurant` and `Mehfil Bakery`
+collide, which is a worse failure than leaving a duplicate on the page.
+
+**Localities nest.** One post says `Tolichowki`, the next says
+`Tolichowki, Mehdipatnam`. The gazetteer lookup takes the last matching part,
+so those become two different areas. `resolve_area()` therefore returns *every*
+area an address touches, not just the winner, and two cards with the same
+`match_key` merge when those sets overlap. A record with no locality at all
+joins its twin only when there is exactly one twin — with three candidates the
+choice would be a guess, so it is left alone.
+
+**Chains are exempt from this second pass.** Two KFCs in overlapping localities
+really are two restaurants, and merging them would hide one of the two scores.
+Membership is decided by `CHAIN_ALIASES`, so a chain that starts appearing in
+the data needs adding there before it will be protected.
+
+Every re-merge is printed by the build, so the decisions stay auditable:
+
+```
+split venues re-merged (2):
+    4 Seasons Multi cuisine Restaurant (Tolichowki) -> 4 Seasons Multicuisine Restaurant (Mehdipatnam)
+    All Rich Dairy (no locality) -> All Rich Dairy (Swetha Diary) (Abdullapurmet)
+```
+
+The surviving card keeps the name and area of the **most recent** visit, shows
+the longest address of the two, and lists the discarded spelling under `aka`,
+so searching the old name still finds it. Read that list after every rebuild:
+a merge that should not have happened is visible here and nowhere else.
 
 ### Scores are percentages, deliberately
 
