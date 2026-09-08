@@ -1,0 +1,404 @@
+{
+ "_source": "Mined from 2474 FSSAI hygiene-rating addresses and geocoded via OpenStreetMap Nominatim.",
+ "_warning": "Centroids are locality-level, accurate to roughly a kilometre. Edit by hand freely; this file is never regenerated over your edits without you re-running the script.",
+ "a wing": {
+  "area": "A Wing",
+  "lat": 19.1466,
+  "lng": 72.8229
+ },
+ "a-wing": {
+  "area": "A-wing",
+  "lat": 19.1416,
+  "lng": 72.8277
+ },
+ "airoli": {
+  "area": "Airoli",
+  "lat": 19.1585,
+  "lng": 72.9994
+ },
+ "andheri": {
+  "area": "Andheri",
+  "lat": 19.1197,
+  "lng": 72.8464
+ },
+ "andheri (east)": {
+  "area": "Andheri (east)",
+  "lat": 19.1159,
+  "lng": 72.8542
+ },
+ "andheri east": {
+  "area": "Andheri East",
+  "lat": 19.1159,
+  "lng": 72.8542
+ },
+ "andheri east mumbai": {
+  "area": "Andheri East Mumbai",
+  "lat": 19.1137,
+  "lng": 72.8586
+ },
+ "andheri kurla road": {
+  "area": "Andheri Kurla Road",
+  "lat": 19.0828,
+  "lng": 72.8805
+ },
+ "andheri west": {
+  "area": "Andheri West",
+  "lat": 19.1172,
+  "lng": 72.834
+ },
+ "b wing": {
+  "area": "B Wing",
+  "lat": 19.0556,
+  "lng": 72.9229
+ },
+ "bandra east": {
+  "area": "Bandra East",
+  "lat": 19.0617,
+  "lng": 72.8498
+ },
+ "bandra kurla complex": {
+  "area": "Bandra Kurla Complex",
+  "lat": 19.0607,
+  "lng": 72.8547
+ },
+ "bandra west": {
+  "area": "Bandra West",
+  "lat": 19.0583,
+  "lng": 72.8303
+ },
+ "bhandup west": {
+  "area": "Bhandup West",
+  "lat": 19.1463,
+  "lng": 72.9339
+ },
+ "borivali west": {
+  "area": "Borivali West",
+  "lat": 19.2298,
+  "lng": 72.8471
+ },
+ "cbd belapur": {
+  "area": "CBD Belapur",
+  "lat": 19.019,
+  "lng": 73.0391
+ },
+ "chembur": {
+  "area": "Chembur",
+  "lat": 19.0548,
+  "lng": 72.898
+ },
+ "chhatrapati shivaji intl. airport": {
+  "area": "Chhatrapati Shivaji Intl. Airport",
+  "lat": 19.0901,
+  "lng": 72.8638
+ },
+ "churchgate": {
+  "area": "Churchgate",
+  "lat": 18.9355,
+  "lng": 72.8272
+ },
+ "colaba": {
+  "area": "Colaba",
+  "lat": 18.9151,
+  "lng": 72.826
+ },
+ "csia": {
+  "area": "Csia",
+  "lat": 19.0942,
+  "lng": 72.8533
+ },
+ "csmia": {
+  "area": "Csmia",
+  "lat": 19.0942,
+  "lng": 72.8541
+ },
+ "dadar west": {
+  "area": "Dadar West",
+  "lat": 19.0239,
+  "lng": 72.8382
+ },
+ "dist thane": {
+  "area": "Dist Thane",
+  "lat": 19.1755,
+  "lng": 72.9902
+ },
+ "dist-thane": {
+  "area": "Dist-thane",
+  "lat": 19.1755,
+  "lng": 72.9902
+ },
+ "dist. thane": {
+  "area": "Dist. Thane",
+  "lat": 19.1755,
+  "lng": 72.9902
+ },
+ "dist.thane": {
+  "area": "Dist.thane",
+  "lat": 19.1755,
+  "lng": 72.9902
+ },
+ "food court": {
+  "area": "Food Court",
+  "lat": 18.9764,
+  "lng": 72.8073
+ },
+ "fort": {
+  "area": "Fort",
+  "lat": 18.922,
+  "lng": 72.8346
+ },
+ "ghansoli": {
+  "area": "Ghansoli",
+  "lat": 19.1164,
+  "lng": 73.007
+ },
+ "ghatkopar west": {
+  "area": "Ghatkopar West",
+  "lat": 19.0897,
+  "lng": 72.9048
+ },
+ "ghatkopar west mumbai": {
+  "area": "Ghatkopar West Mumbai",
+  "lat": 19.0817,
+  "lng": 72.9075
+ },
+ "goregaon west": {
+  "area": "Goregaon West",
+  "lat": 19.1633,
+  "lng": 72.8412
+ },
+ "hiranandani gardens": {
+  "area": "Hiranandani Gardens",
+  "lat": 19.1184,
+  "lng": 72.9115
+ },
+ "inorbit mall": {
+  "area": "Inorbit Mall",
+  "lat": 19.173,
+  "lng": 72.8351
+ },
+ "kalyan west": {
+  "area": "Kalyan West",
+  "lat": 19.1724,
+  "lng": 72.9569
+ },
+ "kandivali east": {
+  "area": "Kandivali East",
+  "lat": 19.2052,
+  "lng": 72.8626
+ },
+ "kandivali west": {
+  "area": "Kandivali West",
+  "lat": 19.214,
+  "lng": 72.8373
+ },
+ "khar west": {
+  "area": "Khar West",
+  "lat": 19.0798,
+  "lng": 72.8248
+ },
+ "kurla west": {
+  "area": "Kurla West",
+  "lat": 19.0686,
+  "lng": 72.8766
+ },
+ "lbs marg": {
+  "area": "LBS Marg",
+  "lat": 19.0841,
+  "lng": 72.8835
+ },
+ "level 3": {
+  "area": "Level 3",
+  "lat": 19.055,
+  "lng": 72.8692
+ },
+ "level 4": {
+  "area": "Level 4",
+  "lat": 19.055,
+  "lng": 72.8692
+ },
+ "level-4": {
+  "area": "Level-4",
+  "lat": 19.055,
+  "lng": 72.8692
+ },
+ "link road": {
+  "area": "Link Road",
+  "lat": 19.1728,
+  "lng": 72.8363
+ },
+ "lower parel": {
+  "area": "Lower Parel",
+  "lat": 18.9957,
+  "lng": 72.8303
+ },
+ "malad (west)": {
+  "area": "Malad (west)",
+  "lat": 19.1853,
+  "lng": 72.8359
+ },
+ "malad west": {
+  "area": "Malad West",
+  "lat": 19.1853,
+  "lng": 72.8359
+ },
+ "manpada": {
+  "area": "Manpada",
+  "lat": 19.2356,
+  "lng": 72.9584
+ },
+ "midc": {
+  "area": "Midc",
+  "lat": 19.1205,
+  "lng": 72.8646
+ },
+ "mira bhayander road": {
+  "area": "Mira Bhayander Road",
+  "lat": 19.2813,
+  "lng": 72.8748
+ },
+ "mulund west": {
+  "area": "Mulund West",
+  "lat": 19.172,
+  "lng": 72.9512
+ },
+ "mumbai": {
+  "area": "Mumbai",
+  "lat": 19.0593,
+  "lng": 72.8613
+ },
+ "navi mumbai": {
+  "area": "Navi Mumbai",
+  "lat": 19.1511,
+  "lng": 72.9995
+ },
+ "nerul": {
+  "area": "Nerul",
+  "lat": 19.0336,
+  "lng": 73.0182
+ },
+ "parel": {
+  "area": "Parel",
+  "lat": 18.9885,
+  "lng": 72.8394
+ },
+ "phase ii": {
+  "area": "Phase II",
+  "lat": 19.1375,
+  "lng": 72.8178
+ },
+ "powai": {
+  "area": "Powai",
+  "lat": 19.1187,
+  "lng": 72.9073
+ },
+ "r city mall": {
+  "area": "R City Mall",
+  "lat": 19.0999,
+  "lng": 72.9163
+ },
+ "sahar": {
+  "area": "Sahar",
+  "lat": 19.097,
+  "lng": 72.8746
+ },
+ "sahar road": {
+  "area": "Sahar Road",
+  "lat": 19.1105,
+  "lng": 72.8512
+ },
+ "saki vihar road": {
+  "area": "Saki Vihar Road",
+  "lat": 19.1293,
+  "lng": 72.8962
+ },
+ "sanpada": {
+  "area": "Sanpada",
+  "lat": 19.066,
+  "lng": 73.0095
+ },
+ "santacruz (east)": {
+  "area": "Santacruz (east)",
+  "lat": 19.0804,
+  "lng": 72.8553
+ },
+ "santacruz east": {
+  "area": "Santacruz East",
+  "lat": 19.0782,
+  "lng": 72.8678
+ },
+ "santacruz(e)": {
+  "area": "Santacruz(e)",
+  "lat": 19.0787,
+  "lng": 72.8471
+ },
+ "santacruz(east)": {
+  "area": "Santacruz(east)",
+  "lat": 19.0782,
+  "lng": 72.8678
+ },
+ "sector 5": {
+  "area": "Sector 5",
+  "lat": 19.1175,
+  "lng": 73.0034
+ },
+ "senapati bapat marg": {
+  "area": "Senapati Bapat Marg",
+  "lat": 19.0275,
+  "lng": 72.8464
+ },
+ "station road": {
+  "area": "Station Road",
+  "lat": 19.1442,
+  "lng": 72.938
+ },
+ "terminal 1": {
+  "area": "Terminal 1",
+  "lat": 19.0928,
+  "lng": 72.857
+ },
+ "terminal 2": {
+  "area": "Terminal 2",
+  "lat": 19.097,
+  "lng": 72.8746
+ },
+ "terminal-2": {
+  "area": "Terminal-2",
+  "lat": 19.097,
+  "lng": 72.8746
+ },
+ "thane": {
+  "area": "Thane",
+  "lat": 19.1175,
+  "lng": 72.9644
+ },
+ "thane (w)": {
+  "area": "Thane (w)",
+  "lat": 19.2597,
+  "lng": 72.9691
+ },
+ "thane west": {
+  "area": "Thane West",
+  "lat": 19.2597,
+  "lng": 72.9691
+ },
+ "vashi": {
+  "area": "Vashi",
+  "lat": 19.0632,
+  "lng": 72.9988
+ },
+ "vikhroli west": {
+  "area": "Vikhroli West",
+  "lat": 19.1145,
+  "lng": 72.9257
+ },
+ "western express highway": {
+  "area": "Western Express Highway",
+  "lat": 19.137,
+  "lng": 72.8551
+ },
+ "worli": {
+  "area": "Worli",
+  "lat": 19.0117,
+  "lng": 72.8179
+ }
+}

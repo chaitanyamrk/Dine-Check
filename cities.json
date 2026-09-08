@@ -1,0 +1,214 @@
+{
+  "_note": "Cities Dine Check covers. Read by both fssai_hygiene_scraper.py (which districts to query) and build_data.py (how to group and place venues). Every district string must match the FSSAI dropdown EXACTLY - they come from https://hygiene.fssai.gov.in/get_district_search.php?stid=<state>&distid=0 and include the odd spellings and casing verbatim (Ahmadabad, Rangareddi, AHMEDABAD ZONE-1). Do not tidy them.",
+  "_gazetteer": "Optional. A locality gazetteer in the areas.json format gives door-level-ish distance sorting; without one, venues in that city are placed at the city centroid and distance sorting is switched off for them rather than being faked. Run geocode_areas.py to build one.",
+  "_districts_empty": "An empty districts list makes the scraper discover them from the site. Prefer an explicit list so a run is reproducible.",
+  "hyderabad": {
+    "name": "Hyderabad",
+    "state": "TE",
+    "stateName": "Telangana",
+    "lat": 17.385,
+    "lng": 78.4867,
+    "gazetteer": "areas.json",
+    "districts": [
+      "Hyderabad",
+      "Hyderabad – Central Zone",
+      "Hyderabad – East Zone",
+      "Hyderabad – North Zone",
+      "Hyderabad – South Zone",
+      "Hyderabad – West Zone",
+      "Rangareddi",
+      "Medak"
+    ],
+    "aliases": [
+      "hyderabad",
+      "hyd"
+    ],
+    "default": true
+  },
+  "bengaluru": {
+    "name": "Bengaluru",
+    "state": "KA",
+    "stateName": "Karnataka",
+    "lat": 12.9716,
+    "lng": 77.5946,
+    "gazetteer": "areas.bengaluru.json",
+    "districts": [
+      "B.B.M.P",
+      "B.B.M.P East",
+      "B.B.M.P North",
+      "B.B.M.P South",
+      "B.B.M.P West",
+      "Bangalore Urban",
+      "Bangalore Rural"
+    ],
+    "aliases": [
+      "bengaluru",
+      "bangalore",
+      "banglore",
+      "bengalore",
+      "bangalore city",
+      "bengaluru city"
+    ]
+  },
+  "mumbai": {
+    "name": "Mumbai",
+    "state": "MH",
+    "stateName": "Maharashtra",
+    "lat": 19.076,
+    "lng": 72.8777,
+    "gazetteer": "areas.mumbai.json",
+    "districts": [
+      "Greater Mumbai",
+      "Mumbai",
+      "Mumbai (Suburban)",
+      "Thane",
+      "Thane Municipal Corporation (Thane Zone-1)",
+      "Navi Mumbai Municipal Corporation (Thane Zone-2)",
+      "Navi Mumbai Municipal Corporation (Thane Zone-3)",
+      "Navi Mumbai Municipal Corporation (Thane Zone-4)",
+      "Bhiwandi Municipal Corporation (Thane Zone-5)",
+      "Vasai Tahashil  (Thane Zone-6)",
+      "Mira Bhayander Municipal Corporation (Thane Zone-7)",
+      "Kalyan Tahashil (Thane Zone-8)",
+      "Ulhasnagar & Ambarnath Tahashil  (Thane Zone-9)",
+      "Thane Zone-10"
+    ],
+    "aliases": [
+      "mumbai",
+      "bombay",
+      "navi mumbai city",
+      "mumbai city",
+      "mumbai suburban"
+    ]
+  },
+  "pune": {
+    "name": "Pune",
+    "state": "MH",
+    "stateName": "Maharashtra",
+    "lat": 18.5204,
+    "lng": 73.8567,
+    "gazetteer": "areas.pune.json",
+    "districts": [
+      "Pune",
+      "Pune PMC",
+      "Pune PCMC",
+      "Pune PMC & Rural",
+      "Pune Rural"
+    ],
+    "aliases": [
+      "pune",
+      "poona",
+      "pune city"
+    ]
+  },
+  "chennai": {
+    "name": "Chennai",
+    "state": "TN",
+    "stateName": "Tamil Nadu",
+    "lat": 13.0827,
+    "lng": 80.2707,
+    "gazetteer": "areas.chennai.json",
+    "districts": [
+      "Chennai"
+    ],
+    "aliases": [
+      "chennai",
+      "madras",
+      "chennai city"
+    ]
+  },
+  "delhi": {
+    "name": "Delhi",
+    "state": "DL",
+    "stateName": "Delhi",
+    "lat": 28.6139,
+    "lng": 77.209,
+    "gazetteer": "areas.delhi.json",
+    "districts": [
+      "Central",
+      "East",
+      "New Delhi",
+      "North",
+      "North East",
+      "North West",
+      "Shahdara",
+      "South",
+      "South East",
+      "South West",
+      "West"
+    ],
+    "aliases": [
+      "delhi",
+      "new delhi",
+      "delhi ncr",
+      "n delhi"
+    ]
+  },
+  "gurugram": {
+    "name": "Gurugram",
+    "state": "HA",
+    "stateName": "Haryana",
+    "lat": 28.4595,
+    "lng": 77.0266,
+    "gazetteer": "areas.gurugram.json",
+    "districts": [
+      "Gurgaon"
+    ],
+    "aliases": [
+      "gurugram",
+      "gurgaon"
+    ]
+  },
+  "faridabad": {
+    "name": "Faridabad",
+    "state": "HA",
+    "stateName": "Haryana",
+    "lat": 28.4089,
+    "lng": 77.3178,
+    "gazetteer": "areas.faridabad.json",
+    "districts": [
+      "Faridabad"
+    ],
+    "aliases": [
+      "faridabad"
+    ]
+  },
+  "ahmedabad": {
+    "name": "Ahmedabad",
+    "state": "GJ",
+    "stateName": "Gujarat",
+    "lat": 23.0225,
+    "lng": 72.5714,
+    "gazetteer": "areas.ahmedabad.json",
+    "districts": [
+      "Ahmadabad",
+      "Ahmedabad Municipal Corporation",
+      "Ahmedabad rural",
+      "AHMEDABAD ZONE-1",
+      "AHMEDABAD ZONE-2"
+    ],
+    "aliases": [
+      "ahmedabad",
+      "ahmadabad",
+      "amdavad",
+      "ahmedabad city"
+    ]
+  },
+  "kolkata": {
+    "name": "Kolkata",
+    "state": "WB",
+    "stateName": "West Bengal",
+    "lat": 22.5726,
+    "lng": 88.3639,
+    "gazetteer": "areas.kolkata.json",
+    "districts": [
+      "Kolkata"
+    ],
+    "aliases": [
+      "kolkata",
+      "calcutta"
+    ]
+  },
+  "_aliases": "Other spellings of the city's own name. Anything matching one is refused as a locality: an address always ends with the city, and the resolver takes the last match, so a single 'bangalore' entry filed 1,298 Bengaluru venues under one useless area.",
+  "_default": "The city the site opens on. Falls back to whichever has the most venues. Hyderabad is the deliberate default: it is the only city with scored inspections, so opening on it shows what the site is for. Opening on Delhi would present a directory of paid voluntary certificates as the headline product."
+}

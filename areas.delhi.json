@@ -1,0 +1,469 @@
+{
+ "_source": "Mined from 3565 FSSAI hygiene-rating addresses and geocoded via OpenStreetMap Nominatim.",
+ "_warning": "Centroids are locality-level, accurate to roughly a kilometre. Edit by hand freely; this file is never regenerated over your edits without you re-running the script.",
+ "acharya niketan": {
+  "area": "Acharya Niketan",
+  "lat": 28.6083,
+  "lng": 77.2948
+ },
+ "adarsh nagar": {
+  "area": "Adarsh Nagar",
+  "lat": 28.7166,
+  "lng": 77.1704
+ },
+ "aerocity": {
+  "area": "Aerocity",
+  "lat": 28.548,
+  "lng": 77.1212
+ },
+ "amar colony": {
+  "area": "Amar Colony",
+  "lat": 28.5615,
+  "lng": 77.2431
+ },
+ "ansal plaza": {
+  "area": "Ansal Plaza",
+  "lat": 28.5627,
+  "lng": 77.2246
+ },
+ "ashok vihar": {
+  "area": "Ashok Vihar",
+  "lat": 28.6885,
+  "lng": 77.1739
+ },
+ "burari": {
+  "area": "Burari",
+  "lat": 28.7536,
+  "lng": 77.2017
+ },
+ "central market": {
+  "area": "Central Market",
+  "lat": 28.5691,
+  "lng": 77.2416
+ },
+ "chandni chowk": {
+  "area": "Chandni Chowk",
+  "lat": 28.656,
+  "lng": 77.2322
+ },
+ "city centre": {
+  "area": "City Centre",
+  "lat": 28.5925,
+  "lng": 77.0413
+ },
+ "community center": {
+  "area": "Community Center",
+  "lat": 28.6263,
+  "lng": 77.2791
+ },
+ "community centre": {
+  "area": "Community Centre",
+  "lat": 28.5621,
+  "lng": 77.2686
+ },
+ "connaught circus": {
+  "area": "Connaught Circus",
+  "lat": 28.6326,
+  "lng": 77.2167
+ },
+ "connaught place": {
+  "area": "Connaught Place",
+  "lat": 28.6318,
+  "lng": 77.2194
+ },
+ "cross river mall": {
+  "area": "Cross River Mall",
+  "lat": 28.6572,
+  "lng": 77.3022
+ },
+ "dda market": {
+  "area": "DDA Market",
+  "lat": 28.5651,
+  "lng": 77.1636
+ },
+ "dilshad garden": {
+  "area": "Dilshad Garden",
+  "lat": 28.6759,
+  "lng": 77.3214
+ },
+ "district centre": {
+  "area": "District Centre",
+  "lat": 28.5393,
+  "lng": 77.2866
+ },
+ "dwarka": {
+  "area": "Dwarka",
+  "lat": 28.6159,
+  "lng": 77.0224
+ },
+ "east patel nagar": {
+  "area": "East Patel Nagar",
+  "lat": 28.6456,
+  "lng": 77.1726
+ },
+ "food court": {
+  "area": "Food Court",
+  "lat": 28.5415,
+  "lng": 77.1551
+ },
+ "g-1": {
+  "area": "G-1",
+  "lat": 28.6665,
+  "lng": 77.217
+ },
+ "g.f": {
+  "area": "G.F",
+  "lat": 28.5471,
+  "lng": 77.2005
+ },
+ "g/f": {
+  "area": "G/f",
+  "lat": 28.5471,
+  "lng": 77.2005
+ },
+ "geeta colony": {
+  "area": "Geeta Colony",
+  "lat": 28.6511,
+  "lng": 77.275
+ },
+ "gole market": {
+  "area": "Gole Market",
+  "lat": 28.6353,
+  "lng": 77.2055
+ },
+ "hospitality district": {
+  "area": "Hospitality District",
+  "lat": 28.4958,
+  "lng": 77.2883
+ },
+ "igi airport": {
+  "area": "IGI Airport",
+  "lat": 28.5565,
+  "lng": 77.0867
+ },
+ "ina market": {
+  "area": "INA Market",
+  "lat": 28.5742,
+  "lng": 77.2102
+ },
+ "indira gandhi international airport": {
+  "area": "Indira Gandhi International Airport",
+  "lat": 28.5554,
+  "lng": 77.0848
+ },
+ "inner circle": {
+  "area": "Inner Circle",
+  "lat": 28.6327,
+  "lng": 77.2197
+ },
+ "international departure": {
+  "area": "International Departure",
+  "lat": 28.5536,
+  "lng": 77.0888
+ },
+ "janak puri": {
+  "area": "Janak Puri",
+  "lat": 28.6301,
+  "lng": 77.0911
+ },
+ "janakpuri": {
+  "area": "Janakpuri",
+  "lat": 28.6219,
+  "lng": 77.0875
+ },
+ "janpath": {
+  "area": "Janpath",
+  "lat": 28.6232,
+  "lng": 77.2192
+ },
+ "jawahar nagar": {
+  "area": "Jawahar Nagar",
+  "lat": 28.7247,
+  "lng": 77.2899
+ },
+ "jhilmil colony": {
+  "area": "Jhilmil Colony",
+  "lat": 28.6698,
+  "lng": 77.3073
+ },
+ "kalkaji": {
+  "area": "Kalkaji",
+  "lat": 28.5469,
+  "lng": 77.2588
+ },
+ "karkardooma": {
+  "area": "Karkardooma",
+  "lat": 28.6536,
+  "lng": 77.2958
+ },
+ "karol bagh": {
+  "area": "Karol Bagh",
+  "lat": 28.653,
+  "lng": 77.189
+ },
+ "khanpur": {
+  "area": "Khanpur",
+  "lat": 28.5128,
+  "lng": 77.2324
+ },
+ "kingsway camp": {
+  "area": "Kingsway Camp",
+  "lat": 28.6988,
+  "lng": 77.2047
+ },
+ "krishna nagar": {
+  "area": "Krishna Nagar",
+  "lat": 28.6578,
+  "lng": 77.2901
+ },
+ "lalita park": {
+  "area": "Lalita Park",
+  "lat": 28.6322,
+  "lng": 77.2716
+ },
+ "laxmi nagar": {
+  "area": "Laxmi Nagar",
+  "lat": 28.6306,
+  "lng": 77.2775
+ },
+ "lsc": {
+  "area": "LSC",
+  "lat": 28.5269,
+  "lng": 77.2322
+ },
+ "mahavir enclave": {
+  "area": "Mahavir Enclave",
+  "lat": 28.6,
+  "lng": 77.079
+ },
+ "main market": {
+  "area": "Main Market",
+  "lat": 28.7009,
+  "lng": 77.2617
+ },
+ "main najafgarh road": {
+  "area": "Main Najafgarh Road",
+  "lat": 28.6334,
+  "lng": 76.9534
+ },
+ "malcha marg": {
+  "area": "Malcha Marg",
+  "lat": 28.6016,
+  "lng": 77.1857
+ },
+ "mall road": {
+  "area": "Mall Road",
+  "lat": 28.5429,
+  "lng": 77.2954
+ },
+ "malviya nagar": {
+  "area": "Malviya Nagar",
+  "lat": 28.5339,
+  "lng": 77.2124
+ },
+ "mathura road": {
+  "area": "Mathura Road",
+  "lat": 28.5357,
+  "lng": 77.285
+ },
+ "mayur vihar": {
+  "area": "Mayur Vihar",
+  "lat": 28.6099,
+  "lng": 77.2926
+ },
+ "mayur vihar phase-1": {
+  "area": "Mayur Vihar Phase-1",
+  "lat": 28.6036,
+  "lng": 77.2899
+ },
+ "mehrauli": {
+  "area": "Mehrauli",
+  "lat": 28.5218,
+  "lng": 77.1783
+ },
+ "moti nagar": {
+  "area": "Moti Nagar",
+  "lat": 28.6579,
+  "lng": 77.1424
+ },
+ "najafgarh road": {
+  "area": "Najafgarh Road",
+  "lat": 28.6129,
+  "lng": 77.3008
+ },
+ "narela": {
+  "area": "Narela",
+  "lat": 28.8465,
+  "lng": 77.0857
+ },
+ "nehru place": {
+  "area": "Nehru Place",
+  "lat": 28.5493,
+  "lng": 77.253
+ },
+ "netaji subhash place": {
+  "area": "Netaji Subhash Place",
+  "lat": 28.696,
+  "lng": 77.1525
+ },
+ "outer circle": {
+  "area": "Outer Circle",
+  "lat": 28.63,
+  "lng": 77.2188
+ },
+ "pacific mall": {
+  "area": "Pacific Mall",
+  "lat": 28.6464,
+  "lng": 77.32
+ },
+ "pahar ganj": {
+  "area": "Pahar Ganj",
+  "lat": 28.6399,
+  "lng": 77.213
+ },
+ "paharganj": {
+  "area": "Paharganj",
+  "lat": 28.6415,
+  "lng": 77.2141
+ },
+ "pandav nagar": {
+  "area": "Pandav Nagar",
+  "lat": 28.6196,
+  "lng": 77.283
+ },
+ "pankha road": {
+  "area": "Pankha Road",
+  "lat": 28.6055,
+  "lng": 77.1096
+ },
+ "paschim vihar": {
+  "area": "Paschim Vihar",
+  "lat": 28.6696,
+  "lng": 77.096
+ },
+ "phase-1": {
+  "area": "Phase-1",
+  "lat": 28.6046,
+  "lng": 77.0363
+ },
+ "pitampura": {
+  "area": "Pitampura",
+  "lat": 28.7033,
+  "lng": 77.1322
+ },
+ "prashant vihar": {
+  "area": "Prashant Vihar",
+  "lat": 28.7142,
+  "lng": 77.1367
+ },
+ "pusa road": {
+  "area": "Pusa Road",
+  "lat": 28.6441,
+  "lng": 77.1902
+ },
+ "rajouri garden": {
+  "area": "Rajouri Garden",
+  "lat": 28.6491,
+  "lng": 77.1227
+ },
+ "rohini": {
+  "area": "Rohini",
+  "lat": 28.7063,
+  "lng": 77.1088
+ },
+ "saket": {
+  "area": "Saket",
+  "lat": 28.5212,
+  "lng": 77.2022
+ },
+ "sector-10": {
+  "area": "Sector-10",
+  "lat": 28.5843,
+  "lng": 77.0577
+ },
+ "sector-12": {
+  "area": "Sector-12",
+  "lat": 28.5956,
+  "lng": 77.043
+ },
+ "sector-14": {
+  "area": "Sector-14",
+  "lat": 28.6042,
+  "lng": 77.0292
+ },
+ "sector-21": {
+  "area": "Sector-21",
+  "lat": 28.5593,
+  "lng": 77.0666
+ },
+ "sector-7": {
+  "area": "Sector-7",
+  "lat": 28.5874,
+  "lng": 77.0673
+ },
+ "sector-9": {
+  "area": "Sector-9",
+  "lat": 28.5791,
+  "lng": 77.0654
+ },
+ "shahdara": {
+  "area": "Shahdara",
+  "lat": 28.6734,
+  "lng": 77.2899
+ },
+ "shalimar bagh": {
+  "area": "Shalimar Bagh",
+  "lat": 28.702,
+  "lng": 77.1654
+ },
+ "shastri nagar": {
+  "area": "Shastri Nagar",
+  "lat": 28.6701,
+  "lng": 77.1819
+ },
+ "terminal 3": {
+  "area": "Terminal 3",
+  "lat": 28.5579,
+  "lng": 77.0835
+ },
+ "tilak nagar": {
+  "area": "Tilak Nagar",
+  "lat": 28.6365,
+  "lng": 77.0965
+ },
+ "unity one": {
+  "area": "Unity One",
+  "lat": 28.715,
+  "lng": 77.1163
+ },
+ "uttam nagar": {
+  "area": "Uttam Nagar",
+  "lat": 28.6215,
+  "lng": 77.0611
+ },
+ "vasant kunj": {
+  "area": "Vasant Kunj",
+  "lat": 28.5292,
+  "lng": 77.1541
+ },
+ "vasant vihar": {
+  "area": "Vasant Vihar",
+  "lat": 28.5578,
+  "lng": 77.1611
+ },
+ "vegas mall": {
+  "area": "Vegas Mall",
+  "lat": 28.6011,
+  "lng": 77.0296
+ },
+ "vikas marg": {
+  "area": "Vikas Marg",
+  "lat": 28.6383,
+  "lng": 77.2901
+ },
+ "yamuna vihar": {
+  "area": "Yamuna Vihar",
+  "lat": 28.7004,
+  "lng": 77.2728
+ }
+}

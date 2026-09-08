@@ -1,0 +1,29 @@
+{
+ "_source": "Mined from 29 FSSAI hygiene-rating addresses and geocoded via OpenStreetMap Nominatim.",
+ "_warning": "Centroids are locality-level, accurate to roughly a kilometre. Edit by hand freely; this file is never regenerated over your edits without you re-running the script.",
+ "crown interiorz mall": {
+  "area": "Crown Interiorz Mall",
+  "lat": 28.4697,
+  "lng": 77.3073
+ },
+ "g-1": {
+  "area": "G-1",
+  "lat": 28.4031,
+  "lng": 77.3106
+ },
+ "sec-12 faridabad": {
+  "area": "Sec-12 Faridabad",
+  "lat": 28.3855,
+  "lng": 77.3232
+ },
+ "sector-35": {
+  "area": "Sector-35",
+  "lat": 28.4708,
+  "lng": 77.3088
+ },
+ "surajkund": {
+  "area": "Surajkund",
+  "lat": 28.4837,
+  "lng": 77.283
+ }
+}

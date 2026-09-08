@@ -1,0 +1,94 @@
+{
+ "_source": "Mined from 19 FSSAI hygiene-rating addresses and geocoded via OpenStreetMap Nominatim.",
+ "_warning": "Centroids are locality-level, accurate to roughly a kilometre. Edit by hand freely; this file is never regenerated over your edits without you re-running the script.",
+ "ambience island": {
+  "area": "Ambience Island",
+  "lat": 28.5008,
+  "lng": 77.1024
+ },
+ "ambience mall": {
+  "area": "Ambience Mall",
+  "lat": 28.5043,
+  "lng": 77.0972
+ },
+ "dlf cyber city": {
+  "area": "DLF Cyber City",
+  "lat": 28.4973,
+  "lng": 77.0918
+ },
+ "dlf phase-ii": {
+  "area": "DLF Phase-ii",
+  "lat": 28.4839,
+  "lng": 77.0846
+ },
+ "g-85 to g-90 and g-93 to g-94": {
+  "area": "G-85 To G-90 And G-93 To G-94",
+  "lat": 28.4646,
+  "lng": 77.0299
+ },
+ "gurgaon": {
+  "area": "Gurgaon",
+  "lat": 28.4891,
+  "lng": 77.0112
+ },
+ "gurgaon-sohna road": {
+  "area": "Gurgaon-sohna Road",
+  "lat": 28.3933,
+  "lng": 77.0469
+ },
+ "k.f.c. at g.f": {
+  "area": "K.F.C. At G.F",
+  "lat": 28.4646,
+  "lng": 77.0299
+ },
+ "m3m urbana": {
+  "area": "M3m Urbana",
+  "lat": 28.3914,
+  "lng": 77.0667
+ },
+ "malibu town gurgaon": {
+  "area": "Malibu Town Gurgaon",
+  "lat": 28.4268,
+  "lng": 77.0584
+ },
+ "nh-8": {
+  "area": "Nh-8",
+  "lat": 28.4646,
+  "lng": 77.0299
+ },
+ "pace city-ii": {
+  "area": "Pace City-ii",
+  "lat": 28.4397,
+  "lng": 77.0109
+ },
+ "sector 50": {
+  "area": "Sector 50",
+  "lat": 28.4167,
+  "lng": 77.0612
+ },
+ "sector-37": {
+  "area": "Sector-37",
+  "lat": 28.4343,
+  "lng": 76.9993
+ },
+ "sector-39": {
+  "area": "Sector-39",
+  "lat": 28.4424,
+  "lng": 77.0505
+ },
+ "sector-67": {
+  "area": "Sector-67",
+  "lat": 28.3864,
+  "lng": 77.0598
+ },
+ "sohna road": {
+  "area": "Sohna Road",
+  "lat": 28.3999,
+  "lng": 77.0451
+ },
+ "tower-c": {
+  "area": "Tower-c",
+  "lat": 28.4437,
+  "lng": 77.0559
+ }
+}

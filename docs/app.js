@@ -38,6 +38,21 @@ var GRADES = {
   unrated:  {label:"No score",  short:"No score",  css:"unrated",color:"var(--unr)",track:"var(--unr-bg)",range:""}
 };
 
+// FSSAI Hygiene Rating bands. A separate scale on purpose: these come from a
+// voluntary paid audit, carry no marks and no date, and are never compared with
+// an inspection percentage.
+// `short` is what fits the 54px badge; the full band name is always shown in
+// the detail sheet, so nothing is lost by abbreviating here.
+var BANDS = {
+  "Excellent":          {css:"exc",  color:"var(--exc)",  rank:0, short:"Excellent"},
+  "Very Good":          {css:"good", color:"var(--good)", rank:1, short:"Very good"},
+  "Good":               {css:"avg",  color:"var(--avg)",  rank:2, short:"Good"},
+  "Needs Improvement":  {css:"poor", color:"var(--poor)", rank:3, short:"Needs work"},
+  "Urgent Improvement": {css:"poor", color:"var(--poor)", rank:4, short:"Urgent"},
+  "Poor":               {css:"poor", color:"var(--poor)", rank:5, short:"Poor"}
+};
+function bandOf(v){ return BANDS[v.band] || {css:"unrated", color:"var(--unr)", rank:9, short:v.band||"Rated"}; }
+
 var MONTHS=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 function fmtDate(iso){
   if(!iso) return "Date not recorded";
@@ -70,8 +85,8 @@ function fmtKm(v){
 }
 
 // -------------------------------------------------------------------- state
-var DATA=null, VENUES=[], me=null;
-var state={ q:"", grade:"", area:"", sort:"score-desc", favOnly:false };
+var INDEX=null, DATA=null, VENUES=[], me=null;
+var state={ q:"", grade:"", area:"", sort:"score-desc", favOnly:false, city:"" };
 var favs=store.get("dinecheck.favs",[]);
 
 // -------------------------------------------------------------------- theme
@@ -98,10 +113,11 @@ function filtered(){
   var out=VENUES.filter(function(v){
     if(state.favOnly && favs.indexOf(v.id)<0) return false;
     if(state.grade==="__enf"){ if(v.kind!=="enforcement") return false; }
+    else if(state.grade==="__cert"){ if(v.kind!=="certification") return false; }
     else if(state.grade && (v.kind!=="inspection" || v.grade!==state.grade)) return false;
     if(state.area && v.area!==state.area) return false;
     if(q){
-      var hay=(v.name+" "+v.area+" "+v.location+" "+(v.aka||[]).join(" ")).toLowerCase();
+      var hay=(v.name+" "+v.area+" "+(v.location||"")+" "+(v.aka||[]).join(" ")).toLowerCase();
       if(hay.indexOf(q)<0) return false;
     }
     return true;
@@ -115,10 +131,19 @@ function filtered(){
       return (b.score==null?-1:b.score)-(a.score==null?-1:a.score);
     }
     if(s==="name") return a.name.localeCompare(b.name);
+    if(s==="band"){
+      var ra=bandOf(a).rank, rb=bandOf(b).rank;
+      if(ra!==rb) return ra-rb;
+      return a.name.localeCompare(b.name);
+    }
     if(s==="date"){
-      var ea=a.kind==="enforcement", eb=b.kind==="enforcement";
-      if(ea!==eb) return ea?1:-1;
-      if(a.lastInspected!==b.lastInspected) return a.lastInspected<b.lastInspected?1:-1;
+      // Certifications carry no date at all, so they cannot take part in a
+      // date sort and sit at the end rather than pretending to be undated-recent.
+      var oa=a.kind==="certification"?2:(a.kind==="enforcement"?1:0);
+      var ob=b.kind==="certification"?2:(b.kind==="enforcement"?1:0);
+      if(oa!==ob) return oa-ob;
+      var la=a.lastInspected||"", lb=b.lastInspected||"";
+      if(la!==lb) return la<lb?1:-1;
       return a.name.localeCompare(b.name);
     }
     var sa=a.score, sb=b.score;
@@ -148,6 +173,15 @@ function markNode(v){
   return m;
 }
 
+function bandNode(v){
+  var b=bandOf(v);
+  var n=el("div","band "+b.css);
+  n.style.setProperty("--c",b.color);
+  n.appendChild(el("b",null,b.short||v.band||"Rated"));
+  n.appendChild(el("s",null,"FSSAI"));
+  return n;
+}
+
 function ringNode(score,grade){
   var g=GRADES[grade]||GRADES.unrated;
   var r=el("div","ring"+(score==null?" none":""));
@@ -165,18 +199,23 @@ function card(v,i){
   row.setAttribute("aria-label",v.name+", score "+(v.score==null?"not recorded":v.score));
 
   var enf = v.kind==="enforcement";
+  var cert = v.kind==="certification";
   if(enf) row.classList.add("enf");
+  if(cert) row.classList.add("cert");
 
-  // Only scored venues are ranked; enforcement records carry no position.
-  if(!enf&&state.sort==="score-desc"&&!state.q&&!state.grade&&!state.area&&!state.favOnly){
+  // Only scored venues are ranked. Enforcement records and voluntary
+  // certifications carry no position, because neither is a score.
+  if(!enf&&!cert&&state.sort==="score-desc"&&!state.q&&!state.grade&&!state.area&&!state.favOnly){
     row.appendChild(el("div","rank","#"+(i+1)));
   }
-  row.appendChild(enf ? markNode(v) : ringNode(v.score,v.grade));
+  row.appendChild(cert ? bandNode(v) : enf ? markNode(v) : ringNode(v.score,v.grade));
 
   var main=el("div","cmain");
   var name=el("div","cname");
   name.appendChild(el("span",null,v.name));
-  if(enf){
+  if(cert){
+    name.appendChild(el("span","tag cert","FSSAI rated"));
+  } else if(enf){
     name.appendChild(el("span","tag enf","Violations recorded"));
     if(isStale(v.lastInspected)) name.appendChild(el("span","tag stale","Historic"));
   } else {
@@ -193,11 +232,19 @@ function card(v,i){
     w.appendChild(el("span",cls||null,text));
     meta.appendChild(w);
   };
-  seg(v.location||v.area);
+  // FSSAI addresses are full postal addresses and swamp the card, so the list
+  // shows the locality and the detail sheet carries the address in full.
+  seg(cert ? (v.area||v.location) : (v.location||v.area));
   if(v._d!=null) seg(fmtKm(v._d),"dist");
-  seg(isStale(v.lastInspected)
-        ? "Inspected "+fmtDate(v.lastInspected)     // exact date once it is old
-        : "Inspected "+ago(v.lastInspected));
+  if(cert){
+    // The directory publishes no audit date, so there is nothing honest to put
+    // here beyond what the rating is.
+    seg("Voluntary rating, undated");
+  } else {
+    seg(isStale(v.lastInspected)
+          ? "Inspected "+fmtDate(v.lastInspected)   // exact date once it is old
+          : "Inspected "+ago(v.lastInspected));
+  }
   main.appendChild(meta);
   row.appendChild(main);
 
@@ -222,7 +269,14 @@ function card(v,i){
   return row;
 }
 
-function render(){
+// Delhi alone carries 3,332 venues. Building a card for every one of them cost
+// ~1.9s on each keystroke — the search box felt broken. The list is therefore
+// capped and extended on demand; the count above it always states the real
+// total, so nothing is hidden, only deferred.
+var PAGE = 150, shown = PAGE;
+
+function render(resetPage){
+  if(resetPage) shown = PAGE;
   var rows=filtered(), list=$("#list");
   list.textContent="";
   if(!rows.length){
@@ -233,24 +287,35 @@ function render(){
       body="<p>You have not saved any places yet. Tap the heart on a card to keep it here.</p>";
     } else if(state.q.trim()){
       // A search that finds nothing is an answer, not a failure — say what it means.
-      body='<p>No inspection has been published for <span class="q">'+esc(state.q.trim())+'</span>.</p>'+
+      var cityName=DATA?DATA.city:"this city";
+      body='<p>Nothing on record for <span class="q">'+esc(state.q.trim())+'</span>.</p>'+
            "<p>That is not a bad sign. Only "+(DATA?DATA.stats.venues:"a few hundred")+
-           " establishments in Hyderabad have an inspection on public record, so most places "+
-           "are simply not here yet. Try another spelling, or browse by area.</p>";
+           " establishments in "+esc(cityName)+" appear in any public food-safety record, so most places "+
+           "are simply not here yet. Try another spelling, browse by area, or switch city.</p>";
     } else {
       body="<p>Nothing matches those filters.</p>";
     }
     e.innerHTML=icon+body;
     list.appendChild(e);
   } else {
+    var slice=rows.slice(0,shown);
     var frag=document.createDocumentFragment();
-    rows.forEach(function(v,i){ frag.appendChild(card(v,i)); });
+    slice.forEach(function(v,i){ frag.appendChild(card(v,i)); });
     list.appendChild(frag);
+    if(rows.length>slice.length){
+      var wrap=el("div","more");
+      wrap.appendChild(el("p",null,"Showing "+slice.length+" of "+rows.length+" places."));
+      var btn=el("button","morebtn","Show "+Math.min(PAGE,rows.length-slice.length)+" more");
+      btn.addEventListener("click",function(){ shown+=PAGE; render(); });
+      wrap.appendChild(btn);
+      list.appendChild(wrap);
+    }
   }
 
   var active = state.q||state.grade||state.area||state.favOnly;
   $("#count").textContent = rows.length+(rows.length===1?" place":" places")+
     (state.grade==="__enf"?" with violations recorded":"")+
+    (state.grade==="__cert"?" with an FSSAI rating":"")+
     (state.area?" in "+state.area:"")+
     (state.favOnly?" saved":"");
   $("#reset").hidden = !active;
@@ -275,7 +340,21 @@ function openSheet(v){
 
   var latest=v.history[0];
   var enf=v.kind==="enforcement";
+  var cert=v.kind==="certification";
   var h='';
+
+  if(cert){
+    var cb=bandOf(v);
+    h+='<div class="scorebox" style="--c:'+cb.color+'">'+
+       '<div><div class="big" style="font-size:22px;line-height:1.2">'+esc(v.band||"Rated")+'</div></div>'+
+       '<div style="flex:1"><div class="meta"><b>FSSAI Hygiene Rating</b><br>'+
+       'Awarded after a voluntary audit. No date is published.</div></div></div>';
+    h+='<div class="enfnote certnote"><b>This is a certificate, not an inspection.</b> '+
+       'The business applied for an FSSAI hygiene audit and paid an accredited agency to carry it out. '+
+       'It is not a routine inspection, it is not ranked against inspection scores, and the directory '+
+       'publishes no audit date, no marks and no findings — only the band above. '+
+       'Ratings are valid for two years.</div>';
+  }
 
   if(enf){
     h+='<div class="enfnote"><b>Enforcement record — no hygiene score.</b> '+
@@ -287,7 +366,7 @@ function openSheet(v){
     }
   }
 
-  if(!enf) h+='<div class="scorebox" style="--c:'+g.color+'">'+
+  if(!enf&&!cert) h+='<div class="scorebox" style="--c:'+g.color+'">'+
        '<div><div class="big">'+(v.score==null?'—':v.score+'<span>/100</span>')+'</div></div>'+
        '<div style="flex:1"><div class="meta"><b>'+g.label+'</b>'+(g.range?' · '+g.range+' band':'')+'<br>'+
        'Inspected '+fmtDate(latest.date)+
@@ -295,7 +374,7 @@ function openSheet(v){
        (v.score==null?'':'<div class="bar"><i style="width:'+v.score+'%"></i></div>')+
        '</div></div>';
 
-  if(!enf && latest.notice||/notice/i.test(latest.action||"")){
+  if(!enf && !cert && latest.notice||(!cert&&/notice/i.test(latest.action||""))){
     h+='<div class="note"><b>An improvement notice was issued</b> at this inspection.'+
        (latest.bad&&latest.bad.length?'':' The published report did not itemise what triggered it — open the original report below.')+
        '</div>';
@@ -320,11 +399,15 @@ function openSheet(v){
   }
 
   if(v.history.length>1){
-    h+='<h3 class="sec">Inspection history</h3><div class="hist">';
+    h+='<h3 class="sec">Record history</h3><div class="hist">';
     v.history.forEach(function(x){
-      var xg=GRADES[x.pct==null?'unrated':(x.pct>=90?'excellent':x.pct>=80?'good':x.pct>=70?'average':'poor')];
-      h+='<div class="hrow" style="--c:'+xg.color+'"><div class="hp">'+(x.pct==null?'—':x.pct)+'</div>'+
-         '<div class="hd">'+fmtDate(x.date)+' · '+esc(x.location||v.area)+'</div>'+
+      var isCert=x.kind==="certification";
+      var xg=isCert
+        ? (BANDS[x.band]||{color:"var(--unr)"})
+        : GRADES[x.pct==null?'unrated':(x.pct>=90?'excellent':x.pct>=80?'good':x.pct>=70?'average':'poor')];
+      h+='<div class="hrow" style="--c:'+xg.color+'"><div class="hp">'+(isCert?'★':(x.pct==null?'—':x.pct))+'</div>'+
+         '<div class="hd">'+(isCert?'FSSAI rating'+(x.band?' — '+esc(x.band):''):fmtDate(x.date))+
+         ' · '+esc(x.location||v.location||v.area)+'</div>'+
          (safeUrl(x.url)
             ? '<a class="srcbtn" style="margin:0;height:30px;padding:0 10px" href="'+esc(safeUrl(x.url))+'" target="_blank" rel="noopener noreferrer">Report</a>'
             : '')+'</div>';
@@ -332,16 +415,20 @@ function openSheet(v){
     h+='</div>';
   }
 
+  var visits=v.history.filter(function(x){ return x.kind!=="certification"; });
   h+='<h3 class="sec">Source</h3>'+
      '<a class="srcbtn" href="'+esc(safeUrl(latest.url))+'" target="_blank" rel="noopener noreferrer">'+
      '<svg viewBox="0 0 24 24"><path d="M14 3h7v7M21 3l-9 9M19 14v5a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h5"/></svg>'+
-     'Original report from '+esc(latest.source||'the inspecting authority')+'</a>'+
+     (cert?'Look this up in the FSSAI directory':'Original report from '+esc(latest.source||'the inspecting authority'))+'</a>'+
      '<p style="font-size:12.5px;color:var(--ink-3);margin:10px 0 4px;line-height:1.55">'+
-     (enf?'':'Checklist totals differ by business type, so compare places on the percentage, never on raw marks. ')+
-     (v.history.length>1
-        ? 'Based on '+v.history.length+' recorded visits, the most recent on '+fmtDate(latest.date)+'. '+
-          'The findings above are from that visit; earlier ones are listed under inspection history.'
-        : 'This reflects a single visit on '+fmtDate(latest.date)+'.')+'</p>';
+     (cert
+       ? 'The FSSAI directory does not publish a permanent link per venue, so the button opens the '+
+         'search page — look the name up there to confirm the rating is still current.'
+       : (enf?'':'Checklist totals differ by business type, so compare places on the percentage, never on raw marks. ')+
+         (visits.length>1
+            ? 'Based on '+visits.length+' recorded visits, the most recent on '+fmtDate(latest.date)+'. '+
+              'The findings above are from that visit; earlier ones are listed under record history.'
+            : 'This reflects a single visit on '+fmtDate(latest.date)+'.'))+'</p>';
 
   $("#sheetBody").innerHTML=h;
   $("#sheetBody").scrollTop=0;
@@ -369,10 +456,18 @@ $("#nearBtn").addEventListener("click",function(){
     me=null; VENUES.forEach(function(v){ v._d=null; });
     btn.classList.remove("active"); $("#nearLabel").textContent="Near me";
     msg.className="geomsg"; if(state.sort==="near"){ state.sort="score-desc"; $("#sort").value="score-desc"; }
-    render(); return;
+    render(true); return;
   }
   if(!navigator.geolocation){
     msg.className="geomsg on err"; msg.textContent="This browser cannot share your location. Pick your area from the dropdown instead.";
+    return;
+  }
+  // A city with no gazetteer has no venue coordinates. Sorting by distance
+  // there would order the list at random, so say so rather than pretend.
+  if(!VENUES.some(function(v){ return v.lat!=null; })){
+    msg.className="geomsg on err";
+    msg.textContent="Distances are not available for "+(DATA?DATA.city:"this city")+" yet — its localities have not been mapped. "+
+      "Filtering by area works, and the search box covers addresses.";
     return;
   }
   btn.disabled=true; $("#nearLabel").textContent="Locating…";
@@ -390,7 +485,7 @@ $("#nearBtn").addEventListener("click",function(){
     msg.textContent="Sorted by distance from you. Distances are to the centre of each locality, so treat them as approximate."+
       (unplaced?" "+unplaced+" place"+(unplaced===1?" has":"s have")+" no mapped locality and sit at the end.":"");
     state.sort="near"; $("#sort").value="near";
-    render();
+    render(true);
   },function(err){
     btn.disabled=false; $("#nearLabel").textContent="Near me";
     msg.className="geomsg on err";
@@ -401,111 +496,234 @@ $("#nearBtn").addEventListener("click",function(){
 });
 
 // ----------------------------------------------------------------- controls
-$("#q").addEventListener("input",function(){ state.q=this.value; render(); });
-$("#clearQ").addEventListener("click",function(){ $("#q").value=""; state.q=""; $("#q").focus(); render(); });
+$("#q").addEventListener("input",function(){ state.q=this.value; render(true); });
+$("#clearQ").addEventListener("click",function(){ $("#q").value=""; state.q=""; $("#q").focus(); render(true); });
 $("#sort").addEventListener("change",function(){
   if(this.value==="near"&&!me){ this.value=state.sort; $("#nearBtn").click(); return; }
-  state.sort=this.value; render();
+  state.sort=this.value; render(true);
 });
-$("#area").addEventListener("change",function(){ state.area=this.value; render(); });
-$("#favBtn").addEventListener("click",function(){ state.favOnly=!state.favOnly; render(); });
+$("#area").addEventListener("change",function(){ state.area=this.value; render(true); });
+$("#favBtn").addEventListener("click",function(){ state.favOnly=!state.favOnly; render(true); });
 $("#reset").addEventListener("click",function(){
   state.q=""; state.grade=""; state.area=""; state.favOnly=false;
-  $("#q").value=""; $("#area").value=""; render();
+  $("#q").value=""; $("#area").value=""; render(true);
 });
 
 // --------------------------------------------------------------------- boot
-function boot(d){
-  DATA=d; VENUES=d.venues.map(function(v){ v._d=null; return v; });
+function loadFailed(what){
+  $("#list").innerHTML='<div class="empty"><p>Could not load '+what+'.<br>'+
+    'If you opened this file directly from disk, serve the folder instead — for example <code>python -m http.server</code> — because browsers block <code>fetch</code> on <code>file://</code> URLs.</p></div>';
+}
+
+function bootCity(d){
+  DATA=d;
+  VENUES=d.venues.map(function(v){ v._d=null; return v; });
+  me=null;
+  state.grade=""; state.area=""; state.q=""; state.favOnly=false;
+  $("#q").value="";
+  $("#nearBtn").classList.remove("active");
+  $("#nearLabel").textContent="Near me";
+  $("#geomsg").className="geomsg";
 
   var s=d.stats;
-  // The average and grade counts describe the SCORED set only - enforcement
-  // records have no score and must not be averaged into it.
-  $("#stats").innerHTML=
-    '<div class="stat"><div class="n">'+s.scoredVenues+'</div><div class="l">scored</div></div>'+
-    '<div class="stat"><div class="n">'+s.avgScore+'</div><div class="l">avg score</div></div>'+
-    '<div class="stat poor"><div class="n">'+s.enforcementVenues+'</div><div class="l">with violations</div></div>'+
-    '<div class="stat"><div class="n">'+s.areas+'</div><div class="l">areas</div></div>';
+  var hasScores = s.scoredVenues>0;
+  // With no scored venues there is nothing to rank, so the list opens in the
+  // only order that means anything for a certification-only city.
+  state.sort = hasScores ? "score-desc" : "band";
+  $("#sort").value = state.sort;
+  $("#sortScore").hidden = !hasScores;
+  $("#sortScoreAsc").hidden = !hasScores;
+  $("#sortBand").hidden = s.certifiedVenues===0;
 
-  var counts={excellent:s.excellent,good:s.good,average:s.average,poor:s.poor};
+  // The average and grade counts describe the SCORED set only — enforcement
+  // records and voluntary certifications have no score and must not be
+  // averaged into it.
+  var stats="";
+  if(hasScores){
+    stats+='<div class="stat"><div class="n">'+s.scoredVenues+'</div><div class="l">scored</div></div>'+
+           '<div class="stat"><div class="n">'+s.avgScore+'</div><div class="l">avg score</div></div>';
+  }
+  if(s.enforcementVenues) stats+='<div class="stat poor"><div class="n">'+s.enforcementVenues+'</div><div class="l">with violations</div></div>';
+  if(s.certifiedVenues)   stats+='<div class="stat"><div class="n">'+s.certifiedVenues+'</div><div class="l">FSSAI rated</div></div>';
+  stats+='<div class="stat"><div class="n">'+s.areas+'</div><div class="l">areas</div></div>';
+  $("#stats").innerHTML=stats;
+
   var chips=$("#grades");
+  chips.textContent="";
   var mk=function(key,label,color){
     var b=el("button","chip"); b.dataset.g=key; b.setAttribute("aria-pressed","false");
     if(color){ var dot=el("span","dot"); dot.style.background=color; b.appendChild(dot); }
     b.appendChild(el("span",null,label));
-    b.addEventListener("click",function(){ state.grade = state.grade===key?"":key; render(); });
+    b.addEventListener("click",function(){ state.grade = state.grade===key?"":key; render(true); });
     chips.appendChild(b);
   };
-  mk("","All ratings",null);
-  mk("excellent","Excellent "+counts.excellent,"var(--exc)");
-  mk("good","Good "+counts.good,"var(--good)");
-  mk("average","Average "+counts.average,"var(--avg)");
-  mk("poor","Needs work "+counts.poor,"var(--poor)");
-  mk("__enf","Violations "+s.enforcementVenues,"var(--poor)");
+  mk("","All records",null);
+  if(hasScores){
+    mk("excellent","Excellent "+s.excellent,"var(--exc)");
+    mk("good","Good "+s.good,"var(--good)");
+    mk("average","Average "+s.average,"var(--avg)");
+    mk("poor","Needs work "+s.poor,"var(--poor)");
+  }
+  if(s.enforcementVenues) mk("__enf","Violations "+s.enforcementVenues,"var(--poor)");
+  if(s.certifiedVenues)   mk("__cert","FSSAI rated "+s.certifiedVenues,"var(--exc)");
 
   var sel=$("#area");
+  sel.textContent="";
+  sel.appendChild(el("option",null,"All areas"));
+  sel.firstChild.value="";
   d.areas.forEach(function(a){
     var o=el("option",null,a.name+" ("+a.count+")"); o.value=a.name; sel.appendChild(o);
   });
 
-  // ---- coverage note: describe the dataset's limits from the dataset itself,
-  //      so it stays true as the archive grows.
-  (function(){
-    var src = (s.sources||[]);
-    var top = src[0];
-    var topAreas = d.areas.slice(0,4).map(function(a){ return a.name; });
-    var line = $("#coverageLine"), body = $("#coverageBody");
-    if(!line || !body) return;
-
-    line.textContent = s.venues+" places with a published inspection — not every restaurant in Hyderabad.";
-
-    var html = "";
-    html += "<p>Two kinds of record appear here. <b>"+s.scoredVenues+"</b> places have a "+
-            "scored hygiene audit, with marks out of a checklist — those are the ones ranked. "+
-            "<b>"+s.enforcementVenues+"</b> have an <b>enforcement record</b> instead: inspectors "+
-            "listed violations but published no score, so they are never ranked against a scored place.</p>";
-
-    if(top){
-      html += "<p><b>"+top.count+" of "+s.inspections+"</b> inspections here were published by "+
-              esc(top.handle)+". Coverage follows whoever publishes, so "+
-              topAreas.slice(0,3).join(", ")+" and "+(topAreas[3]||"nearby areas")+
-              " are well represented while much of the city — including the old city — is barely covered at all.</p>";
+  var hero=$("#heroLine");
+  if(hero){
+    if(s.scoredVenues||s.enforcementVenues){
+      hero.innerHTML="Hygiene scores for "+esc(d.city)+" restaurants, cafés and stores, taken straight from "+
+        "<b>official "+esc((s.sources||[]).slice(0,3).map(function(x){return x.handle;}).join(", ")||"food-safety")+"</b> inspection reports"+
+        (s.certifiedVenues?", alongside "+s.certifiedVenues+" FSSAI hygiene ratings.":".");
+    } else {
+      hero.innerHTML="<b>"+s.certifiedVenues+" FSSAI hygiene ratings</b> for "+esc(d.city)+
+        " restaurants, cafés and stores. No routine inspection reports are published for "+
+        esc(d.city)+" yet — see what this covers, below.";
     }
-    // Point-in-time note. Telangana's food-safety department was merged into
-    // TG SAFE on 16 Aug 2026 and has not yet published inspections itself; its
-    // drives reach the public only through press reports, which this site does
-    // not list because they cannot be traced to the inspecting authority.
-    // DELETE THIS PARAGRAPH once TG SAFE publishes its own feed and the scraper
-    // picks it up — see MAINTAINING.md.
+  }
+
+  // Attribution has to follow the city. Crediting the Telangana handles on a
+  // Delhi page would be a plain misstatement of where the data came from.
+  var attrib=$("#attrib");
+  if(attrib){
+    var parts=[];
+    if(s.inspections){
+      var handles=(s.sources||[]).map(function(x){
+        var h=String(x.handle||"");
+        return h.charAt(0)==="@"
+          ? '<a href="https://x.com/'+esc(h.slice(1))+'" target="_blank" rel="noopener">'+esc(h)+'</a>'
+          : esc(h);
+      });
+      if(handles.length) parts.push("<b>Where this comes from.</b> Inspection records on this page are "+
+        "transcribed from public reports published by "+handles.join(", ")+
+        ". Every listing links back to its original report — check it.");
+    }
+    if(s.certifiedVenues){
+      parts.push((parts.length?"":"<b>Where this comes from.</b> ")+
+        "Hygiene ratings come from the <a href=\"https://hygiene.fssai.gov.in/knowRating.php\" "+
+        "target=\"_blank\" rel=\"noopener\">FSSAI Hygiene Rating directory</a>, a voluntary scheme "+
+        "a business applies and pays to be audited under.");
+    }
+    attrib.innerHTML=parts.join(" ");
+  }
+  var pct=$("#pctnote");
+  if(pct) pct.hidden = !hasScores;   // no percentages in a certification-only city
+
+  coverageNote(d);
+
+  var bits=[];
+  if(s.inspections) bits.push(s.inspections+" inspection report"+(s.inspections===1?"":"s"));
+  if(s.certifiedVenues) bits.push(s.certifiedVenues+" FSSAI hygiene rating"+(s.certifiedVenues===1?"":"s"));
+  $("#gen").textContent="Built from "+bits.join(" and ")+" covering "+s.venues+
+    " establishments across "+s.areas+" localities in "+d.city+
+    (s.latest?". Most recent inspection: "+fmtDate(s.latest)+".":".");
+
+  render(true);
+}
+
+// ---- coverage note: describe the dataset's limits from the dataset itself,
+//      so it stays true as the archive grows and as cities are added.
+function coverageNote(d){
+  var s=d.stats;
+  var line=$("#coverageLine"), body=$("#coverageBody");
+  if(!line||!body) return;
+
+  line.textContent = s.venues+" places on record in "+d.city+" — not every restaurant in the city.";
+
+  var html="", kinds=[];
+  if(s.scoredVenues)      kinds.push("<b>"+s.scoredVenues+"</b> with a scored hygiene audit");
+  if(s.enforcementVenues) kinds.push("<b>"+s.enforcementVenues+"</b> with an enforcement record");
+  if(s.certifiedVenues)   kinds.push("<b>"+s.certifiedVenues+"</b> with a voluntary FSSAI hygiene rating");
+
+  html += "<p>"+(kinds.length>1?"Three kinds of record can appear here, and they are never ranked against each other: "
+                               :"Records here: ")+kinds.join("; ")+".</p>";
+
+  if(s.scoredVenues){
+    html += "<p>A <b>scored audit</b> gives marks out of a checklist — those are the only ones ranked. "+
+            "An <b>enforcement record</b> means inspectors listed violations but published no score.</p>";
+  }
+
+  if(s.certifiedVenues){
+    var bands=(s.bands||[]);
+    var topBand=bands[0];
+    var share = topBand ? Math.round(topBand.count*100/s.certifiedVenues) : 0;
+    html += "<p>The <b>FSSAI hygiene rating</b> is voluntary and paid for: a business applies and "+
+            "hires an accredited agency to audit it. So this part of the list shows who chose to be "+
+            "audited and passed, not who is clean"+
+            (topBand&&share>=60 ? " — "+share+"% of the ratings here are “"+esc(topBand.band)+"”, which is what a self-selected list looks like" : "")+
+            ". No audit date is published with it, so these entries cannot be aged the way inspections are.</p>";
+  }
+
+  var top=(s.sources||[])[0];
+  var topAreas=d.areas.slice(0,4).map(function(a){ return a.name; });
+  if(top && s.inspections){
+    html += "<p><b>"+top.count+" of "+s.inspections+"</b> inspections here were published by "+
+            esc(top.handle)+". Coverage follows whoever publishes, so "+
+            topAreas.slice(0,3).join(", ")+" and "+(topAreas[3]||"nearby areas")+
+            " are well represented while much of the city is barely covered at all.</p>";
+  }
+
+  // Point-in-time note, Hyderabad only. Telangana's food-safety department was
+  // merged into TG SAFE on 16 Aug 2026 and has not yet published inspections
+  // itself. DELETE THIS once TG SAFE publishes its own feed — see MAINTAINING.md.
+  if(d.cityKey==="hyderabad"){
     html += "<p>Telangana's food-safety department was reorganised into <b>TG SAFE</b> in "+
             "August 2026. Its enforcement drives — including in areas missing from this list — "+
             "are not shown here, because TG SAFE does not yet publish inspections itself. "+
             "Only reports traceable to the inspecting authority are included.</p>";
+  }
 
-    if(s.earliest && s.latest){
-      html += "<p>The record runs from "+fmtDate(s.earliest)+" to "+fmtDate(s.latest)+
-              ". Older entries are marked <b>Historic</b> — they describe one day, "+
-              "sometimes years ago, and a place may have changed completely since.</p>";
-    }
-    html += "<p><b>A place missing from this list has not been inspected in public.</b> "+
-            "That is not a mark against it, and not a clean bill of health either — "+
-            "there is simply nothing on record.</p>";
-    body.innerHTML = html;
-  })();
+  if(!s.located){
+    html += "<p>Localities in "+esc(d.city)+" have not been mapped yet, so <b>distance sorting is "+
+            "switched off here</b>. Rather than place every venue at the city centre and show "+
+            "distances that mean nothing, the site leaves it out. Filtering by area still works.</p>";
+  }
 
-  $("#gen").textContent="Built from "+s.inspections+" inspection reports covering "+s.venues+
-    " establishments across "+s.areas+" localities. Most recent inspection: "+fmtDate(s.latest)+".";
+  if(s.earliest && s.latest){
+    html += "<p>The inspection record runs from "+fmtDate(s.earliest)+" to "+fmtDate(s.latest)+
+            ". Older entries are marked <b>Historic</b> — they describe one day, "+
+            "sometimes years ago, and a place may have changed completely since.</p>";
+  }
+  html += "<p><b>A place missing from this list has no public food-safety record.</b> "+
+          "That is not a mark against it, and not a clean bill of health either — "+
+          "there is simply nothing on record.</p>";
+  body.innerHTML=html;
+}
 
-  render();
+function selectCity(key,remember){
+  var c=null;
+  INDEX.cities.forEach(function(x){ if(x.key===key) c=x; });
+  if(!c) c=INDEX.cities[0];
+  state.city=c.key;
+  $("#city").value=c.key;
+  if(remember) store.set("dinecheck.city",c.key);
+  $("#list").innerHTML='<div class="empty"><p>Loading '+esc(c.name)+'…</p></div>';
+  return fetch(c.file,{cache:"no-cache"})
+    .then(function(r){ if(!r.ok) throw new Error(r.status); return r.json(); })
+    .then(bootCity)
+    .catch(function(){ loadFailed("the data for "+c.name); });
 }
 
 fetch("data.json",{cache:"no-cache"})
   .then(function(r){ if(!r.ok) throw new Error(r.status); return r.json(); })
-  .then(boot)
-  .catch(function(){
-    $("#list").innerHTML='<div class="empty"><p>Could not load the inspection data.<br>'+
-      'If you opened this file directly from disk, serve the folder instead — for example <code>python -m http.server</code> — because browsers block <code>fetch</code> on <code>file://</code> URLs.</p></div>';
-  });
+  .then(function(idx){
+    INDEX=idx;
+    var sel=$("#city");
+    idx.cities.forEach(function(c){
+      var o=el("option",null,c.name+" ("+c.venues+")"); o.value=c.key; sel.appendChild(o);
+    });
+    sel.addEventListener("change",function(){ selectCity(this.value,true); });
+    var saved=store.get("dinecheck.city",null);
+    var known=idx.cities.some(function(c){ return c.key===saved; });
+    return selectCity(known?saved:idx.defaultCity,false);
+  })
+  .catch(function(){ loadFailed("the inspection data"); });
 })();
 
 /* ------------------------------------------------------------------ analytics

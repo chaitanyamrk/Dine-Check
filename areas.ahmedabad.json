@@ -1,0 +1,294 @@
+{
+ "_source": "Mined from 1328 FSSAI hygiene-rating addresses and geocoded via OpenStreetMap Nominatim.",
+ "_warning": "Centroids are locality-level, accurate to roughly a kilometre. Edit by hand freely; this file is never regenerated over your edits without you re-running the script.",
+ "a-47": {
+  "area": "A-47",
+  "lat": 23.0215,
+  "lng": 72.5801
+ },
+ "a/94": {
+  "area": "A/94",
+  "lat": 23.0215,
+  "lng": 72.5801
+ },
+ "ahmadabad": {
+  "area": "Ahmadabad",
+  "lat": 23.0215,
+  "lng": 72.5801
+ },
+ "ahmdabad": {
+  "area": "Ahmdabad",
+  "lat": 23.0215,
+  "lng": 72.5801
+ },
+ "ahmedabad": {
+  "area": "Ahmedabad",
+  "lat": 23.0215,
+  "lng": 72.5801
+ },
+ "ambawadi": {
+  "area": "Ambawadi",
+  "lat": 23.0226,
+  "lng": 72.5491
+ },
+ "amraiwadi": {
+  "area": "Amraiwadi",
+  "lat": 23.0058,
+  "lng": 72.627
+ },
+ "ankur road": {
+  "area": "Ankur Road",
+  "lat": 23.0585,
+  "lng": 72.5563
+ },
+ "ashram road": {
+  "area": "Ashram Road",
+  "lat": 23.0273,
+  "lng": 72.5711
+ },
+ "bapunagar": {
+  "area": "Bapunagar",
+  "lat": 23.0362,
+  "lng": 72.6303
+ },
+ "bavla": {
+  "area": "Bavla",
+  "lat": 22.8279,
+  "lng": 72.3685
+ },
+ "bodakdev": {
+  "area": "Bodakdev",
+  "lat": 23.0446,
+  "lng": 72.5173
+ },
+ "bopal": {
+  "area": "Bopal",
+  "lat": 23.0386,
+  "lng": 72.4588
+ },
+ "c.g.road": {
+  "area": "C.G.ROAD",
+  "lat": 23.1054,
+  "lng": 72.5973
+ },
+ "chandkheda": {
+  "area": "Chandkheda",
+  "lat": 23.1101,
+  "lng": 72.5811
+ },
+ "dist-ahmedabad": {
+  "area": "Dist-ahmedabad",
+  "lat": 23.0016,
+  "lng": 72.2596
+ },
+ "dist:ahmedabad": {
+  "area": "Dist:ahmedabad",
+  "lat": 23.0016,
+  "lng": 72.2596
+ },
+ "drive-in road": {
+  "area": "Drive-in Road",
+  "lat": 23.0479,
+  "lng": 72.5257
+ },
+ "ellisbridge": {
+  "area": "Ellisbridge",
+  "lat": 23.0232,
+  "lng": 72.5603
+ },
+ "gandhinagar highway": {
+  "area": "Gandhinagar Highway",
+  "lat": 23.0263,
+  "lng": 72.5078
+ },
+ "gf/1": {
+  "area": "Gf/1",
+  "lat": 23.0215,
+  "lng": 72.5801
+ },
+ "gf/2": {
+  "area": "Gf/2",
+  "lat": 23.0215,
+  "lng": 72.5801
+ },
+ "gheekanta": {
+  "area": "Gheekanta",
+  "lat": 23.0288,
+  "lng": 72.5868
+ },
+ "gota": {
+  "area": "Gota",
+  "lat": 23.101,
+  "lng": 72.5408
+ },
+ "jawahar chowk": {
+  "area": "Jawahar Chowk",
+  "lat": 22.9951,
+  "lng": 72.6051
+ },
+ "kalupur": {
+  "area": "Kalupur",
+  "lat": 23.0263,
+  "lng": 72.601
+ },
+ "law garden": {
+  "area": "LAW Garden",
+  "lat": 23.0264,
+  "lng": 72.5611
+ },
+ "makarba road": {
+  "area": "Makarba Road",
+  "lat": 23.0004,
+  "lng": 72.4998
+ },
+ "maninagar": {
+  "area": "Maninagar",
+  "lat": 22.9987,
+  "lng": 72.6114
+ },
+ "memnagar": {
+  "area": "Memnagar",
+  "lat": 23.0517,
+  "lng": 72.5352
+ },
+ "moraiya": {
+  "area": "Moraiya",
+  "lat": 22.9307,
+  "lng": 72.4408
+ },
+ "motera": {
+  "area": "Motera",
+  "lat": 23.0918,
+  "lng": 72.5973
+ },
+ "municipal market": {
+  "area": "Municipal Market",
+  "lat": 23.0344,
+  "lng": 72.5615
+ },
+ "naranpura": {
+  "area": "Naranpura",
+  "lat": 23.0567,
+  "lng": 72.5509
+ },
+ "naroda": {
+  "area": "Naroda",
+  "lat": 23.0854,
+  "lng": 72.6581
+ },
+ "navrangpura": {
+  "area": "Navrangpura",
+  "lat": 23.036,
+  "lng": 72.5643
+ },
+ "nehrunagar": {
+  "area": "Nehrunagar",
+  "lat": 23.0223,
+  "lng": 72.5428
+ },
+ "odhav": {
+  "area": "Odhav",
+  "lat": 23.0256,
+  "lng": 72.6654
+ },
+ "paldi": {
+  "area": "Paldi",
+  "lat": 23.0146,
+  "lng": 72.5635
+ },
+ "sabarmati": {
+  "area": "Sabarmati",
+  "lat": 23.0771,
+  "lng": 72.5891
+ },
+ "sabarmati river front": {
+  "area": "Sabarmati River Front",
+  "lat": 23.0443,
+  "lng": 72.5724
+ },
+ "sarkhej road": {
+  "area": "Sarkhej Road",
+  "lat": 23.0263,
+  "lng": 72.5078
+ },
+ "satelite": {
+  "area": "Satelite",
+  "lat": 23.0276,
+  "lng": 72.511
+ },
+ "satellite": {
+  "area": "Satellite",
+  "lat": 23.0272,
+  "lng": 72.5071
+ },
+ "science city road": {
+  "area": "Science City Road",
+  "lat": 23.0836,
+  "lng": 72.4936
+ },
+ "shahibaug": {
+  "area": "Shahibaug",
+  "lat": 23.0556,
+  "lng": 72.5966
+ },
+ "shela": {
+  "area": "Shela",
+  "lat": 23.0108,
+  "lng": 72.4427
+ },
+ "shyamal": {
+  "area": "Shyamal",
+  "lat": 23.0154,
+  "lng": 72.5293
+ },
+ "sindhu bhavan road": {
+  "area": "Sindhu Bhavan Road",
+  "lat": 23.0398,
+  "lng": 72.5086
+ },
+ "sola": {
+  "area": "Sola",
+  "lat": 23.0692,
+  "lng": 72.5111
+ },
+ "south bopal": {
+  "area": "South Bopal",
+  "lat": 23.0235,
+  "lng": 72.4705
+ },
+ "stadium road": {
+  "area": "Stadium Road",
+  "lat": 23.0545,
+  "lng": 72.5841
+ },
+ "swastik society": {
+  "area": "Swastik Society",
+  "lat": 23.0385,
+  "lng": 72.5614
+ },
+ "ta.sanand": {
+  "area": "Ta.sanand",
+  "lat": 22.9925,
+  "lng": 72.3826
+ },
+ "thaltej": {
+  "area": "Thaltej",
+  "lat": 23.0485,
+  "lng": 72.5117
+ },
+ "vasna": {
+  "area": "Vasna",
+  "lat": 23.002,
+  "lng": 72.5472
+ },
+ "vastrapur": {
+  "area": "Vastrapur",
+  "lat": 23.0401,
+  "lng": 72.529
+ },
+ "vejalpur": {
+  "area": "Vejalpur",
+  "lat": 23.0069,
+  "lng": 72.5208
+ }
+}

@@ -97,26 +97,115 @@ there too — but not if you open the file directly from disk.
 
 ## Updating the data
 
-The site reads `docs/data.json`. Regenerate it whenever the scraper produces new
-rows:
-
 ```bash
 python build_data.py                                  # uses ./hyderabad_food_inspections.csv
 python build_data.py "../Inspection Scraper/hyderabad_food_inspections.csv"
-git add docs/data.json && git commit -m "Refresh inspections" && git push
+git add docs/ && git commit -m "Refresh data" && git push
 ```
 
-The script prints a summary and, importantly, a list of any locality it could
-not place on the map:
+`build_data.py` reads two inputs and writes several outputs:
+
+| | |
+|---|---|
+| in | `hyderabad_food_inspections.csv` — the X/press pipeline, Hyderabad only |
+| in | `fssai_hygiene_ratings.csv` — the national FSSAI directory, every city |
+| in | `cities.json`, `areas*.json` |
+| out | `docs/data.json` — a small **index** of cities, not the venues |
+| out | `docs/city-<key>.json` — one file per city, loaded on demand |
+
+**`docs/data.json` is no longer the venue list.** It became an index when the
+site went multi-city: the full set is several megabytes, and nobody should
+download Chennai to look at Hyderabad. The page fetches the index, fills the
+city picker, then fetches one city file. Watch out for two consequences —
+a stale single-file `data.json` in a browser cache will render nothing, and the
+UptimeRobot keyword monitor still passes because the index also contains the
+word `venues`.
+
+The script prints a per-city summary and any locality it could not place:
 
 ```
-venues=86  inspections=88  scored=83  avg=74  areas=34  dupes_merged=8  non_venue_posts=17
-NO COORDINATES for: Bagh Ameer, CGR School, PNR Empire, Phoenix Towers, SMR Vinay Technopolis
+cities=4  venues=326  scored=84  enforcement=231  certified=11  dupes_merged=8
+  Hyderabad    319 venues                                    435 KB
+  Chennai      3 venues, NO gazetteer (distance off)           3 KB
 ```
 
-Anything named there still appears on the site and is still filterable by area —
-it just cannot be distance-sorted. Add it to `areas.json` to fix that (see
-below).
+A city marked `NO gazetteer` still works — searchable, filterable by area — it
+just cannot be distance-sorted, and the page says so instead of faking it. Fix
+that by building the gazetteer (see below).
+
+---
+
+## Adding a city
+
+1. **Add it to `cities.json`.** The `districts` list must match the FSSAI
+   dropdown *exactly*, odd spellings included (`Ahmadabad`, `Rangareddi`,
+   `AHMEDABAD ZONE-1`). Get the real list from
+   `https://hygiene.fssai.gov.in/get_district_search.php?stid=<state>&distid=0`.
+
+2. **Scrape the ratings.**
+
+   ```bash
+   python fssai_hygiene_scraper.py --cities chennai
+   ```
+
+   One request per district, one second apart. Re-running is safe and preserves
+   `first_seen`.
+
+3. **Build the gazetteer**, so distances work:
+
+   ```bash
+   python geocode_areas.py chennai --email you@example.com --dry-run   # look first
+   python geocode_areas.py chennai --email you@example.com
+   ```
+
+   It mines locality names out of the scraped addresses, geocodes them through
+   OpenStreetMap Nominatim at the one-per-second its policy requires, and throws
+   away anything landing more than 40 km from the city centre. **Read the file
+   before committing it** — a wrong centroid is worse than a missing one.
+
+4. `python build_data.py`, check the summary, commit.
+
+### Four things that went wrong the first time
+
+All four are fixed, and all four are the kind that produce plausible-looking
+output rather than an error, so they are worth recognising if they recur.
+
+**1. A chain became one card.** The FSSAI directory registers each outlet under
+the **operating company**, so Mumbai carries 86 rows spelled some variation of
+"Tata Starbucks Pvt Ltd" and Pune a dozen under "Sapphire Foods India". Keying
+those on (name, area) — correct for Hyderabad's inspection data — fused whole
+chains into a single card. A certification is therefore identified by its
+**address**, and is excluded from the cross-area merge pass entirely.
+
+**2. One gazetteer entry swallowed a city.** Addresses run specific → broad and
+always end with the city, and `resolve_area` takes the **last** match. So a
+single "mumbai" alias filed 42% of Mumbai under an area called "Mumbai", and
+"bangalore" did the same to 1,298 Bengaluru venues. Two defences now: the miner
+refuses the city name, its districts and its `aliases`, and `load_gazetteer`
+refuses them again at build time and prints what it dropped. Both use a fuzzy
+match, because exact lists never keep up — the data contains Ahmdabad, Banglore,
+Bengalore, Hydrabad. **Read the IGNORED lines after every build.**
+
+**3. Building parts became localities.** "A Wing", "Ground Floor" and "G/F" were
+geocoded to real-looking coordinates and became some of Delhi's largest areas.
+Structural words are now rejected on both sides.
+
+**4. The list got too slow to type in.** Delhi is 3,332 venues, and building a
+card for each took ~1.9s **per keystroke** in the search box. The list is now
+capped at 150 with a "Show more" button; the count above it always states the
+true total. If you raise `PAGE` in `app.js`, measure it on a phone first.
+
+### The trap that makes the FSSAI directory look empty
+
+The search form's **"All District" option is broken upstream**. It returns the
+results table with **zero rows for every state**, which reads exactly like "no
+data exists" — it is why the directory is easy to write off. You have to
+enumerate real districts one at a time, which is what the scraper does. Do not
+"optimise" it back to a single All-District query.
+
+Two smaller gotchas in the same page: the submit button's value is lowercase
+`search` and the server checks it, and the rating `<img>` filenames are off by
+one band (an "Excellent" row ships `verygood.png`), so trust the text.
 
 ---
 
@@ -253,14 +342,34 @@ the coverage note in `docs/app.js` — it is marked with a comment.
 
 ---
 
-## Two kinds of record
+## Three kinds of record
 
-The site carries two things that must never be confused:
+The site carries three things that must never be confused:
 
-| | Source | Has a score? | Ranked? |
-|---|---|---|---|
-| **Scored inspection** | `@CMC_Offcl` | Yes, FoSCoS marks | Yes |
-| **Enforcement record** | `@c_tgsafe` (ex-CFS) | No | **No** |
+| | Source | Has a score? | Has a date? | Ranked? |
+|---|---|---|---|---|
+| **Scored inspection** | `@CMC_Offcl` | Yes, FoSCoS marks | Yes | Yes |
+| **Enforcement record** | `@c_tgsafe` (ex-CFS) | No | Yes | **No** |
+| **FSSAI hygiene rating** | `hygiene.fssai.gov.in` | A band, not marks | **No** | **No** |
+
+The third is the one most likely to be misused, so it is worth being blunt about
+what it is. A business **applies** for an FSSAI hygiene rating and **pays** an
+accredited agency to audit it. Nobody is audited against their will. So the
+directory is a list of who opted in and passed — Hyderabad is 280 "Excellent"
+out of 281, Greater Mumbai 1,217 out of 1,393. That is not a finding about the
+city's restaurants; it is the shape of a self-selected list.
+
+Ranking a paid certificate against an enforcement finding would quietly reward
+buying an audit. `build_data.py` therefore sorts inspections first, enforcement
+second and certifications last, within a city, and the certification band never
+enters `avgScore` or the grade counts. On the page a certification gets a word
+badge, never the score ring and never the issue-count mark, and the detail sheet
+says in as many words that it is a certificate rather than an inspection.
+
+It also carries **no audit date**, which is why the Historic ageing does not
+apply to it. `fssai_hygiene_scraper.py` records `first_seen` and `last_seen`
+itself so a rating that lapses is at least detectable; a row that vanishes from
+the directory is kept with `dropped` set and is excluded from the build.
 
 Enforcement records come from a different regulator with a different method:
 inspectors list violations and initiate action, but publish no marks. They are

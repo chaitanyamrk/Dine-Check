@@ -231,6 +231,48 @@ header{
   padding:11px 13px;font-size:13.5px;line-height:1.5;margin-bottom:14px}
 .enfnote b{font-weight:700}
 
+/* ------------------------------------------- FSSAI voluntary certifications */
+/* A certification is neither a score nor a violation, so it gets its own shape:
+   a word badge, never anything that could be read as a percentage. */
+.band{width:54px;height:54px;flex:none;border-radius:14px;display:grid;
+  place-items:center;gap:0;text-align:center;padding:4px 1px;
+  background:color-mix(in srgb,var(--c) 12%,transparent);color:var(--c)}
+/* Not uppercased — "EXCELLENT" is wider than the badge, "Excellent" is not.
+   Wrapping is left at the default so "Needs work" breaks between the two words;
+   overflow-wrap:anywhere must NOT be set here or it splits "Excelle / nt". */
+.band b{font-size:10px;font-weight:750;line-height:1.2;letter-spacing:-.01em}
+.band s{font-size:8.5px;text-decoration:none;letter-spacing:.06em;
+  text-transform:uppercase;opacity:.75;margin-top:3px}
+.tag.cert{background:var(--brand-soft);color:var(--brand-ink)}
+.card.cert{border-left:3px solid color-mix(in srgb,var(--brand) 45%,var(--line))}
+.enfnote.certnote{background:var(--brand-soft);color:var(--brand-ink)}
+
+/* -------------------------------------------------- paged list ("show more") */
+.more{text-align:center;padding:18px 8px 4px}
+.more p{margin:0 0 10px;font-size:13px;color:var(--ink-3)}
+.morebtn{height:40px;padding:0 18px;border-radius:11px;border:1px solid var(--line);
+  background:var(--card);color:var(--ink);font-weight:600;font-size:14px}
+.morebtn:hover{border-color:color-mix(in srgb,var(--brand) 45%,var(--line))}
+
+/* ----------------------------------------------------------- city selector */
+.citysel{position:relative;display:flex;align-items:center;gap:6px;flex:0 1 auto;min-width:0;
+  height:36px;padding:0 22px 0 10px;border:1px solid var(--line);border-radius:10px;
+  background:var(--card);color:var(--ink);font-size:13.5px;font-weight:600}
+.citysel>svg{width:15px;height:15px;flex:none;fill:none;stroke:currentColor;stroke-width:2;
+  stroke-linecap:round;stroke-linejoin:round;opacity:.7}
+/* A <select> is as wide as its longest option unless it is told otherwise, and
+   "Hyderabad (319)" was enough to push the header buttons off a 360px screen. */
+.citysel select{appearance:none;-webkit-appearance:none;border:0;background:transparent;
+  color:inherit;font:inherit;min-width:0;width:100%;text-overflow:ellipsis}
+@media (max-width:460px){
+  .logo{font-size:15px;min-width:0;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+  .citysel{max-width:36vw;padding-left:8px;gap:0}
+  .citysel>svg{display:none}
+}
+.citysel::after{content:"";position:absolute;right:9px;width:6px;height:6px;
+  border-right:2px solid currentColor;border-bottom:2px solid currentColor;
+  transform:rotate(45deg) translateY(-2px);opacity:.5;pointer-events:none}
+
 /* ------------------------------------------------------------------ detail */
 .scrim{position:fixed;inset:0;z-index:60;background:rgba(8,14,11,.45);backdrop-filter:blur(2px);
   opacity:0;pointer-events:none;transition:opacity .2s ease}
@@ -294,6 +336,10 @@ footer a:hover{text-decoration:underline}
       Dine&nbsp;Check
     </div>
     <div class="spacer"></div>
+    <div class="citysel">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.3 7-11a7 7 0 10-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+      <select id="city" aria-label="Choose a city"></select>
+    </div>
     <button class="iconbtn" id="favBtn" aria-pressed="false" title="Show saved places" aria-label="Show saved places">
       <svg viewBox="0 0 24 24"><path d="M20.8 8.6c0 4.9-8.8 10.4-8.8 10.4S3.2 13.5 3.2 8.6a4.6 4.6 0 018.8-1.8 4.6 4.6 0 018.8 1.8z"/></svg>
     </button>
@@ -306,7 +352,7 @@ footer a:hover{text-decoration:underline}
 <main class="wrap">
   <section class="hero">
     <h1>Know before you eat.</h1>
-    <p>Hygiene scores for Hyderabad restaurants, cafés and stores, taken straight from <b>official CMC, GHMC and Telangana Food Safety</b> inspection reports.</p>
+    <p id="heroLine">Official food-safety records for restaurants, cafés and stores across India — inspection scores, enforcement findings and FSSAI hygiene ratings, straight from the source.</p>
 
     <div class="searchrow">
       <div class="search">
@@ -337,8 +383,9 @@ footer a:hover{text-decoration:underline}
     <div class="selrow">
       <label class="sel"><span class="sr">Sort by</span>
         <select id="sort">
-          <option value="score-desc">Highest score</option>
-          <option value="score-asc">Lowest score</option>
+          <option value="score-desc" id="sortScore">Highest score</option>
+          <option value="score-asc" id="sortScoreAsc">Lowest score</option>
+          <option value="band" id="sortBand">Best FSSAI rating</option>
           <option value="date">Most recently inspected</option>
           <option value="near">Nearest to me</option>
           <option value="name">Name (A–Z)</option>
@@ -358,11 +405,8 @@ footer a:hover{text-decoration:underline}
   <div class="list" id="list"></div>
 
   <footer>
-    <p><b>Where this comes from.</b> Every score on this page is transcribed from a public inspection report published by
-    <a href="https://x.com/CMC_Offcl" target="_blank" rel="noopener">@CMC_Offcl</a> (Cyberabad Municipal Corporation),
-    <a href="https://x.com/cfs_telangana" target="_blank" rel="noopener">@cfs_telangana</a> and
-    <a href="https://x.com/GHMCOnline" target="_blank" rel="noopener">@GHMCOnline</a>. Every listing links back to its original report — check it.</p>
-    <p><b>Read scores as percentages.</b> Inspection checklists differ by business type, so total marks vary between establishments. Only the percentage is comparable.</p>
+    <p id="attrib"></p>
+    <p id="pctnote"><b>Read scores as percentages.</b> Inspection checklists differ by business type, so total marks vary between establishments. Only the percentage is comparable.</p>
     <p><b>A score is a snapshot,</b> not a standing verdict — it reflects one visit on one day, and conditions change. Places with no recent inspection simply have not been visited, which is not a mark against them. Distances are measured to the centre of a locality, so treat them as approximate.</p>
     <p id="gen"></p>
   </footer>

@@ -1,0 +1,434 @@
+{
+ "_source": "Mined from 2296 FSSAI hygiene-rating addresses and geocoded via OpenStreetMap Nominatim.",
+ "_warning": "Centroids are locality-level, accurate to roughly a kilometre. Edit by hand freely; this file is never regenerated over your edits without you re-running the script.",
+ "ambedkar colony": {
+  "area": "Ambedkar Colony",
+  "lat": 12.9709,
+  "lng": 77.6952
+ },
+ "anekal taluk": {
+  "area": "Anekal Taluk",
+  "lat": 12.7593,
+  "lng": 77.6765
+ },
+ "ashok nagar": {
+  "area": "Ashok Nagar",
+  "lat": 12.9694,
+  "lng": 77.6092
+ },
+ "bangalore": {
+  "area": "Bangalore",
+  "lat": 12.9768,
+  "lng": 77.5901
+ },
+ "bangalore rural": {
+  "area": "Bangalore Rural",
+  "lat": 13.0011,
+  "lng": 77.3361
+ },
+ "bangalore rural district": {
+  "area": "Bangalore Rural District",
+  "lat": 13.0011,
+  "lng": 77.3361
+ },
+ "banglore": {
+  "area": "Banglore",
+  "lat": 12.9587,
+  "lng": 77.5573
+ },
+ "bannerghatta main road": {
+  "area": "Bannerghatta Main Road",
+  "lat": 12.7177,
+  "lng": 77.6874
+ },
+ "bannerghatta road": {
+  "area": "Bannerghatta Road",
+  "lat": 12.8719,
+  "lng": 77.5939
+ },
+ "bengaluru": {
+  "area": "Bengaluru",
+  "lat": 12.9768,
+  "lng": 77.5901
+ },
+ "bilekahalli": {
+  "area": "Bilekahalli",
+  "lat": 12.9046,
+  "lng": 77.6071
+ },
+ "brigade road": {
+  "area": "Brigade Road",
+  "lat": 12.9736,
+  "lng": 77.6075
+ },
+ "chamarajapete": {
+  "area": "Chamarajapete",
+  "lat": 12.9584,
+  "lng": 77.5629
+ },
+ "chamarajpet": {
+  "area": "Chamarajpet",
+  "lat": 12.9578,
+  "lng": 77.5665
+ },
+ "chandra layout": {
+  "area": "Chandra Layout",
+  "lat": 12.9553,
+  "lng": 77.5239
+ },
+ "church street": {
+  "area": "Church Street",
+  "lat": 12.9755,
+  "lng": 77.6027
+ },
+ "devanahalli": {
+  "area": "Devanahalli",
+  "lat": 13.2484,
+  "lng": 77.7134
+ },
+ "doddathogur village": {
+  "area": "Doddathogur Village",
+  "lat": 12.8475,
+  "lng": 77.6514
+ },
+ "dr. rajkumar road": {
+  "area": "Dr. Rajkumar Road",
+  "lat": 12.9987,
+  "lng": 77.5528
+ },
+ "dr.rajkumar road": {
+  "area": "Dr.rajkumar Road",
+  "lat": 12.9987,
+  "lng": 77.5528
+ },
+ "food court": {
+  "area": "Food Court",
+  "lat": 12.9164,
+  "lng": 77.5921
+ },
+ "forum mall": {
+  "area": "Forum Mall",
+  "lat": 12.9348,
+  "lng": 77.6113
+ },
+ "ganganagar": {
+  "area": "Ganganagar",
+  "lat": 13.0275,
+  "lng": 77.5906
+ },
+ "garuda mall": {
+  "area": "Garuda Mall",
+  "lat": 12.97,
+  "lng": 77.6097
+ },
+ "gopalapura": {
+  "area": "Gopalapura",
+  "lat": 12.9806,
+  "lng": 77.5581
+ },
+ "hal 2nd stage": {
+  "area": "HAL 2nd Stage",
+  "lat": 12.9689,
+  "lng": 77.6437
+ },
+ "hesaraghatta main road": {
+  "area": "Hesaraghatta Main Road",
+  "lat": 13.0483,
+  "lng": 77.5079
+ },
+ "hoodi": {
+  "area": "Hoodi",
+  "lat": 12.9959,
+  "lng": 77.7193
+ },
+ "hosakote": {
+  "area": "Hosakote",
+  "lat": 12.6998,
+  "lng": 77.4751
+ },
+ "hoskote": {
+  "area": "Hoskote",
+  "lat": 13.0318,
+  "lng": 77.7619
+ },
+ "hosur road": {
+  "area": "Hosur Road",
+  "lat": 12.8966,
+  "lng": 77.6354
+ },
+ "hrbr layout": {
+  "area": "Hrbr Layout",
+  "lat": 13.0142,
+  "lng": 77.6341
+ },
+ "hsr layout": {
+  "area": "HSR Layout",
+  "lat": 12.9116,
+  "lng": 77.6389
+ },
+ "hulimavu": {
+  "area": "Hulimavu",
+  "lat": 12.8773,
+  "lng": 77.6028
+ },
+ "indira canteen": {
+  "area": "Indira Canteen",
+  "lat": 12.9908,
+  "lng": 77.5993
+ },
+ "indiranagar": {
+  "area": "Indiranagar",
+  "lat": 12.9733,
+  "lng": 77.6405
+ },
+ "industrial layout": {
+  "area": "Industrial Layout",
+  "lat": 12.9828,
+  "lng": 77.7083
+ },
+ "itpl main road": {
+  "area": "Itpl Main Road",
+  "lat": 12.9795,
+  "lng": 77.7093
+ },
+ "jayanagar": {
+  "area": "Jayanagar",
+  "lat": 12.9293,
+  "lng": 77.5824
+ },
+ "jigani": {
+  "area": "Jigani",
+  "lat": 12.7756,
+  "lng": 77.6325
+ },
+ "jigani hobli": {
+  "area": "Jigani Hobli",
+  "lat": 12.7793,
+  "lng": 77.6436
+ },
+ "jp nagar": {
+  "area": "JP Nagar",
+  "lat": 12.9097,
+  "lng": 77.5866
+ },
+ "jp nagar 7th phase": {
+  "area": "JP Nagar 7th Phase",
+  "lat": 12.9118,
+  "lng": 77.5871
+ },
+ "kanakapura road": {
+  "area": "Kanakapura Road",
+  "lat": 12.8557,
+  "lng": 77.5254
+ },
+ "kempegowda international airport": {
+  "area": "Kempegowda International Airport",
+  "lat": 13.1976,
+  "lng": 77.7075
+ },
+ "konanakunte": {
+  "area": "Konanakunte",
+  "lat": 12.8793,
+  "lng": 77.5698
+ },
+ "konanakunte village": {
+  "area": "Konanakunte Village",
+  "lat": 12.8889,
+  "lng": 77.5629
+ },
+ "koramangala": {
+  "area": "Koramangala",
+  "lat": 12.9357,
+  "lng": 77.6241
+ },
+ "lulu global mall": {
+  "area": "Lulu Global Mall",
+  "lat": 12.9812,
+  "lng": 77.5631
+ },
+ "magadi main road": {
+  "area": "Magadi Main Road",
+  "lat": 12.9836,
+  "lng": 77.5541
+ },
+ "magrath road": {
+  "area": "Magrath Road",
+  "lat": 12.9706,
+  "lng": 77.6095
+ },
+ "malleshwaram": {
+  "area": "Malleshwaram",
+  "lat": 13.0027,
+  "lng": 77.5703
+ },
+ "malleswaram": {
+  "area": "Malleswaram",
+  "lat": 13.0027,
+  "lng": 77.5703
+ },
+ "mantri square": {
+  "area": "Mantri Square",
+  "lat": 12.9915,
+  "lng": 77.5708
+ },
+ "mantri square mall": {
+  "area": "Mantri Square Mall",
+  "lat": 12.9915,
+  "lng": 77.5708
+ },
+ "marathahalli": {
+  "area": "Marathahalli",
+  "lat": 12.9553,
+  "lng": 77.6984
+ },
+ "marenahalli": {
+  "area": "Marenahalli",
+  "lat": 12.9183,
+  "lng": 77.5917
+ },
+ "mysore road": {
+  "area": "Mysore Road",
+  "lat": 12.9467,
+  "lng": 77.5301
+ },
+ "nagarabhavi": {
+  "area": "Nagarabhavi",
+  "lat": 12.9664,
+  "lng": 77.5131
+ },
+ "nagarabhavi main road": {
+  "area": "Nagarabhavi Main Road",
+  "lat": 12.9702,
+  "lng": 77.5068
+ },
+ "nagavara": {
+  "area": "Nagavara",
+  "lat": 13.0375,
+  "lng": 77.6236
+ },
+ "nelamangala": {
+  "area": "Nelamangala",
+  "lat": 13.1149,
+  "lng": 77.3826
+ },
+ "new bel road": {
+  "area": "NEW BEL Road",
+  "lat": 13.0317,
+  "lng": 77.5701
+ },
+ "no.1": {
+  "area": "No.1",
+  "lat": 12.9768,
+  "lng": 77.5901
+ },
+ "no.172/1": {
+  "area": "No.172/1",
+  "lat": 12.9768,
+  "lng": 77.5901
+ },
+ "no.21": {
+  "area": "No.21",
+  "lat": 12.9768,
+  "lng": 77.5901
+ },
+ "orion mall": {
+  "area": "Orion Mall",
+  "lat": 13.0102,
+  "lng": 77.5548
+ },
+ "outer ring road": {
+  "area": "Outer Ring Road",
+  "lat": 12.9404,
+  "lng": 77.6957
+ },
+ "puttenahalli": {
+  "area": "Puttenahalli",
+  "lat": 12.8951,
+  "lng": 77.5849
+ },
+ "rajajinagar": {
+  "area": "Rajajinagar",
+  "lat": 13.0005,
+  "lng": 77.5496
+ },
+ "residency road": {
+  "area": "Residency Road",
+  "lat": 13.0574,
+  "lng": 77.6262
+ },
+ "royal meenakshi mall": {
+  "area": "Royal Meenakshi Mall",
+  "lat": 12.8757,
+  "lng": 77.5956
+ },
+ "sampige road": {
+  "area": "Sampige Road",
+  "lat": 13.0608,
+  "lng": 77.6405
+ },
+ "shanthala nagar": {
+  "area": "Shanthala Nagar",
+  "lat": 12.9714,
+  "lng": 77.5994
+ },
+ "srinivas industrial estate": {
+  "area": "Srinivas Industrial Estate",
+  "lat": 12.9078,
+  "lng": 77.6011
+ },
+ "terminal 1": {
+  "area": "Terminal 1",
+  "lat": 13.2003,
+  "lng": 77.7097
+ },
+ "terminal 2": {
+  "area": "Terminal 2",
+  "lat": 12.9408,
+  "lng": 77.69
+ },
+ "thanisandra main road": {
+  "area": "Thanisandra Main Road",
+  "lat": 13.0852,
+  "lng": 77.6349
+ },
+ "tumkur road": {
+  "area": "Tumkur Road",
+  "lat": 13.0399,
+  "lng": 77.5183
+ },
+ "varthur hobli": {
+  "area": "Varthur Hobli",
+  "lat": 12.9098,
+  "lng": 77.6878
+ },
+ "vega city mall": {
+  "area": "Vega City Mall",
+  "lat": 12.9078,
+  "lng": 77.6011
+ },
+ "vijayanagar": {
+  "area": "Vijayanagar",
+  "lat": 12.971,
+  "lng": 77.5374
+ },
+ "west of chord road": {
+  "area": "West OF Chord Road",
+  "lat": 12.9974,
+  "lng": 77.5501
+ },
+ "whitefield": {
+  "area": "Whitefield",
+  "lat": 12.9957,
+  "lng": 77.7579
+ },
+ "whitefield main road": {
+  "area": "Whitefield Main Road",
+  "lat": 12.959,
+  "lng": 77.7465
+ },
+ "yelahanka": {
+  "area": "Yelahanka",
+  "lat": 13.1007,
+  "lng": 77.5963
+ }
+}

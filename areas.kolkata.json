@@ -1,0 +1,169 @@
+{
+ "_source": "Mined from 373 FSSAI hygiene-rating addresses and geocoded via OpenStreetMap Nominatim.",
+ "_warning": "Centroids are locality-level, accurate to roughly a kilometre. Edit by hand freely; this file is never regenerated over your edits without you re-running the script.",
+ "alipore": {
+  "area": "Alipore",
+  "lat": 22.5265,
+  "lng": 88.3324
+ },
+ "biryani bhai": {
+  "area": "Biryani Bhai",
+  "lat": 22.6442,
+  "lng": 88.4397
+ },
+ "cafe coffee day": {
+  "area": "Cafe Coffee Day",
+  "lat": 22.5245,
+  "lng": 88.3525
+ },
+ "cookie man": {
+  "area": "Cookie Man",
+  "lat": 22.6418,
+  "lng": 88.4398
+ },
+ "diamond harbour road)": {
+  "area": "Diamond Harbour Road)",
+  "lat": 22.5246,
+  "lng": 88.3252
+ },
+ "domestic terminal": {
+  "area": "Domestic Terminal",
+  "lat": 22.6457,
+  "lng": 88.4399
+ },
+ "ekdalia road": {
+  "area": "Ekdalia Road",
+  "lat": 22.5212,
+  "lng": 88.3679
+ },
+ "flurys": {
+  "area": "Flurys",
+  "lat": 22.5825,
+  "lng": 88.4499
+ },
+ "forum mall": {
+  "area": "Forum Mall",
+  "lat": 22.5385,
+  "lng": 88.351
+ },
+ "gariahat road": {
+  "area": "Gariahat Road",
+  "lat": 22.5203,
+  "lng": 88.3652
+ },
+ "gate no. 24/25": {
+  "area": "Gate No. 24/25",
+  "lat": 22.5135,
+  "lng": 88.3098
+ },
+ "international terminal": {
+  "area": "International Terminal",
+  "lat": 22.6488,
+  "lng": 88.4402
+ },
+ "joka": {
+  "area": "Joka",
+  "lat": 22.4534,
+  "lng": 88.3025
+ },
+ "judges court road": {
+  "area": "Judges Court Road",
+  "lat": 22.5259,
+  "lng": 88.3293
+ },
+ "kfc": {
+  "area": "KFC",
+  "lat": 22.5605,
+  "lng": 88.3516
+ },
+ "kol": {
+  "area": "KOL",
+  "lat": 22.4831,
+  "lng": 88.3492
+ },
+ "kolkata": {
+  "area": "Kolkata",
+  "lat": 22.5726,
+  "lng": 88.3639
+ },
+ "kolkata(27": {
+  "area": "Kolkata(27",
+  "lat": 22.5726,
+  "lng": 88.3639
+ },
+ "kolkata­": {
+  "area": "Kolkata­",
+  "lat": 22.5726,
+  "lng": 88.3639
+ },
+ "lake mall": {
+  "area": "Lake Mall",
+  "lat": 22.5165,
+  "lng": 88.3489
+ },
+ "mani square mall": {
+  "area": "Mani Square Mall",
+  "lat": 22.5778,
+  "lng": 88.4006
+ },
+ "park street": {
+  "area": "Park Street",
+  "lat": 22.5552,
+  "lng": 88.3501
+ },
+ "pizza hut": {
+  "area": "Pizza Hut",
+  "lat": 22.5523,
+  "lng": 88.3528
+ },
+ "prince anwar shah road": {
+  "area": "Prince Anwar Shah Road",
+  "lat": 22.5022,
+  "lng": 88.3546
+ },
+ "prince golam hossain shah road": {
+  "area": "Prince Golam Hossain Shah Road",
+  "lat": 22.4994,
+  "lng": 88.3666
+ },
+ "rajdanga main road": {
+  "area": "Rajdanga Main Road",
+  "lat": 22.5131,
+  "lng": 88.3896
+ },
+ "south city mall": {
+  "area": "South City Mall",
+  "lat": 22.5016,
+  "lng": 88.3617
+ },
+ "subway": {
+  "area": "Subway",
+  "lat": 22.5529,
+  "lng": 88.3533
+ },
+ "the chambers": {
+  "area": "THE Chambers",
+  "lat": 22.5138,
+  "lng": 88.3943
+ },
+ "ultra bar": {
+  "area": "Ultra Bar",
+  "lat": 22.644,
+  "lng": 88.4398
+ },
+ "ward no-31": {
+  "area": "Ward No-31",
+  "lat": 22.5726,
+  "lng": 88.3639
+ },
+ "ward no.31": {
+  "area": "Ward No.31",
+  "lat": 22.5726,
+  "lng": 88.3639
+ },
+ "wow momo": {
+  "area": "Wow Momo",
+  "lat": 22.5173,
+  "lng": 88.3672
+ }
+}

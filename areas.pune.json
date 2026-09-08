@@ -1,0 +1,359 @@
+{
+ "_source": "Mined from 949 FSSAI hygiene-rating addresses and geocoded via OpenStreetMap Nominatim.",
+ "_warning": "Centroids are locality-level, accurate to roughly a kilometre. Edit by hand freely; this file is never regenerated over your edits without you re-running the script.",
+ "amanora mall": {
+  "area": "Amanora Mall",
+  "lat": 18.5187,
+  "lng": 73.9354
+ },
+ "amanora park town": {
+  "area": "Amanora Park Town",
+  "lat": 18.5178,
+  "lng": 73.9461
+ },
+ "aundh": {
+  "area": "Aundh",
+  "lat": 18.5619,
+  "lng": 73.8102
+ },
+ "bajirao road": {
+  "area": "Bajirao Road",
+  "lat": 18.5086,
+  "lng": 73.8537
+ },
+ "balewadi": {
+  "area": "Balewadi",
+  "lat": 18.582,
+  "lng": 73.769
+ },
+ "baner": {
+  "area": "Baner",
+  "lat": 18.559,
+  "lng": 73.7845
+ },
+ "bhosari": {
+  "area": "Bhosari",
+  "lat": 18.621,
+  "lng": 73.8501
+ },
+ "bibvewadi": {
+  "area": "Bibvewadi",
+  "lat": 18.4782,
+  "lng": 73.8621
+ },
+ "bibwewadi": {
+  "area": "Bibwewadi",
+  "lat": 18.4752,
+  "lng": 73.8562
+ },
+ "c wing": {
+  "area": "C Wing",
+  "lat": 18.569,
+  "lng": 73.9072
+ },
+ "camp": {
+  "area": "Camp",
+  "lat": 18.5216,
+  "lng": 73.8718
+ },
+ "chakan": {
+  "area": "Chakan",
+  "lat": 18.7623,
+  "lng": 73.8625
+ },
+ "chinchwad": {
+  "area": "Chinchwad",
+  "lat": 18.6404,
+  "lng": 73.7917
+ },
+ "d.p.road": {
+  "area": "D.P.ROAD",
+  "lat": 18.5604,
+  "lng": 73.8081
+ },
+ "dhayari": {
+  "area": "Dhayari",
+  "lat": 18.4374,
+  "lng": 73.819
+ },
+ "dhole patil road": {
+  "area": "Dhole Patil Road",
+  "lat": 18.5349,
+  "lng": 73.8767
+ },
+ "dist pune": {
+  "area": "Dist Pune",
+  "lat": 18.5133,
+  "lng": 73.8267
+ },
+ "dist-pune": {
+  "area": "Dist-pune",
+  "lat": 18.5133,
+  "lng": 73.8267
+ },
+ "dist. pune": {
+  "area": "Dist. Pune",
+  "lat": 18.5133,
+  "lng": 73.8267
+ },
+ "district pune": {
+  "area": "District Pune",
+  "lat": 18.5133,
+  "lng": 73.8267
+ },
+ "district-pune": {
+  "area": "District-pune",
+  "lat": 18.5133,
+  "lng": 73.8267
+ },
+ "dp road": {
+  "area": "DP Road",
+  "lat": 18.5052,
+  "lng": 73.7925
+ },
+ "hadapsar": {
+  "area": "Hadapsar",
+  "lat": 18.5008,
+  "lng": 73.9379
+ },
+ "haveli": {
+  "area": "Haveli",
+  "lat": 18.5105,
+  "lng": 74.0609
+ },
+ "hinjewadi": {
+  "area": "Hinjewadi",
+  "lat": 18.5921,
+  "lng": 73.7576
+ },
+ "kalyani nagar": {
+  "area": "Kalyani Nagar",
+  "lat": 18.5481,
+  "lng": 73.9026
+ },
+ "kharadi": {
+  "area": "Kharadi",
+  "lat": 18.5513,
+  "lng": 73.9417
+ },
+ "kothrud": {
+  "area": "Kothrud",
+  "lat": 18.5073,
+  "lng": 73.8057
+ },
+ "lohegaon": {
+  "area": "Lohegaon",
+  "lat": 18.5804,
+  "lng": 73.9182
+ },
+ "lohgaon": {
+  "area": "Lohgaon",
+  "lat": 18.5958,
+  "lng": 73.9246
+ },
+ "loni kalbhor": {
+  "area": "Loni Kalbhor",
+  "lat": 18.4884,
+  "lng": 74.0222
+ },
+ "magarpatta road": {
+  "area": "Magarpatta Road",
+  "lat": 18.5315,
+  "lng": 73.9323
+ },
+ "moshi": {
+  "area": "Moshi",
+  "lat": 18.6523,
+  "lng": 73.8442
+ },
+ "mumbai pune road": {
+  "area": "Mumbai Pune Road",
+  "lat": 18.4898,
+  "lng": 73.7922
+ },
+ "nagar road": {
+  "area": "Nagar Road",
+  "lat": 18.5627,
+  "lng": 73.9273
+ },
+ "nanded city": {
+  "area": "Nanded City",
+  "lat": 18.4603,
+  "lng": 73.7856
+ },
+ "narhe": {
+  "area": "Narhe",
+  "lat": 18.192,
+  "lng": 73.8595
+ },
+ "parvati": {
+  "area": "Parvati",
+  "lat": 18.4973,
+  "lng": 73.8469
+ },
+ "paud road": {
+  "area": "Paud Road",
+  "lat": 18.5072,
+  "lng": 73.8049
+ },
+ "pavillion mall": {
+  "area": "Pavillion Mall",
+  "lat": 18.5337,
+  "lng": 73.8296
+ },
+ "pcmc": {
+  "area": "Pcmc",
+  "lat": 18.6279,
+  "lng": 73.801
+ },
+ "phoenix mall of the millenium": {
+  "area": "Phoenix Mall OF THE Millenium",
+  "lat": 18.5995,
+  "lng": 73.7567
+ },
+ "phoenix marketcity": {
+  "area": "Phoenix Marketcity",
+  "lat": 18.562,
+  "lng": 73.9167
+ },
+ "pimple nilakh": {
+  "area": "Pimple Nilakh",
+  "lat": 18.5697,
+  "lng": 73.7941
+ },
+ "pimpri": {
+  "area": "Pimpri",
+  "lat": 18.6232,
+  "lng": 73.802
+ },
+ "pimpri pune": {
+  "area": "Pimpri Pune",
+  "lat": 18.6266,
+  "lng": 73.8034
+ },
+ "pune": {
+  "area": "Pune",
+  "lat": 18.5214,
+  "lng": 73.8545
+ },
+ "pune nagar road": {
+  "area": "Pune Nagar Road",
+  "lat": 18.5609,
+  "lng": 73.9122
+ },
+ "pune nashik road": {
+  "area": "Pune Nashik Road",
+  "lat": 18.7544,
+  "lng": 73.8593
+ },
+ "pune-nashik road": {
+  "area": "Pune-nashik Road",
+  "lat": 18.7444,
+  "lng": 73.8595
+ },
+ "rajiv gandhi infotech park": {
+  "area": "Rajiv Gandhi Infotech Park",
+  "lat": 18.5811,
+  "lng": 73.7406
+ },
+ "sadashiv peth": {
+  "area": "Sadashiv Peth",
+  "lat": 18.5108,
+  "lng": 73.8502
+ },
+ "satara road": {
+  "area": "Satara Road",
+  "lat": 18.4974,
+  "lng": 73.858
+ },
+ "sector 1": {
+  "area": "Sector 1",
+  "lat": 18.6345,
+  "lng": 73.8494
+ },
+ "shivaji nagar": {
+  "area": "Shivaji Nagar",
+  "lat": 18.5322,
+  "lng": 73.8497
+ },
+ "sinhagad road": {
+  "area": "Sinhagad Road",
+  "lat": 18.4645,
+  "lng": 73.8158
+ },
+ "sinhgad road": {
+  "area": "Sinhgad Road",
+  "lat": 18.4644,
+  "lng": 73.8324
+ },
+ "tal-maval": {
+  "area": "Tal-maval",
+  "lat": 18.7639,
+  "lng": 73.6979
+ },
+ "talegaon": {
+  "area": "Talegaon",
+  "lat": 18.7351,
+  "lng": 73.6721
+ },
+ "talegaon station": {
+  "area": "Talegaon Station",
+  "lat": 18.7351,
+  "lng": 73.6721
+ },
+ "viman nagar": {
+  "area": "Viman Nagar",
+  "lat": 18.5704,
+  "lng": 73.9133
+ },
+ "viman nagar road": {
+  "area": "Viman Nagar Road",
+  "lat": 18.5609,
+  "lng": 73.9183
+ },
+ "vimannagar": {
+  "area": "Vimannagar",
+  "lat": 18.5625,
+  "lng": 73.9144
+ },
+ "wadgaon bk": {
+  "area": "Wadgaon BK",
+  "lat": 18.7404,
+  "lng": 73.6376
+ },
+ "wadgaon sheri": {
+  "area": "Wadgaon Sheri",
+  "lat": 18.549,
+  "lng": 73.9149
+ },
+ "wadgaonsheri": {
+  "area": "Wadgaonsheri",
+  "lat": 18.5495,
+  "lng": 73.9155
+ },
+ "wagholi": {
+  "area": "Wagholi",
+  "lat": 18.5806,
+  "lng": 73.9833
+ },
+ "wakad": {
+  "area": "Wakad",
+  "lat": 18.6022,
+  "lng": 73.7644
+ },
+ "wanawadi": {
+  "area": "Wanawadi",
+  "lat": 18.4884,
+  "lng": 73.8987
+ },
+ "westend mall": {
+  "area": "Westend Mall",
+  "lat": 18.5617,
+  "lng": 73.8068
+ },
+ "yashwant nagar": {
+  "area": "Yashwant Nagar",
+  "lat": 18.5401,
+  "lng": 73.8346
+ }
+}

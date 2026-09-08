@@ -1,0 +1,419 @@
+{
+ "_source": "Mined from 2224 FSSAI hygiene-rating addresses and geocoded via OpenStreetMap Nominatim.",
+ "_warning": "Centroids are locality-level, accurate to roughly a kilometre. Edit by hand freely; this file is never regenerated over your edits without you re-running the script.",
+ "adyar": {
+  "area": "Adyar",
+  "lat": 13.0064,
+  "lng": 80.2578
+ },
+ "alwarpet": {
+  "area": "Alwarpet",
+  "lat": 13.0339,
+  "lng": 80.2545
+ },
+ "aminjikarai": {
+  "area": "Aminjikarai",
+  "lat": 13.0721,
+  "lng": 80.2205
+ },
+ "anna nagar": {
+  "area": "Anna Nagar",
+  "lat": 13.0882,
+  "lng": 80.2073
+ },
+ "anna nagar east": {
+  "area": "Anna Nagar East",
+  "lat": 13.0847,
+  "lng": 80.2195
+ },
+ "anna nagar west": {
+  "area": "Anna Nagar West",
+  "lat": 13.0941,
+  "lng": 80.1923
+ },
+ "anna salai": {
+  "area": "Anna Salai",
+  "lat": 13.0763,
+  "lng": 80.2792
+ },
+ "annanagar": {
+  "area": "Annanagar",
+  "lat": 13.095,
+  "lng": 80.1985
+ },
+ "arcot road": {
+  "area": "Arcot Road",
+  "lat": 13.0413,
+  "lng": 80.1743
+ },
+ "arumbakkam": {
+  "area": "Arumbakkam",
+  "lat": 13.0744,
+  "lng": 80.2081
+ },
+ "ashok nagar": {
+  "area": "Ashok Nagar",
+  "lat": 13.0359,
+  "lng": 80.2146
+ },
+ "besant nagar": {
+  "area": "Besant Nagar",
+  "lat": 12.9997,
+  "lng": 80.2682
+ },
+ "cafeccino": {
+  "area": "Cafeccino",
+  "lat": 12.9842,
+  "lng": 80.167
+ },
+ "chennai": {
+  "area": "Chennai",
+  "lat": 13.0837,
+  "lng": 80.2702
+ },
+ "chennai international airport": {
+  "area": "Chennai International Airport",
+  "lat": 12.9934,
+  "lng": 80.1726
+ },
+ "chennai-102": {
+  "area": "Chennai-102",
+  "lat": 12.9769,
+  "lng": 80.2485
+ },
+ "chennai-40": {
+  "area": "Chennai-40",
+  "lat": 13.0837,
+  "lng": 80.2702
+ },
+ "chennai-49": {
+  "area": "Chennai-49",
+  "lat": 13.078,
+  "lng": 80.2386
+ },
+ "chennai-5": {
+  "area": "Chennai-5",
+  "lat": 12.9607,
+  "lng": 80.2142
+ },
+ "chetpet": {
+  "area": "Chetpet",
+  "lat": 13.0717,
+  "lng": 80.2438
+ },
+ "choolai": {
+  "area": "Choolai",
+  "lat": 13.0906,
+  "lng": 80.2621
+ },
+ "csir road": {
+  "area": "Csir Road",
+  "lat": 12.9873,
+  "lng": 80.2451
+ },
+ "egmore": {
+  "area": "Egmore",
+  "lat": 13.0728,
+  "lng": 80.2577
+ },
+ "ekkattuthangal": {
+  "area": "Ekkattuthangal",
+  "lat": 13.0242,
+  "lng": 80.2066
+ },
+ "express avenue": {
+  "area": "Express Avenue",
+  "lat": 13.0588,
+  "lng": 80.2641
+ },
+ "food court": {
+  "area": "Food Court",
+  "lat": 13.1317,
+  "lng": 80.1995
+ },
+ "guindy": {
+  "area": "Guindy",
+  "lat": 13.0087,
+  "lng": 80.2126
+ },
+ "jawaharlal nehru road": {
+  "area": "Jawaharlal Nehru Road",
+  "lat": 13.0737,
+  "lng": 80.2003
+ },
+ "jawaharlal nehru salai": {
+  "area": "Jawaharlal Nehru Salai",
+  "lat": 13.0711,
+  "lng": 80.2036
+ },
+ "kamaraj domestic terminal": {
+  "area": "Kamaraj Domestic Terminal",
+  "lat": 12.9838,
+  "lng": 80.1665
+ },
+ "kilpauk": {
+  "area": "Kilpauk",
+  "lat": 13.0832,
+  "lng": 80.238
+ },
+ "kodambakkam": {
+  "area": "Kodambakkam",
+  "lat": 13.0492,
+  "lng": 80.2243
+ },
+ "kodungaiyur": {
+  "area": "Kodungaiyur",
+  "lat": 13.1308,
+  "lng": 80.2562
+ },
+ "kolathur": {
+  "area": "Kolathur",
+  "lat": 13.1241,
+  "lng": 80.2046
+ },
+ "koyambedu": {
+  "area": "Koyambedu",
+  "lat": 13.0715,
+  "lng": 80.1998
+ },
+ "little mount": {
+  "area": "Little Mount",
+  "lat": 13.0147,
+  "lng": 80.2242
+ },
+ "m.r.nagar": {
+  "area": "M.R.NAGAR",
+  "lat": 12.8885,
+  "lng": 80.2463
+ },
+ "madras coffee house": {
+  "area": "Madras Coffee House",
+  "lat": 13.0399,
+  "lng": 80.2432
+ },
+ "meenambakkam": {
+  "area": "Meenambakkam",
+  "lat": 12.9866,
+  "lng": 80.1726
+ },
+ "mylapore": {
+  "area": "Mylapore",
+  "lat": 13.0316,
+  "lng": 80.27
+ },
+ "no.1": {
+  "area": "No.1",
+  "lat": 13.0516,
+  "lng": 80.2114
+ },
+ "no.142": {
+  "area": "No.142",
+  "lat": 13.0837,
+  "lng": 80.2702
+ },
+ "no.183": {
+  "area": "No.183",
+  "lat": 13.0837,
+  "lng": 80.2702
+ },
+ "no.340": {
+  "area": "No.340",
+  "lat": 13.0837,
+  "lng": 80.2702
+ },
+ "no.44": {
+  "area": "No.44",
+  "lat": 13.0837,
+  "lng": 80.2702
+ },
+ "no:44": {
+  "area": "No:44",
+  "lat": 13.0837,
+  "lng": 80.2702
+ },
+ "nsk salai": {
+  "area": "NSK Salai",
+  "lat": 13.0519,
+  "lng": 80.2184
+ },
+ "nungambakkam": {
+  "area": "Nungambakkam",
+  "lat": 13.0621,
+  "lng": 80.2405
+ },
+ "perambur": {
+  "area": "Perambur",
+  "lat": 13.1121,
+  "lng": 80.245
+ },
+ "perambur high road": {
+  "area": "Perambur High Road",
+  "lat": 13.1068,
+  "lng": 80.2483
+ },
+ "perumal koil street": {
+  "area": "Perumal Koil Street",
+  "lat": 13.0227,
+  "lng": 80.2153
+ },
+ "pillaiyar koil street": {
+  "area": "Pillaiyar Koil Street",
+  "lat": 13.1235,
+  "lng": 80.1551
+ },
+ "pillayar koil street": {
+  "area": "Pillayar Koil Street",
+  "lat": 13.031,
+  "lng": 80.2059
+ },
+ "pilliyar koil street": {
+  "area": "Pilliyar Koil Street",
+  "lat": 13.1261,
+  "lng": 80.2903
+ },
+ "pulianthope": {
+  "area": "Pulianthope",
+  "lat": 13.1008,
+  "lng": 80.2626
+ },
+ "royapettah": {
+  "area": "Royapettah",
+  "lat": 13.0555,
+  "lng": 80.264
+ },
+ "royapuram": {
+  "area": "Royapuram",
+  "lat": 13.1043,
+  "lng": 80.2936
+ },
+ "saidapet": {
+  "area": "Saidapet",
+  "lat": 13.0208,
+  "lng": 80.224
+ },
+ "saligramam": {
+  "area": "Saligramam",
+  "lat": 13.057,
+  "lng": 80.2037
+ },
+ "sha": {
+  "area": "SHA",
+  "lat": 12.9388,
+  "lng": 80.243
+ },
+ "shanthi colony": {
+  "area": "Shanthi Colony",
+  "lat": 13.048,
+  "lng": 80.2536
+ },
+ "t nagar": {
+  "area": "T Nagar",
+  "lat": 13.0378,
+  "lng": 80.2318
+ },
+ "t.h road": {
+  "area": "T.H Road",
+  "lat": 13.0158,
+  "lng": 80.1708
+ },
+ "t.h.road": {
+  "area": "T.H.ROAD",
+  "lat": 13.0158,
+  "lng": 80.1708
+ },
+ "t.nagar": {
+  "area": "T.NAGAR",
+  "lat": 13.0378,
+  "lng": 80.2318
+ },
+ "taramani": {
+  "area": "Taramani",
+  "lat": 12.9849,
+  "lng": 80.2404
+ },
+ "teynampet": {
+  "area": "Teynampet",
+  "lat": 13.0443,
+  "lng": 80.2498
+ },
+ "tharamani": {
+  "area": "Tharamani",
+  "lat": 12.9852,
+  "lng": 80.241
+ },
+ "thiruvanmiyur": {
+  "area": "Thiruvanmiyur",
+  "lat": 12.9859,
+  "lng": 80.2644
+ },
+ "thousand lights": {
+  "area": "Thousand Lights",
+  "lat": 13.0585,
+  "lng": 80.2588
+ },
+ "tondiarpet": {
+  "area": "Tondiarpet",
+  "lat": 13.1275,
+  "lng": 80.2819
+ },
+ "triplicane": {
+  "area": "Triplicane",
+  "lat": 13.0604,
+  "lng": 80.2751
+ },
+ "vadapalani": {
+  "area": "Vadapalani",
+  "lat": 13.0504,
+  "lng": 80.2118
+ },
+ "velachery": {
+  "area": "Velachery",
+  "lat": 12.9802,
+  "lng": 80.2229
+ },
+ "velachery main road": {
+  "area": "Velachery Main Road",
+  "lat": 12.9942,
+  "lng": 80.2177
+ },
+ "velachery road": {
+  "area": "Velachery Road",
+  "lat": 13.014,
+  "lng": 80.2246
+ },
+ "vijaya nagar": {
+  "area": "Vijaya Nagar",
+  "lat": 13.0479,
+  "lng": 80.1763
+ },
+ "villivakkam": {
+  "area": "Villivakkam",
+  "lat": 13.1126,
+  "lng": 80.2081
+ },
+ "virugambakkam": {
+  "area": "Virugambakkam",
+  "lat": 13.0523,
+  "lng": 80.1917
+ },
+ "vr chennai": {
+  "area": "VR Chennai",
+  "lat": 13.0811,
+  "lng": 80.196
+ },
+ "vr mall": {
+  "area": "VR Mall",
+  "lat": 13.0794,
+  "lng": 80.1978
+ },
+ "west mambalam": {
+  "area": "West Mambalam",
+  "lat": 13.0436,
+  "lng": 80.2208
+ },
+ "whites road": {
+  "area": "Whites Road",
+  "lat": 13.058,
+  "lng": 80.2642
+ }
+}
