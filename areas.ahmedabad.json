@@ -1,6 +1,6 @@
 {
  "_source": "Mined from 1328 FSSAI hygiene-rating addresses and geocoded via OpenStreetMap Nominatim.",
- "_warning": "Centroids are locality-level, accurate to roughly a kilometre. Edit by hand freely; this file is never regenerated over your edits without you re-running the script.",
+ "_warning": "Centroids are locality-level, accurate to roughly a kilometre. Hand edits are preserved on re-run: delete the _source line above to mark this file as yours, and the script will only ever add to it. Use --overwrite to force a clean rebuild.",
  "a-47": {
   "area": "A-47",
   "lat": 23.0215,
@@ -8,21 +8,6 @@
  },
  "a/94": {
   "area": "A/94",
-  "lat": 23.0215,
-  "lng": 72.5801
- },
- "ahmadabad": {
-  "area": "Ahmadabad",
-  "lat": 23.0215,
-  "lng": 72.5801
- },
- "ahmdabad": {
-  "area": "Ahmdabad",
-  "lat": 23.0215,
-  "lng": 72.5801
- },
- "ahmedabad": {
-  "area": "Ahmedabad",
   "lat": 23.0215,
   "lng": 72.5801
  },
@@ -38,18 +23,18 @@
  },
  "ankur road": {
   "area": "Ankur Road",
-  "lat": 23.0585,
-  "lng": 72.5563
+  "lat": 23.0084,
+  "lng": 72.5617
  },
  "ashram road": {
   "area": "Ashram Road",
-  "lat": 23.0273,
-  "lng": 72.5711
+  "lat": 23.0242,
+  "lng": 72.5714
  },
  "bapunagar": {
   "area": "Bapunagar",
-  "lat": 23.0362,
-  "lng": 72.6303
+  "lat": 23.0324,
+  "lng": 72.6314
  },
  "bavla": {
   "area": "Bavla",
@@ -76,15 +61,15 @@
   "lat": 23.1101,
   "lng": 72.5811
  },
- "dist-ahmedabad": {
-  "area": "Dist-ahmedabad",
-  "lat": 23.0016,
-  "lng": 72.2596
+ "chocolate room": {
+  "area": "Chocolate Room",
+  "lat": 23.0358,
+  "lng": 72.5617
  },
- "dist:ahmedabad": {
-  "area": "Dist:ahmedabad",
-  "lat": 23.0016,
-  "lng": 72.2596
+ "city gold cinema": {
+  "area": "City Gold Cinema",
+  "lat": 23.0157,
+  "lng": 72.5301
  },
  "drive-in road": {
   "area": "Drive-in Road",
@@ -111,15 +96,30 @@
   "lat": 23.0215,
   "lng": 72.5801
  },
+ "gf/7+8": {
+  "area": "Gf/7+8",
+  "lat": 23.0215,
+  "lng": 72.5801
+ },
  "gheekanta": {
   "area": "Gheekanta",
   "lat": 23.0288,
-  "lng": 72.5868
+  "lng": 72.5867
  },
  "gota": {
   "area": "Gota",
   "lat": 23.101,
   "lng": 72.5408
+ },
+ "hp petrol pump": {
+  "area": "HP Petrol Pump",
+  "lat": 23.032,
+  "lng": 72.5245
+ },
+ "jain derasar": {
+  "area": "Jain Derasar",
+  "lat": 23.0803,
+  "lng": 72.5923
  },
  "jawahar chowk": {
   "area": "Jawahar Chowk",
@@ -146,10 +146,20 @@
   "lat": 22.9987,
   "lng": 72.6114
  },
+ "medilink hospital": {
+  "area": "Medilink Hospital",
+  "lat": 23.0174,
+  "lng": 72.5304
+ },
  "memnagar": {
   "area": "Memnagar",
   "lat": 23.0517,
   "lng": 72.5352
+ },
+ "memnagar fire station": {
+  "area": "Memnagar Fire Station",
+  "lat": 23.0455,
+  "lng": 72.551
  },
  "moraiya": {
   "area": "Moraiya",
@@ -206,6 +216,11 @@
   "lat": 23.0443,
   "lng": 72.5724
  },
+ "sanand": {
+  "area": "Sanand",
+  "lat": 23.0239,
+  "lng": 72.3851
+ },
  "sarkhej road": {
   "area": "Sarkhej Road",
   "lat": 23.0263,
@@ -218,13 +233,13 @@
  },
  "satellite": {
   "area": "Satellite",
-  "lat": 23.0272,
-  "lng": 72.5071
+  "lat": 23.0231,
+  "lng": 72.5365
  },
  "science city road": {
   "area": "Science City Road",
-  "lat": 23.0836,
-  "lng": 72.4936
+  "lat": 23.0742,
+  "lng": 72.5119
  },
  "shahibaug": {
   "area": "Shahibaug",
@@ -258,13 +273,8 @@
  },
  "stadium road": {
   "area": "Stadium Road",
-  "lat": 23.0545,
-  "lng": 72.5841
- },
- "swastik society": {
-  "area": "Swastik Society",
-  "lat": 23.0385,
-  "lng": 72.5614
+  "lat": 23.0386,
+  "lng": 72.5648
  },
  "ta.sanand": {
   "area": "Ta.sanand",

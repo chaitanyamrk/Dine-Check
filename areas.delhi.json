@@ -1,6 +1,6 @@
 {
- "_source": "Mined from 3565 FSSAI hygiene-rating addresses and geocoded via OpenStreetMap Nominatim.",
- "_warning": "Centroids are locality-level, accurate to roughly a kilometre. Edit by hand freely; this file is never regenerated over your edits without you re-running the script.",
+ "_source": "Mined from 3569 FSSAI hygiene-rating addresses and geocoded via OpenStreetMap Nominatim.",
+ "_warning": "Centroids are locality-level, accurate to roughly a kilometre. Hand edits are preserved on re-run: delete the _source line above to mark this file as yours, and the script will only ever add to it. Use --overwrite to force a clean rebuild.",
  "acharya niketan": {
   "area": "Acharya Niketan",
   "lat": 28.6083,
@@ -41,6 +41,11 @@
   "lat": 28.5691,
   "lng": 77.2416
  },
+ "centre": {
+  "area": "Centre",
+  "lat": 28.5387,
+  "lng": 77.2869
+ },
  "chandni chowk": {
   "area": "Chandni Chowk",
   "lat": 28.656,
@@ -71,11 +76,6 @@
   "lat": 28.6318,
   "lng": 77.2194
  },
- "cross river mall": {
-  "area": "Cross River Mall",
-  "lat": 28.6572,
-  "lng": 77.3022
- },
  "dda market": {
   "area": "DDA Market",
   "lat": 28.5651,
@@ -86,15 +86,10 @@
   "lat": 28.6759,
   "lng": 77.3214
  },
- "district centre": {
-  "area": "District Centre",
-  "lat": 28.5393,
-  "lng": 77.2866
- },
  "dwarka": {
   "area": "Dwarka",
-  "lat": 28.6159,
-  "lng": 77.0224
+  "lat": 28.6149,
+  "lng": 77.0228
  },
  "east patel nagar": {
   "area": "East Patel Nagar",
@@ -128,8 +123,8 @@
  },
  "gole market": {
   "area": "Gole Market",
-  "lat": 28.6353,
-  "lng": 77.2055
+  "lat": 28.6337,
+  "lng": 77.2056
  },
  "hospitality district": {
   "area": "Hospitality District",
@@ -263,8 +258,8 @@
  },
  "mathura road": {
   "area": "Mathura Road",
-  "lat": 28.5357,
-  "lng": 77.285
+  "lat": 28.5091,
+  "lng": 77.2991
  },
  "mayur vihar": {
   "area": "Mayur Vihar",
@@ -280,6 +275,11 @@
   "area": "Mehrauli",
   "lat": 28.5218,
   "lng": 77.1783
+ },
+ "metro station": {
+  "area": "Metro Station",
+  "lat": 28.6676,
+  "lng": 77.2281
  },
  "moti nagar": {
   "area": "Moti Nagar",
@@ -303,8 +303,8 @@
  },
  "netaji subhash place": {
   "area": "Netaji Subhash Place",
-  "lat": 28.696,
-  "lng": 77.1525
+  "lat": 28.6947,
+  "lng": 77.1543
  },
  "outer circle": {
   "area": "Outer Circle",
@@ -353,8 +353,8 @@
  },
  "prashant vihar": {
   "area": "Prashant Vihar",
-  "lat": 28.7142,
-  "lng": 77.1367
+  "lat": 28.7123,
+  "lng": 77.1338
  },
  "pusa road": {
   "area": "Pusa Road",
@@ -406,10 +406,10 @@
   "lat": 28.5791,
   "lng": 77.0654
  },
- "shahdara": {
-  "area": "Shahdara",
-  "lat": 28.6734,
-  "lng": 77.2899
+ "shakti nagar": {
+  "area": "Shakti Nagar",
+  "lat": 28.6793,
+  "lng": 77.1945
  },
  "shalimar bagh": {
   "area": "Shalimar Bagh",
@@ -458,8 +458,8 @@
  },
  "vikas marg": {
   "area": "Vikas Marg",
-  "lat": 28.6383,
-  "lng": 77.2901
+  "lat": 28.6331,
+  "lng": 77.2812
  },
  "yamuna vihar": {
   "area": "Yamuna Vihar",

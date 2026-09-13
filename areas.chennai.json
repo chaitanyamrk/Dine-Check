@@ -1,6 +1,6 @@
 {
- "_source": "Mined from 2224 FSSAI hygiene-rating addresses and geocoded via OpenStreetMap Nominatim.",
- "_warning": "Centroids are locality-level, accurate to roughly a kilometre. Edit by hand freely; this file is never regenerated over your edits without you re-running the script.",
+ "_source": "Mined from 2226 FSSAI hygiene-rating addresses and geocoded via OpenStreetMap Nominatim.",
+ "_warning": "Centroids are locality-level, accurate to roughly a kilometre. Hand edits are preserved on re-run: delete the _source line above to mark this file as yours, and the script will only ever add to it. Use --overwrite to force a clean rebuild.",
  "adyar": {
   "area": "Adyar",
   "lat": 13.0064,
@@ -33,18 +33,18 @@
  },
  "anna salai": {
   "area": "Anna Salai",
-  "lat": 13.0763,
-  "lng": 80.2792
+  "lat": 13.011,
+  "lng": 80.2176
  },
  "annanagar": {
   "area": "Annanagar",
   "lat": 13.095,
-  "lng": 80.1985
+  "lng": 80.1988
  },
  "arcot road": {
   "area": "Arcot Road",
-  "lat": 13.0413,
-  "lng": 80.1743
+  "lat": 13.0468,
+  "lng": 80.194
  },
  "arumbakkam": {
   "area": "Arumbakkam",
@@ -56,6 +56,11 @@
   "lat": 13.0359,
   "lng": 80.2146
  },
+ "ayanavaram": {
+  "area": "Ayanavaram",
+  "lat": 13.0946,
+  "lng": 80.2354
+ },
  "besant nagar": {
   "area": "Besant Nagar",
   "lat": 12.9997,
@@ -65,11 +70,6 @@
   "area": "Cafeccino",
   "lat": 12.9842,
   "lng": 80.167
- },
- "chennai": {
-  "area": "Chennai",
-  "lat": 13.0837,
-  "lng": 80.2702
  },
  "chennai international airport": {
   "area": "Chennai International Airport",
@@ -90,11 +90,6 @@
   "area": "Chennai-49",
   "lat": 13.078,
   "lng": 80.2386
- },
- "chennai-5": {
-  "area": "Chennai-5",
-  "lat": 12.9607,
-  "lng": 80.2142
  },
  "chetpet": {
   "area": "Chetpet",
@@ -131,6 +126,11 @@
   "lat": 13.1317,
   "lng": 80.1995
  },
+ "forum vijaya mall": {
+  "area": "Forum Vijaya Mall",
+  "lat": 13.0507,
+  "lng": 80.2096
+ },
  "guindy": {
   "area": "Guindy",
   "lat": 13.0087,
@@ -138,8 +138,8 @@
  },
  "jawaharlal nehru road": {
   "area": "Jawaharlal Nehru Road",
-  "lat": 13.0737,
-  "lng": 80.2003
+  "lat": 13.0612,
+  "lng": 80.2118
  },
  "jawaharlal nehru salai": {
   "area": "Jawaharlal Nehru Salai",
@@ -188,13 +188,18 @@
  },
  "madras coffee house": {
   "area": "Madras Coffee House",
-  "lat": 13.0399,
-  "lng": 80.2432
+  "lat": 13.0469,
+  "lng": 80.2369
  },
  "meenambakkam": {
   "area": "Meenambakkam",
   "lat": 12.9866,
   "lng": 80.1726
+ },
+ "mount road": {
+  "area": "Mount Road",
+  "lat": 13.0246,
+  "lng": 80.2292
  },
  "mylapore": {
   "area": "Mylapore",
@@ -248,18 +253,18 @@
  },
  "perambur high road": {
   "area": "Perambur High Road",
-  "lat": 13.1068,
-  "lng": 80.2483
+  "lat": 13.1061,
+  "lng": 80.2511
  },
  "perumal koil street": {
   "area": "Perumal Koil Street",
-  "lat": 13.0227,
-  "lng": 80.2153
+  "lat": 13.1307,
+  "lng": 80.1554
  },
  "pillaiyar koil street": {
   "area": "Pillaiyar Koil Street",
-  "lat": 13.1235,
-  "lng": 80.1551
+  "lat": 13.1033,
+  "lng": 80.1721
  },
  "pillayar koil street": {
   "area": "Pillayar Koil Street",
@@ -268,8 +273,8 @@
  },
  "pilliyar koil street": {
   "area": "Pilliyar Koil Street",
-  "lat": 13.1261,
-  "lng": 80.2903
+  "lat": 12.9785,
+  "lng": 80.2572
  },
  "pulianthope": {
   "area": "Pulianthope",
@@ -373,18 +378,18 @@
  },
  "velachery main road": {
   "area": "Velachery Main Road",
-  "lat": 12.9942,
-  "lng": 80.2177
+  "lat": 12.9842,
+  "lng": 80.2228
  },
  "velachery road": {
   "area": "Velachery Road",
-  "lat": 13.014,
-  "lng": 80.2246
+  "lat": 13.012,
+  "lng": 80.2236
  },
  "vijaya nagar": {
   "area": "Vijaya Nagar",
-  "lat": 13.0479,
-  "lng": 80.1763
+  "lat": 13.0483,
+  "lng": 80.1766
  },
  "villivakkam": {
   "area": "Villivakkam",

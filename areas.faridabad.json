@@ -1,6 +1,6 @@
 {
  "_source": "Mined from 29 FSSAI hygiene-rating addresses and geocoded via OpenStreetMap Nominatim.",
- "_warning": "Centroids are locality-level, accurate to roughly a kilometre. Edit by hand freely; this file is never regenerated over your edits without you re-running the script.",
+ "_warning": "Centroids are locality-level, accurate to roughly a kilometre. Hand edits are preserved on re-run: delete the _source line above to mark this file as yours, and the script will only ever add to it. Use --overwrite to force a clean rebuild.",
  "crown interiorz mall": {
   "area": "Crown Interiorz Mall",
   "lat": 28.4697,
@@ -10,6 +10,11 @@
   "area": "G-1",
   "lat": 28.4031,
   "lng": 77.3106
+ },
+ "pakhal": {
+  "area": "Pakhal",
+  "lat": 28.3623,
+  "lng": 77.2202
  },
  "sec-12 faridabad": {
   "area": "Sec-12 Faridabad",

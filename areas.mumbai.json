@@ -1,16 +1,6 @@
 {
- "_source": "Mined from 2474 FSSAI hygiene-rating addresses and geocoded via OpenStreetMap Nominatim.",
- "_warning": "Centroids are locality-level, accurate to roughly a kilometre. Edit by hand freely; this file is never regenerated over your edits without you re-running the script.",
- "a wing": {
-  "area": "A Wing",
-  "lat": 19.1466,
-  "lng": 72.8229
- },
- "a-wing": {
-  "area": "A-wing",
-  "lat": 19.1416,
-  "lng": 72.8277
- },
+ "_source": "Mined from 2477 FSSAI hygiene-rating addresses and geocoded via OpenStreetMap Nominatim.",
+ "_warning": "Centroids are locality-level, accurate to roughly a kilometre. Hand edits are preserved on re-run: delete the _source line above to mark this file as yours, and the script will only ever add to it. Use --overwrite to force a clean rebuild.",
  "airoli": {
   "area": "Airoli",
   "lat": 19.1585,
@@ -21,8 +11,8 @@
   "lat": 19.1197,
   "lng": 72.8464
  },
- "andheri (east)": {
-  "area": "Andheri (east)",
+ "andheri e": {
+  "area": "Andheri E",
   "lat": 19.1159,
   "lng": 72.8542
  },
@@ -45,11 +35,6 @@
   "area": "Andheri West",
   "lat": 19.1172,
   "lng": 72.834
- },
- "b wing": {
-  "area": "B Wing",
-  "lat": 19.0556,
-  "lng": 72.9229
  },
  "bandra east": {
   "area": "Bandra East",
@@ -116,26 +101,6 @@
   "lat": 19.0239,
   "lng": 72.8382
  },
- "dist thane": {
-  "area": "Dist Thane",
-  "lat": 19.1755,
-  "lng": 72.9902
- },
- "dist-thane": {
-  "area": "Dist-thane",
-  "lat": 19.1755,
-  "lng": 72.9902
- },
- "dist. thane": {
-  "area": "Dist. Thane",
-  "lat": 19.1755,
-  "lng": 72.9902
- },
- "dist.thane": {
-  "area": "Dist.thane",
-  "lat": 19.1755,
-  "lng": 72.9902
- },
  "food court": {
   "area": "Food Court",
   "lat": 18.9764,
@@ -161,6 +126,11 @@
   "lat": 19.0817,
   "lng": 72.9075
  },
+ "goregaon east": {
+  "area": "Goregaon East",
+  "lat": 19.1693,
+  "lng": 72.8553
+ },
  "goregaon west": {
   "area": "Goregaon West",
   "lat": 19.1633,
@@ -176,10 +146,15 @@
   "lat": 19.173,
   "lng": 72.8351
  },
+ "kalyan": {
+  "area": "Kalyan",
+  "lat": 19.0512,
+  "lng": 72.9293
+ },
  "kalyan west": {
   "area": "Kalyan West",
-  "lat": 19.1724,
-  "lng": 72.9569
+  "lat": 19.1422,
+  "lng": 72.8317
  },
  "kandivali east": {
   "area": "Kandivali East",
@@ -193,8 +168,8 @@
  },
  "khar west": {
   "area": "Khar West",
-  "lat": 19.0798,
-  "lng": 72.8248
+  "lat": 19.0699,
+  "lng": 72.8298
  },
  "kurla west": {
   "area": "Kurla West",
@@ -203,8 +178,8 @@
  },
  "lbs marg": {
   "area": "LBS Marg",
-  "lat": 19.0841,
-  "lng": 72.8835
+  "lat": 19.08,
+  "lng": 72.8804
  },
  "level 3": {
   "area": "Level 3",
@@ -223,18 +198,13 @@
  },
  "link road": {
   "area": "Link Road",
-  "lat": 19.1728,
-  "lng": 72.8363
+  "lat": 19.1912,
+  "lng": 72.8351
  },
  "lower parel": {
   "area": "Lower Parel",
   "lat": 18.9957,
   "lng": 72.8303
- },
- "malad (west)": {
-  "area": "Malad (west)",
-  "lat": 19.1853,
-  "lng": 72.8359
  },
  "malad west": {
   "area": "Malad West",
@@ -261,10 +231,10 @@
   "lat": 19.172,
   "lng": 72.9512
  },
- "mumbai": {
-  "area": "Mumbai",
-  "lat": 19.0593,
-  "lng": 72.8613
+ "nariman point": {
+  "area": "Nariman Point",
+  "lat": 18.9271,
+  "lng": 72.8236
  },
  "navi mumbai": {
   "area": "Navi Mumbai",
@@ -296,6 +266,16 @@
   "lat": 19.0999,
   "lng": 72.9163
  },
+ "railway station": {
+  "area": "Railway Station",
+  "lat": 18.9825,
+  "lng": 72.8242
+ },
+ "s.v.road": {
+  "area": "S.V.ROAD",
+  "lat": 19.1232,
+  "lng": 72.8466
+ },
  "sahar": {
   "area": "Sahar",
   "lat": 19.097,
@@ -303,8 +283,13 @@
  },
  "sahar road": {
   "area": "Sahar Road",
-  "lat": 19.1105,
-  "lng": 72.8512
+  "lat": 19.1067,
+  "lng": 72.8653
+ },
+ "sahara": {
+  "area": "Sahara",
+  "lat": 19.0796,
+  "lng": 72.88
  },
  "saki vihar road": {
   "area": "Saki Vihar Road",
@@ -316,23 +301,8 @@
   "lat": 19.066,
   "lng": 73.0095
  },
- "santacruz (east)": {
-  "area": "Santacruz (east)",
-  "lat": 19.0804,
-  "lng": 72.8553
- },
  "santacruz east": {
   "area": "Santacruz East",
-  "lat": 19.0782,
-  "lng": 72.8678
- },
- "santacruz(e)": {
-  "area": "Santacruz(e)",
-  "lat": 19.0787,
-  "lng": 72.8471
- },
- "santacruz(east)": {
-  "area": "Santacruz(east)",
   "lat": 19.0782,
   "lng": 72.8678
  },
@@ -341,15 +311,20 @@
   "lat": 19.1175,
   "lng": 73.0034
  },
+ "sector-15": {
+  "area": "Sector-15",
+  "lat": 19.1229,
+  "lng": 72.9913
+ },
  "senapati bapat marg": {
   "area": "Senapati Bapat Marg",
-  "lat": 19.0275,
-  "lng": 72.8464
+  "lat": 19.0421,
+  "lng": 72.8457
  },
  "station road": {
   "area": "Station Road",
-  "lat": 19.1442,
-  "lng": 72.938
+  "lat": 19.0799,
+  "lng": 72.8968
  },
  "terminal 1": {
   "area": "Terminal 1",
@@ -366,13 +341,8 @@
   "lat": 19.097,
   "lng": 72.8746
  },
- "thane": {
-  "area": "Thane",
-  "lat": 19.1175,
-  "lng": 72.9644
- },
- "thane (w)": {
-  "area": "Thane (w)",
+ "thane w": {
+  "area": "Thane W",
   "lat": 19.2597,
   "lng": 72.9691
  },
@@ -386,10 +356,20 @@
   "lat": 19.0632,
   "lng": 72.9988
  },
+ "vashi railway station": {
+  "area": "Vashi Railway Station",
+  "lat": 19.0632,
+  "lng": 72.9988
+ },
  "vikhroli west": {
   "area": "Vikhroli West",
   "lat": 19.1145,
   "lng": 72.9257
+ },
+ "vile parle east": {
+  "area": "Vile Parle East",
+  "lat": 19.1097,
+  "lng": 72.8365
  },
  "western express highway": {
   "area": "Western Express Highway",

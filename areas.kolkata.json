@@ -1,6 +1,6 @@
 {
  "_source": "Mined from 373 FSSAI hygiene-rating addresses and geocoded via OpenStreetMap Nominatim.",
- "_warning": "Centroids are locality-level, accurate to roughly a kilometre. Edit by hand freely; this file is never regenerated over your edits without you re-running the script.",
+ "_warning": "Centroids are locality-level, accurate to roughly a kilometre. Hand edits are preserved on re-run: delete the _source line above to mark this file as yours, and the script will only ever add to it. Use --overwrite to force a clean rebuild.",
  "alipore": {
   "area": "Alipore",
   "lat": 22.5265,
@@ -11,20 +11,30 @@
   "lat": 22.6442,
   "lng": 88.4397
  },
+ "biswa bangla": {
+  "area": "Biswa Bangla",
+  "lat": 22.554,
+  "lng": 88.3517
+ },
  "cafe coffee day": {
   "area": "Cafe Coffee Day",
-  "lat": 22.5245,
+  "lat": 22.5457,
   "lng": 88.3525
+ },
+ "chambers": {
+  "area": "Chambers",
+  "lat": 22.5138,
+  "lng": 88.3943
  },
  "cookie man": {
   "area": "Cookie Man",
   "lat": 22.6418,
   "lng": 88.4398
  },
- "diamond harbour road)": {
-  "area": "Diamond Harbour Road)",
-  "lat": 22.5246,
-  "lng": 88.3252
+ "diamond harbour road": {
+  "area": "Diamond Harbour Road",
+  "lat": 22.5376,
+  "lng": 88.3274
  },
  "domestic terminal": {
   "area": "Domestic Terminal",
@@ -48,18 +58,78 @@
  },
  "gariahat road": {
   "area": "Gariahat Road",
-  "lat": 22.5203,
-  "lng": 88.3652
+  "lat": 22.5281,
+  "lng": 88.3659
+ },
+ "gate 19": {
+  "area": "Gate 19",
+  "lat": 22.5129,
+  "lng": 88.3109
+ },
+ "gate 22": {
+  "area": "Gate 22",
+  "lat": 22.6121,
+  "lng": 88.3741
+ },
+ "gate 3c": {
+  "area": "Gate 3c",
+  "lat": 22.5127,
+  "lng": 88.3126
+ },
+ "gate no 22": {
+  "area": "Gate No 22",
+  "lat": 22.5127,
+  "lng": 88.3126
+ },
+ "gate no. 19": {
+  "area": "Gate No. 19",
+  "lat": 22.5127,
+  "lng": 88.3126
+ },
+ "gate no. 22": {
+  "area": "Gate No. 22",
+  "lat": 22.5127,
+  "lng": 88.3126
+ },
+ "gate no. 23": {
+  "area": "Gate No. 23",
+  "lat": 22.5127,
+  "lng": 88.3126
+ },
+ "gate no. 24": {
+  "area": "Gate No. 24",
+  "lat": 22.5127,
+  "lng": 88.3126
  },
  "gate no. 24/25": {
   "area": "Gate No. 24/25",
   "lat": 22.5135,
   "lng": 88.3098
  },
+ "gate no. 3 a 3 b": {
+  "area": "Gate No. 3 A 3 B",
+  "lat": 22.5129,
+  "lng": 88.3109
+ },
+ "gate no. 3c": {
+  "area": "Gate No. 3c",
+  "lat": 22.5129,
+  "lng": 88.3109
+ },
+ "gate no.20": {
+  "area": "Gate No.20",
+  "lat": 22.5127,
+  "lng": 88.3126
+ },
  "international terminal": {
   "area": "International Terminal",
   "lat": 22.6488,
   "lng": 88.4402
+ },
+ "jodhpur park": {
+  "area": "Jodhpur Park",
+  "lat": 22.5056,
+  "lng": 88.3637
  },
  "joka": {
   "area": "Joka",
@@ -73,26 +143,16 @@
  },
  "kfc": {
   "area": "KFC",
-  "lat": 22.5605,
-  "lng": 88.3516
+  "lat": 22.5673,
+  "lng": 88.3711
  },
  "kol": {
   "area": "KOL",
   "lat": 22.4831,
   "lng": 88.3492
  },
- "kolkata": {
-  "area": "Kolkata",
-  "lat": 22.5726,
-  "lng": 88.3639
- },
- "kolkata(27": {
-  "area": "Kolkata(27",
-  "lat": 22.5726,
-  "lng": 88.3639
- },
- "kolkata­": {
-  "area": "Kolkata­",
+ "kolkata 27": {
+  "area": "Kolkata 27",
   "lat": 22.5726,
   "lng": 88.3639
  },
@@ -118,8 +178,8 @@
  },
  "prince anwar shah road": {
   "area": "Prince Anwar Shah Road",
-  "lat": 22.5022,
-  "lng": 88.3546
+  "lat": 22.5013,
+  "lng": 88.3484
  },
  "prince golam hossain shah road": {
   "area": "Prince Golam Hossain Shah Road",
@@ -141,29 +201,14 @@
   "lat": 22.5529,
   "lng": 88.3533
  },
- "the chambers": {
-  "area": "THE Chambers",
-  "lat": 22.5138,
-  "lng": 88.3943
- },
  "ultra bar": {
   "area": "Ultra Bar",
   "lat": 22.644,
   "lng": 88.4398
  },
- "ward no-31": {
-  "area": "Ward No-31",
-  "lat": 22.5726,
-  "lng": 88.3639
- },
- "ward no.31": {
-  "area": "Ward No.31",
-  "lat": 22.5726,
-  "lng": 88.3639
- },
  "wow momo": {
   "area": "Wow Momo",
-  "lat": 22.5173,
-  "lng": 88.3672
+  "lat": 22.5529,
+  "lng": 88.3529
  }
 }

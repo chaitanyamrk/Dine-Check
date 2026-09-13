@@ -1,6 +1,6 @@
 {
  "_source": "Mined from 19 FSSAI hygiene-rating addresses and geocoded via OpenStreetMap Nominatim.",
- "_warning": "Centroids are locality-level, accurate to roughly a kilometre. Edit by hand freely; this file is never regenerated over your edits without you re-running the script.",
+ "_warning": "Centroids are locality-level, accurate to roughly a kilometre. Hand edits are preserved on re-run: delete the _source line above to mark this file as yours, and the script will only ever add to it. Use --overwrite to force a clean rebuild.",
  "ambience island": {
   "area": "Ambience Island",
   "lat": 28.5008,
@@ -25,11 +25,6 @@
   "area": "G-85 To G-90 And G-93 To G-94",
   "lat": 28.4646,
   "lng": 77.0299
- },
- "gurgaon": {
-  "area": "Gurgaon",
-  "lat": 28.4891,
-  "lng": 77.0112
  },
  "gurgaon-sohna road": {
   "area": "Gurgaon-sohna Road",
@@ -84,11 +79,6 @@
  "sohna road": {
   "area": "Sohna Road",
   "lat": 28.3999,
-  "lng": 77.0451
- },
- "tower-c": {
-  "area": "Tower-c",
-  "lat": 28.4437,
-  "lng": 77.0559
+  "lng": 77.0453
  }
 }

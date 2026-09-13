@@ -1,6 +1,6 @@
 {
  "_source": "Mined from 949 FSSAI hygiene-rating addresses and geocoded via OpenStreetMap Nominatim.",
- "_warning": "Centroids are locality-level, accurate to roughly a kilometre. Edit by hand freely; this file is never regenerated over your edits without you re-running the script.",
+ "_warning": "Centroids are locality-level, accurate to roughly a kilometre. Hand edits are preserved on re-run: delete the _source line above to mark this file as yours, and the script will only ever add to it. Use --overwrite to force a clean rebuild.",
  "amanora mall": {
   "area": "Amanora Mall",
   "lat": 18.5187,
@@ -8,8 +8,8 @@
  },
  "amanora park town": {
   "area": "Amanora Park Town",
-  "lat": 18.5178,
-  "lng": 73.9461
+  "lat": 18.517,
+  "lng": 73.9471
  },
  "aundh": {
   "area": "Aundh",
@@ -18,8 +18,8 @@
  },
  "bajirao road": {
   "area": "Bajirao Road",
-  "lat": 18.5086,
-  "lng": 73.8537
+  "lat": 18.5196,
+  "lng": 73.8545
  },
  "balewadi": {
   "area": "Balewadi",
@@ -45,11 +45,6 @@
   "area": "Bibwewadi",
   "lat": 18.4752,
   "lng": 73.8562
- },
- "c wing": {
-  "area": "C Wing",
-  "lat": 18.569,
-  "lng": 73.9072
  },
  "camp": {
   "area": "Camp",
@@ -81,35 +76,15 @@
   "lat": 18.5349,
   "lng": 73.8767
  },
- "dist pune": {
-  "area": "Dist Pune",
-  "lat": 18.5133,
-  "lng": 73.8267
- },
- "dist-pune": {
-  "area": "Dist-pune",
-  "lat": 18.5133,
-  "lng": 73.8267
- },
- "dist. pune": {
-  "area": "Dist. Pune",
-  "lat": 18.5133,
-  "lng": 73.8267
- },
- "district pune": {
-  "area": "District Pune",
-  "lat": 18.5133,
-  "lng": 73.8267
- },
- "district-pune": {
-  "area": "District-pune",
-  "lat": 18.5133,
-  "lng": 73.8267
- },
  "dp road": {
   "area": "DP Road",
-  "lat": 18.5052,
-  "lng": 73.7925
+  "lat": 18.5041,
+  "lng": 73.7938
+ },
+ "east street": {
+  "area": "East Street",
+  "lat": 18.5089,
+  "lng": 73.8797
  },
  "hadapsar": {
   "area": "Hadapsar",
@@ -123,6 +98,11 @@
  },
  "hinjewadi": {
   "area": "Hinjewadi",
+  "lat": 18.592,
+  "lng": 73.7579
+ },
+ "hinjewadi phase-1": {
+  "area": "Hinjewadi Phase-1",
   "lat": 18.5921,
   "lng": 73.7576
  },
@@ -136,6 +116,11 @@
   "lat": 18.5513,
   "lng": 73.9417
  },
+ "khed": {
+  "area": "Khed",
+  "lat": 18.8501,
+  "lng": 73.838
+ },
  "kothrud": {
   "area": "Kothrud",
   "lat": 18.5073,
@@ -148,23 +133,33 @@
  },
  "lohgaon": {
   "area": "Lohgaon",
-  "lat": 18.5958,
-  "lng": 73.9246
+  "lat": 18.5959,
+  "lng": 73.9247
  },
  "loni kalbhor": {
   "area": "Loni Kalbhor",
   "lat": 18.4884,
   "lng": 74.0222
  },
+ "magarpatta city": {
+  "area": "Magarpatta City",
+  "lat": 18.5112,
+  "lng": 73.9274
+ },
  "magarpatta road": {
   "area": "Magarpatta Road",
   "lat": 18.5315,
-  "lng": 73.9323
+  "lng": 73.9322
  },
  "moshi": {
   "area": "Moshi",
   "lat": 18.6523,
   "lng": 73.8442
+ },
+ "mulshi": {
+  "area": "Mulshi",
+  "lat": 18.5,
+  "lng": 73.5137
  },
  "mumbai pune road": {
   "area": "Mumbai Pune Road",
@@ -186,6 +181,11 @@
   "lat": 18.192,
   "lng": 73.8595
  },
+ "parihar chowk": {
+  "area": "Parihar Chowk",
+  "lat": 18.5606,
+  "lng": 73.8092
+ },
  "parvati": {
   "area": "Parvati",
   "lat": 18.4973,
@@ -193,8 +193,8 @@
  },
  "paud road": {
   "area": "Paud Road",
-  "lat": 18.5072,
-  "lng": 73.8049
+  "lat": 18.5102,
+  "lng": 73.8172
  },
  "pavillion mall": {
   "area": "Pavillion Mall",
@@ -231,15 +231,10 @@
   "lat": 18.6266,
   "lng": 73.8034
  },
- "pune": {
-  "area": "Pune",
-  "lat": 18.5214,
-  "lng": 73.8545
- },
  "pune nagar road": {
   "area": "Pune Nagar Road",
-  "lat": 18.5609,
-  "lng": 73.9122
+  "lat": 18.5517,
+  "lng": 73.8952
  },
  "pune nashik road": {
   "area": "Pune Nashik Road",
@@ -248,8 +243,13 @@
  },
  "pune-nashik road": {
   "area": "Pune-nashik Road",
-  "lat": 18.7444,
-  "lng": 73.8595
+  "lat": 18.7595,
+  "lng": 73.8587
+ },
+ "pune-solapur road": {
+  "area": "Pune-solapur Road",
+  "lat": 18.5063,
+  "lng": 73.9082
  },
  "rajiv gandhi infotech park": {
   "area": "Rajiv Gandhi Infotech Park",
@@ -263,8 +263,13 @@
  },
  "satara road": {
   "area": "Satara Road",
-  "lat": 18.4974,
-  "lng": 73.858
+  "lat": 18.4469,
+  "lng": 73.859
+ },
+ "sayaji hotel": {
+  "area": "Sayaji Hotel",
+  "lat": 18.5994,
+  "lng": 73.7551
  },
  "sector 1": {
   "area": "Sector 1",
@@ -286,10 +291,10 @@
   "lat": 18.4644,
   "lng": 73.8324
  },
- "tal-maval": {
-  "area": "Tal-maval",
-  "lat": 18.7639,
-  "lng": 73.6979
+ "spine road": {
+  "area": "Spine Road",
+  "lat": 18.6687,
+  "lng": 73.7877
  },
  "talegaon": {
   "area": "Talegaon",
@@ -308,8 +313,8 @@
  },
  "viman nagar road": {
   "area": "Viman Nagar Road",
-  "lat": 18.5609,
-  "lng": 73.9183
+  "lat": 18.5668,
+  "lng": 73.9185
  },
  "vimannagar": {
   "area": "Vimannagar",
