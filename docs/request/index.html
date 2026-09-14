@@ -1,0 +1,107 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="
+  default-src 'none';
+  script-src 'self';
+  connect-src 'self' https://nyagpcdlywklfukooqqp.supabase.co;
+  style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+  font-src https://fonts.gstatic.com;
+  img-src 'self' data:;
+  base-uri 'self';
+  form-action 'none';
+  frame-ancestors 'none'">
+<title>Request an Audit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@400;500&display=swap">
+<style>
+:root{
+  --bg:#F6F7F9; --surface:#FFFFFF; --surface2:#EFF1F4; --line:#D7DDE4; --line2:#C3CBD4;
+  --ink:#141A21; --ink2:#57626F; --ink3:#8C96A2;
+  --accent:#00635C; --accent-on:#FFFFFF; --accent-soft:#E0EFED;
+  --warm:#8A6B1C; --warm-soft:#F6EFDB; --bad:#AE2B2B;
+  --sans:"IBM Plex Sans",system-ui,-apple-system,Segoe UI,sans-serif;
+  --serif:"IBM Plex Serif",Georgia,serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  --r:10px;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0E1217; --surface:#161C23; --surface2:#1D242C; --line:#2A333D; --line2:#3A4551;
+  --ink:#E8EDF2; --ink2:#A3AEBB; --ink3:#6E7A87;
+  --accent:#3FB5A8; --accent-on:#08201E; --accent-soft:#12312E;
+  --warm:#D4A73C; --warm-soft:#2A2316; --bad:#EF6B6B;
+}}
+:root[data-theme="dark"]{
+  --bg:#0E1217; --surface:#161C23; --surface2:#1D242C; --line:#2A333D; --line2:#3A4551;
+  --ink:#E8EDF2; --ink2:#A3AEBB; --ink3:#6E7A87;
+  --accent:#3FB5A8; --accent-on:#08201E; --accent-soft:#12312E;
+  --warm:#D4A73C; --warm-soft:#2A2316; --bad:#EF6B6B;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.55}
+h1,h2{text-wrap:balance;margin:0}
+button,input{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:6px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+.wrap{max-width:660px;margin:0 auto;padding-inline:18px;padding-block:40px 64px}
+.eyebrow{font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);font-weight:600}
+h1{font-family:var(--serif);font-size:30px;letter-spacing:-.01em;margin-top:8px;line-height:1.2}
+.lede{color:var(--ink2);margin-top:10px;max-width:56ch}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:20px;margin-top:24px}
+label{display:block;margin-bottom:14px}
+label span{display:block;font-size:13px;font-weight:600;color:var(--ink2);margin-bottom:5px}
+input{width:100%;padding:11px 13px;background:var(--bg);border:1px solid var(--line2);border-radius:8px}
+input::placeholder{color:var(--ink3)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:0 14px}
+@media (max-width:520px){.two{grid-template-columns:1fr}}
+.btn{padding:11px 18px;border-radius:8px;border:1px solid var(--line2);background:var(--surface);cursor:pointer;font-weight:600}
+.btn.primary{background:var(--accent);color:var(--accent-on);border-color:var(--accent)}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.btn.small{padding:7px 13px;font-size:13.5px}
+.dupe{margin:2px 0 16px;border:1px solid var(--warm);background:var(--warm-soft);border-radius:9px;padding:13px 15px}
+.dupe h2{font-size:14px}
+.dupe p{margin:4px 0 10px;font-size:13.5px;color:var(--ink2)}
+.hit{display:flex;align-items:center;gap:12px;padding:9px 0;border-top:1px solid rgba(0,0,0,.08)}
+.hit:first-of-type{border-top:0}
+.hit .nm{flex:1;font-size:14px}
+.hit .nm em{font-style:normal;color:var(--ink2);display:block;font-size:12.5px}
+.votes{font-family:var(--mono);font-size:12.5px;color:var(--ink2);white-space:nowrap}
+.note{font-size:13px;color:var(--ink2);margin-top:14px;padding-top:14px;border-top:1px dashed var(--line2)}
+.ok{border:1px solid var(--accent);background:var(--accent-soft);border-radius:9px;padding:16px 18px}
+.ok b{display:block;margin-bottom:4px}
+.err{border-left:3px solid var(--bad);padding:10px 13px;font-size:13.5px;background:var(--surface2);border-radius:8px;margin-top:12px}
+.board{margin-top:14px}
+.brow{display:flex;align-items:baseline;gap:12px;padding:11px 0;border-bottom:1px solid var(--line)}
+.brow .rank{font-family:var(--mono);font-size:12.5px;color:var(--ink3);width:22px;flex:none}
+.brow .nm{flex:1}
+.brow .nm em{font-style:normal;color:var(--ink2);font-size:13px;display:block}
+.empty{color:var(--ink3);font-size:14px;padding:14px 0}
+.spin{display:inline-block;width:13px;height:13px;border:2px solid var(--line2);border-top-color:var(--accent);border-radius:50%;animation:s .7s linear infinite;vertical-align:-2px}
+@keyframes s{to{transform:rotate(360deg)}}
+</style>
+
+<div class="wrap">
+  <div class="eyebrow">Dine Check</div>
+  <h1>Ask us to audit a restaurant</h1>
+  <p class="lede">Tell us where you eat and would like checked. Requests are private — we read every one, and we decide which to take on. Nothing you send here is published as a complaint about a business.</p>
+
+  <form class="card" id="form" autocomplete="off">
+    <div class="two">
+      <label for="name"><span>Restaurant name</span>
+        <input id="name" name="name" placeholder="e.g. Paradise Biryani" maxlength="160" required></label>
+      <label for="area"><span>Area or locality</span>
+        <input id="area" name="area" placeholder="e.g. Secunderabad" maxlength="120" required></label>
+    </div>
+    <div id="dupe"></div>
+    <label for="address"><span>Address <span style="font-weight:400;color:var(--ink3)">— optional, helps us find the right outlet</span></span>
+      <input id="address" name="address" placeholder="Street, landmark" maxlength="240"></label>
+    <button class="btn primary" id="submit" type="submit">Send request</button>
+    <div id="msg"></div>
+    <p class="note">We ask for nothing about you. A request is a suggestion for our audit list, not an allegation, and we only audit an establishment that agrees to it.</p>
+  </form>
+
+  <h2 style="font-size:15px;margin-top:34px" class="eyebrow">Requests we've chosen to show</h2>
+  <div class="board" id="board"><div class="empty">Loading…</div></div>
+</div>
+
+<script src="app.js"></script>

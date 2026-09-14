@@ -12,9 +12,8 @@ rather than a score. The three record types are kept strictly apart and never
 ranked against each other; MAINTAINING.md explains why that matters.
 
 Everything is static — one HTML file, one script, a JSON index and a JSON file
-per city. No build tooling and no framework. Out of the box it makes zero
-external requests; the only optional one is an analytics beacon you switch on
-yourself. It drops straight onto GitHub Pages.
+per city. No build tooling and no framework. It drops straight onto GitHub
+Pages.
 
 ---
 
@@ -129,60 +128,7 @@ the site says so in the footer.
   action taken, full inspection history, and a link to the original report
 - **Saved places** kept in the visitor's browser via `localStorage`
 - **Dark mode** following the system setting, with a manual override
-- Keyboard accessible, works offline once loaded, and makes no external requests
-  unless you enable analytics
-
----
-
-## Analytics and uptime
-
-GitHub Pages gives you **no server logs** — you don't own the server and GitHub
-exposes nothing about requests. (The repo's Insights → Traffic tab counts visits
-to the *repo page*, not to the site.) So everything is measured either from the
-browser or by probing the site from outside.
-
-### Traffic — Cloudflare Web Analytics
-
-Cookieless, stores nothing on the visitor's device, so no consent banner is
-needed under the DPDP Act.
-
-1. Cloudflare dashboard → **Web Analytics** → **Add a site** → `dinecheck.in`
-2. It shows a snippet containing `"token": "abc123…"` — copy just the token
-3. In `docs/index.html`, find the analytics block at the bottom and paste it in:
-
-   ```js
-   var TOKEN = "abc123…";
-   ```
-
-4. Commit and push
-
-You do **not** need to move your DNS to Cloudflare for this — the beacon works
-on any host.
-
-The block is written to fail safe. With `TOKEN` empty nothing loads at all and
-the site stays request-free, and it never fires from `localhost` or a `file://`
-URL, so your own testing is not counted in your numbers. If Cloudflare is
-unreachable the page carries on regardless.
-
-### Uptime — UptimeRobot
-
-The free tier covers 50 monitors at 5-minute intervals. Create **two**, because
-they catch different failures:
-
-| Monitor | Type | Checks |
-|---|---|---|
-| `https://dinecheck.in/` | HTTP(s) | The site is reachable at all |
-| `https://dinecheck.in/data.json` | Keyword, expecting `venues` | The data file is actually being served |
-
-The second one matters more than it looks. If a build ships a broken or missing
-`data.json`, the homepage still returns HTTP 200 and a plain uptime check stays
-green — while every visitor sees an empty list. The keyword monitor catches that.
-
-### Build failures
-
-Every push runs a "pages build and deployment" job under the repo's **Actions**
-tab. Turn on failure notifications (GitHub → Settings → Notifications → Actions)
-so a bad build doesn't quietly leave a stale site up.
+- Keyboard accessible and works offline once loaded
 
 ---
 
