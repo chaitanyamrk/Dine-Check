@@ -6,26 +6,22 @@
 
 const SUPABASE_URL = "https://nyagpcdlywklfukooqqp.supabase.co";
 const SUPABASE_KEY = "sb_publishable_sp23L2CI2Buds-RFaJMVHA_O73aOv2n";
-const CITY = "Hyderabad";
+const HOME_CITY = "Hyderabad";
+const city = () => ($("city") && $("city").value) || HOME_CITY;
 
 const H = { apikey: SUPABASE_KEY, "Content-Type": "application/json" };
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? "").replace(/[&<>"]/g,
   m => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[m]));
 
-/* A random id kept in this browser. It is not an identity — it exists only
-   so one person cannot run the vote count up on their own. */
-function voterKey() {
-  let k = null;
-  try { k = localStorage.getItem("dc-voter"); } catch (e) {}
-  if (!k) {
-    k = ([1e7] + "").replace(/[018]/g, c =>
-      (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16))
-      + Math.random().toString(36).slice(2, 8);
-    try { localStorage.setItem("dc-voter", k); } catch (e) {}
-  }
-  return k;
-}
+/* Voting identity is decided by the server, from the address the request
+   arrived on, inside a security-definer function. This page no longer has
+   one to offer: the parameter is still in the signature so an older cached
+   copy of this file keeps working, and it is ignored either way.
+
+   What is kept below is purely so the button can say "Added" on return —
+   it is a note to this browser about what it has already done, never an
+   identity, and losing it costs nothing. */
 function votedFor(id) {
   try { return (JSON.parse(localStorage.getItem("dc-voted") || "[]")).includes(id); }
   catch (e) { return false; }
@@ -37,15 +33,22 @@ function rememberVote(id) {
   } catch (e) {}
 }
 
+/* Never throws. A dropped connection on a phone is the normal case, not an
+   exception, and an unhandled rejection here leaves the board saying
+   "Loading…" for as long as the page is open. */
 async function api(path, opts = {}) {
-  const r = await fetch(SUPABASE_URL + "/rest/v1/" + path, {
-    method: opts.method || "GET",
-    headers: { ...H, ...(opts.headers || {}) },
-    body: opts.body ? JSON.stringify(opts.body) : undefined
-  });
-  const text = await r.text();
-  let json = null; try { json = JSON.parse(text); } catch (e) {}
-  return { ok: r.ok, status: r.status, json };
+  try {
+    const r = await fetch(SUPABASE_URL + "/rest/v1/" + path, {
+      method: opts.method || "GET",
+      headers: { ...H, ...(opts.headers || {}) },
+      body: opts.body ? JSON.stringify(opts.body) : undefined
+    });
+    const text = await r.text();
+    let json = null; try { json = JSON.parse(text); } catch (e) {}
+    return { ok: r.ok, status: r.status, json };
+  } catch (e) {
+    return { ok: false, status: 0, json: null, offline: true };
+  }
 }
 
 /* ------------------------------------------------------ duplicate check */
@@ -61,18 +64,27 @@ async function runSearch() {
   if (q === lastQuery) return;
   lastQuery = q;
   $("dupe").innerHTML = `<div class="dupe"><h2><span class="spin"></span> Checking for an existing request…</h2></div>`;
-  const res = await api("rpc/search_requests", { method: "POST", body: { q, in_city: CITY } });
+  const res = await api("rpc/search_requests", { method: "POST", body: { q, in_city: city() } });
   currentHits = (res.ok && Array.isArray(res.json)) ? res.json.filter(h => h.similarity >= 0.25) : [];
   paintDupes();
 }
 function paintDupes() {
   const box = $("dupe");
   if (!currentHits.length) { box.innerHTML = ""; return; }
+  /* A request we have chosen to show comes back named. One we have not is
+     private, so it comes back as a bare "something like this is already
+     here" — no name, no area, no count. That is the whole point of the
+     promise at the top of this page. */
   const rows = currentHits.map(h => {
     const done = votedFor(h.id);
-    return `<div class="hit">
-      <span class="nm">${esc(h.venue_name)}<em>${esc(h.area)}</em></span>
-      <span class="votes" id="v-${h.id}">${h.votes} ${h.votes === 1 ? "request" : "requests"}</span>
+    const named = !!h.venue_name;
+    const label = named
+      ? `<span class="nm">${esc(h.venue_name)}<em>${esc(h.area)}</em></span>`
+      : `<span class="nm">A request matching this<em class="anon">already on our list — we don't show requests we haven't chosen to publish</em></span>`;
+    const count = named
+      ? `<span class="votes" id="v-${h.id}">${h.votes} ${h.votes === 1 ? "request" : "requests"}</span>`
+      : `<span class="votes" id="v-${h.id}"></span>`;
+    return `<div class="hit">${label}${count}
       <button type="button" class="btn small" data-vote="${h.id}" ${done ? "disabled" : ""}>
         ${done ? "Added" : "Add mine"}</button></div>`;
   }).join("");
@@ -86,12 +98,13 @@ function paintDupes() {
 async function castVote(id, btn) {
   btn.disabled = true; btn.textContent = "…";
   const res = await api("rpc/vote_request", { method: "POST",
-    body: { p_request: id, p_voter: voterKey() } });
+    body: { p_request: id, p_voter: "server-derived" } });
   if (res.ok) {
     rememberVote(id);
     btn.textContent = "Added";
     const v = $("v-" + id);
-    if (v && typeof res.json === "number") v.textContent = `${res.json} ${res.json === 1 ? "request" : "requests"}`;
+    if (v && v.textContent && typeof res.json === "number")
+      v.textContent = `${res.json} ${res.json === 1 ? "request" : "requests"}`;
     $("msg").innerHTML = `<div class="ok" style="margin-top:14px"><b>Counted.</b>
       You've been added to that request. Thank you — that's genuinely useful to us.</div>`;
     loadBoard();
@@ -104,6 +117,13 @@ async function castVote(id, btn) {
 /* ------------------------------------------------------------- submit */
 $("name").addEventListener("input", scheduleSearch);
 $("area").addEventListener("input", scheduleSearch);
+$("city").addEventListener("change", () => {
+  /* A request filed against the wrong city is worse than no request: it
+     lands in a list we are not working and nobody ever sees it again.
+     Say plainly what a non-home city means before it is sent. */
+  $("cityhint").hidden = city() === HOME_CITY;
+  lastQuery = ""; currentHits = []; paintDupes(); scheduleSearch(); loadBoard();
+});
 
 $("form").addEventListener("submit", async e => {
   e.preventDefault();
@@ -120,11 +140,11 @@ $("form").addEventListener("submit", async e => {
      once written — asking for it back is refused by the select policy. */
   const res = await api("audit_requests", {
     method: "POST",
-    body: { venue_name: name, area, city: CITY, address: address || null }
+    body: { venue_name: name, area, city: city(), address: address || null }
   });
 
   if (res.status === 201) {
-    done(`<b>Request received.</b> We've added ${esc(name)}, ${esc(area)} to our list.
+    done(`<b>Request received.</b> We've added ${esc(name)}, ${esc(area)}, ${esc(city())} to our list.
           We don't publish requests, and we'll only audit them with the establishment's agreement.`);
     /* register this browser's interest in the row we cannot read back */
     lastQuery = ""; runSearch();
@@ -136,7 +156,9 @@ $("form").addEventListener("submit", async e => {
       so it counts.</div>`;
   } else {
     btn.disabled = false; btn.textContent = "Send request";
-    $("msg").innerHTML = `<div class="err">We couldn't record that just now. Please try again shortly.</div>`;
+    $("msg").innerHTML = res.offline
+      ? `<div class="err">That didn't send — you appear to be offline. Nothing was recorded, so try again when you have a connection.</div>`
+      : `<div class="err">We couldn't record that just now. Please try again shortly.</div>`;
   }
   function done(html) {
     $("form").querySelectorAll("input,button").forEach(x => x.disabled = true);
@@ -147,10 +169,18 @@ $("form").addEventListener("submit", async e => {
 
 /* --------------------------------------------------------- public board */
 async function loadBoard() {
+  /* Only columns anon has a grant on. Adding one here without granting it
+     turns the whole query into a 401 — the table grant is per column. */
   const res = await api("audit_requests?select=venue_name,area,votes,public_rank"
-    + "&is_public=eq.true&order=public_rank.asc,votes.desc&limit=10");
+    + "&is_public=eq.true&city=eq." + encodeURIComponent(city())
+    + "&order=public_rank.asc,votes.desc&limit=10");
   const box = $("board");
-  if (!res.ok || !Array.isArray(res.json)) { box.innerHTML = `<div class="empty">Not available right now.</div>`; return; }
+  if (!res.ok || !Array.isArray(res.json)) {
+    box.innerHTML = res.offline
+      ? `<div class="empty">Couldn't reach us just now — check your connection. You can still fill in the form; sending will tell you if it didn't go through.</div>`
+      : `<div class="empty">Not available right now.</div>`;
+    return;
+  }
   if (!res.json.length) {
     box.innerHTML = `<div class="empty">Nothing here yet. We show a request only when we've chosen to —
       the list is ours to curate, not a public tally.</div>`;
