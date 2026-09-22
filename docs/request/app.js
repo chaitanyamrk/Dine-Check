@@ -212,24 +212,88 @@ $("send").addEventListener("click", async () => {
 });
 
 /* ------------------------------------------------------------------ sharing */
+/* Small line icons (generic pictograms, not the platforms' own logos). */
+const ICON = {
+  instagram: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="3"/><circle cx="12" cy="13.5" r="3.5"/><path d="M8.5 7l1.5-2.5h4L15.5 7"/></svg>',
+  whatsapp: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5"/></svg>',
+  facebook: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3.5 19c.5-3.3 2.8-5 5.5-5s5 1.7 5.5 5"/><circle cx="17" cy="9" r="2.3"/><path d="M16 14.2c2.4-.3 4.2 1.2 4.6 3.8"/></svg>',
+  x: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg>',
+  link: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg>',
+  more: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V4M8 8l4-4 4 4"/><path d="M5 12v7a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-7"/></svg>'
+};
+
+/* A 1080×1920 picture for an Instagram story: the count, the restaurant, and where to add a voice. */
+async function storyImage(r) {
+  try { await Promise.all([document.fonts.load('600 80px "IBM Plex Serif"'), document.fonts.load('600 40px "IBM Plex Sans"')]); } catch (e) {}
+  const c = document.createElement("canvas"); c.width = 1080; c.height = 1920;
+  const g = c.getContext("2d");
+  g.fillStyle = "#0E1217"; g.fillRect(0, 0, 1080, 1920);
+  g.fillStyle = "#3FB5A8"; g.fillRect(0, 0, 1080, 18);
+  const sans = w => `${w} "IBM Plex Sans", system-ui, sans-serif`, serif = w => `${w} "IBM Plex Serif", Georgia, serif`;
+  const wrap = (text, x, y, max, lh) => {
+    const words = String(text).split(/\s+/); let line = "";
+    for (const w of words) {
+      const t = line ? line + " " + w : w;
+      if (g.measureText(t).width > max && line) { g.fillText(line, x, y); y += lh; line = w; } else line = t;
+    }
+    if (line) { g.fillText(line, x, y); y += lh; }
+    return y;
+  };
+  g.textBaseline = "alphabetic";
+  g.fillStyle = "#3FB5A8"; g.font = sans("700 44px"); g.fillText("DINE CHECK", 96, 200);
+  g.fillStyle = "#3FB5A8"; g.font = serif("500 300px"); g.fillText(String(r.votes), 90, 620);
+  g.fillStyle = "#A3AEBB"; g.font = sans("400 52px");
+  let y = wrap(`${r.votes === 1 ? "person has" : "people have"} asked Dine Check to audit`, 96, 720, 888, 70);
+  g.fillStyle = "#E8EDF2"; g.font = serif("600 96px");
+  y = wrap(r.venue_name, 96, y + 70, 888, 112);
+  g.fillStyle = "#A3AEBB"; g.font = sans("400 52px");
+  y = wrap(`${r.area}${r.city && r.city !== "Other" ? ", " + r.city : ""}`, 96, y + 10, 888, 66);
+  g.fillStyle = "#E8EDF2"; g.font = sans("400 50px");
+  wrap("Want it checked for food safety too? Add your voice — the more people ask, the sooner we go.", 96, 1500, 888, 68);
+  g.fillStyle = "#3FB5A8"; g.font = sans("700 56px"); g.fillText("dinecheck.in/request", 96, 1760);
+  const blob = await new Promise(res => c.toBlob(res, "image/png"));
+  return blob ? new File([blob], "dinecheck-request.png", { type: "image/png" }) : null;
+}
+
 function shareBlock(r) {
   const url = SITE + "?r=" + encodeURIComponent(r.slug);
   const text = `Help get ${r.venue_name}, ${r.area} checked for food safety by Dine Check — ${plural(r.votes, "person has", "people have")} asked so far. Add your voice:`;
   const d = document.createElement("div");
   d.className = "share";
-  d.innerHTML = `<div class="small muted">Your share link</div>
-    <div class="row"><input readonly value="${esc(url)}" aria-label="Share link" style="flex:1;min-width:0;font-family:var(--mono);font-size:13px">
-      <button class="btn small" type="button" data-copy>Copy</button></div>
-    <div class="row">
-      <a class="btn small" target="_blank" rel="noopener" href="https://wa.me/?text=${encodeURIComponent(text + " " + url)}">WhatsApp</a>
-      <a class="btn small" target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}">X</a>
-      <a class="btn small" target="_blank" rel="noopener" href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}">Facebook</a>
-      <a class="btn small" target="_blank" rel="noopener" href="https://t.me/share/url?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}">Telegram</a>
-      ${navigator.share ? `<button class="btn small" type="button" data-more>More…</button>` : ""}
-    </div>`;
-  d.querySelector("[data-copy]").addEventListener("click", async e => {
-    try { await navigator.clipboard.writeText(url); e.target.textContent = "Copied"; }
-    catch (err) { const i = d.querySelector("input"); i.select(); }
+  d.innerHTML = `<div class="small muted">Share it</div>
+    <div class="row sharebtns">
+      <button class="btn small" type="button" data-ig>${ICON.instagram}Instagram</button>
+      <a class="btn small" target="_blank" rel="noopener" href="https://wa.me/?text=${encodeURIComponent(text + " " + url)}">${ICON.whatsapp}WhatsApp</a>
+      <a class="btn small" target="_blank" rel="noopener" href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}">${ICON.facebook}Facebook</a>
+      <a class="btn small" target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}">${ICON.x}X</a>
+    </div>
+    <div class="row sharebtns">
+      <input readonly value="${esc(url)}" aria-label="Share link" style="flex:1;min-width:0;font-family:var(--mono);font-size:13px">
+      <button class="btn small" type="button" data-copy>${ICON.link}Copy</button>
+      ${navigator.share ? `<button class="btn small" type="button" data-more>${ICON.more}More</button>` : ""}
+    </div>
+    <div class="small" data-ighint hidden></div>`;
+  const copy = async () => { try { await navigator.clipboard.writeText(url); return true; } catch (err) { d.querySelector("input").select(); return false; } };
+  d.querySelector("[data-copy]").addEventListener("click", async e => { if (await copy()) e.currentTarget.lastChild.textContent = "Copied"; });
+  /* Instagram has no web "share" link. On a phone we hand the story picture to the
+     share sheet (pick Instagram); everywhere, the link is copied for the Link sticker. */
+  d.querySelector("[data-ig]").addEventListener("click", async e => {
+    const btn = e.currentTarget, hint = d.querySelector("[data-ighint]");
+    btn.disabled = true;
+    const copied = await copy();
+    hint.hidden = false;
+    hint.innerHTML = `<div class="warnbox" style="margin:10px 0 0">${copied ? "Link copied. " : ""}In Instagram, post the picture to your story and add the link with the <b>Link</b> sticker (paste it), or put it in your bio.</div>`;
+    try {
+      const file = await storyImage(r);
+      if (file && navigator.canShare && navigator.canShare({ files: [file] })) {
+        await navigator.share({ files: [file] }).catch(() => {});
+      } else if (file) {
+        const a = document.createElement("a"); a.href = URL.createObjectURL(file); a.download = file.name; a.click();
+        setTimeout(() => URL.revokeObjectURL(a.href), 60000);
+        hint.firstChild.insertAdjacentHTML("beforeend", " The story picture has been downloaded.");
+        window.open("https://www.instagram.com/", "_blank", "noopener");
+      }
+    } finally { btn.disabled = false; }
   });
   const more = d.querySelector("[data-more]");
   if (more) more.addEventListener("click", () => navigator.share({ title: "Dine Check", text, url }).catch(() => {}));
