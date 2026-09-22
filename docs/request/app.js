@@ -10,7 +10,7 @@
 const API = "https://data.dinecheck.in";
 const KEY = "sb_publishable_sp23L2CI2Buds-RFaJMVHA_O73aOv2n";
 /* From Google Cloud → APIs & Services → Credentials → OAuth client (Web). Public by design. */
-const GOOGLE_CLIENT_ID = "PASTE_CLIENT_ID_HERE.apps.googleusercontent.com";
+const GOOGLE_CLIENT_ID = "558944594305-5fkublg74boecs0bk8khpk6fornl9gdg.apps.googleusercontent.com";
 const SITE = "https://dinecheck.in/request/";
 const HOME_CITY = "Hyderabad";
 
