@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Dine Check — Hyderabad food hygiene scores</title>
 <meta name="description" content="Official food safety inspection scores for Hyderabad restaurants, cafés, cloud kitchens and stores. Search by name, filter by area, or sort by what's nearest to you.">
-<meta name="theme-color" content="#0f7a4d" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#07120f" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#00635C" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E1217" media="(prefers-color-scheme: dark)">
 <meta property="og:title" content="Dine Check — Hyderabad food hygiene scores">
 <meta property="og:description" content="Official food safety inspection scores for Hyderabad, ranked and searchable.">
 <meta property="og:type" content="website">
@@ -20,13 +20,14 @@
   base-uri 'self';
   form-action 'none';
   frame-ancestors 'none'">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f7a4d'/%3E%3Cpath d='M16 7a9 9 0 100 18 9 9 0 000-18zm-1.4 13.2l-3.8-3.8 1.7-1.7 2.1 2.1 5.2-5.2 1.7 1.7-6.9 6.9z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2300635C'/%3E%3Cpath d='M16 7a9 9 0 100 18 9 9 0 000-18zm-1.4 13.2l-3.8-3.8 1.7-1.7 2.1 2.1 5.2-5.2 1.7 1.7-6.9 6.9z' fill='%23fff'/%3E%3C/svg%3E">
 <style>
 /* ------------------------------------------------------------------ tokens */
 :root{
-  --bg:#f6f7f5; --surface:#ffffff; --surface-2:#f0f2ef; --line:#e2e6e0;
-  --ink:#141a17; --ink-2:#4d5a53; --ink-3:#7b8880;
-  --brand:#0f7a4d; --brand-ink:#0b5d3b; --brand-soft:#e4f3ec;
+  /* neutrals and brand colour shared with the kit and the client portal */
+  --bg:#F6F7F9; --surface:#FFFFFF; --surface-2:#EFF1F4; --line:#D7DDE4;
+  --ink:#141A21; --ink-2:#57626F; --ink-3:#8C96A2;
+  --brand:#00635C; --brand-ink:#00524C; --brand-soft:#E0EFED;
   --exc:#15803d; --exc-bg:#dcfce7;
   --good:#4d7c0f; --good-bg:#ecfccb;
   --avg:#b45309; --avg-bg:#fef3c7;
@@ -38,9 +39,9 @@
 }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
-    --bg:#0a100d; --surface:#131b17; --surface-2:#1a241f; --line:#26332c;
-    --ink:#e8efea; --ink-2:#a2b1a9; --ink-3:#7b8b83;
-    --brand:#3ec98a; --brand-ink:#8ce0b6; --brand-soft:#12291f;
+    --bg:#0E1217; --surface:#161C23; --surface-2:#1D242C; --line:#2A333D;
+    --ink:#E8EDF2; --ink-2:#A3AEBB; --ink-3:#6E7A87;
+    --brand:#3FB5A8; --brand-ink:#7FD3C9; --brand-soft:#12312E;
     --exc:#4ade80; --exc-bg:#0f2e1c;
     --good:#a3e635; --good-bg:#1f2a10;
     --avg:#fbbf24; --avg-bg:#332305;
@@ -50,9 +51,9 @@
   }
 }
 :root[data-theme="dark"]{
-  --bg:#0a100d; --surface:#131b17; --surface-2:#1a241f; --line:#26332c;
-  --ink:#e8efea; --ink-2:#a2b1a9; --ink-3:#7b8b83;
-  --brand:#3ec98a; --brand-ink:#8ce0b6; --brand-soft:#12291f;
+  --bg:#0E1217; --surface:#161C23; --surface-2:#1D242C; --line:#2A333D;
+  --ink:#E8EDF2; --ink-2:#A3AEBB; --ink-3:#6E7A87;
+  --brand:#3FB5A8; --brand-ink:#7FD3C9; --brand-soft:#12312E;
   --exc:#4ade80; --exc-bg:#0f2e1c;
   --good:#a3e635; --good-bg:#1f2a10;
   --avg:#fbbf24; --avg-bg:#332305;
@@ -84,7 +85,7 @@ header{
 .logo .mk{width:26px;height:26px;border-radius:8px;background:var(--brand);display:grid;place-items:center;flex:none}
 .logo .mk svg{width:16px;height:16px;fill:#fff}
 :root[data-theme="dark"] .logo .mk svg,
-:root:not([data-theme="light"]) .logo .mk svg{fill:#07130d}
+:root:not([data-theme="light"]) .logo .mk svg{fill:#08201E}
 @media (prefers-color-scheme:light){:root:not([data-theme="dark"]) .logo .mk svg{fill:#fff}}
 .spacer{flex:1}
 .reqbtn{display:inline-flex;align-items:center;gap:7px;height:38px;padding:0 12px;border-radius:10px;border:1px solid var(--brand);
@@ -132,7 +133,7 @@ header{
   height:46px;padding:0 15px;border-radius:12px;background:var(--brand);color:#fff;font-weight:600;font-size:14px;
   display:flex;align-items:center;gap:7px;white-space:nowrap;box-shadow:var(--shadow);flex:none;
 }
-:root[data-theme="dark"] .near,:root:not([data-theme="light"]) .near{color:#06130d}
+:root[data-theme="dark"] .near,:root:not([data-theme="light"]) .near{color:#08201E}
 @media (prefers-color-scheme:light){:root:not([data-theme="dark"]) .near{color:#fff}}
 .near svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .near[disabled]{opacity:.6}
