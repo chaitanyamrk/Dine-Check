@@ -1,15 +1,29 @@
+<!doctype html>
+<html lang="en">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="
   default-src 'none';
-  script-src 'self';
-  connect-src 'self' https://data.dinecheck.in;
-  style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+  script-src 'self' https://accounts.google.com/gsi/client;
+  connect-src 'self' https://data.dinecheck.in https://accounts.google.com/gsi/;
+  frame-src https://accounts.google.com/gsi/;
+  style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://accounts.google.com/gsi/style;
   font-src https://fonts.gstatic.com;
-  img-src 'self' data:;
+  img-src 'self' data: https://*.googleusercontent.com;
   base-uri 'self';
   form-action 'none'">
-<title>Request an Audit</title>
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Ask Dine Check to audit a restaurant</title>
+<meta name="description" content="Tell Dine Check which restaurant you want food-safety audited. The more people ask, the sooner we go.">
+<meta property="og:title" content="Ask Dine Check to audit a restaurant">
+<meta property="og:description" content="Which restaurant do you want food-safety audited? Add your voice — the more people ask, the sooner we go.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dinecheck.in/request/">
+<meta property="og:image" content="https://dinecheck.in/request/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#00635C">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@400;500&display=swap">
@@ -40,62 +54,104 @@
 body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.55}
 h1,h2{text-wrap:balance;margin:0}
 button,input,select{font:inherit;color:inherit}
+a{color:var(--accent)}
 :focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:6px}
-@media (prefers-reduced-motion:reduce){*{transition:none!important}}
-.wrap{max-width:660px;margin:0 auto;padding-inline:18px;padding-block:40px 64px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+.wrap{max-width:660px;margin:0 auto;padding-inline:18px;padding-block:32px 64px}
+.top{display:flex;align-items:center;gap:10px}
+.top a{font-size:13.5px;text-decoration:none;margin-left:auto;color:var(--ink2)}
 .eyebrow{font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);font-weight:600}
 h1{font-family:var(--serif);font-size:30px;letter-spacing:-.01em;margin-top:8px;line-height:1.2}
 .lede{color:var(--ink2);margin-top:10px;max-width:56ch}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:20px;margin-top:24px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:20px;margin-top:22px}
+.step{display:flex;align-items:center;gap:10px;font-weight:600;font-size:15px;margin-bottom:12px}
+.step b{flex:none;width:24px;height:24px;border-radius:50%;background:var(--accent);color:var(--accent-on);display:inline-grid;place-items:center;font-size:13px}
+.step.done b{background:var(--surface2);color:var(--accent);border:1px solid var(--accent)}
+.muted{color:var(--ink2)}.small{font-size:13.5px}.tiny{font-size:12px;color:var(--ink3)}
 label{display:block;margin-bottom:14px}
-label span{display:block;font-size:13px;font-weight:600;color:var(--ink2);margin-bottom:5px}
+label > span{display:block;font-size:13px;font-weight:600;color:var(--ink2);margin-bottom:5px}
 input,select{width:100%;padding:11px 13px;background:var(--bg);border:1px solid var(--line2);border-radius:8px}
 input::placeholder{color:var(--ink3)}
-.cityhint{margin:-8px 0 14px;font-size:13px;color:var(--warm);background:var(--warm-soft);
-  border-radius:8px;padding:9px 12px}
-.hit .nm em.anon{color:var(--ink3);font-style:italic}
+input[type=checkbox]{width:auto;accent-color:var(--accent);margin:3px 0 0}
+.check{display:flex;gap:10px;align-items:flex-start;font-size:14px;margin:14px 0}
+.check span{display:inline;font-weight:400;color:var(--ink);font-size:14px}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:0 14px}
 @media (max-width:520px){.two{grid-template-columns:1fr}}
-.btn{padding:11px 18px;border-radius:8px;border:1px solid var(--line2);background:var(--surface);cursor:pointer;font-weight:600}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:11px 18px;border-radius:8px;border:1px solid var(--line2);background:var(--surface);cursor:pointer;font-weight:600;text-decoration:none;color:var(--ink)}
 .btn.primary{background:var(--accent);color:var(--accent-on);border-color:var(--accent)}
 .btn:disabled{opacity:.5;cursor:not-allowed}
 .btn.small{padding:7px 13px;font-size:13.5px}
-.dupe{margin:2px 0 16px;border:1px solid var(--warm);background:var(--warm-soft);border-radius:9px;padding:13px 15px}
-.dupe h2{font-size:14px}
-.dupe p{margin:4px 0 10px;font-size:13.5px;color:var(--ink2)}
-.hit{display:flex;align-items:center;gap:12px;padding:9px 0;border-top:1px solid rgba(0,0,0,.08)}
-.hit:first-of-type{border-top:0}
-.hit .nm{flex:1;font-size:14px}
-.hit .nm em{font-style:normal;color:var(--ink2);display:block;font-size:12.5px}
-.votes{font-family:var(--mono);font-size:12.5px;color:var(--ink2);white-space:nowrap}
-.note{font-size:13px;color:var(--ink2);margin-top:14px;padding-top:14px;border-top:1px dashed var(--line2)}
+.btn.link{border:0;background:none;padding:4px 0;color:var(--accent);font-weight:600}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.who{display:flex;gap:12px;align-items:center}
+.who .av{width:36px;height:36px;border-radius:50%;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;font-weight:700;flex:none}
+.locked{opacity:.45;pointer-events:none;user-select:none}
+.sugg{border:1px solid var(--line2);border-radius:8px;margin-top:-8px;margin-bottom:14px;overflow:hidden;background:var(--surface)}
+.sugg button{display:block;width:100%;text-align:left;background:none;border:0;border-top:1px solid var(--line);padding:10px 13px;cursor:pointer}
+.sugg button:first-child{border-top:0}
+.sugg button:hover,.sugg button:focus-visible{background:var(--surface2)}
+.sugg b{display:block;font-weight:600;font-size:14.5px}
+.sugg em{font-style:normal;color:var(--ink2);font-size:13px}
+.attrib{font-size:11.5px;color:var(--ink3);text-align:right;padding:6px 10px;border-top:1px solid var(--line)}
+.picked{border:1px solid var(--accent);background:var(--accent-soft);border-radius:9px;padding:13px 15px;margin-bottom:14px}
+.picked b{display:block;font-size:16px}
 .ok{border:1px solid var(--accent);background:var(--accent-soft);border-radius:9px;padding:16px 18px}
-.ok b{display:block;margin-bottom:4px}
 .err{border-left:3px solid var(--bad);padding:10px 13px;font-size:13.5px;background:var(--surface2);border-radius:8px;margin-top:12px}
+.warnbox{border-left:3px solid var(--warm);padding:10px 13px;font-size:13.5px;background:var(--warm-soft);border-radius:8px;margin:0 0 14px}
+.hero{border:1px solid var(--accent);background:var(--surface);border-radius:var(--r);padding:22px 20px;margin-top:22px}
+.hero .count{font-family:var(--serif);font-size:44px;line-height:1;color:var(--accent)}
+.hero h2{font-family:var(--serif);font-size:24px;margin-top:6px;line-height:1.25}
+.hero .area{color:var(--ink2);margin-top:2px}
+.stage{display:inline-block;margin-top:12px;font-size:13px;font-weight:600;padding:4px 10px;border-radius:99px;background:var(--accent-soft);color:var(--accent)}
+.share{margin-top:16px;padding-top:14px;border-top:1px dashed var(--line2)}
+.share .row{gap:8px;margin-top:8px}
 .board{margin-top:14px}
-.brow{display:flex;align-items:baseline;gap:12px;padding:11px 0;border-bottom:1px solid var(--line)}
+.brow{display:flex;align-items:baseline;gap:12px;padding:11px 0;border-bottom:1px solid var(--line);text-decoration:none;color:inherit}
 .brow .rank{font-family:var(--mono);font-size:12.5px;color:var(--ink3);width:22px;flex:none}
 .brow .nm{flex:1}
 .brow .nm em{font-style:normal;color:var(--ink2);font-size:13px;display:block}
+.votes{font-family:var(--mono);font-size:12.5px;color:var(--ink2);white-space:nowrap}
+.mine{display:flex;gap:10px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line)}
+.mine:last-child{border-bottom:0}
+.mine .nm{flex:1;min-width:0}
+.mine .nm em{font-style:normal;color:var(--ink2);font-size:13px;display:block}
 .empty{color:var(--ink3);font-size:14px;padding:14px 0}
+.note{font-size:13px;color:var(--ink2);margin-top:14px;padding-top:14px;border-top:1px dashed var(--line2)}
+.note p{margin:6px 0}
 .spin{display:inline-block;width:13px;height:13px;border:2px solid var(--line2);border-top-color:var(--accent);border-radius:50%;animation:s .7s linear infinite;vertical-align:-2px}
 @keyframes s{to{transform:rotate(360deg)}}
+[hidden]{display:none!important}
 </style>
 
 <div class="wrap">
-  <div class="eyebrow">Dine Check</div>
-  <h1>Ask us to audit a restaurant</h1>
-  <p class="lede">Tell us where you eat and would like checked. Requests are private — we read every one, and we decide which to take on. Nothing you send here is published as a complaint about a business.</p>
+  <div class="top"><span class="eyebrow">Dine Check</span><a href="/">← Food safety scores</a></div>
 
-  <form class="card" id="form" autocomplete="off">
-    <div class="two">
-      <label for="name"><span>Restaurant name</span>
-        <input id="name" name="name" placeholder="e.g. Paradise Biryani" maxlength="160" required></label>
-      <label for="area"><span>Area or locality</span>
-        <input id="area" name="area" placeholder="e.g. Secunderabad" maxlength="120" required></label>
+  <div id="notice"></div>
+  <div id="shared"></div>
+
+  <h1 id="title">Ask us to audit a restaurant</h1>
+  <p class="lede">Pick a restaurant you eat at and would like checked for food safety. The more people ask for the same place, the sooner we go — so share it with friends when you're done.</p>
+
+  <!-- 1. who you are -->
+  <section class="card" id="signin">
+    <div class="step" id="step1"><b>1</b> Sign in with Google</div>
+    <div id="signedOut">
+      <p class="small muted" style="margin:0 0 12px">So each person counts once, and so we can tell you when the restaurant agrees to an audit. We only receive your name and email address.</p>
+      <div id="gsi"></div>
+      <div id="gsiErr"></div>
     </div>
+    <div id="signedIn" hidden>
+      <div class="who"><span class="av" id="av"></span>
+        <div style="flex:1;min-width:0"><div id="whoName" style="font-weight:600"></div><div class="small muted" id="whoEmail"></div></div>
+        <button class="btn small" id="signOut" type="button">Sign out</button></div>
+    </div>
+  </section>
+
+  <!-- 2. which restaurant -->
+  <section class="card locked" id="ask" aria-disabled="true">
+    <div class="step"><b>2</b> Find the restaurant</div>
     <label for="city"><span>City</span>
-      <select id="city" name="city" required>
+      <select id="city">
         <option value="Hyderabad" selected>Hyderabad</option>
         <option value="Bengaluru">Bengaluru</option>
         <option value="Chennai">Chennai</option>
@@ -108,17 +164,53 @@ input::placeholder{color:var(--ink3)}
         <option value="Kochi">Kochi</option>
         <option value="Other">Somewhere else</option>
       </select></label>
-    <p class="cityhint" id="cityhint" hidden>We audit in Hyderabad today. A request elsewhere still counts — it is how we decide where to go next — but we cannot say when.</p>
-    <div id="dupe"></div>
-    <label for="address"><span>Address <span style="font-weight:400;color:var(--ink3)">— optional, helps us find the right outlet</span></span>
-      <input id="address" name="address" placeholder="Street, landmark" maxlength="240"></label>
-    <button class="btn primary" id="submit" type="submit">Send request</button>
-    <div id="msg"></div>
-    <p class="note">We ask for nothing about you — no name, no email, no account. A request is a suggestion for our audit list, not an allegation, and we only audit an establishment that agrees to it. To stop one person running a count up, a vote is tied to the network you sent it from; we store that as a one-way hash and it identifies nobody.</p>
-  </form>
+    <p class="warnbox" id="cityhint" hidden>We audit in Hyderabad today. A request elsewhere still counts — it is how we decide where to go next — but we cannot say when.</p>
 
-  <h2 style="font-size:15px;margin-top:34px" class="eyebrow">Requests we've chosen to show</h2>
+    <div id="searchBox">
+      <label for="q"><span>Restaurant name</span>
+        <input id="q" type="search" placeholder="Start typing, e.g. Paradise Biryani" maxlength="120" autocomplete="off"
+               role="combobox" aria-expanded="false" aria-controls="sugg" aria-autocomplete="list"></label>
+      <div class="sugg" id="sugg" role="listbox" hidden></div>
+      <button class="btn link small" id="manualOpen" type="button">Can't find it? Type it in yourself</button>
+    </div>
+
+    <div id="picked" hidden></div>
+
+    <div id="manual" hidden>
+      <div class="two">
+        <label for="mName"><span>Restaurant name</span><input id="mName" maxlength="160" placeholder="e.g. Paradise Biryani"></label>
+        <label for="mArea"><span>Area or locality</span><input id="mArea" maxlength="120" placeholder="e.g. Secunderabad"></label>
+      </div>
+      <button class="btn link small" id="manualClose" type="button">← Search instead</button>
+    </div>
+
+    <div class="step" style="margin-top:18px"><b>3</b> Send it</div>
+    <label class="check" for="updates"><input type="checkbox" id="updates">
+      <span>Email me when this restaurant agrees to an audit, and when it has been audited. Nothing else, and you can stop any time.</span></label>
+    <button class="btn primary" id="send" type="button" disabled>Ask for an audit</button>
+    <div id="msg"></div>
+  </section>
+
+  <!-- after sign-in -->
+  <section class="card" id="mineCard" hidden>
+    <div class="eyebrow">Your requests</div>
+    <div id="mineList"></div>
+    <label class="check" for="updatesAll" style="margin-top:16px"><input type="checkbox" id="updatesAll">
+      <span>Email me updates about the restaurants I've asked for</span></label>
+    <button class="btn link small" id="forget" type="button" style="color:var(--bad)">Delete my details</button>
+    <div id="mineMsg"></div>
+  </section>
+
+  <h2 class="eyebrow" style="font-size:12px;margin-top:34px">Most requested — chosen by us to show</h2>
   <div class="board" id="board"><div class="empty">Loading…</div></div>
+
+  <div class="note">
+    <p><b>What we keep.</b> Your name and email address from Google, which restaurants you asked for, and whether you want updates. Only Dine Check's admins can see who asked; we never publish it, sell it or share it with the restaurant. A request is a suggestion for our audit list, not a complaint, and we audit only an establishment that agrees.</p>
+    <p>Stop the emails with the link in any of them, or delete your details here at any time — your vote stays counted, but no longer points at you. If you don't come back for two years, we delete your details anyway.</p>
+    <p>Restaurant suggestions are from Google Maps. Signing in uses Google Sign-In; Google's own privacy policy applies to it.</p>
+  </div>
 </div>
 
 <script src="app.js"></script>
+<script src="https://accounts.google.com/gsi/client" async></script>
+</html>
