@@ -4,7 +4,7 @@
    trusted. Notably this page CANNOT read back what it submits — an
    unpublished request is invisible to the public, by policy. */
 
-const SUPABASE_URL = "https://nyagpcdlywklfukooqqp.supabase.co";
+const SUPABASE_URL = "https://data.dinecheck.in";
 const SUPABASE_KEY = "sb_publishable_sp23L2CI2Buds-RFaJMVHA_O73aOv2n";
 const HOME_CITY = "Hyderabad";
 const city = () => ($("city") && $("city").value) || HOME_CITY;
