@@ -30,7 +30,7 @@
 <style>
 :root{
   --bg:#F6F7F9; --surface:#FFFFFF; --surface2:#EFF1F4; --line:#D7DDE4; --line2:#C3CBD4;
-  --ink:#141A21; --ink2:#57626F; --ink3:#8C96A2;
+  --ink:#141A21; --ink2:#57626F; --ink3:#626C77;
   --accent:#00635C; --accent-on:#FFFFFF; --accent-soft:#E0EFED;
   --warm:#8A6B1C; --warm-soft:#F6EFDB; --bad:#AE2B2B;
   --sans:"IBM Plex Sans",system-ui,-apple-system,Segoe UI,sans-serif;
@@ -40,13 +40,13 @@
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
   --bg:#0E1217; --surface:#161C23; --surface2:#1D242C; --line:#2A333D; --line2:#3A4551;
-  --ink:#E8EDF2; --ink2:#A3AEBB; --ink3:#6E7A87;
+  --ink:#E8EDF2; --ink2:#A3AEBB; --ink3:#8A96A3;
   --accent:#3FB5A8; --accent-on:#08201E; --accent-soft:#12312E;
   --warm:#D4A73C; --warm-soft:#2A2316; --bad:#EF6B6B;
 }}
 :root[data-theme="dark"]{
   --bg:#0E1217; --surface:#161C23; --surface2:#1D242C; --line:#2A333D; --line2:#3A4551;
-  --ink:#E8EDF2; --ink2:#A3AEBB; --ink3:#6E7A87;
+  --ink:#E8EDF2; --ink2:#A3AEBB; --ink3:#8A96A3;
   --accent:#3FB5A8; --accent-on:#08201E; --accent-soft:#12312E;
   --warm:#D4A73C; --warm-soft:#2A2316; --bad:#EF6B6B;
 }
@@ -122,6 +122,15 @@ input[type=checkbox]{width:auto;accent-color:var(--accent);margin:3px 0 0}
 .note p{margin:6px 0}
 .spin{display:inline-block;width:13px;height:13px;border:2px solid var(--line2);border-top-color:var(--accent);border-radius:50%;animation:s .7s linear infinite;vertical-align:-2px}
 @keyframes s{to{transform:rotate(360deg)}}
+.noticebar{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;max-width:640px;margin:0 auto;display:flex;align-items:center;gap:12px;
+  padding:12px 14px;border-radius:12px;background:var(--surface,#fff);color:var(--ink,#141A21);border:1px solid var(--line,#D7DDE4);
+  box-shadow:0 10px 30px rgba(0,0,0,.25);font-size:13.5px;line-height:1.45}
+.noticebar p{margin:0;flex:1}
+.noticebar a{color:var(--brand,var(--accent,#00635C));font-weight:600}
+.noticebar button{flex:none;font:inherit;font-weight:700;padding:8px 16px;border-radius:9px;border:0;cursor:pointer;
+  background:var(--brand,var(--accent,#00635C));color:var(--bg,#fff)}
+@media print{.noticebar{display:none}}
+.legal{margin-top:18px;font-size:13px;color:var(--ink3)}
 [hidden]{display:none!important}
 </style>
 
@@ -140,6 +149,7 @@ input[type=checkbox]{width:auto;accent-color:var(--accent);margin:3px 0 0}
     <div id="signedOut">
       <p class="small muted" style="margin:0 0 12px">So each person counts once, and so we can tell you when the restaurant agrees to an audit. We only receive your name and email address.</p>
       <div id="gsi"></div>
+      <p class="tiny" style="margin:10px 0 0">By signing in you agree to our <a href="/terms/">Terms of Use</a> and <a href="/privacy/">Privacy Policy</a>.</p>
       <div id="gsiErr"></div>
     </div>
     <div id="signedIn" hidden>
@@ -210,9 +220,10 @@ input[type=checkbox]{width:auto;accent-color:var(--accent);margin:3px 0 0}
     <p><b>What we keep.</b> Your name and email address from Google, which restaurants you asked for, and whether you want updates. Only Dine Check's admins can see who asked; we never publish it, sell it or share it with the restaurant. A request is a suggestion for our audit list, not a complaint, and we audit only an establishment that agrees.</p>
     <p>Stop the emails with the link in any of them, or delete your details here at any time — your vote stays counted, but no longer points at you. If you don't come back for two years, we delete your details anyway.</p>
     <p>Restaurant suggestions are from Google Maps. Signing in uses Google Sign-In; Google's own privacy policy applies to it.</p>
+    <p>The full details are in our <a href="/privacy/">Privacy Policy</a> and <a href="/terms/">Terms of Use</a>. Questions: <a href="mailto:privacy@dinecheck.in">privacy@dinecheck.in</a>.</p>
   </div>
 </div>
 
-<script src="app.js?v=31"></script>
+<script src="app.js?v=32"></script>
 <script src="https://accounts.google.com/gsi/client" async></script>
 </html>

@@ -752,3 +752,20 @@ fetch("data.json",{cache:"no-cache"})
   s.onerror = function () { /* analytics must never break the page */ };
   document.head.appendChild(s);
 })();
+
+/* ------------------------------------------------------------------ notice
+   A one-time bar pointing to the Terms and Privacy Policy. It remembers only
+   that it has been seen, in this browser. */
+(function () {
+  var KEY = "dc-notice-ok";
+  try { if (localStorage.getItem(KEY)) return; } catch (e) {}
+  var bar = document.createElement("div");
+  bar.className = "noticebar"; bar.setAttribute("role", "region"); bar.setAttribute("aria-label", "Terms and privacy");
+  bar.innerHTML = '<p>By using Dine Check you agree to our <a href="/terms/">Terms of Use</a>. We don’t use tracking or advertising cookies — see our <a href="/privacy/">Privacy Policy</a>.</p>' +
+    '<button type="button">OK</button>';
+  bar.querySelector("button").addEventListener("click", function () {
+    try { localStorage.setItem(KEY, "1"); } catch (e) {}
+    bar.remove();
+  });
+  document.body.appendChild(bar);
+})();
