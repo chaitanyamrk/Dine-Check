@@ -291,7 +291,8 @@ function render(resetPage){
       body='<p>Nothing on record for <span class="q">'+esc(state.q.trim())+'</span>.</p>'+
            "<p>That is not a bad sign. Only "+(DATA?DATA.stats.venues:"a few hundred")+
            " establishments in "+esc(cityName)+" appear in any public food-safety record, so most places "+
-           "are simply not here yet. Try another spelling, browse by area, or switch city.</p>";
+           "are simply not here yet. Try another spelling, browse by area, or switch city.</p>"+
+           '<p><a class="reqlink" href="request/?q='+encodeURIComponent(state.q.trim())+'">Ask us to audit '+esc(state.q.trim())+' →</a></p>';
     } else {
       body="<p>Nothing matches those filters.</p>";
     }

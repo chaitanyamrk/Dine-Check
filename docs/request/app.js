@@ -70,6 +70,7 @@ function signedIn() {
   $("ask").classList.remove("locked"); $("ask").removeAttribute("aria-disabled");
   loadMine();
   if (pendingVote) { const s = pendingVote; pendingVote = null; vote(s); }
+  if ($("q").value.trim().length >= 3 && !$("searchBox").hidden) { lastQ = ""; search(); }
 }
 function signOut(expired) {
   cred = null; user = null;
@@ -398,6 +399,8 @@ async function loadBoard() {
                                : `<div class="err">That unsubscribe link didn't work. Sign in below and untick "Email me updates" instead.</div>`;
     try { history.replaceState(null, "", location.pathname); } catch (e) {}
   }
+  const pre = (qs.get("q") || "").trim().slice(0, 120);
+  if (pre) { $("q").value = pre; $("mName").value = pre; }   // from a search on the main site
   const slug = qs.get("r");
   if (slug && /^[a-f0-9]{6,20}$/i.test(slug)) showShared(slug);
   let stored = null; try { stored = sessionStorage.getItem("dc-cred"); } catch (e) {}
