@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <!-- Subtle drop shadow for depth on Google consent screens -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Base App Shape / Rounded Squircle Frame -->
+  <rect x="10" y="10" width="100" height="100" rx="28" fill="url(#brandGrad)" filter="url(#shadow)"/>
+
+  <!-- Inner Plate / Dining Ring Graphic -->
+  <circle cx="60" cy="60" r="32" fill="none" stroke="#334155" stroke-width="3" stroke-dasharray="4 2"/>
+  <circle cx="60" cy="60" r="24" fill="none" stroke="#64748B" stroke-width="2" opacity="0.4"/>
+
+  <!-- Stylized Cloche / Dome & Handle -->
+  <path d="M42 64 C42 52, 50 46, 60 46 C70 46, 78 52, 78 64 Z" fill="#F8FAFC"/>
+  <rect x="57" y="41" width="6" height="4" rx="1" fill="#10B981"/>
+
+  <!-- Base Plate Line -->
+  <rect x="38" y="68" width="44" height="4" rx="2" fill="#E2E8F0"/>
+
+  <!-- Verification Check Badge overlay -->
+  <g transform="translate(64, 58)">
+    <circle cx="16" cy="16" r="14" fill="url(#accentGrad)" stroke="#0F172A" stroke-width="3"/>
+    <path d="M10 16 L14 20 L22 11" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
