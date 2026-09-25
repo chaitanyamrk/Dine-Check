@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="
+  default-src 'none';
+  script-src 'self';
+  connect-src https://data.dinecheck.in;
+  style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+  font-src https://fonts.gstatic.com;
+  img-src 'self' data:;
+  base-uri 'self';
+  form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Would your kitchen pass a TG SAFE inspection? — Dine Check</title>
+<link rel="icon" href="../logo.svg" type="image/svg+xml">
+<link rel="icon" href="../favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<meta name="description" content="A free five-minute self-check for restaurant, QSR, cloud-kitchen and catering owners, built from what TG SAFE's food-safety officers found in Hyderabad in September 2026.">
+<meta property="og:title" content="Would your kitchen pass a TG SAFE inspection?">
+<meta property="og:description" content="20 questions, 5 minutes, built from what food-safety officers actually found. Free — nothing is sent unless you ask us to call.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dinecheck.in/check/">
+<meta name="theme-color" content="#00635C">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@400;500&display=swap">
+<style>
+:root{
+  --bg:#F6F7F9; --surface:#FFFFFF; --surface2:#EFF1F4; --line:#D7DDE4; --line2:#C3CBD4;
+  --ink:#141A21; --ink2:#57626F; --ink3:#626C77;
+  --accent:#00635C; --accent-on:#FFFFFF; --accent-soft:#E0EFED;
+  --warm:#8A6B1C; --warm-soft:#F6EFDB; --bad:#AE2B2B; --bad-soft:#F7E3E3; --ok:#1C7A51; --ok-soft:#E3F2EA;
+  --sans:"IBM Plex Sans",system-ui,-apple-system,Segoe UI,sans-serif;
+  --serif:"IBM Plex Serif",Georgia,serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  --r:10px;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0E1217; --surface:#161C23; --surface2:#1D242C; --line:#2A333D; --line2:#3A4551;
+  --ink:#E8EDF2; --ink2:#A3AEBB; --ink3:#8A96A3;
+  --accent:#3FB5A8; --accent-on:#08201E; --accent-soft:#12312E;
+  --warm:#D4A73C; --warm-soft:#2A2316; --bad:#EF6B6B; --bad-soft:#2E1717; --ok:#4CC28C; --ok-soft:#15291F;
+}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.55}
+h1,h2,h3{text-wrap:balance;margin:0}
+button,input,select{font:inherit;color:inherit}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:6px}
+.wrap{max-width:720px;margin:0 auto;padding-inline:18px;padding-block:32px 64px}
+.top{display:flex;align-items:center;gap:10px}
+.top a{font-size:13.5px;text-decoration:none;margin-left:auto;color:var(--ink2)}
+.eyebrow{font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);font-weight:600}
+h1{font-family:var(--serif);font-size:30px;letter-spacing:-.01em;margin-top:8px;line-height:1.2}
+h2{font-family:var(--serif);font-size:21px;line-height:1.25}
+.lede{color:var(--ink2);margin-top:10px;max-width:60ch}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:20px;margin-top:22px}
+.muted{color:var(--ink2)}.small{font-size:13.5px}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}
+.facts div{border:1px solid var(--line);border-radius:9px;padding:10px 12px;background:var(--surface)}
+.facts b{display:block;font-family:var(--serif);font-size:26px;color:var(--bad);line-height:1.1}
+@media (max-width:520px){.facts{grid-template-columns:1fr 1fr 1fr}.facts b{font-size:22px}.facts span{font-size:12px}}
+.grp{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3);font-weight:700;margin:22px 0 4px}
+.q{display:flex;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.q .t{flex:1 1 300px;min-width:0}
+.q .t b{font-weight:600}
+.q .crit{font-size:11px;font-weight:700;color:var(--bad);border:1px solid var(--bad);border-radius:99px;padding:0 7px;margin-left:6px;white-space:nowrap}
+.q .why{font-size:12.5px;color:var(--ink3);margin-top:2px}
+.yn{display:inline-flex;border:1px solid var(--line2);border-radius:9px;overflow:hidden;flex:none}
+.yn button{border:0;background:var(--surface);padding:9px 16px;font-weight:600;cursor:pointer;min-width:62px;color:var(--ink2)}
+.yn button+button{border-left:1px solid var(--line2)}
+.yn button[aria-pressed=true].y{background:var(--ok);color:#fff}.yn button[aria-pressed=true].n{background:var(--bad);color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 20px;border-radius:8px;border:1px solid var(--line2);background:var(--surface);cursor:pointer;font-weight:600;text-decoration:none;color:var(--ink)}
+.btn.primary{background:var(--accent);color:var(--accent-on);border-color:var(--accent)}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.progress{height:6px;background:var(--surface2);border-radius:99px;overflow:hidden;margin-top:14px}.progress i{display:block;height:100%;background:var(--accent);width:0}
+.result{border-radius:var(--r);padding:20px;margin-top:22px;border:2px solid}
+.result.ok{border-color:var(--ok);background:var(--ok-soft)}.result.warn{border-color:var(--warm);background:var(--warm-soft)}.result.bad{border-color:var(--bad);background:var(--bad-soft)}
+.result .score{font-family:var(--serif);font-size:48px;line-height:1}
+.fix{padding:12px 0;border-bottom:1px solid var(--line)}.fix:last-child{border-bottom:0}
+.fix b{display:block}.fix .how{font-size:13.5px;color:var(--ink2);margin-top:3px}.fix .dc{font-size:13px;color:var(--accent);margin-top:3px}
+label{display:block;margin-bottom:12px}
+label > span{display:block;font-size:13px;font-weight:600;color:var(--ink2);margin-bottom:5px}
+input,select{width:100%;padding:11px 13px;background:var(--bg);border:1px solid var(--line2);border-radius:8px}
+input[type=checkbox]{width:auto;accent-color:var(--accent);margin:3px 0 0}
+.check{display:flex;gap:10px;align-items:flex-start;font-size:14px;margin:10px 0}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:0 14px}
+@media (max-width:520px){.two{grid-template-columns:1fr}}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.okbox{border:1px solid var(--accent);background:var(--accent-soft);border-radius:9px;padding:16px 18px}
+.err{border-left:3px solid var(--bad);padding:10px 13px;font-size:13.5px;background:var(--surface2);border-radius:8px;margin-top:12px}
+.legal{margin-top:22px;font-size:13px;color:var(--ink3)}
+[hidden]{display:none!important}
+@media print{.noprint{display:none!important}}
+</style>
+
+<div class="wrap">
+  <div class="top"><img src="../logo.svg" alt="" width="28" height="28"><span class="eyebrow">Dine Check · for kitchen owners</span><a href="/">← Food safety scores</a></div>
+  <h1>Would your kitchen pass a TG SAFE inspection?</h1>
+  <p class="lede">On 24 September 2026, TG SAFE sent eight teams of food-safety officers and police into Hyderabad's core urban region. Of the fifteen kitchens they inspected, eight are having their FSSAI licence suspended and one was closed. These twenty questions check your kitchen against what they found. It takes about five minutes, works for restaurants, QSRs, cloud kitchens, caterers and cafés, and nothing leaves your phone unless you ask us to call.</p>
+  <div class="facts" aria-label="What the drive found">
+    <div><b>15</b><span class="small muted">kitchens inspected</span></div>
+    <div><b>8</b><span class="small muted">licences being suspended</span></div>
+    <div><b>1</b><span class="small muted">closed</span></div>
+  </div>
+  <p class="small muted" style="margin-top:8px">Source: <a href="https://x.com/c_tgsafe/status/2103106700400320522" rel="noopener noreferrer" target="_blank">TG SAFE on X</a>. Officers reported expired, contaminated and spoiled food, rotten vegetables, badly kept fridges, unsafe storage, pests, wet floors, greasy exhausts, poor handler hygiene and missing records.</p>
+
+  <section class="card" id="quiz">
+    <h2>Answer honestly — for today, not your best day</h2>
+    <p class="small muted" style="margin:6px 0 0">Questions marked <span class="crit" style="font-size:11px;font-weight:700;color:var(--bad);border:1px solid var(--bad);border-radius:99px;padding:0 7px">critical</span> are the ones that get licences suspended.</p>
+    <div class="progress" aria-hidden="true"><i id="bar"></i></div>
+    <div id="qs"></div>
+    <div class="row noprint" style="margin-top:18px"><button class="btn primary" id="done" type="button" disabled>See my result</button> <span class="small muted" id="left"></span></div>
+  </section>
+
+  <section id="res" hidden></section>
+
+  <section class="card noprint" id="lead" hidden>
+    <h2>Want help putting it right?</h2>
+    <p class="small muted" style="margin:6px 0 12px">Leave your details and a Dine Check auditor will call you — no charge for the call. We send your score and the questions you answered No, nothing else from this page.</p>
+    <div class="two">
+      <label for="lName"><span>Your name</span><input id="lName" maxlength="120" autocomplete="name"></label>
+      <label for="lRest"><span>Restaurant or kitchen</span><input id="lRest" maxlength="160" autocomplete="organization"></label>
+      <label for="lArea"><span>Area</span><input id="lArea" maxlength="120" placeholder="e.g. Kondapur"></label>
+      <label for="lCity"><span>City</span><select id="lCity"><option>Hyderabad</option><option>Bengaluru</option><option>Chennai</option><option>Mumbai</option><option>Pune</option><option>Delhi</option><option>Kolkata</option><option>Ahmedabad</option><option>Other</option></select></label>
+      <label for="lPhone"><span>Phone</span><input id="lPhone" maxlength="20" inputmode="tel" autocomplete="tel" placeholder="+91 …"></label>
+      <label for="lEmail"><span>Or email</span><input id="lEmail" maxlength="200" type="email" autocomplete="email"></label>
+    </div>
+    <label for="lType"><span>Kind of kitchen</span><select id="lType"><option value="full">Restaurant (full kitchen)</option><option value="qsr">Quick-service (QSR)</option><option value="cloud">Cloud kitchen</option><option value="caterer">Caterer</option><option value="cafe">Café or bakery</option></select></label>
+    <div class="small" style="font-weight:600;color:var(--ink2);margin-bottom:4px">I'm interested in</div>
+    <label class="check"><input type="checkbox" id="wAudit" checked> <span>A pre-inspection audit of my kitchen</span></label>
+    <label class="check"><input type="checkbox" id="wApp"> <span>The kitchen app — labels, use-by, storage walks, temperatures</span></label>
+    <label class="check"><input type="checkbox" id="wTraining"> <span>Food-safety training for my staff</span></label>
+    <div class="hp" aria-hidden="true"><label for="website">Website<input id="website" tabindex="-1" autocomplete="off"></label></div>
+    <label class="check"><input type="checkbox" id="consent"> <span>Dine Check may contact me about this. <a href="/privacy/" target="_blank" rel="noopener">Privacy Policy</a> — we keep this for 18 months and never share it.</span></label>
+    <button class="btn primary" id="send" type="button">Ask Dine Check to call me</button>
+    <div id="msg"></div>
+  </section>
+
+  <p class="legal">This self-check is guidance, not legal advice or an inspection. It is based on the Food Safety and Standards Act 2006, the FSS (Licensing and Registration) Regulations 2011 (Schedule 4) and FSSAI's guidance for the catering sector. A food-safety officer may look at more. · <a href="/privacy/">Privacy Policy</a> · <a href="/terms/">Terms of Use</a></p>
+</div>
+<script src="check.js"></script>
+</html>

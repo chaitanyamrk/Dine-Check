@@ -26,6 +26,9 @@ from datetime import datetime
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DEFAULT_CSV = os.path.join(HERE, "hyderabad_food_inspections.csv")
+# Enforcement actions published only as images (e.g. TG SAFE's drive graphics), typed in by hand
+# from the post and linked to it. Same columns as the scraper CSV; the scraper never overwrites it.
+MANUAL_CSV = os.path.join(HERE, "enforcement_manual.csv")
 FSSAI_CSV = os.path.join(HERE, "fssai_hygiene_ratings.csv")
 DOCS = os.path.join(HERE, "docs")
 OUT = os.path.join(DOCS, "data.json")
@@ -902,6 +905,10 @@ def main():
 
     hyd_gaz = gazetteers.get("hyderabad", {})
     inspections, skipped = read_inspections(src, hyd_gaz)
+    if os.path.exists(MANUAL_CSV):
+        manual, m_skipped = read_inspections(MANUAL_CSV, hyd_gaz)
+        print(f"manual enforcement records: {len(manual)} (skipped {m_skipped})")
+        inspections += manual
     certifications, unknown_cities = read_certifications(fssai, cities, gazetteers)
 
     records = collections.defaultdict(list)

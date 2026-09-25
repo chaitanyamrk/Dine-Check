@@ -168,6 +168,12 @@ function isStale(iso){
 
 function markNode(v){
   var m=el("div","mark");
+  // a drive that named the place and the action but not its own violations: show the action, not "0 issues"
+  if(!v.violations&&v.history&&v.history[0]&&v.history[0].action){
+    m.appendChild(el("b",null,"!"));
+    m.appendChild(el("s",null,"action"));
+    return m;
+  }
   m.appendChild(el("b",null,String(v.violations||0)));
   m.appendChild(el("s",null,v.violations===1?"issue":"issues"));
   return m;
@@ -216,7 +222,13 @@ function card(v,i){
   if(cert){
     name.appendChild(el("span","tag cert","FSSAI rated"));
   } else if(enf){
-    name.appendChild(el("span","tag enf","Violations recorded"));
+    // what the authority did, when the record says (improvement / show-cause notice, licence suspension, closure)
+    var act=(v.history[0]&&v.history[0].action)||"";
+    if(/closed|closure|sealed/i.test(act)) name.appendChild(el("span","tag enf","Closed by the authority"));
+    else if(/suspen/i.test(act)) name.appendChild(el("span","tag enf","Licence being suspended"));
+    else if(/show.?cause/i.test(act)) name.appendChild(el("span","tag notice","Show-cause notice"));
+    else if(/improvement notice/i.test(act)) name.appendChild(el("span","tag notice","Improvement notice"));
+    else name.appendChild(el("span","tag enf","Violations recorded"));
     if(isStale(v.lastInspected)) name.appendChild(el("span","tag stale","Historic"));
   } else {
     var g=GRADES[v.grade]||GRADES.unrated;
@@ -361,6 +373,10 @@ function openSheet(v){
     h+='<div class="enfnote"><b>Enforcement record — no hygiene score.</b> '+
        'Inspectors recorded violations here; this is not a scored audit and is '+
        'not ranked against places that have one.</div>';
+    if(!(latest.bad&&latest.bad.length)&&latest.action){
+      h+='<div class="note"><b>The authority named this place and the action it took, but not its own violations.</b> '+
+         'On a drive, the violations are often listed for every place inspected together — open the original post below for the full list.</div>';
+    }
     if(isStale(latest.date)){
       h+='<div class="note"><b>This record is from '+fmtDate(latest.date)+'.</b> '+
          'It describes conditions on that day and may not reflect the place today.</div>';

@@ -518,3 +518,19 @@ tab. Turn on failure notifications (GitHub → Settings → Notifications → Ac
 so a bad build doesn't quietly leave a stale site up.
 
 ---
+
+## Enforcement actions published only as images — `enforcement_manual.csv`
+
+Some TG SAFE posts carry the establishment names and actions only in their graphics (the 24 September 2026
+Core Urban Region drive is the first). The scraper cannot read those, so they are typed in by hand into
+`enforcement_manual.csv` — same columns as `hyderabad_food_inspections.csv`, one row per establishment, with the
+post's URL and date. `build_data.py` reads it after the scraper CSV; `refresh` never overwrites it.
+
+- `action_taken` starts with the action as the post states it (Improvement notice issued / Show-cause notice
+  issued / FSSAI licence being suspended / Closed) and says "as reported by TG SAFE". The list card turns that into a
+  tag (Improvement notice, Show-cause notice, Licence being suspended, Closed by the authority).
+- Put violations in `non_compliances` (separated by `|`) **only** when the post attributes them to that
+  establishment. A drive's general list of violations is not evidence against any one place — the sheet says so and
+  links to the post.
+- Localities not in `areas.json` stay unplaced (no distance) until someone adds them with a checked centroid.
+
