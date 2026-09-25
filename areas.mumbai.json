@@ -1,5 +1,5 @@
 {
- "_source": "Mined from 2477 FSSAI hygiene-rating addresses and geocoded via OpenStreetMap Nominatim.",
+ "_source": "Mined from 2487 FSSAI hygiene-rating addresses and geocoded via OpenStreetMap Nominatim.",
  "_warning": "Centroids are locality-level, accurate to roughly a kilometre. Hand edits are preserved on re-run: delete the _source line above to mark this file as yours, and the script will only ever add to it. Use --overwrite to force a clean rebuild.",
  "airoli": {
   "area": "Airoli",
@@ -153,8 +153,8 @@
  },
  "kalyan west": {
   "area": "Kalyan West",
-  "lat": 19.1422,
-  "lng": 72.8317
+  "lat": 19.1724,
+  "lng": 72.9569
  },
  "kandivali east": {
   "area": "Kandivali East",
@@ -178,8 +178,8 @@
  },
  "lbs marg": {
   "area": "LBS Marg",
-  "lat": 19.08,
-  "lng": 72.8804
+  "lat": 19.0845,
+  "lng": 72.8846
  },
  "level 3": {
   "area": "Level 3",
@@ -198,8 +198,8 @@
  },
  "link road": {
   "area": "Link Road",
-  "lat": 19.1912,
-  "lng": 72.8351
+  "lat": 19.1439,
+  "lng": 72.8313
  },
  "lower parel": {
   "area": "Lower Parel",
@@ -273,8 +273,8 @@
  },
  "s.v.road": {
   "area": "S.V.ROAD",
-  "lat": 19.1232,
-  "lng": 72.8466
+  "lat": 19.1735,
+  "lng": 72.8452
  },
  "sahar": {
   "area": "Sahar",
@@ -283,8 +283,8 @@
  },
  "sahar road": {
   "area": "Sahar Road",
-  "lat": 19.1067,
-  "lng": 72.8653
+  "lat": 19.1105,
+  "lng": 72.8511
  },
  "sahara": {
   "area": "Sahara",
@@ -318,13 +318,13 @@
  },
  "senapati bapat marg": {
   "area": "Senapati Bapat Marg",
-  "lat": 19.0421,
-  "lng": 72.8457
+  "lat": 19.0275,
+  "lng": 72.8464
  },
  "station road": {
   "area": "Station Road",
-  "lat": 19.0799,
-  "lng": 72.8968
+  "lat": 19.1442,
+  "lng": 72.938
  },
  "terminal 1": {
   "area": "Terminal 1",
@@ -373,8 +373,8 @@
  },
  "western express highway": {
   "area": "Western Express Highway",
-  "lat": 19.137,
-  "lng": 72.8551
+  "lat": 19.0675,
+  "lng": 72.8466
  },
  "worli": {
   "area": "Worli",

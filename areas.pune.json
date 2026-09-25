@@ -8,8 +8,8 @@
  },
  "amanora park town": {
   "area": "Amanora Park Town",
-  "lat": 18.517,
-  "lng": 73.9471
+  "lat": 18.5178,
+  "lng": 73.9461
  },
  "aundh": {
   "area": "Aundh",
@@ -18,8 +18,8 @@
  },
  "bajirao road": {
   "area": "Bajirao Road",
-  "lat": 18.5196,
-  "lng": 73.8545
+  "lat": 18.5062,
+  "lng": 73.8536
  },
  "balewadi": {
   "area": "Balewadi",
@@ -78,13 +78,13 @@
  },
  "dp road": {
   "area": "DP Road",
-  "lat": 18.5041,
-  "lng": 73.7938
+  "lat": 18.5022,
+  "lng": 73.803
  },
  "east street": {
   "area": "East Street",
-  "lat": 18.5089,
-  "lng": 73.8797
+  "lat": 18.5102,
+  "lng": 73.88
  },
  "hadapsar": {
   "area": "Hadapsar",
@@ -103,8 +103,8 @@
  },
  "hinjewadi phase-1": {
   "area": "Hinjewadi Phase-1",
-  "lat": 18.5921,
-  "lng": 73.7576
+  "lat": 18.592,
+  "lng": 73.7579
  },
  "kalyani nagar": {
   "area": "Kalyani Nagar",
@@ -148,8 +148,8 @@
  },
  "magarpatta road": {
   "area": "Magarpatta Road",
-  "lat": 18.5315,
-  "lng": 73.9322
+  "lat": 18.5342,
+  "lng": 73.9334
  },
  "moshi": {
   "area": "Moshi",
@@ -168,13 +168,13 @@
  },
  "nagar road": {
   "area": "Nagar Road",
-  "lat": 18.5627,
-  "lng": 73.9273
+  "lat": 18.5625,
+  "lng": 73.9239
  },
  "nanded city": {
   "area": "Nanded City",
-  "lat": 18.4603,
-  "lng": 73.7856
+  "lat": 18.4572,
+  "lng": 73.8029
  },
  "narhe": {
   "area": "Narhe",
@@ -233,8 +233,8 @@
  },
  "pune nagar road": {
   "area": "Pune Nagar Road",
-  "lat": 18.5517,
-  "lng": 73.8952
+  "lat": 18.5609,
+  "lng": 73.9122
  },
  "pune nashik road": {
   "area": "Pune Nashik Road",
@@ -243,8 +243,8 @@
  },
  "pune-nashik road": {
   "area": "Pune-nashik Road",
-  "lat": 18.7595,
-  "lng": 73.8587
+  "lat": 18.7444,
+  "lng": 73.8595
  },
  "pune-solapur road": {
   "area": "Pune-solapur Road",
@@ -283,8 +283,8 @@
  },
  "sinhagad road": {
   "area": "Sinhagad Road",
-  "lat": 18.4645,
-  "lng": 73.8158
+  "lat": 18.5007,
+  "lng": 73.8451
  },
  "sinhgad road": {
   "area": "Sinhgad Road",
@@ -313,8 +313,8 @@
  },
  "viman nagar road": {
   "area": "Viman Nagar Road",
-  "lat": 18.5668,
-  "lng": 73.9185
+  "lat": 18.5609,
+  "lng": 73.9183
  },
  "vimannagar": {
   "area": "Vimannagar",

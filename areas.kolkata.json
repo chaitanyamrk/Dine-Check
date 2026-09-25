@@ -1,5 +1,5 @@
 {
- "_source": "Mined from 373 FSSAI hygiene-rating addresses and geocoded via OpenStreetMap Nominatim.",
+ "_source": "Mined from 386 FSSAI hygiene-rating addresses and geocoded via OpenStreetMap Nominatim.",
  "_warning": "Centroids are locality-level, accurate to roughly a kilometre. Hand edits are preserved on re-run: delete the _source line above to mark this file as yours, and the script will only ever add to it. Use --overwrite to force a clean rebuild.",
  "alipore": {
   "area": "Alipore",
@@ -18,7 +18,7 @@
  },
  "cafe coffee day": {
   "area": "Cafe Coffee Day",
-  "lat": 22.5457,
+  "lat": 22.5245,
   "lng": 88.3525
  },
  "chambers": {
@@ -33,8 +33,8 @@
  },
  "diamond harbour road": {
   "area": "Diamond Harbour Road",
-  "lat": 22.5376,
-  "lng": 88.3274
+  "lat": 22.4519,
+  "lng": 88.3016
  },
  "domestic terminal": {
   "area": "Domestic Terminal",
@@ -63,8 +63,8 @@
  },
  "gate 19": {
   "area": "Gate 19",
-  "lat": 22.5129,
-  "lng": 88.3109
+  "lat": 22.5127,
+  "lng": 88.3126
  },
  "gate 22": {
   "area": "Gate 22",
@@ -93,8 +93,8 @@
  },
  "gate no. 23": {
   "area": "Gate No. 23",
-  "lat": 22.5127,
-  "lng": 88.3126
+  "lat": 22.5129,
+  "lng": 88.3109
  },
  "gate no. 24": {
   "area": "Gate No. 24",
@@ -103,8 +103,8 @@
  },
  "gate no. 24/25": {
   "area": "Gate No. 24/25",
-  "lat": 22.5135,
-  "lng": 88.3098
+  "lat": 22.5127,
+  "lng": 88.3126
  },
  "gate no. 3 a 3 b": {
   "area": "Gate No. 3 A 3 B",
@@ -143,8 +143,8 @@
  },
  "kfc": {
   "area": "KFC",
-  "lat": 22.5673,
-  "lng": 88.3711
+  "lat": 22.5605,
+  "lng": 88.3516
  },
  "kol": {
   "area": "KOL",
@@ -183,8 +183,8 @@
  },
  "prince golam hossain shah road": {
   "area": "Prince Golam Hossain Shah Road",
-  "lat": 22.4994,
-  "lng": 88.3666
+  "lat": 22.4969,
+  "lng": 88.3614
  },
  "rajdanga main road": {
   "area": "Rajdanga Main Road",
@@ -208,7 +208,7 @@
  },
  "wow momo": {
   "area": "Wow Momo",
-  "lat": 22.5529,
-  "lng": 88.3529
+  "lat": 22.5605,
+  "lng": 88.3515
  }
 }

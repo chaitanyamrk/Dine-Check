@@ -1,5 +1,5 @@
 {
- "_source": "Mined from 29 FSSAI hygiene-rating addresses and geocoded via OpenStreetMap Nominatim.",
+ "_source": "Mined from 30 FSSAI hygiene-rating addresses and geocoded via OpenStreetMap Nominatim.",
  "_warning": "Centroids are locality-level, accurate to roughly a kilometre. Hand edits are preserved on re-run: delete the _source line above to mark this file as yours, and the script will only ever add to it. Use --overwrite to force a clean rebuild.",
  "crown interiorz mall": {
   "area": "Crown Interiorz Mall",

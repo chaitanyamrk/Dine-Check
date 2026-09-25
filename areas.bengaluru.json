@@ -1,5 +1,5 @@
 {
- "_source": "Mined from 2296 FSSAI hygiene-rating addresses and geocoded via OpenStreetMap Nominatim.",
+ "_source": "Mined from 2316 FSSAI hygiene-rating addresses and geocoded via OpenStreetMap Nominatim.",
  "_warning": "Centroids are locality-level, accurate to roughly a kilometre. Hand edits are preserved on re-run: delete the _source line above to mark this file as yours, and the script will only ever add to it. Use --overwrite to force a clean rebuild.",
  "ambedkar colony": {
   "area": "Ambedkar Colony",
@@ -28,8 +28,8 @@
  },
  "bannerghatta road": {
   "area": "Bannerghatta Road",
-  "lat": 12.8719,
-  "lng": 77.5939
+  "lat": 12.886,
+  "lng": 77.5967
  },
  "bilekahalli": {
   "area": "Bilekahalli",
@@ -63,8 +63,8 @@
  },
  "church street": {
   "area": "Church Street",
-  "lat": 12.9747,
-  "lng": 77.6526
+  "lat": 12.9755,
+  "lng": 77.6027
  },
  "devanahalli": {
   "area": "Devanahalli",
@@ -78,13 +78,13 @@
  },
  "dr. rajkumar road": {
   "area": "Dr. Rajkumar Road",
-  "lat": 12.9775,
-  "lng": 77.553
+  "lat": 13.0123,
+  "lng": 77.5545
  },
  "dr.rajkumar road": {
   "area": "Dr.rajkumar Road",
-  "lat": 12.9987,
-  "lng": 77.5528
+  "lat": 12.9804,
+  "lng": 77.5573
  },
  "electronic city": {
   "area": "Electronic City",
@@ -93,8 +93,8 @@
  },
  "food court": {
   "area": "Food Court",
-  "lat": 12.9164,
-  "lng": 77.5921
+  "lat": 12.979,
+  "lng": 77.5936
  },
  "forum mall": {
   "area": "Forum Mall",
@@ -123,8 +123,8 @@
  },
  "hesaraghatta main road": {
   "area": "Hesaraghatta Main Road",
-  "lat": 13.0588,
-  "lng": 77.5071
+  "lat": 13.0483,
+  "lng": 77.5079
  },
  "hoodi": {
   "area": "Hoodi",
@@ -143,8 +143,8 @@
  },
  "hosur road": {
   "area": "Hosur Road",
-  "lat": 12.9344,
-  "lng": 77.6124
+  "lat": 12.947,
+  "lng": 77.6067
  },
  "hrbr layout": {
   "area": "Hrbr Layout",
@@ -173,13 +173,13 @@
  },
  "industrial layout": {
   "area": "Industrial Layout",
-  "lat": 12.9698,
-  "lng": 77.7127
+  "lat": 12.9711,
+  "lng": 77.7123
  },
  "itpl main road": {
   "area": "Itpl Main Road",
-  "lat": 12.9795,
-  "lng": 77.7093
+  "lat": 12.9911,
+  "lng": 77.7139
  },
  "jayanagar": {
   "area": "Jayanagar",
@@ -188,8 +188,8 @@
  },
  "jigani": {
   "area": "Jigani",
-  "lat": 12.7765,
-  "lng": 77.6326
+  "lat": 12.7756,
+  "lng": 77.6325
  },
  "jigani hobli": {
   "area": "Jigani Hobli",
@@ -208,8 +208,8 @@
  },
  "kanakapura road": {
   "area": "Kanakapura Road",
-  "lat": 12.9223,
-  "lng": 77.5751
+  "lat": 12.876,
+  "lng": 77.5441
  },
  "kempegowda international airport": {
   "area": "Kempegowda International Airport",
@@ -308,8 +308,8 @@
  },
  "new bel road": {
   "area": "NEW BEL Road",
-  "lat": 13.0317,
-  "lng": 77.5701
+  "lat": 13.035,
+  "lng": 77.5678
  },
  "no.1": {
   "area": "No.1",
@@ -328,13 +328,13 @@
  },
  "orion mall": {
   "area": "Orion Mall",
-  "lat": 13.0106,
-  "lng": 77.5554
+  "lat": 13.011,
+  "lng": 77.5552
  },
  "outer ring road": {
   "area": "Outer Ring Road",
-  "lat": 12.9404,
-  "lng": 77.6957
+  "lat": 13.0235,
+  "lng": 77.6455
  },
  "puttenahalli": {
   "area": "Puttenahalli",
@@ -344,27 +344,22 @@
  "rajajinagar": {
   "area": "Rajajinagar",
   "lat": 13.0005,
-  "lng": 77.5497
+  "lng": 77.5496
  },
  "residency road": {
   "area": "Residency Road",
-  "lat": 12.9673,
-  "lng": 77.5994
+  "lat": 12.972,
+  "lng": 77.6072
  },
  "royal meenakshi mall": {
   "area": "Royal Meenakshi Mall",
   "lat": 12.8757,
   "lng": 77.5956
  },
- "rt nagar": {
-  "area": "RT Nagar",
-  "lat": 13.0227,
-  "lng": 77.5957
- },
  "sampige road": {
   "area": "Sampige Road",
-  "lat": 12.9981,
-  "lng": 77.5714
+  "lat": 13.009,
+  "lng": 77.5711
  },
  "shanthala nagar": {
   "area": "Shanthala Nagar",
@@ -374,7 +369,7 @@
  "srinivas industrial estate": {
   "area": "Srinivas Industrial Estate",
   "lat": 12.9078,
-  "lng": 77.6011
+  "lng": 77.6012
  },
  "terminal 1": {
   "area": "Terminal 1",
@@ -388,13 +383,13 @@
  },
  "thanisandra main road": {
   "area": "Thanisandra Main Road",
-  "lat": 13.0404,
-  "lng": 77.6243
+  "lat": 13.0441,
+  "lng": 77.6262
  },
  "tumkur road": {
   "area": "Tumkur Road",
-  "lat": 13.0185,
-  "lng": 77.5574
+  "lat": 13.0399,
+  "lng": 77.5183
  },
  "varthur hobli": {
   "area": "Varthur Hobli",
@@ -404,7 +399,7 @@
  "vega city mall": {
   "area": "Vega City Mall",
   "lat": 12.9078,
-  "lng": 77.6011
+  "lng": 77.6012
  },
  "vijayanagar": {
   "area": "Vijayanagar",
@@ -413,8 +408,8 @@
  },
  "west of chord road": {
   "area": "West OF Chord Road",
-  "lat": 12.9974,
-  "lng": 77.5501
+  "lat": 13.0001,
+  "lng": 77.55
  },
  "whitefield": {
   "area": "Whitefield",
@@ -423,8 +418,8 @@
  },
  "whitefield main road": {
   "area": "Whitefield Main Road",
-  "lat": 12.9756,
-  "lng": 77.7507
+  "lat": 12.9718,
+  "lng": 77.7502
  },
  "yelahanka": {
   "area": "Yelahanka",

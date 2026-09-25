@@ -1,12 +1,12 @@
 {
- "generated": "2026-09-13T19:38:18Z",
+ "generated": "2026-09-25T02:32:15Z",
  "defaultCity": "hyderabad",
  "totals": {
   "cities": 10,
-  "venues": 12743,
-  "scoredVenues": 84,
-  "enforcementVenues": 232,
-  "certifiedVenues": 12427
+  "venues": 12838,
+  "scoredVenues": 85,
+  "enforcementVenues": 256,
+  "certifiedVenues": 12497
  },
  "cities": [
   {
@@ -16,12 +16,12 @@
    "lat": 28.6139,
    "lng": 77.209,
    "file": "city-delhi.json",
-   "bytes": 1534257,
+   "bytes": 1547555,
    "hasGeo": true,
-   "venues": 3334,
+   "venues": 3362,
    "scoredVenues": 0,
    "enforcementVenues": 0,
-   "certifiedVenues": 3334,
+   "certifiedVenues": 3362,
    "latest": ""
   },
   {
@@ -31,12 +31,12 @@
    "lat": 12.9716,
    "lng": 77.5946,
    "file": "city-bengaluru.json",
-   "bytes": 1107889,
+   "bytes": 1116825,
    "hasGeo": true,
-   "venues": 2247,
+   "venues": 2263,
    "scoredVenues": 0,
    "enforcementVenues": 0,
-   "certifiedVenues": 2247,
+   "certifiedVenues": 2263,
    "latest": ""
   },
   {
@@ -46,12 +46,12 @@
    "lat": 19.076,
    "lng": 72.8777,
    "file": "city-mumbai.json",
-   "bytes": 1109894,
+   "bytes": 1114022,
    "hasGeo": true,
-   "venues": 2143,
+   "venues": 2151,
    "scoredVenues": 0,
    "enforcementVenues": 0,
-   "certifiedVenues": 2143,
+   "certifiedVenues": 2151,
    "latest": ""
   },
   {
@@ -61,12 +61,12 @@
    "lat": 13.0827,
    "lng": 80.2707,
    "file": "city-chennai.json",
-   "bytes": 995681,
+   "bytes": 997836,
    "hasGeo": true,
-   "venues": 2052,
+   "venues": 2056,
    "scoredVenues": 0,
    "enforcementVenues": 0,
-   "certifiedVenues": 2052,
+   "certifiedVenues": 2056,
    "latest": ""
   },
   {
@@ -91,7 +91,7 @@
    "lat": 18.5204,
    "lng": 73.8567,
    "file": "city-pune.json",
-   "bytes": 433370,
+   "bytes": 433368,
    "hasGeo": true,
    "venues": 858,
    "scoredVenues": 0,
@@ -106,11 +106,11 @@
    "lat": 17.385,
    "lng": 78.4867,
    "file": "city-hyderabad.json",
-   "bytes": 540601,
+   "bytes": 560722,
    "hasGeo": true,
-   "venues": 657,
-   "scoredVenues": 84,
-   "enforcementVenues": 232,
+   "venues": 682,
+   "scoredVenues": 85,
+   "enforcementVenues": 256,
    "certifiedVenues": 341,
    "latest": "2026-08-13"
   },
@@ -121,12 +121,12 @@
    "lat": 22.5726,
    "lng": 88.3639,
    "file": "city-kolkata.json",
-   "bytes": 169416,
+   "bytes": 176082,
    "hasGeo": true,
-   "venues": 320,
+   "venues": 333,
    "scoredVenues": 0,
    "enforcementVenues": 0,
-   "certifiedVenues": 320,
+   "certifiedVenues": 333,
    "latest": ""
   },
   {
@@ -136,12 +136,12 @@
    "lat": 28.4089,
    "lng": 77.3178,
    "file": "city-faridabad.json",
-   "bytes": 13895,
+   "bytes": 14302,
    "hasGeo": true,
-   "venues": 27,
+   "venues": 28,
    "scoredVenues": 0,
    "enforcementVenues": 0,
-   "certifiedVenues": 27,
+   "certifiedVenues": 28,
    "latest": ""
   },
   {

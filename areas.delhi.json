@@ -1,5 +1,5 @@
 {
- "_source": "Mined from 3569 FSSAI hygiene-rating addresses and geocoded via OpenStreetMap Nominatim.",
+ "_source": "Mined from 3602 FSSAI hygiene-rating addresses and geocoded via OpenStreetMap Nominatim.",
  "_warning": "Centroids are locality-level, accurate to roughly a kilometre. Hand edits are preserved on re-run: delete the _source line above to mark this file as yours, and the script will only ever add to it. Use --overwrite to force a clean rebuild.",
  "acharya niketan": {
   "area": "Acharya Niketan",
@@ -20,6 +20,11 @@
   "area": "Amar Colony",
   "lat": 28.5615,
   "lng": 77.2431
+ },
+ "ambience mall": {
+  "area": "Ambience Mall",
+  "lat": 28.5412,
+  "lng": 77.1548
  },
  "ansal plaza": {
   "area": "Ansal Plaza",
@@ -123,8 +128,8 @@
  },
  "gole market": {
   "area": "Gole Market",
-  "lat": 28.6337,
-  "lng": 77.2056
+  "lat": 28.6347,
+  "lng": 77.2037
  },
  "hospitality district": {
   "area": "Hospitality District",
@@ -196,6 +201,11 @@
   "lat": 28.653,
   "lng": 77.189
  },
+ "khan market": {
+  "area": "Khan Market",
+  "lat": 28.5995,
+  "lng": 77.226
+ },
  "khanpur": {
   "area": "Khanpur",
   "lat": 28.5128,
@@ -210,11 +220,6 @@
   "area": "Krishna Nagar",
   "lat": 28.6578,
   "lng": 77.2901
- },
- "lalita park": {
-  "area": "Lalita Park",
-  "lat": 28.6322,
-  "lng": 77.2716
  },
  "laxmi nagar": {
   "area": "Laxmi Nagar",
@@ -276,11 +281,6 @@
   "lat": 28.5218,
   "lng": 77.1783
  },
- "metro station": {
-  "area": "Metro Station",
-  "lat": 28.6676,
-  "lng": 77.2281
- },
  "moti nagar": {
   "area": "Moti Nagar",
   "lat": 28.6579,
@@ -303,8 +303,8 @@
  },
  "netaji subhash place": {
   "area": "Netaji Subhash Place",
-  "lat": 28.6947,
-  "lng": 77.1543
+  "lat": 28.6961,
+  "lng": 77.1526
  },
  "outer circle": {
   "area": "Outer Circle",
@@ -353,13 +353,8 @@
  },
  "prashant vihar": {
   "area": "Prashant Vihar",
-  "lat": 28.7123,
-  "lng": 77.1338
- },
- "pusa road": {
-  "area": "Pusa Road",
-  "lat": 28.6441,
-  "lng": 77.1902
+  "lat": 28.7146,
+  "lng": 77.1341
  },
  "rajouri garden": {
   "area": "Rajouri Garden",
@@ -458,8 +453,8 @@
  },
  "vikas marg": {
   "area": "Vikas Marg",
-  "lat": 28.6331,
-  "lng": 77.2812
+  "lat": 28.6295,
+  "lng": 77.2758
  },
  "yamuna vihar": {
   "area": "Yamuna Vihar",

@@ -6,205 +6,30 @@
   "lat": 17.2521,
   "lng": 78.6798
  },
- "abdullapurmet": {
-  "area": "Abdullapurmet",
-  "lat": 17.306,
-  "lng": 78.639
- },
  "abids": {
   "area": "Abids",
-  "lat": 17.389,
-  "lng": 78.476
- },
- "alkapuri township": {
-  "area": "Alkapuri Township",
-  "lat": 17.546,
-  "lng": 78.429
- },
- "alwal": {
-  "area": "Alwal",
-  "lat": 17.503,
-  "lng": 78.503
- },
- "amb mall": {
-  "area": "Gachibowli",
-  "lat": 17.456,
-  "lng": 78.34
- },
- "amberpet": {
-  "area": "Amberpet",
-  "lat": 17.392,
-  "lng": 78.519
- },
- "ameenpur": {
-  "area": "Ameenpur",
-  "lat": 17.5286,
-  "lng": 78.3122
+  "lat": 17.3895,
+  "lng": 78.4772
  },
  "ameerpet": {
   "area": "Ameerpet",
-  "lat": 17.4374,
-  "lng": 78.4487
- },
- "anjaiah nagar": {
-  "area": "Anjaiah Nagar",
-  "lat": 17.5,
-  "lng": 78.418
- },
- "aparna neo mall": {
-  "area": "Nallagandla",
-  "lat": 17.4735,
-  "lng": 78.305
- },
- "aramgarh": {
-  "area": "Aramghar",
-  "lat": 17.33,
-  "lng": 78.437
- },
- "aramghar": {
-  "area": "Aramghar",
-  "lat": 17.33,
-  "lng": 78.437
- },
- "ashok nagar": {
-  "area": "Ashok Nagar",
-  "lat": 17.4046,
-  "lng": 78.4966
- },
- "ashoknagar": {
-  "area": "Ashok Nagar",
-  "lat": 17.4046,
-  "lng": 78.4966
- },
- "attapur": {
-  "area": "Attapur",
-  "lat": 17.362,
-  "lng": 78.423
- },
- "bachupally": {
-  "area": "Bachupally",
-  "lat": 17.5453,
-  "lng": 78.3712
- },
- "bahadurpura": {
-  "area": "Bahadurpura",
-  "lat": 17.352,
-  "lng": 78.452
- },
- "balanagar": {
-  "area": "Balanagar",
-  "lat": 17.475,
-  "lng": 78.438
+  "lat": 17.4375,
+  "lng": 78.4483
  },
  "banjara hills": {
   "area": "Banjara Hills",
-  "lat": 17.4126,
-  "lng": 78.4392
- },
- "beeramguda": {
-  "area": "Ameenpur",
-  "lat": 17.509,
-  "lng": 78.306
- },
- "begum bazaar": {
-  "area": "Begum Bazaar",
-  "lat": 17.378,
-  "lng": 78.472
+  "lat": 17.4177,
+  "lng": 78.4399
  },
  "begumpet": {
   "area": "Begumpet",
-  "lat": 17.444,
+  "lat": 17.4462,
   "lng": 78.463
- },
- "bjp office": {
-  "area": "Kukatpally",
-  "lat": 17.4948,
-  "lng": 78.3996
- },
- "boduppal": {
-  "area": "Boduppal",
-  "lat": 17.409,
-  "lng": 78.582
- },
- "bowrampet": {
-  "area": "Bachupally",
-  "lat": 17.551,
-  "lng": 78.372
- },
- "chaitanyapuri": {
-  "area": "Chaitanyapuri",
-  "lat": 17.366,
-  "lng": 78.532
- },
- "champapet": {
-  "area": "Champapet",
-  "lat": 17.348,
-  "lng": 78.517
- },
- "chandanagar": {
-  "area": "Chandanagar",
-  "lat": 17.498,
-  "lng": 78.318
- },
- "charminar": {
-  "area": "Charminar",
-  "lat": 17.3616,
-  "lng": 78.4747
- },
- "chengicherla": {
-  "area": "Chengicherla",
-  "lat": 17.418,
-  "lng": 78.601
- },
- "cherlapally": {
-  "area": "Cherlapally",
-  "lat": 17.472,
-  "lng": 78.583
- },
- "chintal": {
-  "area": "Chintal",
-  "lat": 17.4972,
-  "lng": 78.439
- },
- "chitrapuri colony": {
-  "area": "Khajaguda",
-  "lat": 17.4185,
-  "lng": 78.3673
- },
- "devbhoomi nagar": {
-  "area": "Gajularamaram",
-  "lat": 17.5163,
-  "lng": 78.439
- },
- "dilsukhnagar": {
-  "area": "Dilsukhnagar",
-  "lat": 17.3687,
-  "lng": 78.5247
  },
  "dsl virtue mall": {
   "area": "DSL Virtue Mall",
   "lat": 17.4002,
   "lng": 78.5551
- },
- "east maredpally": {
-  "area": "East Maredpally",
-  "lat": 17.445,
-  "lng": 78.504
- },
- "falaknuma": {
-  "area": "Falaknuma",
-  "lat": 17.331,
-  "lng": 78.467
- },
- "fatehnagar": {
-  "area": "Fatehnagar",
-  "lat": 17.456,
-  "lng": 78.44
- },
- "financial district": {
-  "area": "Financial District",
-  "lat": 17.418,
-  "lng": 78.34
  },
  "food court": {
   "area": "Food Court",
@@ -213,63 +38,28 @@
  },
  "gachibowli": {
   "area": "Gachibowli",
-  "lat": 17.4401,
-  "lng": 78.3489
- },
- "gachibowli road": {
-  "area": "Gachibowli",
-  "lat": 17.4401,
-  "lng": 78.3489
- },
- "gajularamaram": {
-  "area": "Gajularamaram",
-  "lat": 17.5163,
-  "lng": 78.439
- },
- "gajularamaram circle": {
-  "area": "Gajularamaram",
-  "lat": 17.5163,
-  "lng": 78.439
+  "lat": 17.4436,
+  "lng": 78.352
  },
  "gandipet mandal": {
   "area": "Gandipet Mandal",
   "lat": 17.4089,
   "lng": 78.3945
  },
- "genpact lane": {
-  "area": "Hafeezpet",
-  "lat": 17.48,
-  "lng": 78.352
- },
- "gopanpally": {
-  "area": "Gopanpally",
-  "lat": 17.461,
-  "lng": 78.318
- },
  "gsm mall": {
-  "area": "Madinaguda",
-  "lat": 17.4948,
-  "lng": 78.3352
- },
- "habsiguda": {
-  "area": "Habsiguda",
-  "lat": 17.406,
-  "lng": 78.542
+  "area": "GSM Mall",
+  "lat": 17.4967,
+  "lng": 78.3358
  },
  "habsiguda main road": {
   "area": "Habsiguda Main Road",
-  "lat": 17.4258,
-  "lng": 78.5327
+  "lat": 17.4123,
+  "lng": 78.549
  },
  "hafeezpet": {
   "area": "Hafeezpet",
-  "lat": 17.48,
-  "lng": 78.352
- },
- "hayathnagar": {
-  "area": "Hayathnagar",
-  "lat": 17.33,
-  "lng": 78.6
+  "lat": 17.4834,
+  "lng": 78.3611
  },
  "hayathnagar mandal": {
   "area": "Hayathnagar Mandal",
@@ -278,28 +68,13 @@
  },
  "heritage fresh": {
   "area": "Heritage Fresh",
-  "lat": 17.4048,
-  "lng": 78.5155
- },
- "hi-tech city": {
-  "area": "HITEC City",
-  "lat": 17.4456,
-  "lng": 78.3772
- },
- "hitec city": {
-  "area": "HITEC City",
-  "lat": 17.4456,
-  "lng": 78.3772
+  "lat": 17.3747,
+  "lng": 78.5524
  },
  "hitech city": {
-  "area": "HITEC City",
-  "lat": 17.4456,
-  "lng": 78.3772
- },
- "hitex": {
-  "area": "HITEC City",
-  "lat": 17.47,
-  "lng": 78.376
+  "area": "Hitech City",
+  "lat": 17.4697,
+  "lng": 78.3852
  },
  "huda techno enclave": {
   "area": "Huda Techno Enclave",
@@ -311,135 +86,30 @@
   "lat": 17.4511,
   "lng": 78.2718
  },
- "ida cherlapally": {
-  "area": "Cherlapally",
-  "lat": 17.472,
-  "lng": 78.583
- },
- "ida kukatpally": {
-  "area": "Kukatpally",
-  "lat": 17.475,
-  "lng": 78.398
- },
- "ida mallapur": {
-  "area": "Mallapur",
-  "lat": 17.411,
-  "lng": 78.557
- },
- "ida moulali": {
-  "area": "Moulali",
-  "lat": 17.456,
-  "lng": 78.546
- },
- "ida patancheru": {
-  "area": "Patancheru",
-  "lat": 17.531,
-  "lng": 78.264
- },
- "idpl x road": {
-  "area": "Chintal",
-  "lat": 17.4972,
-  "lng": 78.439
- },
- "image gardens": {
-  "area": "Madhapur",
-  "lat": 17.4483,
-  "lng": 78.3915
- },
- "infinity mall": {
-  "area": "Madinaguda",
-  "lat": 17.4948,
-  "lng": 78.3352
- },
  "inorbit mall": {
-  "area": "Madhapur",
-  "lat": 17.4345,
-  "lng": 78.3866
- },
- "jaya bheri": {
-  "area": "Kompally",
-  "lat": 17.541,
-  "lng": 78.4867
- },
- "jeedimetla": {
-  "area": "Jeedimetla",
-  "lat": 17.5,
-  "lng": 78.44
- },
- "jubilee enclave": {
-  "area": "Madhapur",
-  "lat": 17.4462,
-  "lng": 78.3792
+  "area": "Inorbit Mall",
+  "lat": 17.4346,
+  "lng": 78.3867
  },
  "jubilee hills": {
   "area": "Jubilee Hills",
-  "lat": 17.431,
-  "lng": 78.407
- },
- "kacheguda": {
-  "area": "Kacheguda",
-  "lat": 17.386,
-  "lng": 78.493
- },
- "kandlakoya": {
-  "area": "Kandlakoya",
-  "lat": 17.576,
-  "lng": 78.464
+  "lat": 17.4308,
+  "lng": 78.4103
  },
  "kapra": {
   "area": "Kapra",
   "lat": 17.4846,
   "lng": 78.561
  },
- "karmanghat": {
-  "area": "Karmanghat",
-  "lat": 17.342,
-  "lng": 78.522
- },
- "katedan": {
-  "area": "Katedan",
-  "lat": 17.323,
-  "lng": 78.438
- },
- "katedhan": {
-  "area": "Katedan",
-  "lat": 17.323,
-  "lng": 78.438
- },
  "kavadiguda": {
   "area": "Kavadiguda",
   "lat": 17.4227,
   "lng": 78.4918
  },
- "kavuri hills": {
-  "area": "Kavuri Hills",
-  "lat": 17.434,
-  "lng": 78.402
- },
- "khairatabad": {
-  "area": "Khairatabad",
-  "lat": 17.409,
-  "lng": 78.461
- },
- "khajaguda": {
-  "area": "Khajaguda",
-  "lat": 17.4185,
-  "lng": 78.3673
- },
- "kollur": {
-  "area": "Kollur",
-  "lat": 17.479,
-  "lng": 78.257
- },
- "kompally": {
-  "area": "Kompally",
-  "lat": 17.541,
-  "lng": 78.4867
- },
  "kondapur": {
   "area": "Kondapur",
-  "lat": 17.4615,
-  "lng": 78.3639
+  "lat": 17.4588,
+  "lng": 78.3731
  },
  "kothaguda": {
   "area": "Kothaguda",
@@ -448,23 +118,23 @@
  },
  "kothapet": {
   "area": "Kothapet",
-  "lat": 17.368,
-  "lng": 78.537
+  "lat": 17.3758,
+  "lng": 78.5409
  },
  "kphb": {
-  "area": "Kukatpally",
-  "lat": 17.4948,
-  "lng": 78.3996
+  "area": "Kphb",
+  "lat": 17.494,
+  "lng": 78.4008
  },
  "kphb colony": {
-  "area": "Kukatpally",
-  "lat": 17.4948,
-  "lng": 78.3996
+  "area": "Kphb Colony",
+  "lat": 17.4938,
+  "lng": 78.4018
  },
  "kukatpally": {
   "area": "Kukatpally",
-  "lat": 17.4948,
-  "lng": 78.3996
+  "lat": 17.4931,
+  "lng": 78.4054
  },
  "l.b.nagar": {
   "area": "L.B.Nagar",
@@ -476,140 +146,45 @@
   "lat": 17.4048,
   "lng": 78.4611
  },
- "lakdikapul": {
-  "area": "Lakdikapul",
-  "lat": 17.401,
-  "lng": 78.461
- },
  "lb nagar": {
   "area": "LB Nagar",
-  "lat": 17.347,
-  "lng": 78.552
- },
- "lingampally": {
-  "area": "Lingampally",
-  "lat": 17.493,
-  "lng": 78.314
- },
- "lulu mall": {
-  "area": "Kukatpally",
-  "lat": 17.489,
-  "lng": 78.397
- },
- "madeenaguda": {
-  "area": "Madinaguda",
-  "lat": 17.4948,
-  "lng": 78.3352
+  "lat": 17.3502,
+  "lng": 78.5511
  },
  "madhapur": {
   "area": "Madhapur",
-  "lat": 17.4483,
-  "lng": 78.3915
+  "lat": 17.4409,
+  "lng": 78.3916
  },
  "madinaguda": {
   "area": "Madinaguda",
-  "lat": 17.4948,
-  "lng": 78.3352
+  "lat": 17.4918,
+  "lng": 78.3423
  },
  "malakpet": {
   "area": "Malakpet",
-  "lat": 17.3752,
-  "lng": 78.503
- },
- "malkajgiri": {
-  "area": "Malkajgiri",
-  "lat": 17.447,
-  "lng": 78.527
- },
- "mallapur": {
-  "area": "Mallapur",
-  "lat": 17.411,
-  "lng": 78.557
- },
- "manikonda": {
-  "area": "Manikonda",
-  "lat": 17.4041,
-  "lng": 78.3772
- },
- "medchal": {
-  "area": "Medchal",
-  "lat": 17.627,
-  "lng": 78.481
+  "lat": 17.3737,
+  "lng": 78.4996
  },
  "medchal-malkajgiri": {
   "area": "Medchal-malkajgiri",
   "lat": 17.363,
   "lng": 78.5769
  },
- "mehdipatnam": {
-  "area": "Mehdipatnam",
-  "lat": 17.396,
-  "lng": 78.434
- },
- "mg bus station": {
-  "area": "Imlibun",
-  "lat": 17.379,
-  "lng": 78.483
- },
- "mgsr chamber": {
-  "area": "Gajularamaram",
-  "lat": 17.5163,
-  "lng": 78.439
- },
  "mie": {
   "area": "MIE",
   "lat": 17.4901,
   "lng": 78.3542
  },
- "miraj theatre lane": {
-  "area": "Miyapur",
-  "lat": 17.4966,
-  "lng": 78.3579
- },
  "miyapur": {
   "area": "Miyapur",
-  "lat": 17.4966,
-  "lng": 78.3579
+  "lat": 17.4982,
+  "lng": 78.3568
  },
  "miyapur road": {
   "area": "Miyapur Road",
   "lat": 17.4929,
   "lng": 78.3526
- },
- "moosapet": {
-  "area": "Moosapet",
-  "lat": 17.468,
-  "lng": 78.427
- },
- "moulali": {
-  "area": "Moulali",
-  "lat": 17.456,
-  "lng": 78.546
- },
- "musheerabad": {
-  "area": "Musheerabad",
-  "lat": 17.403,
-  "lng": 78.501
- },
- "muthangi": {
-  "area": "Muthangi",
-  "lat": 17.533,
-  "lng": 78.226
- },
- "nacharam": {
-  "area": "Nacharam",
-  "lat": 17.429,
-  "lng": 78.556
- },
- "nagole": {
-  "area": "Nagole",
-  "lat": 17.372,
-  "lng": 78.559
- },
- "nallagandla": {
-  "area": "Nallagandla",
-  "lat": 17.4735,
-  "lng": 78.305
  },
  "nampally": {
   "area": "Nampally",
@@ -617,84 +192,24 @@
   "lng": 78.4701
  },
  "nanakramguda": {
-  "area": "Financial District",
-  "lat": 17.418,
-  "lng": 78.34
- },
- "narayanaguda": {
-  "area": "Narayanguda",
-  "lat": 17.39,
-  "lng": 78.49
- },
- "narayanguda": {
-  "area": "Narayanguda",
-  "lat": 17.39,
-  "lng": 78.49
- },
- "narsingi": {
-  "area": "Narsingi",
-  "lat": 17.394,
-  "lng": 78.352
- },
- "nexus mall": {
-  "area": "Kukatpally",
-  "lat": 17.488,
-  "lng": 78.399
- },
- "nizampet": {
-  "area": "Nizampet",
-  "lat": 17.5089,
-  "lng": 78.3877
+  "area": "Nanakramguda",
+  "lat": 17.4218,
+  "lng": 78.338
  },
  "panjagutta": {
-  "area": "Punjagutta",
-  "lat": 17.426,
-  "lng": 78.452
- },
- "patancheru": {
-  "area": "Patancheru",
-  "lat": 17.531,
-  "lng": 78.264
- },
- "patancheruvu": {
-  "area": "Patancheru",
-  "lat": 17.531,
-  "lng": 78.264
- },
- "peerzadiguda": {
-  "area": "Peerzadiguda",
-  "lat": 17.401,
-  "lng": 78.586
+  "area": "Panjagutta",
+  "lat": 17.4254,
+  "lng": 78.4518
  },
  "pg road": {
   "area": "PG Road",
-  "lat": 17.44,
+  "lat": 17.4401,
   "lng": 78.4848
- },
- "preston mall": {
-  "area": "Gachibowli",
-  "lat": 17.452,
-  "lng": 78.343
- },
- "punjagutta": {
-  "area": "Punjagutta",
-  "lat": 17.426,
-  "lng": 78.452
- },
- "puppalaguda": {
-  "area": "Puppalaguda",
-  "lat": 17.407,
-  "lng": 78.362
  },
  "puppalaguda village": {
   "area": "Puppalaguda Village",
   "lat": 17.4,
   "lng": 78.3862
- },
- "qutubullapur": {
-  "area": "Qutubullapur",
-  "lat": 17.51,
-  "lng": 78.463
  },
  "r r dist": {
   "area": "R R Dist",
@@ -708,28 +223,13 @@
  },
  "raidurg": {
   "area": "Raidurg",
-  "lat": 17.429,
-  "lng": 78.382
- },
- "rainbow vistas": {
-  "area": "Moosapet",
-  "lat": 17.47,
-  "lng": 78.421
+  "lat": 17.4142,
+  "lng": 78.3907
  },
  "rajendra nagar": {
   "area": "Rajendra Nagar",
   "lat": 17.32,
   "lng": 78.402
- },
- "rajendranagar": {
-  "area": "Rajendranagar",
-  "lat": 17.323,
-  "lng": 78.403
- },
- "ramachandrapuram": {
-  "area": "RC Puram",
-  "lat": 17.5216,
-  "lng": 78.296
  },
  "ramoji film city": {
   "area": "Ramoji Film City",
@@ -738,8 +238,8 @@
  },
  "ranga reddy dist": {
   "area": "Ranga Reddy Dist",
-  "lat": 17.4253,
-  "lng": 78.334
+  "lat": 17.4215,
+  "lng": 78.3458
  },
  "rangareddy dist": {
   "area": "Rangareddy Dist",
@@ -756,11 +256,6 @@
   "lat": 17.4436,
   "lng": 78.4764
  },
- "rc puram": {
-  "area": "RC Puram",
-  "lat": 17.5216,
-  "lng": 78.296
- },
  "red hills": {
   "area": "RED Hills",
   "lat": 17.3983,
@@ -768,63 +263,28 @@
  },
  "road no.1": {
   "area": "Road No.1",
-  "lat": 17.4212,
-  "lng": 78.4474
+  "lat": 17.4221,
+  "lng": 78.3333
  },
  "road no.36": {
   "area": "Road No.36",
-  "lat": 17.4386,
-  "lng": 78.3977
+  "lat": 17.4395,
+  "lng": 78.3962
  },
  "road.no.36": {
   "area": "Road.no.36",
-  "lat": 17.4387,
+  "lat": 17.4389,
   "lng": 78.3992
- },
- "rodamestry nagar": {
-  "area": "Gajularamaram",
-  "lat": 17.5163,
-  "lng": 78.439
  },
  "s.p. road": {
   "area": "S.P. Road",
   "lat": 17.4431,
   "lng": 78.4855
  },
- "sagar x road": {
-  "area": "Champapet",
-  "lat": 17.348,
-  "lng": 78.517
- },
- "saidabad": {
-  "area": "Saidabad",
-  "lat": 17.356,
-  "lng": 78.503
- },
- "saifabad": {
-  "area": "Saifabad",
-  "lat": 17.406,
-  "lng": 78.467
- },
- "sainikpuri": {
-  "area": "Sainikpuri",
-  "lat": 17.487,
-  "lng": 78.547
- },
- "sangareddy": {
-  "area": "Sangareddy",
-  "lat": 17.625,
-  "lng": 78.087
- },
- "santosh nagar": {
-  "area": "Santosh Nagar",
-  "lat": 17.348,
-  "lng": 78.493
- },
  "sardar patel road": {
   "area": "Sardar Patel Road",
-  "lat": 17.4427,
-  "lng": 78.5034
+  "lat": 17.444,
+  "lng": 78.4718
  },
  "saroornagar": {
   "area": "Saroornagar",
@@ -836,109 +296,39 @@
   "lat": 17.363,
   "lng": 78.5769
  },
- "satya towers": {
-  "area": "Kondapur",
-  "lat": 17.4615,
-  "lng": 78.3639
- },
  "secunderabad": {
   "area": "Secunderabad",
-  "lat": 17.4399,
-  "lng": 78.4983
+  "lat": 17.4337,
+  "lng": 78.5007
  },
  "serilingampally": {
   "area": "Serilingampally",
-  "lat": 17.4667,
-  "lng": 78.3404
- },
- "serilingampally m": {
-  "area": "Serilingampally M",
-  "lat": 17.4667,
-  "lng": 78.3404
+  "lat": 17.475,
+  "lng": 78.3289
  },
  "serilingampally mandal": {
   "area": "Serilingampally Mandal",
   "lat": 17.4429,
   "lng": 78.3573
  },
- "shamirpet": {
-  "area": "Shamirpet",
-  "lat": 17.606,
-  "lng": 78.571
- },
  "shamshabad": {
   "area": "Shamshabad",
   "lat": 17.2572,
   "lng": 78.3451
- },
- "shilpakala vedika": {
-  "area": "Madhapur",
-  "lat": 17.453,
-  "lng": 78.384
  },
  "shilparamam": {
   "area": "Shilparamam",
   "lat": 17.4515,
   "lng": 78.3775
  },
- "somajiguda": {
-  "area": "Somajiguda",
-  "lat": 17.423,
-  "lng": 78.456
- },
- "sultan bazar": {
-  "area": "Sultan Bazar",
-  "lat": 17.383,
-  "lng": 78.482
- },
- "telecom nagar": {
-  "area": "Gachibowli",
-  "lat": 17.4362,
-  "lng": 78.3455
- },
- "tellapur": {
-  "area": "Tellapur",
-  "lat": 17.482,
-  "lng": 78.287
- },
- "tolichowki": {
-  "area": "Tolichowki",
-  "lat": 17.398,
-  "lng": 78.413
- },
- "turkayamjal": {
-  "area": "Hayathnagar",
-  "lat": 17.296,
-  "lng": 78.576
- },
  "uppal": {
   "area": "Uppal",
-  "lat": 17.398,
-  "lng": 78.558
+  "lat": 17.4025,
+  "lng": 78.5613
  },
  "uppal mandal": {
   "area": "Uppal Mandal",
   "lat": 17.363,
   "lng": 78.5769
- },
- "vanasthalipuram": {
-  "area": "Vanasthalipuram",
-  "lat": 17.33,
-  "lng": 78.562
- },
- "vengalrao nagar": {
-  "area": "Vengal Rao Nagar",
-  "lat": 17.433,
-  "lng": 78.438
- },
- "vidyanagar": {
-  "area": "Vidyanagar",
-  "lat": 17.403,
-  "lng": 78.51
- },
- "west maredpally": {
-  "area": "West Maredpally",
-  "lat": 17.452,
-  "lng": 78.499
  }
 }

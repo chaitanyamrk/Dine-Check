@@ -53,8 +53,8 @@
  },
  "c.g.road": {
   "area": "C.G.ROAD",
-  "lat": 23.1054,
-  "lng": 72.5973
+  "lat": 23.1093,
+  "lng": 72.5947
  },
  "chandkheda": {
   "area": "Chandkheda",
@@ -83,8 +83,8 @@
  },
  "gandhinagar highway": {
   "area": "Gandhinagar Highway",
-  "lat": 23.0263,
-  "lng": 72.5078
+  "lat": 23.0516,
+  "lng": 72.5191
  },
  "gf/1": {
   "area": "Gf/1",
@@ -104,7 +104,7 @@
  "gheekanta": {
   "area": "Gheekanta",
   "lat": 23.0288,
-  "lng": 72.5867
+  "lng": 72.5868
  },
  "gota": {
   "area": "Gota",
@@ -233,8 +233,8 @@
  },
  "satellite": {
   "area": "Satellite",
-  "lat": 23.0231,
-  "lng": 72.5365
+  "lat": 23.0272,
+  "lng": 72.5094
  },
  "science city road": {
   "area": "Science City Road",

@@ -1,5 +1,5 @@
 {
- "_source": "Mined from 2226 FSSAI hygiene-rating addresses and geocoded via OpenStreetMap Nominatim.",
+ "_source": "Mined from 2231 FSSAI hygiene-rating addresses and geocoded via OpenStreetMap Nominatim.",
  "_warning": "Centroids are locality-level, accurate to roughly a kilometre. Hand edits are preserved on re-run: delete the _source line above to mark this file as yours, and the script will only ever add to it. Use --overwrite to force a clean rebuild.",
  "adyar": {
   "area": "Adyar",
@@ -33,18 +33,18 @@
  },
  "anna salai": {
   "area": "Anna Salai",
-  "lat": 13.011,
-  "lng": 80.2176
+  "lat": 13.0605,
+  "lng": 80.2612
  },
  "annanagar": {
   "area": "Annanagar",
   "lat": 13.095,
-  "lng": 80.1988
+  "lng": 80.1985
  },
  "arcot road": {
   "area": "Arcot Road",
-  "lat": 13.0468,
-  "lng": 80.194
+  "lat": 13.0382,
+  "lng": 80.1634
  },
  "arumbakkam": {
   "area": "Arumbakkam",
@@ -88,7 +88,7 @@
  },
  "chennai-49": {
   "area": "Chennai-49",
-  "lat": 13.078,
+  "lat": 13.0784,
   "lng": 80.2386
  },
  "chetpet": {
@@ -138,8 +138,8 @@
  },
  "jawaharlal nehru road": {
   "area": "Jawaharlal Nehru Road",
-  "lat": 13.0612,
-  "lng": 80.2118
+  "lat": 13.1241,
+  "lng": 80.2035
  },
  "jawaharlal nehru salai": {
   "area": "Jawaharlal Nehru Salai",
@@ -168,8 +168,8 @@
  },
  "kolathur": {
   "area": "Kolathur",
-  "lat": 13.1241,
-  "lng": 80.2046
+  "lat": 13.1237,
+  "lng": 80.2129
  },
  "koyambedu": {
   "area": "Koyambedu",
@@ -188,8 +188,8 @@
  },
  "madras coffee house": {
   "area": "Madras Coffee House",
-  "lat": 13.0469,
-  "lng": 80.2369
+  "lat": 13.0851,
+  "lng": 80.2024
  },
  "meenambakkam": {
   "area": "Meenambakkam",
@@ -198,8 +198,8 @@
  },
  "mount road": {
   "area": "Mount Road",
-  "lat": 13.0246,
-  "lng": 80.2292
+  "lat": 13.0639,
+  "lng": 80.2653
  },
  "mylapore": {
   "area": "Mylapore",
@@ -253,18 +253,18 @@
  },
  "perambur high road": {
   "area": "Perambur High Road",
-  "lat": 13.1061,
-  "lng": 80.2511
+  "lat": 13.1068,
+  "lng": 80.2483
  },
  "perumal koil street": {
   "area": "Perumal Koil Street",
-  "lat": 13.1307,
-  "lng": 80.1554
+  "lat": 13.0692,
+  "lng": 80.1858
  },
  "pillaiyar koil street": {
   "area": "Pillaiyar Koil Street",
-  "lat": 13.1033,
-  "lng": 80.1721
+  "lat": 13.0369,
+  "lng": 80.1903
  },
  "pillayar koil street": {
   "area": "Pillayar Koil Street",
@@ -273,8 +273,8 @@
  },
  "pilliyar koil street": {
   "area": "Pilliyar Koil Street",
-  "lat": 12.9785,
-  "lng": 80.2572
+  "lat": 13.1261,
+  "lng": 80.2903
  },
  "pulianthope": {
   "area": "Pulianthope",
@@ -368,7 +368,7 @@
  },
  "vadapalani": {
   "area": "Vadapalani",
-  "lat": 13.0504,
+  "lat": 13.0503,
   "lng": 80.2118
  },
  "velachery": {
@@ -378,23 +378,23 @@
  },
  "velachery main road": {
   "area": "Velachery Main Road",
-  "lat": 12.9842,
-  "lng": 80.2228
+  "lat": 12.9942,
+  "lng": 80.2177
  },
  "velachery road": {
   "area": "Velachery Road",
-  "lat": 13.012,
-  "lng": 80.2236
+  "lat": 12.9999,
+  "lng": 80.2057
  },
  "vijaya nagar": {
   "area": "Vijaya Nagar",
-  "lat": 13.0483,
-  "lng": 80.1766
+  "lat": 13.0479,
+  "lng": 80.1763
  },
  "villivakkam": {
   "area": "Villivakkam",
-  "lat": 13.1126,
-  "lng": 80.2081
+  "lat": 13.104,
+  "lng": 80.209
  },
  "virugambakkam": {
   "area": "Virugambakkam",
