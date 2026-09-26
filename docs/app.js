@@ -736,9 +736,17 @@ fetch("data.json",{cache:"no-cache"})
       var o=el("option",null,c.name+" ("+c.venues+")"); o.value=c.key; sel.appendChild(o);
     });
     sel.addEventListener("change",function(){ selectCity(this.value,true); });
+    // Links from the city and place pages (and search engines) arrive as
+    // /?city=<key>&q=<name>. A city in the link wins over the remembered one
+    // for this visit only; the remembered choice is left alone.
+    var P={}; try{ new URLSearchParams(location.search).forEach(function(v,k){ P[k]=v; }); }catch(e){}
     var saved=store.get("dinecheck.city",null);
-    var known=idx.cities.some(function(c){ return c.key===saved; });
-    return selectCity(known?saved:idx.defaultCity,false);
+    var isKey=function(k){ return idx.cities.some(function(c){ return c.key===k; }); };
+    var start=isKey(P.city)?P.city:(isKey(saved)?saved:idx.defaultCity);
+    return selectCity(start,false).then(function(){
+      var q=(P.q||"").slice(0,80);
+      if(q && DATA){ $("#q").value=q; state.q=q; render(true); }
+    });
   })
   .catch(function(){ loadFailed("the inspection data"); });
 })();

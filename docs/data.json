@@ -1,11 +1,11 @@
 {
- "generated": "2026-09-25T06:02:14Z",
+ "generated": "2026-09-26T20:26:06Z",
  "defaultCity": "hyderabad",
  "totals": {
   "cities": 10,
-  "venues": 12853,
+  "venues": 12872,
   "scoredVenues": 85,
-  "enforcementVenues": 271,
+  "enforcementVenues": 290,
   "certifiedVenues": 12497
  },
  "cities": [
@@ -106,13 +106,13 @@
    "lat": 17.385,
    "lng": 78.4867,
    "file": "city-hyderabad.json",
-   "bytes": 568705,
+   "bytes": 579012,
    "hasGeo": true,
-   "venues": 697,
+   "venues": 716,
    "scoredVenues": 85,
-   "enforcementVenues": 271,
+   "enforcementVenues": 290,
    "certifiedVenues": 341,
-   "latest": "2026-09-24"
+   "latest": "2026-09-26"
   },
   {
    "key": "kolkata",
